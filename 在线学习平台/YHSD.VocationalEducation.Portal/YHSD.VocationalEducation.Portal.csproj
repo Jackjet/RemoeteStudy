@@ -1,0 +1,1882 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A13DA51-F74C-49D2-8CB7-743D5A085B76}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YHSD.VocationalEducation.Portal</RootNamespace>
+    <AssemblyName>YHSD.VocationalEducation.Portal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager">
+      <HintPath>..\..\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="NPOI">
+      <HintPath>..\..\..\..\Users\Administrator\Desktop\职教中心代码\YHSD.VocationalEducation.Portal\YHSD.VocationalEducation.Portal\bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\..\..\..\Users\Administrator\Desktop\职教中心代码\YHSD.VocationalEducation.Portal\YHSD.VocationalEducation.Portal\bin\Debug\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\..\..\..\Users\Administrator\Desktop\职教中心代码\YHSD.VocationalEducation.Portal\YHSD.VocationalEducation.Portal\bin\Debug\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\Common\BusinessException.cs" />
+    <Compile Include="Code\Common\CommonUtil.cs" />
+    <Compile Include="Code\Common\CompanyOrDepartment.cs" />
+    <Compile Include="Code\Common\ConnectionManager.cs" />
+    <Compile Include="Code\Common\DBTable.cs" />
+    <Compile Include="Code\Common\ExportUtil.cs" />
+    <Compile Include="Code\Common\FileUtil.cs" />
+    <Compile Include="Code\Common\FormatUtil.cs" />
+    <Compile Include="Code\Common\MyHttpModule.cs" />
+    <Compile Include="Code\Common\MySqlDataReader.cs" />
+    <Compile Include="Code\Common\PublicEnum.cs" />
+    <Compile Include="Code\Common\SerialNumberUtil.cs" />
+    <Compile Include="Code\Common\TreeData.cs" />
+    <Compile Include="Code\Common\ValidUser.cs" />
+    <Compile Include="Code\Control\CenterGrid.cs" />
+    <Compile Include="Code\Control\CenterGridPageNav.cs" />
+    <Compile Include="Code\Control\IndexColumn.cs" />
+    <Compile Include="Code\Dao\AttachmentDao.cs" />
+    <Compile Include="Code\Dao\AttachmentInfoDao.cs" />
+    <Compile Include="Code\Dao\ChapterDao.cs" />
+    <Compile Include="Code\Dao\ClassCurriculumDao.cs" />
+    <Compile Include="Code\Dao\ClassInfoDao.cs" />
+    <Compile Include="Code\Dao\ClassUserDao.cs" />
+    <Compile Include="Code\Dao\ClickDetailDao.cs" />
+    <Compile Include="Code\Dao\CompanyDepartmentDao.cs" />
+    <Compile Include="Code\Dao\CurriculumInfoDao.cs" />
+    <Compile Include="Code\Dao\CurriculumRelationDao.cs" />
+    <Compile Include="Code\Dao\CurriculumTypeDao.cs" />
+    <Compile Include="Code\Dao\ExamAnswerDao.cs" />
+    <Compile Include="Code\Dao\ExamDao.cs" />
+    <Compile Include="Code\Dao\ExamQuestionForChooseDao.cs" />
+    <Compile Include="Code\Dao\ExamQuestionForEssayDao.cs" />
+    <Compile Include="Code\Dao\ExamQuestionStoreDao.cs" />
+    <Compile Include="Code\Dao\ExamResultDao.cs" />
+    <Compile Include="Code\Dao\HomeWorkDao.cs" />
+    <Compile Include="Code\Dao\PapersDao.cs" />
+    <Compile Include="Code\Dao\PapersQuestionStoreDao.cs" />
+    <Compile Include="Code\Dao\PositionDao.cs" />
+    <Compile Include="Code\Dao\PositionMenuDao.cs" />
+    <Compile Include="Code\Dao\QuestionForChooseDao.cs" />
+    <Compile Include="Code\Dao\QuestionForEssayDao.cs" />
+    <Compile Include="Code\Dao\QuestionGroupDao.cs" />
+    <Compile Include="Code\Dao\QuestionStoreDao.cs" />
+    <Compile Include="Code\Dao\ResourceClassificationDao.cs" />
+    <Compile Include="Code\Dao\ResourceDao.cs" />
+    <Compile Include="Code\Dao\StudyExperienceDao.cs" />
+    <Compile Include="Code\Dao\UserDeptDao.cs" />
+    <Compile Include="Code\Dao\UserInfoDao.cs" />
+    <Compile Include="Code\Dao\UserPositionDao.cs" />
+    <Compile Include="Code\Dao\VocationalMenuDao.cs" />
+    <Compile Include="Code\Entity\Attachment.cs" />
+    <Compile Include="Code\Entity\AttachmentInfo.cs" />
+    <Compile Include="Code\Entity\BaseEntity.cs" />
+    <Compile Include="Code\Entity\Chapter.cs" />
+    <Compile Include="Code\Entity\ClassCurriculum.cs" />
+    <Compile Include="Code\Entity\ClassInfo.cs" />
+    <Compile Include="Code\Entity\ClassUser.cs" />
+    <Compile Include="Code\Entity\ClickDetail.cs" />
+    <Compile Include="Code\Entity\CompanyDepartment.cs" />
+    <Compile Include="Code\Entity\CurriculumInfo.cs" />
+    <Compile Include="Code\Entity\CurriculumRelation.cs" />
+    <Compile Include="Code\Entity\CurriculumType.cs" />
+    <Compile Include="Code\Entity\Exam.cs" />
+    <Compile Include="Code\Entity\ExamAnswer.cs" />
+    <Compile Include="Code\Entity\ExamQuestionForChoose.cs" />
+    <Compile Include="Code\Entity\ExamQuestionForEssay.cs" />
+    <Compile Include="Code\Entity\ExamQuestionStore.cs" />
+    <Compile Include="Code\Entity\ExamResult.cs" />
+    <Compile Include="Code\Entity\ExperienceJson.cs" />
+    <Compile Include="Code\Entity\HomeWork.cs" />
+    <Compile Include="Code\Entity\Papers.cs" />
+    <Compile Include="Code\Entity\PaperScore.cs" />
+    <Compile Include="Code\Entity\PapersQuestionStore.cs" />
+    <Compile Include="Code\Entity\PositionMenu.cs" />
+    <Compile Include="Code\Entity\QuestionForChoose.cs" />
+    <Compile Include="Code\Entity\QuestionForEssay.cs" />
+    <Compile Include="Code\Entity\QuestionGroup.cs" />
+    <Compile Include="Code\Entity\QuestionStore.cs" />
+    <Compile Include="Code\Entity\RequestEntity.cs" />
+    <Compile Include="Code\Entity\Position.cs" />
+    <Compile Include="Code\Entity\Resource.cs" />
+    <Compile Include="Code\Entity\ResourceClassification.cs" />
+    <Compile Include="Code\Entity\StudyExperience.cs" />
+    <Compile Include="Code\Entity\UserDept.cs" />
+    <Compile Include="Code\Entity\UserInfo.cs" />
+    <Compile Include="Code\Entity\UserPosition.cs" />
+    <Compile Include="Code\Entity\VocationalMenu.cs" />
+    <Compile Include="Code\Manager\AttachmentInfoManager.cs" />
+    <Compile Include="Code\Manager\AttachmentManager.cs" />
+    <Compile Include="Code\Manager\ChapterManager.cs" />
+    <Compile Include="Code\Manager\ClassCurriculumManager.cs" />
+    <Compile Include="Code\Manager\ClassInfoManager.cs" />
+    <Compile Include="Code\Manager\ClassUserManager.cs" />
+    <Compile Include="Code\Manager\ClickDetailManager.cs" />
+    <Compile Include="Code\Manager\CompanyDepartmentManager.cs" />
+    <Compile Include="Code\Manager\CurriculumInfoManager.cs" />
+    <Compile Include="Code\Manager\CurriculumRelationManager.cs" />
+    <Compile Include="Code\Manager\CurriculumTypeManager.cs" />
+    <Compile Include="Code\Manager\ExamAnswerManager.cs" />
+    <Compile Include="Code\Manager\ExamManager.cs" />
+    <Compile Include="Code\Manager\ExamQuestionForChooseManager.cs" />
+    <Compile Include="Code\Manager\ExamQuestionForEssayManager.cs" />
+    <Compile Include="Code\Manager\ExamQuestionStoreManager.cs" />
+    <Compile Include="Code\Manager\ExamResultManager.cs" />
+    <Compile Include="Code\Manager\HomeWorkManager.cs" />
+    <Compile Include="Code\Manager\PapersManager.cs" />
+    <Compile Include="Code\Manager\PapersQuestionStoreManager.cs" />
+    <Compile Include="Code\Manager\PositionManager.cs" />
+    <Compile Include="Code\Manager\PositionMenuManager.cs" />
+    <Compile Include="Code\Manager\QuestionForChooseManager.cs" />
+    <Compile Include="Code\Manager\QuestionForEssayManager.cs" />
+    <Compile Include="Code\Manager\QuestionGroupManager.cs" />
+    <Compile Include="Code\Manager\QuestionStoreManager.cs" />
+    <Compile Include="Code\Manager\RequestEntityManager.cs" />
+    <Compile Include="Code\Manager\ResourceClassificationManager.cs" />
+    <Compile Include="Code\Manager\ResourceManager.cs" />
+    <Compile Include="Code\Manager\StudyExperienceManager.cs" />
+    <Compile Include="Code\Manager\UserDeptManager.cs" />
+    <Compile Include="Code\Manager\UserInfoManager.cs" />
+    <Compile Include="Code\Manager\UserPositionManager.cs" />
+    <Compile Include="Code\Manager\VocationalMenuManager.cs" />
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\ClassificationMgr.ascx.cs">
+      <DependentUpon>ClassificationMgr.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\ClassificationMgr.ascx.designer.cs">
+      <DependentUpon>ClassificationMgr.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\ClassMgr.ascx.cs">
+      <DependentUpon>ClassMgr.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\ClassMgr.ascx.designer.cs">
+      <DependentUpon>ClassMgr.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\CompanyList.ascx.cs">
+      <DependentUpon>CompanyList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\CompanyList.ascx.designer.cs">
+      <DependentUpon>CompanyList.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\CurriculumInfoList.ascx.cs">
+      <DependentUpon>CurriculumInfoList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\CurriculumInfoList.ascx.designer.cs">
+      <DependentUpon>CurriculumInfoList.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\HomePage.ascx.cs">
+      <DependentUpon>HomePage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\HomePage.ascx.designer.cs">
+      <DependentUpon>HomePage.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\MarkingMgr.ascx.cs">
+      <DependentUpon>MarkingMgr.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\MarkingMgr.ascx.designer.cs">
+      <DependentUpon>MarkingMgr.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\MenuList.ascx.cs">
+      <DependentUpon>MenuList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\MenuList.ascx.designer.cs">
+      <DependentUpon>MenuList.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\MenuTreeView.ascx.cs">
+      <DependentUpon>MenuTreeView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\MenuTreeView.ascx.designer.cs">
+      <DependentUpon>MenuTreeView.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\PapersMgr.ascx.cs">
+      <DependentUpon>PapersMgr.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\PapersMgr.ascx.designer.cs">
+      <DependentUpon>PapersMgr.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\PositionList.ascx.cs">
+      <DependentUpon>PositionList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\PositionList.ascx.designer.cs">
+      <DependentUpon>PositionList.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\QuestionStore.ascx.cs">
+      <DependentUpon>QuestionStore.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\QuestionStore.ascx.designer.cs">
+      <DependentUpon>QuestionStore.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\ResourceMgr.ascx.cs">
+      <DependentUpon>ResourceMgr.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\ResourceMgr.ascx.designer.cs">
+      <DependentUpon>ResourceMgr.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\StatisticsOfClass.ascx.cs">
+      <DependentUpon>StatisticsOfClass.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\StatisticsOfClass.ascx.designer.cs">
+      <DependentUpon>StatisticsOfClass.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\StatisticsOfQuestion.ascx.cs">
+      <DependentUpon>StatisticsOfQuestion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\StatisticsOfQuestion.ascx.designer.cs">
+      <DependentUpon>StatisticsOfQuestion.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\StatisticsOfStudent.ascx.cs">
+      <DependentUpon>StatisticsOfStudent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\StatisticsOfStudent.ascx.designer.cs">
+      <DependentUpon>StatisticsOfStudent.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\SystemSwitch.ascx.cs">
+      <DependentUpon>SystemSwitch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\SystemSwitch.ascx.designer.cs">
+      <DependentUpon>SystemSwitch.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\TestMgr.ascx.cs">
+      <DependentUpon>TestMgr.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\TestMgr.ascx.designer.cs">
+      <DependentUpon>TestMgr.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\UserinfoList.ascx.cs">
+      <DependentUpon>UserinfoList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\UserinfoList.ascx.designer.cs">
+      <DependentUpon>UserinfoList.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ChapterEdit.aspx.cs">
+      <DependentUpon>ChapterEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ChapterEdit.aspx.designer.cs">
+      <DependentUpon>ChapterEdit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ChapterGuanLi.aspx.cs">
+      <DependentUpon>ChapterGuanLi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ChapterGuanLi.aspx.designer.cs">
+      <DependentUpon>ChapterGuanLi.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ChapterNew.aspx.cs">
+      <DependentUpon>ChapterNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ChapterNew.aspx.designer.cs">
+      <DependentUpon>ChapterNew.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ChapterPlay.aspx.cs">
+      <DependentUpon>ChapterPlay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ChapterPlay.aspx.designer.cs">
+      <DependentUpon>ChapterPlay.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ChapterWorkList.aspx.cs">
+      <DependentUpon>ChapterWorkList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ChapterWorkList.aspx.designer.cs">
+      <DependentUpon>ChapterWorkList.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ClassCurriculumList.aspx.cs">
+      <DependentUpon>ClassCurriculumList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ClassCurriculumList.aspx.designer.cs">
+      <DependentUpon>ClassCurriculumList.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ClassEdit.aspx.cs">
+      <DependentUpon>ClassEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ClassEdit.aspx.designer.cs">
+      <DependentUpon>ClassEdit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ClassInfoSelect.aspx.cs">
+      <DependentUpon>ClassInfoSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ClassInfoSelect.aspx.designer.cs">
+      <DependentUpon>ClassInfoSelect.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ClassMgrHandler.aspx.cs">
+      <DependentUpon>ClassMgrHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ClassMgrHandler.aspx.designer.cs">
+      <DependentUpon>ClassMgrHandler.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CommonSelect\ClassSelect.aspx.cs">
+      <DependentUpon>ClassSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CommonSelect\ClassSelect.aspx.designer.cs">
+      <DependentUpon>ClassSelect.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CommonSelect\PaperSelect.aspx.cs">
+      <DependentUpon>PaperSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CommonSelect\PaperSelect.aspx.designer.cs">
+      <DependentUpon>PaperSelect.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CompanyTree.aspx.cs">
+      <DependentUpon>CompanyTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CompanyTree.aspx.designer.cs">
+      <DependentUpon>CompanyTree.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CompanyEdit.aspx.cs">
+      <DependentUpon>CompanyEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CompanyEdit.aspx.designer.cs">
+      <DependentUpon>CompanyEdit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumInfoNew.aspx.cs">
+      <DependentUpon>CurriculumInfoNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumInfoNew.aspx.designer.cs">
+      <DependentUpon>CurriculumInfoNew.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumInfoSelect.aspx.cs">
+      <DependentUpon>CurriculumInfoSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumInfoSelect.aspx.designer.cs">
+      <DependentUpon>CurriculumInfoSelect.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumInfoTree.aspx.cs">
+      <DependentUpon>CurriculumInfoTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumInfoTree.aspx.designer.cs">
+      <DependentUpon>CurriculumInfoTree.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumRelationList.aspx.cs">
+      <DependentUpon>CurriculumRelationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumRelationList.aspx.designer.cs">
+      <DependentUpon>CurriculumRelationList.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumTypeEdit.aspx.cs">
+      <DependentUpon>CurriculumTypeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumTypeEdit.aspx.designer.cs">
+      <DependentUpon>CurriculumTypeEdit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumTypeList.aspx.cs">
+      <DependentUpon>CurriculumTypeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumTypeList.aspx.designer.cs">
+      <DependentUpon>CurriculumTypeList.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumTypeTree.aspx.cs">
+      <DependentUpon>CurriculumTypeTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumTypeTree.aspx.designer.cs">
+      <DependentUpon>CurriculumTypeTree.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ExamAdd.aspx.cs">
+      <DependentUpon>ExamAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ExamAdd.aspx.designer.cs">
+      <DependentUpon>ExamAdd.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ExamList.aspx.cs">
+      <DependentUpon>ExamList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ExamList.aspx.designer.cs">
+      <DependentUpon>ExamList.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\FormPapers.aspx.cs">
+      <DependentUpon>FormPapers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\FormPapers.aspx.designer.cs">
+      <DependentUpon>FormPapers.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\BaseHandler.aspx.cs">
+      <DependentUpon>BaseHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\BaseHandler.aspx.designer.cs">
+      <DependentUpon>BaseHandler.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\ClassCurriculumHandler.aspx.cs">
+      <DependentUpon>ClassCurriculumHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\ClassCurriculumHandler.aspx.designer.cs">
+      <DependentUpon>ClassCurriculumHandler.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\ClassificationMgrHandler.aspx.cs">
+      <DependentUpon>ClassificationMgrHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\ClassificationMgrHandler.aspx.designer.cs">
+      <DependentUpon>ClassificationMgrHandler.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\CommonHandler.aspx.cs">
+      <DependentUpon>CommonHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\CommonHandler.aspx.designer.cs">
+      <DependentUpon>CommonHandler.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\PapersMgrHandler.aspx.cs">
+      <DependentUpon>PapersMgrHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\PapersMgrHandler.aspx.designer.cs">
+      <DependentUpon>PapersMgrHandler.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\QuestionStoreHandler.aspx.cs">
+      <DependentUpon>QuestionStoreHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\QuestionStoreHandler.aspx.designer.cs">
+      <DependentUpon>QuestionStoreHandler.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\ResourceMgrHandler.aspx.cs">
+      <DependentUpon>ResourceMgrHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\ResourceMgrHandler.aspx.designer.cs">
+      <DependentUpon>ResourceMgrHandler.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\StatisticsMgrHandler.aspx.cs">
+      <DependentUpon>StatisticsMgrHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\StatisticsMgrHandler.aspx.designer.cs">
+      <DependentUpon>StatisticsMgrHandler.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\SystemSwitchHandler.aspx.cs">
+      <DependentUpon>SystemSwitchHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\SystemSwitchHandler.aspx.designer.cs">
+      <DependentUpon>SystemSwitchHandler.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\TestMgrHandler.aspx.cs">
+      <DependentUpon>TestMgrHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\TestMgrHandler.aspx.designer.cs">
+      <DependentUpon>TestMgrHandler.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\UploadResourceHandler.aspx.cs">
+      <DependentUpon>UploadResourceHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Handler\UploadResourceHandler.aspx.designer.cs">
+      <DependentUpon>UploadResourceHandler.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\HomeWorkPiGai.aspx.cs">
+      <DependentUpon>HomeWorkPiGai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\HomeWorkPiGai.aspx.designer.cs">
+      <DependentUpon>HomeWorkPiGai.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ImportUser.aspx.cs">
+      <DependentUpon>ImportUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ImportUser.aspx.designer.cs">
+      <DependentUpon>ImportUser.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Marking.aspx.cs">
+      <DependentUpon>Marking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Marking.aspx.designer.cs">
+      <DependentUpon>Marking.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\MendEdit.aspx.cs">
+      <DependentUpon>MendEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\MendEdit.aspx.designer.cs">
+      <DependentUpon>MendEdit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\MenuTree.aspx.cs">
+      <DependentUpon>MenuTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\MenuTree.aspx.designer.cs">
+      <DependentUpon>MenuTree.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ComPanySelect.aspx.cs">
+      <DependentUpon>ComPanySelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\MyCourseDetails.aspx.cs">
+      <DependentUpon>MyCourseDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\MyCourseDetails.aspx.designer.cs">
+      <DependentUpon>MyCourseDetails.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\MyCourseList.aspx.cs">
+      <DependentUpon>MyCourseList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\MyCourseList.aspx.designer.cs">
+      <DependentUpon>MyCourseList.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\OpenCoursesList.aspx.cs">
+      <DependentUpon>OpenCoursesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\OpenCoursesList.aspx.designer.cs">
+      <DependentUpon>OpenCoursesList.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\OpenDetails.aspx.cs">
+      <DependentUpon>OpenDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\OpenDetails.aspx.designer.cs">
+      <DependentUpon>OpenDetails.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\OpenPlay.aspx.cs">
+      <DependentUpon>OpenPlay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\OpenPlay.aspx.designer.cs">
+      <DependentUpon>OpenPlay.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\PaperPreView.aspx.cs">
+      <DependentUpon>PaperPreView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\PaperPreView.aspx.designer.cs">
+      <DependentUpon>PaperPreView.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\PositionEdit.aspx.cs">
+      <DependentUpon>PositionEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\PositionEdit.aspx.designer.cs">
+      <DependentUpon>PositionEdit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\PositionJson.aspx.cs">
+      <DependentUpon>PositionJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\PositionJson.aspx.designer.cs">
+      <DependentUpon>PositionJson.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\PositionNew.aspx.cs">
+      <DependentUpon>PositionNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\PositionNew.aspx.designer.cs">
+      <DependentUpon>PositionNew.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\PositionTree.aspx.cs">
+      <DependentUpon>PositionTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\PositionTree.aspx.designer.cs">
+      <DependentUpon>PositionTree.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\PositionUserList.aspx.cs">
+      <DependentUpon>PositionUserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\PositionUserList.aspx.designer.cs">
+      <DependentUpon>PositionUserList.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\QuestionAdd.aspx.cs">
+      <DependentUpon>QuestionAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\QuestionAdd.aspx.designer.cs">
+      <DependentUpon>QuestionAdd.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\QuestionAddForSelect.aspx.cs">
+      <DependentUpon>QuestionAddForSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\QuestionAddForSelect.aspx.designer.cs">
+      <DependentUpon>QuestionAddForSelect.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\QuestionDetails.aspx.cs">
+      <DependentUpon>QuestionDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\QuestionDetails.aspx.designer.cs">
+      <DependentUpon>QuestionDetails.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\QuestionSelect.aspx.cs">
+      <DependentUpon>QuestionSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\QuestionSelect.aspx.designer.cs">
+      <DependentUpon>QuestionSelect.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ResourceClassificationEdit.aspx.cs">
+      <DependentUpon>ResourceClassificationEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\ResourceClassificationEdit.aspx.designer.cs">
+      <DependentUpon>ResourceClassificationEdit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\SelectCurriculum.aspx.cs">
+      <DependentUpon>SelectCurriculum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\SelectCurriculum.aspx.designer.cs">
+      <DependentUpon>SelectCurriculum.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\SelectResou.aspx.cs">
+      <DependentUpon>SelectResou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\SelectResou.aspx.designer.cs">
+      <DependentUpon>SelectResou.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\StartToTest.aspx.cs">
+      <DependentUpon>StartToTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\StartToTest.aspx.designer.cs">
+      <DependentUpon>StartToTest.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Statistics\PapersScore.aspx.cs">
+      <DependentUpon>PapersScore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\Statistics\PapersScore.aspx.designer.cs">
+      <DependentUpon>PapersScore.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\StudentAdd.aspx.cs">
+      <DependentUpon>StudentAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\StudentAdd.aspx.designer.cs">
+      <DependentUpon>StudentAdd.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\StudentList.aspx.cs">
+      <DependentUpon>StudentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\StudentList.aspx.designer.cs">
+      <DependentUpon>StudentList.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\StudentMgrHandler.aspx.cs">
+      <DependentUpon>StudentMgrHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\StudentMgrHandler.aspx.designer.cs">
+      <DependentUpon>StudentMgrHandler.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SystemSwitch.aspx.cs">
+      <DependentUpon>SystemSwitch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SystemSwitch.aspx.designer.cs">
+      <DependentUpon>SystemSwitch.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\TeacherSelect.aspx.cs">
+      <DependentUpon>TeacherSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\TeacherSelect.aspx.designer.cs">
+      <DependentUpon>TeacherSelect.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\UpdateUser.aspx.cs">
+      <DependentUpon>UpdateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\UpdateUser.aspx.designer.cs">
+      <DependentUpon>UpdateUser.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\UploadResource.aspx.cs">
+      <DependentUpon>UploadResource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\UploadResource.aspx.designer.cs">
+      <DependentUpon>UploadResource.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\UserInfoADD.aspx.cs">
+      <DependentUpon>UserInfoADD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\UserInfoADD.aspx.designer.cs">
+      <DependentUpon>UserInfoADD.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\UserInfoEdit.aspx.cs">
+      <DependentUpon>UserInfoEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\UserInfoEdit.aspx.designer.cs">
+      <DependentUpon>UserInfoEdit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\UserSelect.aspx.cs">
+      <DependentUpon>UserSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\UserSelect.aspx.designer.cs">
+      <DependentUpon>UserSelect.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\WorkGuanLi.aspx.cs">
+      <DependentUpon>WorkGuanLi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\YHSD.VocationalEducation.Portal\WorkGuanLi.aspx.designer.cs">
+      <DependentUpon>WorkGuanLi.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VEClassificationMgr\VEClassificationMgr.cs" />
+    <Compile Include="VEClassMgrWebPart\VEClassMgrWebPart.cs" />
+    <Compile Include="VECompanyWebPart\VECompanyWebPart.cs" />
+    <Compile Include="VECurriculumInfoWebPart\VECurriculumInfoWebPart.cs" />
+    <Compile Include="VECurriculumTypeWebPart\VECurriculumTypeWebPart.cs" />
+    <Compile Include="VEHomePageWebPart\VEHomePageWebPart.cs" />
+    <Compile Include="VEMarkingMgrWebPart\VEMarkingMgrWebPart.cs" />
+    <Compile Include="VEMenuWebPart\VEMenuWebPart.cs" />
+    <Compile Include="VEPapersMgrWebPart\VEPapersMgrWebPart.cs" />
+    <Compile Include="VEPositionWebPart\VEPositionWebPart.cs" />
+    <Compile Include="VEQuestionStore\VEQuestionStore.cs" />
+    <Compile Include="VEResourceMgrWebPart\VEResourceMgrWebPart.cs" />
+    <Compile Include="VEStatisticsOfClassWebPart\VEStatisticsOfClassWebPart.cs" />
+    <Compile Include="VEStatisticsOfQuestionWebPart\VEStatisticsOfQuestionWebPart.cs" />
+    <Compile Include="VEStatisticsOfStudentWebPart\VEStatisticsOfStudentWebPart.cs" />
+    <Compile Include="VEStudentMgrWebPart\VEStudentMgrWebPart.cs" />
+    <Compile Include="VESystemSwitch\VESystemSwitch.cs" />
+    <Compile Include="VETestMgrWebPart\VETestMgrWebPart.cs" />
+    <Compile Include="VEUserInfoWebPart\VEUserInfoWebPart.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CONTROLTEMPLATES\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9d6e4709-6c35-4bf6-b51d-c0f4d1a30602}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{a9add3a4-0e37-4454-90cd-23308e1ad7f0}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2c4ce93f-43a8-4f78-b7c8-0ff5a157de48}</SharePointProjectItemId>
+    </None>
+    <None Include="Layouts\YHSD.VocationalEducation.Portal\js\layer\skin\default\Thumbs.db" />
+    <None Include="Layouts\YHSD.VocationalEducation.Portal\uploads\zjzxUser.zip" />
+    <None Include="Package\Package.package">
+      <PackageId>{51f19cf4-42c5-4a84-b7db-0af32bc8b99a}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="VEClassificationMgr\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9352a43e-79c6-4d49-a07e-50c68e954550}</SharePointProjectItemId>
+    </None>
+    <None Include="VEClassificationMgr\VEClassificationMgr.webpart" />
+    <None Include="VEClassMgrWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c0fa232a-fae0-413d-acfe-a2138604073d}</SharePointProjectItemId>
+    </None>
+    <None Include="VEClassMgrWebPart\VEClassMgrWebPart.webpart" />
+    <None Include="VECompanyWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{441f084d-eb51-4f2d-b8ac-a04c51dea629}</SharePointProjectItemId>
+    </None>
+    <None Include="VECompanyWebPart\VECompanyWebPart.webpart" />
+    <None Include="VECurriculumInfoWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{754826af-cc11-4f2e-b61d-d2ffc713fd39}</SharePointProjectItemId>
+    </None>
+    <None Include="VECurriculumInfoWebPart\VECurriculumInfoWebPart.webpart" />
+    <None Include="VECurriculumTypeWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4d459251-ab32-4e9d-9a6c-9cb30dedc4e9}</SharePointProjectItemId>
+    </None>
+    <None Include="VECurriculumTypeWebPart\VECurriculumTypeWebPart.webpart" />
+    <None Include="VEHomePageWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0fcd0ac5-6ec9-4e94-8dbb-4a0ed6dcdf6a}</SharePointProjectItemId>
+    </None>
+    <None Include="VEHomePageWebPart\VEHomePageWebPart.webpart" />
+    <None Include="VEMarkingMgrWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0be25783-dab2-4d53-963c-87ea42e1bcc4}</SharePointProjectItemId>
+    </None>
+    <None Include="VEMarkingMgrWebPart\VEMarkingMgrWebPart.webpart" />
+    <None Include="VEMenuWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ebd435bf-5f87-48f7-ac2a-e4b283d25633}</SharePointProjectItemId>
+    </None>
+    <None Include="VEMenuWebPart\VEMenuWebPart.webpart" />
+    <None Include="VEPapersMgrWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{05a34bea-2a05-4486-a896-24cca32174c8}</SharePointProjectItemId>
+    </None>
+    <None Include="VEPapersMgrWebPart\VEPapersMgrWebPart.webpart" />
+    <None Include="VEPositionWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cf10f407-148f-4f6b-9827-6b23893e96d4}</SharePointProjectItemId>
+    </None>
+    <None Include="VEPositionWebPart\VEPositionWebPart.webpart" />
+    <None Include="VEQuestionStore\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c4ba53c9-8d85-4b63-8b00-20bd6a94ac5b}</SharePointProjectItemId>
+    </None>
+    <None Include="VEQuestionStore\VEQuestionStore.webpart" />
+    <None Include="VEResourceMgrWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{21aba286-4701-4a49-b38f-833271202adc}</SharePointProjectItemId>
+    </None>
+    <None Include="VEResourceMgrWebPart\VEResourceMgrWebPart.webpart" />
+    <None Include="VEStatisticsOfClassWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a5461d54-bb6f-414c-aaf7-13effd59e38f}</SharePointProjectItemId>
+    </None>
+    <None Include="VEStatisticsOfClassWebPart\VEStatisticsOfClassWebPart.webpart" />
+    <None Include="VEStatisticsOfQuestionWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{38afe1b4-69f0-47e7-998c-95390cd9354d}</SharePointProjectItemId>
+    </None>
+    <None Include="VEStatisticsOfQuestionWebPart\VEStatisticsOfQuestionWebPart.webpart" />
+    <None Include="VEStatisticsOfStudentWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ae2eb6ff-ecd2-48f6-920c-816957565b1b}</SharePointProjectItemId>
+    </None>
+    <None Include="VEStatisticsOfStudentWebPart\VEStatisticsOfStudentWebPart.webpart" />
+    <None Include="VEStudentMgrWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5c03f0d6-2303-46ec-93d7-791535636414}</SharePointProjectItemId>
+    </None>
+    <None Include="VEStudentMgrWebPart\VEStudentMgrWebPart.webpart" />
+    <None Include="VESystemSwitch\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{89224f2b-b19f-4fa3-a434-235425f5563e}</SharePointProjectItemId>
+    </None>
+    <None Include="VESystemSwitch\VESystemSwitch.webpart" />
+    <None Include="VETestMgrWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b804a31f-e720-4259-83e5-cefcd3857378}</SharePointProjectItemId>
+    </None>
+    <None Include="VETestMgrWebPart\VETestMgrWebPart.webpart" />
+    <None Include="VEUserInfoWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{323014af-3a80-4419-a850-696371545590}</SharePointProjectItemId>
+    </None>
+    <None Include="VEUserInfoWebPart\VEUserInfoWebPart.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\ClassificationMgr.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\ClassMgr.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\CompanyList.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\CurriculumInfoList.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\HomePage.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\MarkingMgr.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\MenuList.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\MenuTreeView.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\PapersMgr.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\PositionList.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\QuestionStore.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\ResourceMgr.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\StatisticsOfClass.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\StatisticsOfQuestion.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\StatisticsOfStudent.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\SystemSwitch.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\TestMgr.ascx" />
+    <Content Include="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal\UserinfoList.ascx" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ChapterEdit.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ChapterGuanLi.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ChapterNew.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ChapterPlay.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ChapterWorkList.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\ckplayer.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\ckplayer.swf" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\ckplayer.xml" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\language.xml" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\related.xml" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\share.xml" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\share\feixin.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\share\google.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\share\kaixin001.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\share\msn.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\share\qq.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\share\qq2.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\share\qzone.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\share\rr.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\share\sina.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\share\sohu.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\share\tianya.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ckplayer\style.swf" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ClassCurriculumList.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ClassEdit.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ClassInfoSelect.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ClassMgrHandler.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\CommonSelect\ClassSelect.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\CommonSelect\PaperSelect.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\CompanyTree.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\CompanyEdit.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\css\common.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\css\edit.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\css\gridview.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\css\MenuTree.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\css\Pager.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\css\Progressbar.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\css\style.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\css\styleQianTai.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\css\Tabs.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\css\type.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumInfoNew.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumInfoSelect.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumInfoTree.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumRelationList.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumTypeEdit.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumTypeList.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\CurriculumTypeTree.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ExamAdd.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ExamList.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\FormPapers.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\Handler\BaseHandler.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\Handler\ClassCurriculumHandler.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\Handler\ClassificationMgrHandler.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\Handler\CommonHandler.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\Handler\PapersMgrHandler.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\Handler\QuestionStoreHandler.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\Handler\ResourceMgrHandler.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\Handler\StatisticsMgrHandler.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\Handler\SystemSwitchHandler.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\Handler\TestMgrHandler.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\Handler\UploadResourceHandler.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\HomeWorkPiGai.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\01.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\02.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\03.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\add.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\arrow_down.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\arrow_up.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\bg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\boy.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\btn_bg.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\chakan.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\classes_pic14.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Delete.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Delete.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List2\bottom_left.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List2\bottom_line.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List2\bottom_right.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List2\color.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List2\left_line.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List2\right_line.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List2\top_left.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List2\top_line.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List2\top_right.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_FirstItem.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_FirstItem_Left.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_FirstItem_Right.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_FooterItem_2.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_FooterItem_2_Left.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_FooterItem_2_Right.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_Header.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_Header_Left_Top.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_Header_Right_Top.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_Item_1.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_Item_1_Left.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_Item_1_Right.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_Item_2.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_Item_2_Left.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_Item_2_Right.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\List\List_PageNav.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\PopMenu\1dian.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\PopMenu\left_sanjiao.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\PopMenu\sanjiaoxing.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\PopMenu\t-left_top.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\PopMenu\t_left_bottom.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\PopMenu\t_l_r_line.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\PopMenu\t_right_bottom.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\PopMenu\t_right_top.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Form\PopMenu\t_t_b_line.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\girl.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\green_bg.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\grey_bg.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\more_pic.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\news_pic.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\NoImage.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\NoTouXiang.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\page_down.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\page_down01.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\page_up.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\page_up01.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\plan_pic.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\quit_pic.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\preview.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\shang.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\partymembereducation.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\studenteducation.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\continuationeducation.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\toolBg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\touming.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\txt_icon01.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\txt_icon02.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\txt_icon03.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Update.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Update.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\xia.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\You.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\images\Zuo.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ImportUser.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\DatePicker\calendar.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\DatePicker\lang\en.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\DatePicker\lang\zh-cn.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\DatePicker\lang\zh-tw.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\DatePicker\skin\datePicker.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\DatePicker\skin\default\datepicker.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\DatePicker\skin\default\img.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\DatePicker\skin\WdatePicker.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\DatePicker\WdatePicker.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\FormatUtil.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\adapters\standalone-framework.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\adapters\standalone-framework.src.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\highcharts-3d.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\highcharts-3d.src.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\highcharts-more.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\highcharts-more.src.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\highcharts.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\highcharts.src.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\broken-axis.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\broken-axis.src.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\canvas-tools.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\canvas-tools.src.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\data.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\data.src.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\drilldown.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\drilldown.src.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\exporting.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\exporting.src.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\funnel.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\funnel.src.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\heatmap.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\heatmap.src.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\no-data-to-display.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\no-data-to-display.src.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\solid-gauge.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\solid-gauge.src.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\treemap.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\modules\treemap.src.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\themes\dark-blue.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\themes\dark-green.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\themes\dark-unica.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\themes\gray.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\themes\grid-light.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\themes\grid.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\themes\sand-signika.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Highcharts\themes\skies.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\combo_arrow.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\jquery.knob.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\json.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\layer\extend\layer.ext.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\layer\jquery.min.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\layer\layer.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\layer\OpenLayer.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\layer\skin\default\icon_ext.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\layer\skin\default\textbg.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\layer\skin\default\xubox_ico0.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\layer\skin\default\xubox_loading0.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\layer\skin\default\xubox_loading2.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\layer\skin\default\xubox_loading1.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\layer\skin\default\xubox_loading3.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\layer\skin\layer.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\layer\skin\layer.ext.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\mulitifile.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Pager.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Tabs.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\VocationalEducation.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\jquery-1.6.2.min.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\changelog.txt" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\easyloader.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\jquery.easyui.min.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\jquery.easyui.mobile.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\jquery.min.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\licence_gpl.txt" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-af.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-am.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-ar.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-bg.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-ca.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-cs.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-cz.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-da.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-de.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-el.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-en.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-es.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-fr.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-it.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-jp.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-nl.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-pl.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-pt_BR.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-ru.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-sv_SE.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-tr.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-zh_CN.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\locale\easyui-lang-zh_TW.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.accordion.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.calendar.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.combo.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.combobox.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.combogrid.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.combotree.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.datagrid.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.datalist.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.datebox.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.datetimebox.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.datetimespinner.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.dialog.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.draggable.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.droppable.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.filebox.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.form.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.layout.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.linkbutton.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.menu.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.menubutton.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.messager.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.mobile.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.numberbox.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.numberspinner.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.pagination.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.panel.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.parser.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.progressbar.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.propertygrid.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.resizable.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.searchbox.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.slider.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.spinner.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.splitbutton.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.tabs.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.textbox.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.timespinner.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.tooltip.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.tree.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.treegrid.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.validatebox.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\plugins\jquery.window.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\readme.txt" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\easyloader.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.accordion.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.calendar.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.combobox.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.datebox.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.draggable.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.droppable.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.form.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.linkbutton.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.menu.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.parser.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.progressbar.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.propertygrid.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.resizable.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.slider.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.tabs.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\src\jquery.window.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\accordion.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\calendar.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\combo.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\combobox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\datagrid.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\datalist.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\datebox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\dialog.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\easyui.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\filebox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\accordion_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\blank.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\calendar_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\combo_arrow.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\datagrid_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\datebox_arrow.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\layout_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\linkbutton_bg.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\loading.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\menu_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\messager_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\pagination_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\panel_tools.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\searchbox_button.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\slider_handle.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\spinner_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\tabs_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\tree_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\images\validatebox_warning.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\layout.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\linkbutton.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\menu.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\menubutton.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\messager.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\numberbox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\pagination.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\panel.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\progressbar.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\propertygrid.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\searchbox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\slider.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\spinner.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\splitbutton.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\tabs.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\textbox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\tooltip.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\tree.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\validatebox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\black\window.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\accordion.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\calendar.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\combo.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\combobox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\datagrid.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\datalist.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\datebox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\dialog.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\easyui.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\filebox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\accordion_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\blank.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\calendar_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\combo_arrow.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\datagrid_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\datebox_arrow.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\layout_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\linkbutton_bg.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\loading.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\menu_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\messager_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\pagination_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\panel_tools.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\searchbox_button.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\slider_handle.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\spinner_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\tabs_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\tree_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\images\validatebox_warning.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\layout.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\linkbutton.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\menu.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\menubutton.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\messager.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\numberbox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\pagination.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\panel.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\progressbar.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\propertygrid.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\searchbox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\slider.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\spinner.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\splitbutton.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\tabs.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\textbox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\tooltip.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\tree.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\validatebox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\bootstrap\window.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\color.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\accordion.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\calendar.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\combo.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\combobox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\datagrid.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\datalist.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\datebox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\dialog.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\easyui.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\filebox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\accordion_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\blank.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\calendar_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\combo_arrow2.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\datagrid_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\datebox_arrow.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\layout_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\linkbutton_bg.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\loading.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\menu_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\messager_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\pagination_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\panel_tools.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\searchbox_button.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\slider_handle.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\spinner_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\tabs_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\tree_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\images\validatebox_warning.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\layout.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\linkbutton.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\menu.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\menubutton.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\messager.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\numberbox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\pagination.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\panel.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\progressbar.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\propertygrid.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\searchbox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\slider.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\spinner.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\splitbutton.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\tabs.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\textbox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\tooltip.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\tree.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\validatebox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\default\window.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\accordion.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\calendar.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\combo.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\combobox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\datagrid.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\datalist.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\datebox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\dialog.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\easyui.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\filebox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\accordion_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\blank.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\calendar_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\combo_arrow.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\datagrid_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\datebox_arrow.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\layout_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\linkbutton_bg.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\loading.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\menu_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\messager_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\pagination_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\panel_tools.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\searchbox_button.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\slider_handle.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\spinner_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\tabs_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\tree_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\images\validatebox_warning.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\layout.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\linkbutton.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\menu.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\menubutton.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\messager.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\numberbox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\pagination.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\panel.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\progressbar.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\propertygrid.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\searchbox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\slider.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\spinner.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\splitbutton.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\tabs.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\textbox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\tooltip.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\tree.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\validatebox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\gray\window.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icon.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\back.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\blank.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\cancel.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\clear.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\cut.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\edit_add.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\edit_remove.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\filesave.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\filter.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\help.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\large_chart.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\large_clipart.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\large_picture.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\large_shapes.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\large_smartart.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\lock.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\man.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\mini_add.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\mini_edit.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\mini_refresh.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\more.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\no.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\ok.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\pencil.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\print.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\redo.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\reload.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\search.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\sum.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\tip.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\icons\undo.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\accordion.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\calendar.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\combo.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\combobox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\datagrid.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\datalist.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\datebox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\dialog.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\easyui.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\filebox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\accordion_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\blank.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\calendar_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\combo_arrow.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\datagrid_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\datebox_arrow.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\layout_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\linkbutton_bg.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\loading.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\menu_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\messager_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\pagination_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\panel_tools.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\searchbox_button.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\slider_handle.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\spinner_arrows.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\tabs_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\tree_icons.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\images\validatebox_warning.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\layout.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\linkbutton.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\menu.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\menubutton.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\messager.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\numberbox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\pagination.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\panel.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\progressbar.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\propertygrid.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\searchbox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\slider.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\spinner.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\splitbutton.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\tabs.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\textbox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\tooltip.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\tree.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\validatebox.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\metro\window.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\Jquery.easyui\themes\mobile.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\uploadify\jquery-1.9.1.min.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\uploadify\jquery.uploadify.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\uploadify\jquery.uploadify.min.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\uploadify\license.txt" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\uploadify\uploadify-cancel.png" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\uploadify\uploadify.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\uploadify\uploadify.swf" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\js\uploadify\__MACOSX\._uploadify.swf" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\Marking.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\MendEdit.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\MenuTree.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ComPanySelect.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\MyCourseDetails.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\MyCourseList.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\OpenCoursesList.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\OpenDetails.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\OpenPlay.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\PaperPreView.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\PositionEdit.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\PositionJson.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\PositionNew.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\PositionTree.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\PositionUserList.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\QuestionAdd.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\QuestionAddForSelect.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\QuestionDetails.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\QuestionSelect.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\ResourceClassificationEdit.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\SelectCurriculum.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\SelectResou.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\StartToTest.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\Statistics\PapersScore.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\StudentAdd.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\StudentList.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\StudentMgrHandler.aspx" />
+    <Content Include="Layouts\SystemSwitch.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\TeacherSelect.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\UpdateUser.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\UploadResource.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\UserInfoADD.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\UserInfoEdit.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\UserSelect.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\WorkGuanLi.aspx" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor-1.2.2.min.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\angry.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\awkward.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\bye.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\config.txt" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\crazy.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\cry.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\curse.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\cute.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\despise.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\doubt.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\envy.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\fastcry.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\knock.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\laugh.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\mad.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\ohmy.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\panic.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\proud.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\quiet.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\sad.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\shutup.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\shy.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\sleep.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\smile.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\struggle.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\titter.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\tongue.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\wail.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\default\wronged.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\alien.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\angel.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\angry.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\bandit.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\biglaugh.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\blink.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\blush.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\config.txt" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\cool.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\cry.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\depres.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\devil.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\glare.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\heart.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\joyful.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\kiss.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\laugh.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\magician.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\ninja.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\pinch.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\police.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\sad.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\sick.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\sideways.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\sleep.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\smile.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\surprised.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\tongue.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\unsure.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\w00t.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\whistling.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\wondering.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\ipb\wub.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\1.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\10.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\11.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\12.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\13.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\14.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\15.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\16.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\17.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\18.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\19.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\2.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\20.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\21.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\22.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\23.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\24.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\25.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\26.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\27.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\28.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\29.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\3.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\30.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\31.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\32.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\33.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\34.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\35.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\36.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\37.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\38.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\39.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\4.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\40.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\5.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\6.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\7.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\8.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\msn\9.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\angry.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\bad.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\blush.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\brokenheart.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\bye.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\coffee.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\config.txt" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\cool.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\cry.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\curse.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\cute.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\devil.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\envy.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\gift.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\good.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\kiss.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\laugh.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\love.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\music.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\question.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\rose.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\sad.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\shocked.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\shout.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\sick.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\sleepy.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\smile.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\soccer.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\sweat.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\tired.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\tongue.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\victory.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_emot\pidgin\wink.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_lang\en.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_lang\zh-cn.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_lang\zh-tw.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\html2markdown.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\htmldomparser.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\multiupload\img\add.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\multiupload\img\bg1.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\multiupload\img\bg2.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\multiupload\img\btnbg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\multiupload\img\btnbgr.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\multiupload\img\clear.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\multiupload\img\progressbg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\multiupload\img\start.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\multiupload\multiupload.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\multiupload\multiupload.html" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\multiupload\multiupload.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\multiupload\swfupload\swfupload.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\multiupload\swfupload\swfupload.swf" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\showdown.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_plugins\ubb.js" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\blank.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\iframe.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\anchor.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\close.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\flash.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\icons.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\loading.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\progress.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\progressbg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\tag-address.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\tag-div.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\tag-h1.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\tag-h2.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\tag-h3.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\tag-h4.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\tag-h5.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\tag-h6.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\tag-p.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\tag-pre.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\waiting.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\wmp.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\img\wordimg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\default\ui.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\iframe.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\anchor.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\close.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\flash.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\icons.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\loading.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\progress.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\progressbg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\tag-address.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\tag-div.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\tag-h1.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\tag-h2.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\tag-h3.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\tag-h4.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\tag-h5.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\tag-h6.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\tag-p.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\tag-pre.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\waiting.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\wmp.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\img\wordimg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\nostyle\ui.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\iframe.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\anchor.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\buttonbg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\close.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\flash.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\icons.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\loading.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\progress.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\progressbg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\tag-address.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\tag-div.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\tag-h1.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\tag-h2.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\tag-h3.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\tag-h4.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\tag-h5.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\tag-h6.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\tag-p.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\tag-pre.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\waiting.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\wmp.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\img\wordimg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007blue\ui.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\iframe.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\anchor.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\buttonbg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\close.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\flash.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\icons.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\loading.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\progress.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\progressbg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\tag-address.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\tag-div.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\tag-h1.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\tag-h2.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\tag-h3.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\tag-h4.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\tag-h5.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\tag-h6.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\tag-p.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\tag-pre.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\waiting.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\wmp.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\img\wordimg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\o2007silver\ui.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\iframe.css" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\anchor.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\buttonbg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\close.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\flash.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\icons.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\loading.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\progress.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\progressbg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\tag-address.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\tag-div.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\tag-h1.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\tag-h2.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\tag-h3.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\tag-h4.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\tag-h5.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\tag-h6.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\tag-p.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\tag-pre.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\titlebg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\waiting.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\wmp.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\img\wordimg.gif" />
+    <Content Include="Layouts\YHSD.VocationalEducation.Portal\xhEditor\xheditor_skin\vista\ui.css" />
+    <Content Include="VEClassificationMgr\Elements.xml" />
+    <Content Include="VEClassMgrWebPart\Elements.xml" />
+    <Content Include="VECompanyWebPart\Elements.xml" />
+    <Content Include="VECurriculumInfoWebPart\Elements.xml" />
+    <Content Include="VECurriculumTypeWebPart\Elements.xml" />
+    <Content Include="VEHomePageWebPart\Elements.xml" />
+    <Content Include="VEMarkingMgrWebPart\Elements.xml" />
+    <Content Include="VEMenuWebPart\Elements.xml" />
+    <Content Include="VEPapersMgrWebPart\Elements.xml" />
+    <Content Include="VEPositionWebPart\Elements.xml" />
+    <Content Include="VEQuestionStore\Elements.xml" />
+    <Content Include="VEResourceMgrWebPart\Elements.xml" />
+    <Content Include="VEStatisticsOfClassWebPart\Elements.xml" />
+    <Content Include="VEStatisticsOfQuestionWebPart\Elements.xml" />
+    <Content Include="VEStatisticsOfStudentWebPart\Elements.xml" />
+    <Content Include="VEStudentMgrWebPart\Elements.xml" />
+    <Content Include="VESystemSwitch\Elements.xml" />
+    <Content Include="VETestMgrWebPart\Elements.xml" />
+    <Content Include="VEUserInfoWebPart\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ADUtility\ADUtility.csproj">
+      <Project>{76526db0-70ea-4e7e-b98f-5737fd44b908}</Project>
+      <Name>ADUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="QueryDepartmentByzzjgh">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryDepartmentByzzjghResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryDepartmentByzzjghResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="QueryDepartmentByzzjghSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryDepartmentByzzjgh" />
+  </wsdl:message>
+  <wsdl:message name="QueryDepartmentByzzjghSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryDepartmentByzzjghResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DepartmentSoap">
+    <wsdl:operation name="QueryDepartmentByzzjgh">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据组织机构号，获取其下子节点</wsdl:documentation>
+      <wsdl:input message="tns:QueryDepartmentByzzjghSoapIn" />
+      <wsdl:output message="tns:QueryDepartmentByzzjghSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DepartmentSoap" type="tns:DepartmentSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="QueryDepartmentByzzjgh">
+      <soap:operation soapAction="http://tempuri.org/QueryDepartmentByzzjgh" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DepartmentSoap12" type="tns:DepartmentSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="QueryDepartmentByzzjgh">
+      <soap12:operation soapAction="http://tempuri.org/QueryDepartmentByzzjgh" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Department">
+    <wsdl:port name="DepartmentSoap" binding="tns:DepartmentSoap">
+      <soap:address location="http://117.106.7.150/department.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DepartmentSoap12" binding="tns:DepartmentSoap12">
+      <soap12:address location="http://117.106.7.150/department.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

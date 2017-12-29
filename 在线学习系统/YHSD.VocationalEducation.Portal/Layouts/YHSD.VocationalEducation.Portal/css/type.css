@@ -1,0 +1,212 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.table_main {
+    width: 833px;
+}
+
+.search_mian {
+    border-bottom: 1px solid #cecece;
+}
+
+.search_input {
+    padding-left: 16px;
+    margin: 8px 0;
+}
+
+.input_part {
+    border: 1px solid rgb(222, 222, 222) !important; 
+    width: 150px; 
+    height: 22px;
+}
+.long_input_part {
+    border: 1px solid rgb(222, 222, 222) !important; 
+    width: 198px !important; 
+    height: 22px !important;
+}
+
+.button_part {
+    height: 31px;
+    line-height: 29px;
+    background: url(../images/btn_bg.png) repeat-x;
+    padding: 0 20px;
+    font-size: 13px;
+    font-family: "微软雅黑","宋体";
+    color: #565656;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #d5d5d5;
+    cursor: pointer;
+    margin-left: 15px;
+    letter-spacing: 2px;
+}
+
+.main_list_table {
+    width: 801px;
+    /*margin: 16px;*/
+    margin: 5px;
+    border: 1px solid #dedede;
+}
+
+    .main_list_table .list_table {
+        width: 801px;
+    }
+
+        .main_list_table .list_table .tab_th {
+            height: 36px;
+            line-height: 36px;
+            cursor: pointer;
+        }
+
+        .main_list_table .list_table .th_tit {
+            font-size: 13px;
+            color: #444;
+            text-align: center;
+        }
+        
+        .main_list_table .list_table .th_tit_left {
+            font-size: 13px;
+            color: #444;
+            text-align: left;
+        }
+        
+        .main_list_table .list_table .th_tit_right {
+            font-size: 13px;
+            color: #444;
+            text-align: right;
+        }
+
+        .main_list_table .list_table .top_th {
+            background: #f2f2f2;
+        }
+
+        .main_list_table .list_table .td_tit {
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+        }
+       .td_tit_left {
+            font-size: 13px;
+            color: #666;
+            text-align: left;
+        }
+       .td_tit_right {
+            font-size: 13px;
+            color: #666;
+            text-align: right;
+        }
+        .main_list_table .list_table .tab_td {
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .main_list_table .list_table .td_bg {
+            background: #f9f9f7;
+        }
+
+.list_table .tit_link {
+    font-size: 13px;
+    font-family: "微软雅黑","宋体";
+    color: #49b700;
+}
+
+    .list_table .tit_link:hover {
+        text-decoration: underline;
+    }
+
+.main_button_part {
+    text-align: center;
+}
+
+.button_s {
+    height: 31px;
+    line-height: 29px;
+    background: url(../images/btn_bg.png) repeat-x;
+    padding: 0 36px !important;
+    font-size: 13px !important;
+    font-family: "微软雅黑","宋体" !important;
+    color: #49b700 !important;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #d5d5d5;
+    cursor: pointer;
+    margin: 0 10px;
+    letter-spacing: 2px;
+}
+
+.button_n {
+    height: 31px;
+    line-height: 29px;
+    background: url(../images/btn_bg.png) repeat-x;
+    padding: 0 36px !important;
+    font-size: 13px !important;
+    font-family: "微软雅黑","宋体" !important;
+    color: #565656 !important;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #d5d5d5;
+    cursor: pointer;
+    margin: 0 10px;
+    letter-spacing: 2px;
+}
+
+.TopToolbar {
+    /*margin: 16px;*/
+    margin: 5px;
+}
+/*Layer alert skin*/
+body .layui-layer-molv .layui-layer-title {
+    border: none;
+    background: #49B700;
+    color: #fff;
+}
+
+body .layui-layer-molv .layui-layer-load {
+      background: url(../js/layer/skin/default/xubox_loading1.gif) #fff center center no-repeat;
+}
+/*删除的图片*/
+.DelImg{
+    background:url('/_layouts/15/YHSD.VocationalEducation.Portal/images/Delete.png');
+    width:18px;
+    height:18px;
+    cursor:pointer;
+}
+/*编辑的图片*/
+.EditImg{
+    background:url('/_layouts/15/YHSD.VocationalEducation.Portal/images/Update.png');
+    width:18px;
+    height:18px;
+    cursor:pointer;
+}
+
+/*查看的图片*/
+.ViewImg{
+    background:url('/_layouts/15/YHSD.VocationalEducation.Portal/images/chakan.png');
+    width:18px;
+    height:18px;
+    cursor:pointer;
+}
+.TopImg{
+    background:url('/_layouts/15/YHSD.VocationalEducation.Portal/images/shang.png');
+    width:18px;
+    height:18px;
+    cursor:pointer;
+}
+.BottomImg{
+    background:url('/_layouts/15/YHSD.VocationalEducation.Portal/images/xia.png');
+    width:18px;
+    height:18px;
+    cursor:pointer;
+}
+/*隐藏x轴滚动条*/
+/*#s4-workspace{
+     overflow-x:hidden !important;
+}*/
+#ctl00_PlaceHolderMain_WikiField .ms-rtestate-field{
+padding-right:0px !important;
+}
+.ms-rte-layoutszone-inner{
+margin:0px !important;
+
+padding:0px !important;
+border:0 !important;
+}

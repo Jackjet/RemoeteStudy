@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="WP_wp_MyDriveUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="WP_wp_MyDrive\" Type="ElementManifest" />
+    <ProjectItemFile Source="WP_wp_MyDrive.webpart" Target="WP_wp_MyDrive\" Type="ElementFile" />
+    <ProjectItemFile Source="WP_wp_MyDriveUserControl.ascx" Target="CONTROLTEMPLATES\Sinp_TeacherWP.WebParts.WP\WP_wp_MyDrive\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Sinp_TeacherWP.WebParts.WP.WP_wp_MyDrive" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

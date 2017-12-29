@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="IF_wp_PersonDriveSet" List="113" Url="_catalogs/wp">
+    <File Path="IF_wp_PersonDriveSet\IF_wp_PersonDriveSet.webpart" Url="SVDigitalCampus_IF_wp_PersonDriveSet.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

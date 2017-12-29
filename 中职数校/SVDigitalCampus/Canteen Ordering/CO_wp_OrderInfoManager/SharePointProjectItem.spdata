@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="CO_wp_OrderInfoManagerUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="CO_wp_OrderInfoManager\" Type="ElementManifest" />
+    <ProjectItemFile Source="CO_wp_OrderInfoManager.webpart" Target="CO_wp_OrderInfoManager\" Type="ElementFile" />
+    <ProjectItemFile Source="CO_wp_OrderInfoManagerUserControl.ascx" Target="CONTROLTEMPLATES\SVDigitalCampus.Canteen_Ordering\CO_wp_OrderInfoManager\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SVDigitalCampus.Canteen_Ordering.CO_wp_OrderInfoManager" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

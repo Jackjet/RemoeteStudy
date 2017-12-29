@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="SG_wp_AddPracticeEvaluateUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="SG_wp_AddPracticeEvaluate\" Type="ElementManifest" />
+    <ProjectItemFile Source="SG_wp_AddPracticeEvaluate.webpart" Target="SG_wp_AddPracticeEvaluate\" Type="ElementFile" />
+    <ProjectItemFile Source="SG_wp_AddPracticeEvaluateUserControl.ascx" Target="CONTROLTEMPLATES\Sinp_StudentWP.WebParts.SG\SG_wp_AddPracticeEvaluate\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Sinp_StudentWP.WebParts.SG.SG_wp_AddPracticeEvaluate" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

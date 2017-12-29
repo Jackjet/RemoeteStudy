@@ -1,0 +1,280 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #666;
+}
+
+img {
+    border: 0;
+}
+/*timeline start*/
+.timeline {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    padding: 68px 0 0 166px;
+}
+
+    .timeline .t_send {
+        width: 700px;
+        height: 210px;
+        border-left: 8px solid #e9e9e9;
+    }
+
+        .timeline .t_send .t_header {
+            float: left;
+            margin-left: -30px;
+            width: 50px;
+            text-align: center;
+            line-height: 28px;
+        }
+
+            .timeline .t_send .t_header img {
+                border-radius: 33px;
+            }
+
+        .timeline .t_send .t_icon {
+            width: 13px;
+            height: 16px;
+            background: url("images/sanjiao1.png") no-repeat;
+            float: left;
+            margin: 27px 0 0 10px;
+        }
+
+        .timeline .t_send .t_box {
+            width: 600px;
+            /*height: 172px;*/
+            background: #fff;
+            float: left;
+            border-radius: 3px;
+            position: relative;
+            box-shadow: 0px 0px 3px #bbb;
+        }
+
+            .timeline .t_send .t_box .t_msg {
+                width: 540px;
+                height: 50px;
+                border: 1px solid #ccc;
+                margin: 0 auto;
+                padding: 10px;
+                outline: none;
+                overflow: auto;
+            }
+
+                .timeline .t_send .t_box .t_msg img {
+                    margin: 2px;
+                }
+
+            .timeline .t_send .t_box .t_title {
+                padding: 10px 0 15px 20px;
+                font-size: 14px;
+            }
+
+            .timeline .t_send .t_box .t_face {
+                padding-bottom: 10px;
+                overflow: hidden;
+            }
+
+            .timeline .t_send .t_box .t_face_btn {
+                float: left;
+                margin: 15px 0 0 16px;
+            }
+
+.t_send_btn {
+    float: right;
+    width: 80px;
+    height: 32px;
+    background: #0da6ec;
+    text-decoration: none;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: #fff;
+    margin: 8px 20px 0 0;
+    border-radius: 3px;
+}
+
+    .t_send_btn:hover {
+        background: #0d96d4;
+    }
+
+.timeline .t_send .t_box .t_face_con {
+    width: 365px;
+    height: 180px;
+    border: 1px solid #ccc;
+    background: #fff;
+    box-shadow: 1px 2px 6px 0px #000;
+    position: absolute;
+    left: 24px;
+    top: 158px;
+    padding: 5px;
+    display: none;
+    z-index: 1;
+}
+
+    .timeline .t_send .t_box .t_face_con ul li {
+        list-style: none;
+        float: left;
+        margin: 2px;
+        cursor: pointer;
+    }
+
+.timeline .t_all {
+    width: 1100px;
+    position: relative;
+}
+
+    .timeline .t_all .l_header {
+        margin-left: -30px;
+        float: left;
+        width: 50px;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .timeline .t_all .t_list {
+        border-left: 8px solid #e9e9e9;
+        float: left;
+        padding: 20px 0;
+    }
+
+        .timeline .t_all .t_list .l_icon {
+            width: 13px;
+            height: 16px;
+            background: url("images/sanjiao1.png") no-repeat;
+            float: left;
+            margin: 27px 0 0 10px;
+        }
+
+        .timeline .t_all .t_list .l_header img {
+            border-radius: 33px;
+        }
+
+        .timeline .t_all .t_list .l_msg {
+            min-height: 50px;
+            border: 1px solid #ddd;
+            width: 600px;
+            background: #fff;
+            float: left;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+.clear {
+    clear: both;
+}
+
+.timeline .t_all .t_list .l_msg .firstcon {
+    padding: 16px 16px 0 16px;
+}
+
+    .timeline .t_all .t_list .l_msg .firstcon .l_msgcon {
+        text-indent: 2em;
+        line-height: 28px;
+    }
+
+    .timeline .t_all .t_list .l_msg .firstcon .co_con {
+    }
+
+        .timeline .t_all .t_list .l_msg .firstcon .co_con .co_left {
+            font-size: 14px;
+            line-height: 28px;
+        }
+
+        .timeline .t_all .t_list .l_msg .firstcon .co_con .co_right {
+            font-size: 12px;
+            line-height: 32px;
+            color: #ddd;
+        }
+
+            .timeline .t_all .t_list .l_msg .firstcon .co_con .co_right span {
+                padding: 0 4px;
+                color: #333;
+            }
+
+/*第一次回复*/
+.secondcon {
+    background: #f1f1f1;
+    min-height: 50px;
+    margin-top: 10px;
+}
+
+    .secondcon .s_icon {
+        width: 13px;
+        height: 16px;
+        background: url("images/s_top.png") no-repeat;
+        float: left;
+        margin: -6px 0 0 10px;
+    }
+
+    .secondcon .s_con {
+        overflow: hidden;
+    }
+
+        .secondcon .s_con .Publish .s_msg {
+            width: 540px;
+            min-height: 24px;
+            line-height: 24px;
+            background: #fff;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+            padding: 0 10px;
+            outline: none;
+            overflow: auto;
+        }
+
+
+        .secondcon .s_con .third {
+            padding: 10px 20px;
+            font-size: 12px;
+            border-bottom: 1px solid #dbdbdb;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+            .secondcon .s_con .third .tcon_left {
+                width: 50px;
+                line-height: 24px;
+                text-align: center;
+                color: #e98120;
+            }
+
+            .secondcon .s_con .third .tcon_right {
+                width: 500px;
+                line-height: 24px;
+            }
+
+                .secondcon .s_con .third .tcon_right .third_con {
+                    text-indent: 2em;
+                }
+
+                .secondcon .s_con .third .tcon_right .third_c {
+                }
+
+.arttit {
+    margin-top: 30px;
+    font-family: '微软雅黑';
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.artsectit {
+    font-size: 12px;
+    text-align: center;
+    color: gray;
+}
+
+.artcontent {
+    width: 80%;
+    margin: auto;
+    font-size: 14px;
+    /*text-align: center;*/
+    font-family: '微软雅黑';
+    text-indent: 2em;
+}

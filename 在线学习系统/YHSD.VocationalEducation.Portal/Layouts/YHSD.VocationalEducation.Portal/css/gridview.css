@@ -1,0 +1,802 @@
+﻿.housingBorder {
+    border-right-color: #b3a7c7;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+.mainlist_td {
+    height: 42px;
+    line-height: 42px;
+    background: #a28cc8;
+    border: 0px solid #8261b9;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.mainlist_search {
+    color: #fff;
+    font-size: 12px;
+}
+
+    .mainlist_search > tbody > tr > th {
+        padding: 0 10px;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .mainlist_search .searchRadio {
+        padding: 0 2px;
+    }
+
+    .mainlist_search .searchText {
+        width: 75px;
+        height: 22px;
+        line-height: 22px;
+        border-radius: 2px;
+        padding: 0 5px;
+        font-size: 12px;
+        font-family: "微软雅黑";
+        color: #333;
+        background: #f3f3f3;
+        margin-right: 10px;
+    }
+
+    .mainlist_search .searchButton {
+        padding: 0 12px;
+        height: 26px;
+        line-height: 26px;
+        border: 1px solid #8261b9;
+        border-radius: 3px;
+        font-size: 12px;
+        color: #fff;
+        font-family: "微软雅黑";
+        cursor: pointer;
+        background: #8261b9;
+    }
+
+.mainlist_datahead {
+    font-size: 12px;
+    color: #fff;
+    font-family: "微软雅黑";
+    background: #b3a7c7;
+    border-bottom: 1px solid #928d9a;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.newButton {
+    padding: 7px 35px;
+    background: #8261b9;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #fff;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+
+
+
+.ListOverflow {
+    table-layout: fixed;
+    table-layout: fixed;
+}
+
+    .ListOverflow td {
+        white-space: nowrap;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+.List {
+    border: 0px none;
+}
+
+.ListHeaderCell {
+}
+
+.ListFirstItem {
+    /*color: #7c7a7a;
+    border: 0px none;
+    line-height: 33px;
+    background-image: url(Images/Form/List/List_FirstItem.gif);
+    background-repeat: repeat-x;*/
+}
+
+    .ListFirstItem td {
+        font-size: 12px;
+        color: #666;
+        font-family: "微软雅黑";
+        background: #fff;
+        /*border-bottom: 1px solid #f0f2fc;*/
+        line-height: 24px;
+        padding: 10px 0;
+    }
+
+.ListItem1 {
+    /*color: #7c7a7a;
+    line-height: 28px;
+    background-image: url(Images/Form/List/List_Item_1.gif);
+    background-repeat: repeat;*/
+}
+
+    .ListItem1 td {
+        font-size: 12px;
+        color: #666;
+        font-family: "微软雅黑";
+        background: #fff;
+        /*border-bottom: 1px solid #f0f2fc;*/
+        line-height: 24px;
+        padding: 10px 0;
+    }
+
+.ListItem2 {
+    /*color: #7c7a7a;
+    line-height: 30px;
+    background-image: url(Images/Form/List/List_Item_2.gif);
+    background-repeat: repeat;*/
+}
+
+    .ListItem2 td {
+        font-size: 12px;
+        color: #666;
+        font-family: "微软雅黑";
+        background: #fff;
+        /*border-bottom: 1px solid #f0f2fc;*/
+        line-height: 24px;
+        padding: 10px 0;
+    }
+
+.List th {
+    /*border: 1px solid #f5f5f5;*/
+    text-align: center;
+    border-bottom: 1px solid #f0f2fc;
+}
+
+.List td {
+    /*text-align: center;*/
+    border: 0px solid #f5f5f5;
+    white-space: nowrap;
+    border-bottom: 1px solid #f0f2fc;
+    padding-left:10px;
+}
+
+.IndexCell {
+    width: 35px;
+    /*text-align: center;*/
+}
+
+.GridHeader {
+    line-height: 33px;
+    background: #b3a7c7;
+    border-bottom: 0px none;
+    color: #fff;
+}
+
+    .GridHeader > td {
+        /*text-align: left;
+        padding-left: 5px;*/
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-bottom: 1px solid #999;
+        font-size: 12px;
+        color: #fff;
+        font-family: "微软雅黑";
+        background: #999;
+        border-bottom: 1px solid #999;
+        line-height: 32px;
+        font-weight: bold;
+    }
+
+.tdLeft {
+    text-align: left !important;
+    /*padding-left: 6px;*/
+}
+
+.tdRight {
+    text-align: right !important;
+    /*padding-right: 8px;*/
+}
+
+.tdCenter {
+    text-align: center !important;
+}
+
+.PageNav {
+    background-color: #fffffd;
+    height: 30px;
+}
+
+
+    .PageNav input[type=submit] {
+        border: none;
+        margin: 2px auto;
+        height: 20px;
+        width: 17px;
+        background-color: #fffbff;
+        background-image: url(/res/images/Form/List/List_PageNav.png);
+        background-repeat: no-repeat;
+    }
+
+.PageNavFirst {
+    background-position: 0px 0px;
+}
+
+.PageNavPrev {
+    background-position: -18px 0px;
+    border: 0px;
+}
+
+.PageNavPrev_Disabled {
+    background-position: -18px 0px;
+}
+
+.PageNavNext {
+    background-position: -70px 0px;
+}
+
+.PageNavNext_Disabled {
+    background-position: -70px 0px;
+}
+
+.PageNavLast {
+    background-position: -88px 0px;
+}
+
+.PageNavLast_Disabled {
+    background-position: -88px 0px;
+}
+
+.PageNavText {
+    font-size: 13px;
+    line-height: 12px;
+    width: 26px;
+    height: 16px;
+    background-image: none;
+    padding-left: 5px !important;
+}
+
+.PageNavGo {
+    width: 26px !important;
+    height: 16px !important;
+    background-position: -110px -2px;
+    border: 0px;
+}
+
+.PageNav input[type=text] {
+    height: 12px;
+    width: 20px;
+    border: 1px solid #7a94a3;
+    margin: 8px auto;
+    padding: 0px 0px;
+}
+
+.PageNav tr > td {
+    margin: 0px;
+    padding-left: 5px;
+    height: 30px;
+    text-align: left;
+    border: 0px;
+}
+
+.PageNavFirst:hover, .PageNavPrev:hover, .PageNavNext:hover, .PageNavLast:hover, .PageNavGo:hover {
+    border: 1px solid #306695;
+    cursor: pointer;
+}
+
+.PageNavFirst_Disabled:hover, .PageNavPrev_Disabled:hover, .PageNavNext_Disabled:hover, .PageNavLast_Disabled:hover {
+    border: none;
+    cursor: not-allowed;
+}
+
+.TreeViewDiv { /*background-color:rgb(246,246,246);*/
+    border: 1px solid #FFFAFA;
+}
+
+.TreeNode {
+    font-size: 12px;
+    color: #242424;
+}
+
+.TreeNodeSelected {
+    background-color: #969696;
+    font-size: 12px;
+    color: #FFFFCC;
+}
+
+
+.HeaderTitle {
+    color: #0b97ec;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.HeaderTitle2 {
+    color: #333333;
+    font-weight: bold;
+    margin-left: 10px;
+    padding-left: 40px;
+    font-size: 16px;
+    line-height: 35px;
+    background-image: url(../Common/Images/Form/img.png);
+    background-repeat: no-repeat;
+}
+
+.EditTDTitle {
+    text-align: right;
+    font-weight: bold;
+    color: #7c7a7a;
+    line-height: 25px;
+}
+
+.EditTDCell {
+    padding-left: 15px;
+    line-height: 25px;
+}
+
+/*列表查询条件样式*/
+
+.FormFrame > tbody > tr > th, .FormFrame > tr > th {
+    text-align: right;
+    font-weight: bold;
+    color: #666666;
+    line-height: 25px;
+    white-space: nowrap;
+    padding-left: 10px;
+}
+
+.FormFrame > tbody > tr > td, .FormFrame > tr > td {
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 25px;
+}
+
+.FormFrameEdit > tbody > tr > th, .FormFrame > tr > th {
+    text-align: right;
+    font-weight: bold;
+    color: #666666;
+    line-height: 25px;
+    white-space: nowrap;
+    padding-left: 5px;
+}
+
+.FormFrameEdit > tbody > tr > td, .FormFrame > tr > td {
+    padding-left: 5px;
+    padding-right: 15px;
+    line-height: 25px;
+}
+
+.ListCellButton {
+    width: 60px;
+    margin: 0 auto;
+}
+
+    .button, .ListCellButton > input[type=submit] {
+        padding: 0px;
+        color: #676767;
+        cursor: pointer;
+        width: 56px;
+        height: 24px;
+        background-image: url(Images/Form/btn1_2.png);
+        background-repeat: no-repeat;
+        border: none;
+        background-color: transparent;
+    }
+
+        .button:hover, .UpgradeButton:hover, .ListCellButton > input[type=button]:hover {
+            color: #037fd9;
+        }
+
+.button3 {
+    padding: 0px;
+    color: #676767;
+    cursor: pointer;
+    width: 83px;
+    height: 24px;
+    background-image: url(Images/Form/btn1_3.png);
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+}
+
+    .button3:hover {
+        color: #037fd9;
+    }
+
+
+.UpgradeButton {
+    border: none;
+    padding: 0px;
+    color: #676767;
+    cursor: pointer;
+    width: 115px;
+    height: 33px;
+    background-image: url(Images/Form/Upgrade.png);
+}
+
+.ListCellButton > input[type=button], .ListCellButton > input[type=submit] {
+    padding: 0px;
+    background-color: transparent;
+    line-height: 26px;
+    background-image: url(Images/Form/btn_look.png);
+}
+
+    .ListCellButton > input[type=button]:hover, .ListCellButton > input[type=submit]:hover {
+        background-image: url(Images/Form/btn_genzong.png);
+        color: #FFFFFF;
+    }
+
+.buttonPlus, .buttonMinus {
+    font-size: 1px;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border: 0px none;
+    padding: 0px;
+    background-image: url(../Common/Images/Form/Plus.png);
+    background-repeat: no-repeat;
+}
+
+.buttonMinus {
+    background-image: url(../Common/Images/Form/Minus.png);
+}
+
+input[type=text], input[type=file], textarea {
+    border: 1px solid #999;
+}
+
+input[type=text], input[type=file] {
+    height: 20px;
+}
+
+select {
+    border: 1px solid #999; /*border: 0 !important;  Removes border*/
+    -webkit-appearance: none; /*Removes default chrome and safari style*/
+    -moz-appearance: none; /*Removes default style Firefox*/ /*background: url('you_own_image_arrow.png')  no-repeat;*/
+}
+
+.select_style {
+    width: 240px;
+    height: 30px;
+    overflow: hidden;
+    background: url(../images/arrow.png) no-repeat 215px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px; /* Gecko browsers */
+    -webkit-border-radius: 5px; /* Webkit browsers */
+    border-radius: 5px;
+}
+
+    .select_style select {
+        padding: 5px;
+        background: transparent;
+        width: 268px;
+        font-size: 16px;
+        border: none;
+        height: 30px;
+        -webkit-appearance: none; /*for Webkit browsers*/
+    }
+
+.NumText {
+    text-align: right;
+}
+
+.FormDivBackground {
+    position: absolute;
+    z-index: 10000;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #4c4c4c; /*Ifilter:alpha(opacity=80); -moz-opacity:0.5; opacity:0.5;*/
+}
+
+    .FormDivBackground > div {
+        width: 575px;
+        height: 380px;
+        margin: 0 auto;
+        margin-top: 120px;
+        background-image: url(Images/Form/FormDiv.png);
+        filter: alpha(opacity=100); /*IE滤镜，透明度50%*/
+        -moz-opacity: 1; /*Firefox私有，透明度50%*/
+        opacity: 1; /*其他，透明度50%*/
+    }
+
+    .FormDivBackground #divHeader {
+        height: 35px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .FormDivBackground #divClose {
+        z-index: 10010;
+        float: right;
+        cursor: pointer;
+        line-height: 30px;
+        width: 30px;
+    }
+
+    .FormDivBackground #divContent {
+        height: 293px;
+        background-color: #FFFFFF;
+        overflow: auto;
+        margin-left: 1px;
+        padding-left: 15px;
+    }
+
+    .FormDivBackground #divFoot {
+        height: 50px;
+        display: inline;
+    }
+
+        .FormDivBackground #divFoot > div {
+            cursor: pointer;
+            float: left;
+            font-weight: bold;
+            color: #656766;
+            margin-left: 227px;
+            text-align: center;
+            padding-top: 7px;
+            margin-top: 12px;
+            width: 60px;
+            height: 20px;
+            display: inline-block;
+        }
+
+            .FormDivBackground #divFoot > div:hover {
+                color: #017ed8;
+            }
+
+    .FormDivBackground #divCancel {
+        margin-left: 22px !important;
+    }
+
+.CenterFileUpload {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    white-space: nowrap;
+}
+
+    .CenterFileUpload > input[type=submit] {
+        border-style: none;
+        border-color: inherit;
+        border-width: medium;
+        background: url('Images/Form/Icos.jpg') no-repeat -122px -61px;
+        width: 16px;
+        height: 16px;
+        margin-bottom: -4px;
+        margin-left: 5px;
+    }
+
+    .CenterFileUpload > input[type=file] {
+        border: 1px solid #333333;
+        font-size: 12px;
+        height: 22px;
+        line-height: 19px;
+        width: 500px;
+    }
+
+.CenterFileDisplay {
+    padding-top: 2px;
+}
+
+    .CenterFileDisplay a {
+        line-height: 19px;
+        color: #027c49;
+    }
+
+        .CenterFileDisplay a:hover {
+            color: #bf0200;
+        }
+
+    .CenterFileDisplay input[type=submit] {
+        border-style: none;
+        border-color: inherit;
+        border-width: medium;
+        background: url('Images/Form/Icos.jpg') no-repeat -122px -61px;
+        width: 16px;
+        height: 16px;
+        margin-bottom: -4px;
+        margin-left: 5px;
+    }
+
+.EventDescription { /*white-space:pre;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#pop {
+    background: #fff;
+    width: 200px;
+    border: 1px solid #e0e0e0;
+    font-size: 12px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+#popHead {
+    line-height: 32px;
+    background-image: url(Images/PopTitle_bg.png);
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    font-size: 12px;
+    padding: 0 0 0 10px;
+}
+
+    #popHead h2 {
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 32px;
+        height: 32px;
+    }
+
+    #popHead #popClose {
+        position: absolute;
+        color: #FFFFFF;
+        right: 10px;
+        top: 1px;
+    }
+
+    #popHead a#popClose:hover {
+        color: #f00;
+        cursor: pointer;
+    }
+
+#popContent {
+    padding: 5px 10px 5px 20px;
+}
+
+#pop dt {
+    margin: 5,0,0,20;
+}
+
+    #pop dt a {
+        line-height: 24px;
+        font-size: 14px;
+        font-family: '微软雅黑';
+        color: #333; /*--font-weight: bold;*/
+        text-decoration: none;
+    }
+
+        #pop dt a span {
+            color: Red;
+        }
+
+        #pop dt a:hover {
+            color: #f60;
+        }
+
+#pop dd {
+    text-indent: 24px;
+    line-height: 160%;
+    margin: 5px 0;
+    color: #666;
+}
+
+#popMore {
+    text-align: right;
+    border-top: 1px dotted #ccc;
+    line-height: 24px;
+    margin: 8px 0 0 0;
+}
+
+    #popMore a {
+        color: #f60;
+    }
+
+        #popMore a:hover {
+            color: #f00;
+        }
+
+.buttonExpansion {
+    border: none;
+    width: 30px;
+    height: 15px;
+    background-image: url('Images/Form/sanjiao_b.gif');
+}
+
+.buttonFalten {
+    border: none;
+    width: 30px;
+    height: 15px;
+    background-image: url('Images/Form/sanjiao_r.gif');
+}
+
+.LabLink {
+    text-decoration: underline;
+    color: #7c7a7a;
+    cursor: pointer;
+}
+
+    .LabLink:hover {
+        color: #f00;
+    }
+
+.clear {
+    clear: both;
+}
+
+/* 页脚*/
+.mainnav-bottom {
+    padding-bottom: 0px;
+    margin-top: 30px;
+}
+
+    .mainnav-bottom p {
+        height: 20px;
+        padding-right: 110px;
+        text-align: right;
+    }
+
+        .mainnav-bottom p span {
+            font-size: 12px;
+            font-family: "宋体";
+            color: #fff;
+        }
+
+        .mainnav-bottom P .line {
+            padding: 0 10px;
+        }
+
+/*Navigator链接*/
+.navigatorLink {
+    text-decoration: none;
+    padding: 0px 5px;
+}
+/*文本框样式(old)*/
+.textStyle {
+    line-height: 22px;
+    border-top: 1px solid #d4d4d4;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #ecedf1;
+    border-bottom: 1px solid #ecedf1;
+    background: #eeeff4;
+    color: #333;
+}
+
+.btnAdd {
+    padding: 7px 35px;
+    border: 0px;
+    background: #8261b9;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #fff;
+    font-family: "微软雅黑";
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.btnCancel {
+    padding: 6px 33px;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #8261b9;
+    font-family: "微软雅黑";
+    cursor: pointer;
+    margin-right: 15px;
+    background: #fff;
+}
+
+.left_top_radius {
+    border-radius: 3px 0 0 0;
+}
+
+.left_bottom_radius {
+    border-radius: 0 0 0 3px;
+}
+
+.leaseHead {
+    font-size: 15px;
+    color: #666;
+    font-family: "微软雅黑";
+    padding-left: 46px;
+    margin-bottom: 15px;
+    height: 26px;
+    line-height: 26px;
+    background: url(images/Lease/LeaseContract/leaseTitle.png) no-repeat 12px center;
+}

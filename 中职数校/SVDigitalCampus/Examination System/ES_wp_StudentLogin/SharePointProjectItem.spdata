@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="ES_wp_StudentLoginUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="ES_wp_StudentLogin\" Type="ElementManifest" />
+    <ProjectItemFile Source="ES_wp_StudentLogin.webpart" Target="ES_wp_StudentLogin\" Type="ElementFile" />
+    <ProjectItemFile Source="ES_wp_StudentLoginUserControl.ascx" Target="CONTROLTEMPLATES\SVDigitalCampus.Examination_System\ES_wp_StudentLogin\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SVDigitalCampus.Examination_System.ES_wp_StudentLogin" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

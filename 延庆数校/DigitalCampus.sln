@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sinp_TeacherWP", "Sinp_TeacherWP\Sinp_TeacherWP.csproj", "{7B855AE2-A958-4141-9EAA-C7437FDED19B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5950E38D-1FB2-45F1-87C0-5ED7F20D0969} = {5950E38D-1FB2-45F1-87C0-5ED7F20D0969}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{4B38B8BC-6017-4F4E-921A-6C622CFB328D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sinp_StudentWP", "Sinp_StudentWP\Sinp_StudentWP.csproj", "{5950E38D-1FB2-45F1-87C0-5ED7F20D0969}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemConfig", "SystemConfig\SystemConfig.csproj", "{2162A50A-D73B-4D3E-ABBD-C9E5C2CAD9A2}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://61.50.119.70:700/tfs/%E8%BF%9C%E7%A8%8B%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Common\\Common.csproj
+		SccProjectName1 = Common
+		SccLocalPath1 = Common
+		SccProjectUniqueName2 = Sinp_StudentWP\\Sinp_StudentWP.csproj
+		SccProjectName2 = Sinp_StudentWP
+		SccLocalPath2 = Sinp_StudentWP
+		SccProjectUniqueName3 = Sinp_TeacherWP\\Sinp_TeacherWP.csproj
+		SccProjectName3 = Sinp_TeacherWP
+		SccLocalPath3 = Sinp_TeacherWP
+		SccProjectUniqueName4 = SystemConfig\\SystemConfig.csproj
+		SccProjectName4 = SystemConfig
+		SccLocalPath4 = SystemConfig
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B855AE2-A958-4141-9EAA-C7437FDED19B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B855AE2-A958-4141-9EAA-C7437FDED19B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B855AE2-A958-4141-9EAA-C7437FDED19B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7B855AE2-A958-4141-9EAA-C7437FDED19B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B855AE2-A958-4141-9EAA-C7437FDED19B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B855AE2-A958-4141-9EAA-C7437FDED19B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4B38B8BC-6017-4F4E-921A-6C622CFB328D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B38B8BC-6017-4F4E-921A-6C622CFB328D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B38B8BC-6017-4F4E-921A-6C622CFB328D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B38B8BC-6017-4F4E-921A-6C622CFB328D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5950E38D-1FB2-45F1-87C0-5ED7F20D0969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5950E38D-1FB2-45F1-87C0-5ED7F20D0969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5950E38D-1FB2-45F1-87C0-5ED7F20D0969}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5950E38D-1FB2-45F1-87C0-5ED7F20D0969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5950E38D-1FB2-45F1-87C0-5ED7F20D0969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5950E38D-1FB2-45F1-87C0-5ED7F20D0969}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2162A50A-D73B-4D3E-ABBD-C9E5C2CAD9A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2162A50A-D73B-4D3E-ABBD-C9E5C2CAD9A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2162A50A-D73B-4D3E-ABBD-C9E5C2CAD9A2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2162A50A-D73B-4D3E-ABBD-C9E5C2CAD9A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2162A50A-D73B-4D3E-ABBD-C9E5C2CAD9A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2162A50A-D73B-4D3E-ABBD-C9E5C2CAD9A2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

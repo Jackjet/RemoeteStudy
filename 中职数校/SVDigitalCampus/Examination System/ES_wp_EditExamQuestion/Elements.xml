@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="ES_wp_EditExamQuestion" List="113" Url="_catalogs/wp">
+    <File Path="ES_wp_EditExamQuestion\ES_wp_EditExamQuestion.webpart" Url="SVDigitalCampus_ES_wp_EditExamQuestion.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园-考试系统" />
+    </File>
+  </Module>
+</Elements>

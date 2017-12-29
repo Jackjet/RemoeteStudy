@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="SG_wp_GrowthSummary" List="113" Url="_catalogs/wp">
+    <File Path="SG_wp_GrowthSummary\SG_wp_GrowthSummary.webpart" Url="Sinp_StudentWP_SG_wp_GrowthSummary.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园_学生成长管理系统" />
+    </File>
+  </Module>
+</Elements>

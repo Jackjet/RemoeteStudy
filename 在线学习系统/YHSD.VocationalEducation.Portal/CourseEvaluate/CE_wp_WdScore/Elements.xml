@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="CE_wp_WdScore" List="113" Url="_catalogs/wp">
+    <File Path="CE_wp_WdScore\CE_wp_WdScore.webpart" Url="YHSD.VocationalEducation.Portal_CE_wp_WdScore.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="在线教学_课程评价" />
+    </File>
+  </Module>
+</Elements>

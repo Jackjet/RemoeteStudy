@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="IF_wp_EnterpriseList" List="113" Url="_catalogs/wp">
+    <File Path="IF_wp_EnterpriseList\IF_wp_EnterpriseList.webpart" Url="SVDigitalCampus_IF_wp_EnterpriseList.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园-实习反馈" />
+    </File>
+  </Module>
+</Elements>

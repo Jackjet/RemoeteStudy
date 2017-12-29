@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="TT_wp_DiscussUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="TT_wp_Discuss\" Type="ElementManifest" />
+    <ProjectItemFile Source="TT_wp_Discuss.webpart" Target="TT_wp_Discuss\" Type="ElementFile" />
+    <ProjectItemFile Source="TT_wp_DiscussUserControl.ascx" Target="CONTROLTEMPLATES\Sinp_TeacherWP.WebParts.TT\TT_wp_Discuss\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Sinp_TeacherWP.WebParts.TT.TT_wp_Discuss" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

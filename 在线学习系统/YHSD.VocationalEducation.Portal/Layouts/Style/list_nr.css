@@ -1,0 +1,402 @@
+
+.header,.main,.bottom{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	clear: both;
+}
+.header{
+	height: 80px;
+	background: #0695d8;
+}
+.lfmain{
+	float: left;
+	width: 170px;
+	min-height: 600px;
+	overflow: hidden;
+	background:#f3f8fc;
+	border-right: solid 1px #c3ced5;
+}
+.rfmain{
+	background: #f2f2f2;
+	overflow: hidden;
+	padding-bottom:50px; 
+}
+/*组别管理弹窗页*/
+.gl_zubiebt{
+	width: 90%;
+	height: 40px;
+	margin: 30px auto 0;
+	line-height: 40px;
+	background: #3db8f1;
+	color: #fff;
+	border: solid 1px #b3e7fd;
+	border-radius: 5px 5px 0 0;
+	box-shadow: 0 0 3px #b3e7fd;
+	text-indent: 1em;
+}
+.gl_zubienr{
+	width: 90%;
+	margin: 0 auto;
+	background: #fff;
+	border: solid 1px #b4e6ff;
+	border-top: none;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0 0 3px #b4e6ff;
+}
+/*全体成员    _修改*/
+/*开始*/
+/*leftnav*/
+.left_navcon {  width:26%; background:#fff; min-height:584px; display: inline-block;}
+.left_navcon .icon {  border: 1px solid #666; border-radius: 60px; display: block;  float: left; height: 5px; line-height: 32px; margin-right: 6px; margin-top: 15px; width: 5px; }
+.left_navcon .ici-menu:hover .icon {  background:#add0f6; border:1px solid #add0f6; border-radius: 60px; display: block;  float: left; height: 5px; line-height: 32px; margin-right: 6px; margin-top: 15px; width: 5px; }
+/*select*/
+.left_navcon .ici-menu:hover .icon {  background:#add0f6; border:1px solid #add0f6; border-radius: 60px; display: block;  float: left; height: 5px; line-height: 32px; margin-right: 6px; margin-top: 15px; width: 5px; }
+
+.left_navcon .icic-item:hover .icon {  background:#add0f6; border:1px solid #add0f6; border-radius: 60px; display: block;  float: left; height: 5px; line-height: 32px; margin-right: 6px; margin-top: 9px; width: 5px; }
+
+.select-box{ position:relative;}
+.i-menu {  height:38px;  line-height:38px; cursor:pointer; clear:both; padding-left:20px; color:#333; font-size: 14px; font-weight: bold;}
+.ici-menu{  height:38px;  line-height:38px; cursor:pointer; clear:both; padding-left:30px; color:#666;}
+.icic-item{  height:28px;  line-height:28px; cursor:pointer; padding-left:40px; clear:both; color:#999; }
+.icic-item .icon { margin-top:9px;}
+/*一级*/
+.item .i-menu  span.tubiao i { font-size:14px; font-weight: bold; margin-right:6px; color:#5b98d7;}
+span.tit { display:block; width:85%; font-size: 14px;}
+
+  .btn-area a{ font-size:12px; color:#333; }
+  .btn-area a:hover{  text-decoration:underline;   }   
+  .btn-area{ display:none; background: #fff ; border: 1px solid #5493d7; border-radius: 3px; color: red; display: none; line-height: 24px; margin-right: 5px; margin-top: 30px; padding: 0 4px;   position: absolute; right: 0;}
+  .ici-con,.i-con{display:none;}
+  .i-menu:hover,.ici-menu:hover,.icic-item:hover {  background:#f6f6f6;color:#666;  }
+ /*结束*/
+.zubie_navcon{
+	width: 20%;
+	height: 555px;
+	margin: 15px 0 0 10px;
+	border: solid 1px #e5e5e5;
+}
+.zubie_navcon .item{
+	margin: 0 0 6px 0;
+	background: #ecf0f3;
+	text-align: center;
+}
+.zubie_navcon .item:hover .btn-area{
+	display: block;
+	border: solid 1px #898989;
+}
+/*主要列表内容*/
+.gl_zubienr_list{
+	width: 76%;
+	height: 555px;
+	margin: 15px 10px 0 0;
+	border: solid 1px #e5e5e5;
+}
+/*组别条件搜索操作*/
+.zb_search span{
+	margin: 12px 10px 0 15px;
+	display: inline-block;
+}
+.zb_search span select,
+.zb_search span select option{
+	width: 100px;
+	height: 33px;
+	padding-left: 10px;
+	line-height: 33px;
+	text-align: center;
+	border: solid 1px #e0e0e0;
+	border-radius: 5px;
+	display: block;
+}
+.zb_search span:last-child select,
+.zb_search span:last-child select option{
+	width: 125px;
+}
+.zb_search span input{
+	width: 130px;
+	height: 25px;
+	padding:3px 63px 3px 10px;
+	outline: none;
+	border: solid 1px #e0e0e0;
+	border-radius: 5px;
+}
+.zb_search span input.zb_ss{
+	width: 61px;
+	height: 31px; 
+	margin: 0 0 0 -67px;
+	padding: 0;
+	text-align: center;
+	line-height: 32px;
+	background: #f5f5f5; 
+	cursor: pointer;
+}
+.zb_search span input.zb_ss:active{
+	background: #dddbdb;
+}
+/*组别管理列表*/
+.zb_list ul{
+	width: 160px;
+	margin: 10px 10px 0 15px;
+	border: solid 1px #e1e1e1;
+	display: inline-block;
+}
+.zb_list ul li{
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	border-top: solid 1px #e1e1e1;
+	overflow: hidden;
+}
+.zb_list ul li:first-child{
+	border-top: none;
+	background: #f1f1f1;
+}
+.zb_list ul li:hover{
+	background: #f0f7fd;
+}
+.zb_list ul li span{
+	width: 42px;
+	text-align: center;
+	border-right: solid 1px #e1e1e1;
+	display: inline-block;
+}
+.zb_list ul li span input{
+	width: 15px;
+	height: 15px;
+	background: #fff;
+}
+.zb_list ul li p{
+	width: 116px;
+	text-align: center;
+	display: inline-block;
+}
+/*18英语特色_英文写作_我的作文学生 页面*/
+.my_kc{
+	margin: 17px 0px;
+	background: #fff;
+	border: solid 1px #e6e6e6;
+	box-shadow: 0 0 5px #e6e6e6;
+}
+.my_kc_xxk{
+	height: 42px;
+	background: #f0f0f0;
+	border-bottom: solid 1px #e3e3e3;
+}
+.my_kc_xxk ul li{
+	width: 125px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	float: left;
+}
+.my_kc_xxk ul li a{
+	color: #757575;
+	font-size: 14px;
+}
+.my_kc_xxk ul li.active{
+	background: #fff;
+	border-right: solid 1px #e3e3e3;
+	border-left: solid 1px #e3e3e3;
+	border-top: solid 2px #01b1ed;
+}
+/**********列表开始*/
+/*我的作文列表样式更改增加*/
+.zuowen_listbt,
+.zuowen_listnr{
+	width: 98%;
+	margin: 0 auto;
+	cursor: pointer;
+	overflow: hidden;
+}
+.zuowen_listbt tr{
+	width: 100%;
+	border: solid 1px #e8e8e8;
+}
+.zuowen_listbt tr td,
+.zuowen_listbt tr th{
+	width: 11%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #f5f5f5;
+	border-left: solid 1px #e8e8e8;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.zuowen_listbt tr th{
+	background: #eeeeee;	
+	font-weight: normal;
+}
+.zuowen_listbt tr .title{
+	width: 380px;
+	height: 40px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.zuowen_listbt tr td:first-child,
+.zuowen_listbt tr th:first-child{
+	width: 4%;
+	border-left: none;
+	text-overflow:ellipsis;
+}
+.zuowen_listbt tr td:last-child,
+.zuowen_listbt tr th:last-child{
+	width: 4%;
+}
+.zuowen_listbt tr td i{
+	width: 15px;
+  	height: 15px;
+  	margin: 10px 10px 0 0;
+  	line-height: 13px;
+ 	text-align: center;
+ 	border-radius: 15px;
+  	border: solid 1px #9c9c9c;
+  	font-style: normal;
+  	float: right;
+  	cursor: pointer;
+}
+.zuowen_listbt tr td span.iconfont{
+	font-size: 26px;
+}
+.zuowen_listnr{
+	border: solid 1px #e8e8e8;
+	border-top: none;
+	line-height: 24px;
+}
+.zuowen_listnr p{
+	width: 96%;
+	padding: 0 2%;
+	text-indent: 2em;
+}
+.zuowen_listnr div{
+	width: 96%;
+	padding: 0 2%;
+	background: #ecf7fd;
+	border-top: solid 1px #dbf1fc;
+}
+.zuowen_listnr div span{
+	width: 100%;
+	display: block;
+}
+/*****列表结束*/
+/*公用标题开始*/
+.ty_biaoti{
+	height: 32px;
+	margin: 15px 10px 0 10px;
+	line-height: 32px;
+	border-bottom: solid 2px #e1e1e1;
+}
+.ty_biaoti span{
+	padding: 0 5px 0 10px;
+	font-size: 16px;
+	float: left;
+}
+.ty_biaoti span.active{
+	border-bottom: solid 2px #01b1ed;
+}
+.ty_biaoti p{
+	width: 50px;
+	margin: 0 0 0 0;
+	text-align: right;
+	cursor: pointer;
+	float: right;
+}
+/*公用标题结束*/
+/*学生日常行为规范考评开始*/
+.shijuan_nr{
+	width: 750px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.shijuan_nr h1{
+	width: 100%;
+	height: 36px;
+	margin: 13px 0 0 0;
+	line-height: 36px;
+	text-align: center;
+	font-weight: normal;
+	font-size: 18px;
+}
+.fubiaoti{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #8c8c8c;
+}
+.fubiaoti p{
+	margin: 0 15px 0 0;
+	display: inline-block;
+
+}
+.fubiaoti p span{
+	color: #f24242;
+}
+.zhubiaoti{
+	width: 100%;
+	height: 29px;
+	line-height: 29px;
+	background: #e6e6e6;
+	font-size: 14px;
+}
+.zhubiaoti h2{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 20px;
+}
+.zhubiaoti span {
+    float:right;margin-right:20px;cursor:pointer
+}
+.zhubiaoti_nr{
+	width: 95%;
+	margin: 5px auto;
+	font-weight: bold;
+}
+.zhubiaoti_nr li{
+	width: 100%;
+	border-bottom: solid 1px #f1f1f1;
+}
+.zhubiaoti_nr li:last-child{
+	border-bottom: none;
+}
+.zhubiaoti_nr li p{
+	height: 40px;
+	line-height: 40px;
+}
+.zhubiaoti_nr li p:after{
+	content: '*';
+	margin: 0 0 0 10px;
+	color: #ff0000;
+}
+.zhubiaoti_nr li label{
+	width: 100%;
+	display: inline-block;
+    margin:3px 0;
+}
+.sj_tijiao{
+	width: 100%;
+	padding: 45px 0;
+	text-align: center;
+	border-top: solid 1px #e6e6e6;
+}
+.sj_tijiao a{
+	width: 120px;
+	height: 38px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 38px;
+	display: block;
+	color: #fff;
+	background: #00a1ec;
+	border-radius: 5px;
+}
+/*学生日常行为规范考评结束*/
+
+
+
+
+
+

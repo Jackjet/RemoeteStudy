@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1e550ed9-4698-41f1-acb8-71bf02b2f6cc" solutionId="1e550ed9-4698-41f1-acb8-71bf02b2f6cc" resetWebServer="true" sharePointProductVersion="15.0" name="Sinp_StudentWP" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="f130033d-3867-41ec-8718-a2a6ecc27a43" />
+    <featureReference itemId="c586ec46-734d-4efa-8c30-00de9d889ba7" />
+    <featureReference itemId="33e4bdca-6a11-4736-b3a5-643444144a4c" />
+    <featureReference itemId="adecdd21-9c4d-47e5-8305-7b2ed42840b5" />
+    <featureReference itemId="1a2cf5dd-f2bd-40a7-b804-aa68e8983d32" />
+    <featureReference itemId="b37eb5c4-68d0-4165-9aa8-ea5a5b0fd51b" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="daa9ae8f-4b70-4688-896c-814f7bb4f4c6" />
+    <projectItemReference itemId="34f82918-7a9f-4a78-9a88-3d26409651c5" />
+  </projectItems>
+</package>

@@ -1,0 +1,6 @@
+﻿@charset "utf-8";
+.background{position:fixed;_position:absolute;z-index:998;top:0px;left:0px;width:100%;_width:expression(document.documentElement.clientWidth);height:100%;_height:expression(document.documentElement.clientHeight);background:rgb(50,50,50);background:rgba(0,0,0,0.5);}
+.webox{position:fixed;_position:absolute;z-index:999;border:#999999 1px solid;}
+.webox #inside{background-color:#FFFFFF;height:240px;}
+.webox #inside h1{height: 38px; color: white; line-height: 38px; padding-left: 20px; font-family: Microsoft Yahei; font-size: 16px; border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: solid; position: relative; background-color: rgb(84, 147, 215); cursor:move;}
+.webox #inside h1 a{top: 0px; width: 28px; height: 28px; right: 3px; font-size: 16px; position: absolute; cursor: pointer; color:white}

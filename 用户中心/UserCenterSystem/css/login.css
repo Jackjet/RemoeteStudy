@@ -1,0 +1,18 @@
+/* CSS Document */
+html {
+	overflow:auto; overflow-x:hidden; height:100%; 
+}
+.body_login{background:url(../images/login/bg.png) bottom repeat-x #b2b3b7;}
+.login{ width:1000px; background:url(../images/login/map.jpg) no-repeat bottom; position:absolute; bottom:80px; left:17%; height:440px; }
+.login_in{ background:url(../images/login/login_bg.png) no-repeat; width:550px; height:364px; margin-left:180px;  clear:both; overflow:hidden;  text-align:center;}
+.login_in_logo{ margin-top:45px; font-size:33px; font-weight:bolder; height:59px;}
+.login_in_con{ margin-top:35px;}
+.login_in_con table{ width:320px; margin:0px auto;}
+.login_in_con table td{ padding:8px;border-top:none;line-height:18px;text-align:left;}
+.input_login{ border:1px solid #807d7d; width:231px; height:19px; padding:5px;}
+.login_name{ font-size:14px; color:#454547; font-weight:bold;}
+.button_login{ width:81px; height:25px; background:url(../images/login/button.png) no-repeat; border:0px; color:#FFF; line-height:24px;}
+.button_login_no{ background-position:0px -32px; color:#4d4d4d;}
+.login_bottom{ position:absolute; bottom:5px; right:5px; color:#969696;}
+
+  

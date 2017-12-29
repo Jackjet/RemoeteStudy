@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="CouseEdit" List="113" Url="_catalogs/wp">
+    <File Path="CouseEdit\CouseEdit.webpart" Url="SVDigitalCampus_CouseEdit.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园-校本课程" />
+    </File>
+  </Module>
+</Elements>

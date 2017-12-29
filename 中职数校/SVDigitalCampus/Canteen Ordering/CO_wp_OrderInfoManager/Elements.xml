@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="CO_wp_OrderInfoManager" List="113" Url="_catalogs/wp">
+    <File Path="CO_wp_OrderInfoManager\CO_wp_OrderInfoManager.webpart" Url="SVDigitalCampus_CO_wp_OrderInfoManager.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园-食堂订餐" />
+    </File>
+  </Module>
+</Elements>

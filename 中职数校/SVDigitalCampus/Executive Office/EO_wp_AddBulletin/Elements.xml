@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="EO_wp_AddBulletin" List="113" Url="_catalogs/wp">
+    <File Path="EO_wp_AddBulletin\EO_wp_AddBulletin.webpart" Url="SVDigitalCampus_EO_wp_AddBulletin.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园-行政办公" />
+    </File>
+  </Module>
+</Elements>

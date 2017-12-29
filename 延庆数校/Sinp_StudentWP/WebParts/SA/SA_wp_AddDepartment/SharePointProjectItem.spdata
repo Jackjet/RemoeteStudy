@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="SA_wp_AddDepartmentUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="SA_wp_AddDepartment\" Type="ElementManifest" />
+    <ProjectItemFile Source="SA_wp_AddDepartment.webpart" Target="SA_wp_AddDepartment\" Type="ElementFile" />
+    <ProjectItemFile Source="SA_wp_AddDepartmentUserControl.ascx" Target="CONTROLTEMPLATES\Sinp_StudentWP.WebParts.SA\SA_wp_AddDepartment\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Sinp_StudentWP.WebParts.SA.SA_wp_AddDepartment" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

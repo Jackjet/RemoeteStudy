@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="RR_wp_LeftNav" List="113" Url="_catalogs/wp">
+    <File Path="RR_wp_LeftNav\RR_wp_LeftNav.webpart" Url="SVDigitalCampus_RR_wp_LeftNav.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园-资源预定" />
+    </File>
+  </Module>
+</Elements>

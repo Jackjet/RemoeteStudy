@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="TG_wp_ClassExamineUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="TG_wp_ClassExamine\" Type="ElementManifest" />
+    <ProjectItemFile Source="TG_wp_ClassExamine.webpart" Target="TG_wp_ClassExamine\" Type="ElementFile" />
+    <ProjectItemFile Source="TG_wp_ClassExamineUserControl.ascx" Target="CONTROLTEMPLATES\Sinp_TeacherWP.WebParts.TG\TG_wp_ClassExamine\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Sinp_TeacherWP.WebParts.TG.TG_wp_ClassExamine" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

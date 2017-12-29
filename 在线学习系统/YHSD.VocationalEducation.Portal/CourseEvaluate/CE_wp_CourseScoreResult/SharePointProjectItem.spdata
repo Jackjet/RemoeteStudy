@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="CE_wp_CourseScoreResultUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="CE_wp_CourseScoreResult\" Type="ElementManifest" />
+    <ProjectItemFile Source="CE_wp_CourseScoreResult.webpart" Target="CE_wp_CourseScoreResult\" Type="ElementFile" />
+    <ProjectItemFile Source="CE_wp_CourseScoreResultUserControl.ascx" Target="CONTROLTEMPLATES\YHSD.VocationalEducation.Portal.CourseEvaluate\CE_wp_CourseScoreResult\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="YHSD.VocationalEducation.Portal.CourseEvaluate.CE_wp_CourseScoreResult" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

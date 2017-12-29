@@ -1,0 +1,63 @@
+﻿/*整个分页控件的样式*/
+.pageDiv {
+    width: auto;
+    /*height: 38px;
+    margin:16px;*/
+    height: 30px;
+    /*margin:5px;*/
+}
+/*基础样式*/
+.pageDiv div {
+    float: left;
+    margin: 3px;
+    cursor: pointer;
+    height: 20px;
+    min-width: 20px;
+    line-height: 18px;
+    overflow: hidden;
+    vertical-align: middle;
+    color:#403f3f;
+    font-size:12px;
+    font-family:"微软雅黑","宋体";
+    text-align:center;
+}
+/*悬浮页码的样式*/
+.pageDiv .overBtn {
+    color: blue !important; 
+    /*background: #ffa501 !important;*/
+    /*border-color:#ffa501 !important;*/
+}
+
+/*普通页码的样式*/
+.pageDiv .pageIndex{
+    border:1px solid #ddd;
+    height:18px;
+    border:1px solid silver;
+    /*background-image:url("grey_bg.png");*/
+}
+/*选中页码的样式*/
+.pageDiv .SelectPageIndex{
+    border:0;
+    color:white;
+    cursor:text;
+    background-image:url("../images/green_bg.png");
+    height: 20px;
+    line-height: 20px;
+}
+
+/*禁用页码的样式*/
+.pageDiv .Disabled{
+    cursor:text;
+    color:silver;
+}
+
+/*上一页\下一页的样式*/
+.pageDiv .PN{
+    height:20px;
+    line-height: 20px;
+    border:0;
+    padding:0 6px;
+}
+
+
+

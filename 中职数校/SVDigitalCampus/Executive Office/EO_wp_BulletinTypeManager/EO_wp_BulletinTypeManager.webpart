@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="SVDigitalCampus.Executive_Office.EO_wp_BulletinTypeManager.EO_wp_BulletinTypeManager, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">SVDigitalCampus - EO_wp_BulletinTypeManager</property>
+        <property name="Description" type="string">我的可视 Web 部件</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

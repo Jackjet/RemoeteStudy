@@ -1,0 +1,59 @@
+﻿body{
+	padding:0;
+	margin:0;
+	font-size:12px;
+	font-family:"微软雅黑","宋体";
+	color:#333;
+}
+h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,input,img,p,textarea,select,button{
+	padding:0;
+	margin:0;
+	list-style:none;
+	border:0;
+	resize:none;
+}
+.Menu_List {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.Menu_A{
+    display:inline-block;
+	font-size:15px;
+	font-family:"微软雅黑","宋体";
+	padding-left:30px;
+}
+.Menu_DianJi{
+     color:#49b700;
+}
+.ms-wikicontent{
+	/*margin:15px;*/
+}
+.js-webpart-titleCell{
+	font-size:13px;
+	font-family:"微软雅黑","宋体";
+	color:#333;
+}
+.ms-webpart-titleText{
+	font-size:16px;
+	font-family:"微软雅黑","宋体";
+	color:#49b700 !important;
+	font-weight:500;
+}
+.nav_part .nav_space{
+	padding-left: 46px;
+	line-height: 24px;
+}
+.panel-body{
+	/*margin-top:10px;*/
+}
+
+
+
+
+
+
+
+
+

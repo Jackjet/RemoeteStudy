@@ -1,0 +1,1677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="UpdateTeacherInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DZXX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LXDH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="JTDH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YZBM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="JTZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HYZKM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ZZMMM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HKXZM" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTeacherInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateTeacherInfoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateStudentInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LXDH" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YZBM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XZZ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HYZKM" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateStudentInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateStudentInfoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TeacherInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TeacherInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TeacherInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Department">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DepartmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DepartmentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTeacherByDepartmentID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTeacherByDepartmentIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTeacherByDepartmentIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReserchTeamL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SchoolNO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReserchTeamLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReserchTeamLResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReserchTeamUsers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TeamID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReserchTeamUsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReserchTeamUsersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TeamUsers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserNO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TeamUsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TeamUsersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GroupDescription">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="groupName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GroupDescriptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GroupDescriptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBaseTeacherInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBaseTeacherInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBaseTeacherInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBaseSubjectInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBaseSubjectInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBaseSubjectInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentsInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentsInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStudentsInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudysection">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetStudysectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStudysectionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTeacherUserInfo_NO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTeacherUserInfo_NOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTeacherUserInfo_NOResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTeacherUserInfo_School">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SchoolCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTeacherUserInfo_SchoolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTeacherUserInfo_SchoolResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentUserInfo_NO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentUserInfo_NOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStudentUserInfo_NOResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentUserInfoNO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentUserInfoNOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStudentUserInfoNOResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentUserInfo_School">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SchoolName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentUserInfo_SchoolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStudentUserInfo_SchoolResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTeacherGeneral">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserNO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTeacherGeneralResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTeacherGeneralResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTeacherCV">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserNO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTeacherCVResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTeacherCVResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateResume">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TR" type="tns:Teacher_Resume" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Teacher_Resume">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Resume_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Login_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Company" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StartTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EndTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Grade" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Course" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Referee" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Other" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateResumeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateResumeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCV">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CV" type="tns:Teacher_CV" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Teacher_CV">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CV_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Login_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="School" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StartTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EndTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Degree" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Other" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateCVResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateCVResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateGeneral">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TG" type="tns:Teacher_General" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Teacher_General">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="General_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Resume_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Login_NO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GeneralName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StartTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EndTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Other" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateGeneralResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateGeneralResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertResume">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TR" type="tns:Teacher_Resume" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertResumeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertResumeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCV">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CV" type="tns:Teacher_CV" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCVResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertCVResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertGeneral">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TG" type="tns:Teacher_General" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertGeneralResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertGeneralResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteResume">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TR" type="tns:Teacher_Resume" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteResumeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteResumeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCV">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CV" type="tns:Teacher_CV" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCVResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteCVResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteGeneral">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TG" type="tns:Teacher_General" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteGeneralResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteGeneralResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserTypeBysAMAccountName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sAMAccountName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserTypeBysAMAccountNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserTypeBysAMAccountNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentInfoSchoolNO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SchoolNO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentInfoSchoolNOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStudentInfoSchoolNOResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGradeAndSubjectBySchoolID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SchoolID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGradeAndSubjectBySchoolIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGradeAndSubjectBySchoolIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentClassInfoBySchool">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SchoolID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentClassInfoBySchoolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStudentClassInfoBySchoolResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGradeClassBySchool">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SchoolID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGradeClassBySchoolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGradeClassBySchoolResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UpdateTeacherInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateTeacherInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTeacherInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateTeacherInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStudentInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateStudentInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStudentInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateStudentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="TeacherInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:TeacherInfo" />
+  </wsdl:message>
+  <wsdl:message name="TeacherInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:TeacherInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DepartmentSoapIn">
+    <wsdl:part name="parameters" element="tns:Department" />
+  </wsdl:message>
+  <wsdl:message name="DepartmentSoapOut">
+    <wsdl:part name="parameters" element="tns:DepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTeacherByDepartmentIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTeacherByDepartmentID" />
+  </wsdl:message>
+  <wsdl:message name="GetTeacherByDepartmentIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTeacherByDepartmentIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReserchTeamLSoapIn">
+    <wsdl:part name="parameters" element="tns:ReserchTeamL" />
+  </wsdl:message>
+  <wsdl:message name="ReserchTeamLSoapOut">
+    <wsdl:part name="parameters" element="tns:ReserchTeamLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReserchTeamUsersSoapIn">
+    <wsdl:part name="parameters" element="tns:ReserchTeamUsers" />
+  </wsdl:message>
+  <wsdl:message name="ReserchTeamUsersSoapOut">
+    <wsdl:part name="parameters" element="tns:ReserchTeamUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="TeamUsersSoapIn">
+    <wsdl:part name="parameters" element="tns:TeamUsers" />
+  </wsdl:message>
+  <wsdl:message name="TeamUsersSoapOut">
+    <wsdl:part name="parameters" element="tns:TeamUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GroupDescriptionSoapIn">
+    <wsdl:part name="parameters" element="tns:GroupDescription" />
+  </wsdl:message>
+  <wsdl:message name="GroupDescriptionSoapOut">
+    <wsdl:part name="parameters" element="tns:GroupDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBaseTeacherInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBaseTeacherInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetBaseTeacherInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBaseTeacherInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBaseSubjectInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBaseSubjectInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetBaseSubjectInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBaseSubjectInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentsInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStudentsInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentsInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStudentsInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStudysectionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStudysection" />
+  </wsdl:message>
+  <wsdl:message name="GetStudysectionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStudysectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTeacherUserInfo_NOSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTeacherUserInfo_NO" />
+  </wsdl:message>
+  <wsdl:message name="GetTeacherUserInfo_NOSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTeacherUserInfo_NOResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTeacherUserInfo_SchoolSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTeacherUserInfo_School" />
+  </wsdl:message>
+  <wsdl:message name="GetTeacherUserInfo_SchoolSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTeacherUserInfo_SchoolResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentUserInfo_NOSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStudentUserInfo_NO" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentUserInfo_NOSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStudentUserInfo_NOResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentUserInfoNOSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStudentUserInfoNO" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentUserInfoNOSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStudentUserInfoNOResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentUserInfo_SchoolSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStudentUserInfo_School" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentUserInfo_SchoolSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStudentUserInfo_SchoolResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTeacherGeneralSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTeacherGeneral" />
+  </wsdl:message>
+  <wsdl:message name="GetTeacherGeneralSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTeacherGeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTeacherCVSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTeacherCV" />
+  </wsdl:message>
+  <wsdl:message name="GetTeacherCVSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTeacherCVResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateResumeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateResume" />
+  </wsdl:message>
+  <wsdl:message name="UpdateResumeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateResumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCVSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCV" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCVSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCVResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGeneralSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateGeneral" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGeneralSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateGeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertResumeSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertResume" />
+  </wsdl:message>
+  <wsdl:message name="InsertResumeSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertResumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertCVSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertCV" />
+  </wsdl:message>
+  <wsdl:message name="InsertCVSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertCVResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertGeneralSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertGeneral" />
+  </wsdl:message>
+  <wsdl:message name="InsertGeneralSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertGeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteResumeSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteResume" />
+  </wsdl:message>
+  <wsdl:message name="DeleteResumeSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteResumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCVSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteCV" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCVSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteCVResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteGeneralSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteGeneral" />
+  </wsdl:message>
+  <wsdl:message name="DeleteGeneralSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteGeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserTypeBysAMAccountNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserTypeBysAMAccountName" />
+  </wsdl:message>
+  <wsdl:message name="GetUserTypeBysAMAccountNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserTypeBysAMAccountNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentInfoSchoolNOSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStudentInfoSchoolNO" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentInfoSchoolNOSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStudentInfoSchoolNOResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGradeAndSubjectBySchoolIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGradeAndSubjectBySchoolID" />
+  </wsdl:message>
+  <wsdl:message name="GetGradeAndSubjectBySchoolIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGradeAndSubjectBySchoolIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentClassInfoBySchoolSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStudentClassInfoBySchool" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentClassInfoBySchoolSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStudentClassInfoBySchoolResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGradeClassBySchoolSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGradeClassBySchool" />
+  </wsdl:message>
+  <wsdl:message name="GetGradeClassBySchoolSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGradeClassBySchoolResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UserPhotoSoap">
+    <wsdl:operation name="UpdateTeacherInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新教师信息. UserNo：用户账号，DZXX：电子信箱， LXDH:联系电话，JTDH：家庭电话，YZBM：邮政编码，JTZZ：家庭住址，HYZKM：婚姻状况码，ZZMMM：政治面貌码，HKXZM：户口性质码</wsdl:documentation>
+      <wsdl:input message="tns:UpdateTeacherInfoSoapIn" />
+      <wsdl:output message="tns:UpdateTeacherInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudentInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新学生信息. UserNo：用户账号，LXDH：联系电话，YZBM：邮政编码，XZZ：现住址，HYZKM：婚姻状况码</wsdl:documentation>
+      <wsdl:input message="tns:UpdateStudentInfoSoapIn" />
+      <wsdl:output message="tns:UpdateStudentInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TeacherInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据【用户账号】，返回【教师：年级、学科】</wsdl:documentation>
+      <wsdl:input message="tns:TeacherInfoSoapIn" />
+      <wsdl:output message="tns:TeacherInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Department">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据【登陆用户】 返回 【所在组织 / 组织结构】</wsdl:documentation>
+      <wsdl:input message="tns:DepartmentSoapIn" />
+      <wsdl:output message="tns:DepartmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherByDepartmentID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据【组织机构号】  返回【所有教师的账号、姓名】</wsdl:documentation>
+      <wsdl:input message="tns:GetTeacherByDepartmentIDSoapIn" />
+      <wsdl:output message="tns:GetTeacherByDepartmentIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReserchTeamL">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据【学校组织机构号】  返回  【教研组】</wsdl:documentation>
+      <wsdl:input message="tns:ReserchTeamLSoapIn" />
+      <wsdl:output message="tns:ReserchTeamLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReserchTeamUsers">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据【教研组ID】 返回 【所有教师的账号、姓名】</wsdl:documentation>
+      <wsdl:input message="tns:ReserchTeamUsersSoapIn" />
+      <wsdl:output message="tns:ReserchTeamUsersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TeamUsers">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据【登录用户】  返回  【所在校园组 + 组内成员】</wsdl:documentation>
+      <wsdl:input message="tns:TeamUsersSoapIn" />
+      <wsdl:output message="tns:TeamUsersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GroupDescription">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据【教研组名称】  返回  【教研组简介】</wsdl:documentation>
+      <wsdl:input message="tns:GroupDescriptionSoapIn" />
+      <wsdl:output message="tns:GroupDescriptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBaseTeacherInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据【登陆账号】  返回【教师基本信息】</wsdl:documentation>
+      <wsdl:input message="tns:GetBaseTeacherInfoSoapIn" />
+      <wsdl:output message="tns:GetBaseTeacherInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBaseSubjectInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据【登陆账号】  返回 【学科基础信息，年级所教学科】</wsdl:documentation>
+      <wsdl:input message="tns:GetBaseSubjectInfoSoapIn" />
+      <wsdl:output message="tns:GetBaseSubjectInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentsInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据 【学生账号】  返回  【学生信息】</wsdl:documentation>
+      <wsdl:input message="tns:GetStudentsInfoSoapIn" />
+      <wsdl:output message="tns:GetStudentsInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudysection">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">返回 学年、学期</wsdl:documentation>
+      <wsdl:input message="tns:GetStudysectionSoapIn" />
+      <wsdl:output message="tns:GetStudysectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherUserInfo_NO">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据  【教师账号】  返回  【教师信息】</wsdl:documentation>
+      <wsdl:input message="tns:GetTeacherUserInfo_NOSoapIn" />
+      <wsdl:output message="tns:GetTeacherUserInfo_NOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherUserInfo_School">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据  【学校名称】  返回  【教师信息】</wsdl:documentation>
+      <wsdl:input message="tns:GetTeacherUserInfo_SchoolSoapIn" />
+      <wsdl:output message="tns:GetTeacherUserInfo_SchoolSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentUserInfo_NO">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据  【教师账号】  返回  【学生信息】</wsdl:documentation>
+      <wsdl:input message="tns:GetStudentUserInfo_NOSoapIn" />
+      <wsdl:output message="tns:GetStudentUserInfo_NOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentUserInfoNO">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据  【教师账号】  返回  【学生信息】</wsdl:documentation>
+      <wsdl:input message="tns:GetStudentUserInfoNOSoapIn" />
+      <wsdl:output message="tns:GetStudentUserInfoNOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentUserInfo_School">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据  【学校名称】  返回  【学生信息】</wsdl:documentation>
+      <wsdl:input message="tns:GetStudentUserInfo_SchoolSoapIn" />
+      <wsdl:output message="tns:GetStudentUserInfo_SchoolSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherGeneral">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据  【教师账号】  返回  【教师工作简历 ：单位 + 职务】</wsdl:documentation>
+      <wsdl:input message="tns:GetTeacherGeneralSoapIn" />
+      <wsdl:output message="tns:GetTeacherGeneralSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherCV">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据  【教师账号】  返回  【教师学习简历】</wsdl:documentation>
+      <wsdl:input message="tns:GetTeacherCVSoapIn" />
+      <wsdl:output message="tns:GetTeacherCVSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateResume">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据  【工作简历.编号】  更改 【工作简历】</wsdl:documentation>
+      <wsdl:input message="tns:UpdateResumeSoapIn" />
+      <wsdl:output message="tns:UpdateResumeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCV">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据  【学习简历.编号】  更改 【学习简历】</wsdl:documentation>
+      <wsdl:input message="tns:UpdateCVSoapIn" />
+      <wsdl:output message="tns:UpdateCVSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGeneral">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据  【职务.编号】  更改 【职务】</wsdl:documentation>
+      <wsdl:input message="tns:UpdateGeneralSoapIn" />
+      <wsdl:output message="tns:UpdateGeneralSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertResume">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">[Insert] 【工作简历】</wsdl:documentation>
+      <wsdl:input message="tns:InsertResumeSoapIn" />
+      <wsdl:output message="tns:InsertResumeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCV">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">[Insert] 【学习简历】</wsdl:documentation>
+      <wsdl:input message="tns:InsertCVSoapIn" />
+      <wsdl:output message="tns:InsertCVSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertGeneral">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">[Insert] 【职务】</wsdl:documentation>
+      <wsdl:input message="tns:InsertGeneralSoapIn" />
+      <wsdl:output message="tns:InsertGeneralSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteResume">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据  【工作简历.编号】  删除 【工作简历】</wsdl:documentation>
+      <wsdl:input message="tns:DeleteResumeSoapIn" />
+      <wsdl:output message="tns:DeleteResumeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCV">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据  【学习简历.编号】  删除 【学习简历】</wsdl:documentation>
+      <wsdl:input message="tns:DeleteCVSoapIn" />
+      <wsdl:output message="tns:DeleteCVSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGeneral">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据  【职务.编号】  删除 【职务】</wsdl:documentation>
+      <wsdl:input message="tns:DeleteGeneralSoapIn" />
+      <wsdl:output message="tns:DeleteGeneralSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeBysAMAccountName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">检查用户名,查询用户组</wsdl:documentation>
+      <wsdl:input message="tns:GetUserTypeBysAMAccountNameSoapIn" />
+      <wsdl:output message="tns:GetUserTypeBysAMAccountNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentInfoSchoolNO">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据  【学校组织机构号】  返回  【学生信息】【全部学生】</wsdl:documentation>
+      <wsdl:input message="tns:GetStudentInfoSchoolNOSoapIn" />
+      <wsdl:output message="tns:GetStudentInfoSchoolNOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGradeAndSubjectBySchoolID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据学校ID返回年级、学科数据</wsdl:documentation>
+      <wsdl:input message="tns:GetGradeAndSubjectBySchoolIDSoapIn" />
+      <wsdl:output message="tns:GetGradeAndSubjectBySchoolIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentClassInfoBySchool">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据学校获取学生数据</wsdl:documentation>
+      <wsdl:input message="tns:GetStudentClassInfoBySchoolSoapIn" />
+      <wsdl:output message="tns:GetStudentClassInfoBySchoolSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGradeClassBySchool">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据学校获取年纪、班级数据</wsdl:documentation>
+      <wsdl:input message="tns:GetGradeClassBySchoolSoapIn" />
+      <wsdl:output message="tns:GetGradeClassBySchoolSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UserPhotoSoap" type="tns:UserPhotoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateTeacherInfo">
+      <soap:operation soapAction="http://tempuri.org/UpdateTeacherInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudentInfo">
+      <soap:operation soapAction="http://tempuri.org/UpdateStudentInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TeacherInfo">
+      <soap:operation soapAction="http://tempuri.org/TeacherInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Department">
+      <soap:operation soapAction="http://tempuri.org/Department" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherByDepartmentID">
+      <soap:operation soapAction="http://tempuri.org/GetTeacherByDepartmentID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReserchTeamL">
+      <soap:operation soapAction="http://tempuri.org/ReserchTeamL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReserchTeamUsers">
+      <soap:operation soapAction="http://tempuri.org/ReserchTeamUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TeamUsers">
+      <soap:operation soapAction="http://tempuri.org/TeamUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GroupDescription">
+      <soap:operation soapAction="http://tempuri.org/GroupDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBaseTeacherInfo">
+      <soap:operation soapAction="http://tempuri.org/GetBaseTeacherInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBaseSubjectInfo">
+      <soap:operation soapAction="http://tempuri.org/GetBaseSubjectInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentsInfo">
+      <soap:operation soapAction="http://tempuri.org/GetStudentsInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudysection">
+      <soap:operation soapAction="http://tempuri.org/GetStudysection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherUserInfo_NO">
+      <soap:operation soapAction="http://tempuri.org/GetTeacherUserInfo_NO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherUserInfo_School">
+      <soap:operation soapAction="http://tempuri.org/GetTeacherUserInfo_School" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentUserInfo_NO">
+      <soap:operation soapAction="http://tempuri.org/GetStudentUserInfo_NO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentUserInfoNO">
+      <soap:operation soapAction="http://tempuri.org/GetStudentUserInfoNO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentUserInfo_School">
+      <soap:operation soapAction="http://tempuri.org/GetStudentUserInfo_School" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherGeneral">
+      <soap:operation soapAction="http://tempuri.org/GetTeacherGeneral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherCV">
+      <soap:operation soapAction="http://tempuri.org/GetTeacherCV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateResume">
+      <soap:operation soapAction="http://tempuri.org/UpdateResume" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCV">
+      <soap:operation soapAction="http://tempuri.org/UpdateCV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGeneral">
+      <soap:operation soapAction="http://tempuri.org/UpdateGeneral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertResume">
+      <soap:operation soapAction="http://tempuri.org/InsertResume" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCV">
+      <soap:operation soapAction="http://tempuri.org/InsertCV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertGeneral">
+      <soap:operation soapAction="http://tempuri.org/InsertGeneral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteResume">
+      <soap:operation soapAction="http://tempuri.org/DeleteResume" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCV">
+      <soap:operation soapAction="http://tempuri.org/DeleteCV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGeneral">
+      <soap:operation soapAction="http://tempuri.org/DeleteGeneral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeBysAMAccountName">
+      <soap:operation soapAction="http://tempuri.org/GetUserTypeBysAMAccountName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentInfoSchoolNO">
+      <soap:operation soapAction="http://tempuri.org/GetStudentInfoSchoolNO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGradeAndSubjectBySchoolID">
+      <soap:operation soapAction="http://tempuri.org/GetGradeAndSubjectBySchoolID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentClassInfoBySchool">
+      <soap:operation soapAction="http://tempuri.org/GetStudentClassInfoBySchool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGradeClassBySchool">
+      <soap:operation soapAction="http://tempuri.org/GetGradeClassBySchool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UserPhotoSoap12" type="tns:UserPhotoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateTeacherInfo">
+      <soap12:operation soapAction="http://tempuri.org/UpdateTeacherInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudentInfo">
+      <soap12:operation soapAction="http://tempuri.org/UpdateStudentInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TeacherInfo">
+      <soap12:operation soapAction="http://tempuri.org/TeacherInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Department">
+      <soap12:operation soapAction="http://tempuri.org/Department" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherByDepartmentID">
+      <soap12:operation soapAction="http://tempuri.org/GetTeacherByDepartmentID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReserchTeamL">
+      <soap12:operation soapAction="http://tempuri.org/ReserchTeamL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReserchTeamUsers">
+      <soap12:operation soapAction="http://tempuri.org/ReserchTeamUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TeamUsers">
+      <soap12:operation soapAction="http://tempuri.org/TeamUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GroupDescription">
+      <soap12:operation soapAction="http://tempuri.org/GroupDescription" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBaseTeacherInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetBaseTeacherInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBaseSubjectInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetBaseSubjectInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentsInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetStudentsInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudysection">
+      <soap12:operation soapAction="http://tempuri.org/GetStudysection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherUserInfo_NO">
+      <soap12:operation soapAction="http://tempuri.org/GetTeacherUserInfo_NO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherUserInfo_School">
+      <soap12:operation soapAction="http://tempuri.org/GetTeacherUserInfo_School" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentUserInfo_NO">
+      <soap12:operation soapAction="http://tempuri.org/GetStudentUserInfo_NO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentUserInfoNO">
+      <soap12:operation soapAction="http://tempuri.org/GetStudentUserInfoNO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentUserInfo_School">
+      <soap12:operation soapAction="http://tempuri.org/GetStudentUserInfo_School" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherGeneral">
+      <soap12:operation soapAction="http://tempuri.org/GetTeacherGeneral" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherCV">
+      <soap12:operation soapAction="http://tempuri.org/GetTeacherCV" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateResume">
+      <soap12:operation soapAction="http://tempuri.org/UpdateResume" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCV">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCV" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGeneral">
+      <soap12:operation soapAction="http://tempuri.org/UpdateGeneral" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertResume">
+      <soap12:operation soapAction="http://tempuri.org/InsertResume" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCV">
+      <soap12:operation soapAction="http://tempuri.org/InsertCV" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertGeneral">
+      <soap12:operation soapAction="http://tempuri.org/InsertGeneral" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteResume">
+      <soap12:operation soapAction="http://tempuri.org/DeleteResume" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCV">
+      <soap12:operation soapAction="http://tempuri.org/DeleteCV" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGeneral">
+      <soap12:operation soapAction="http://tempuri.org/DeleteGeneral" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeBysAMAccountName">
+      <soap12:operation soapAction="http://tempuri.org/GetUserTypeBysAMAccountName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentInfoSchoolNO">
+      <soap12:operation soapAction="http://tempuri.org/GetStudentInfoSchoolNO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGradeAndSubjectBySchoolID">
+      <soap12:operation soapAction="http://tempuri.org/GetGradeAndSubjectBySchoolID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentClassInfoBySchool">
+      <soap12:operation soapAction="http://tempuri.org/GetStudentClassInfoBySchool" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGradeClassBySchool">
+      <soap12:operation soapAction="http://tempuri.org/GetGradeClassBySchool" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UserPhoto">
+    <wsdl:port name="UserPhotoSoap" binding="tns:UserPhotoSoap">
+      <soap:address location="http://192.168.1.78:8082/SchoolUser.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UserPhotoSoap12" binding="tns:UserPhotoSoap12">
+      <soap12:address location="http://192.168.1.78:8082/SchoolUser.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,507 @@
+.W_main {width:800px; margin:0 auto;}
+/*教师成长tab切换*/
+.yy_tab { margin-top: 14px; border: 1px solid #e1e1e1; background: #fff; box-shadow:0px 0px 4px #bbb;}
+.yy_tab .yy_tabheader {  height: 45px; background: #f0f0f0; border-bottom: 1px solid #e1e1e1;}
+.yy_tab ul.tab_tit li { float: left; line-height: 45px; border-right: 1px solid #e1e1e1; text-align: center; font-size: 16px; color: #757575; font-family: microsoft yahei ui;  }
+.yy_tab .yy_tabheader a { text-decoration: none; color: #666; display: block; padding: 0px 30px; }
+.yy_tab ul li.selected {  background: #fff; position: relative; top: -1px;  border-top: 2px solid #01b1ed; border-right: 1px solid #e1e1e1; border-left: 1px solid #e1e1e1; left: -1px;}
+.yy_tab .content{ width:768px; margin:0 auto; min-height:715px;}
+.yy_tab .content .tc { padding: 20px;  }
+.yy_tab .content .tc p { text-indent: 2em; }
+.yy_tab .content .tc .Personal_info img { border:4px solid #d0d0d0; display:block; max-width: 100%; width:720px; height:400px;}
+
+
+.Personal_info { overflow:hidden;}
+/*更换照片*/
+a#achage { text-align:right; display:block;line-height:30px; height:30px; color:#0da6ed; float:right;}
+a#asitechage { text-align:right; display:block;line-height:30px; height:30px; color:#0da6ed; float:left;}
+
+
+/*添加培训信息*/
+.topadd { text-align: right; font-size: 15px; height: 30px; line-height: 30px;}
+.topadd a { color: #148cf1;  }
+
+/*上传路径*/
+#dvupload {  display: none; width:67%; margin: auto; padding:10px;}
+#dvupload input { height:32px; line-height:32px; padding:0 10px; border-radius:3px; margin-right:10px; color:#4a4a4a; cursor:pointer;}
+/*上传路径*/
+#dvload {  display: none; width:67%; margin: auto; padding:10px;}
+#dvload input { height:32px; line-height:32px; padding:0 10px; border-radius:3px; margin-right:10px; color:#4a4a4a; cursor:pointer;}
+/*教师成长表单相关样式开始*/
+.formdv { color:#666;}
+.formdv table {  width: 100%; display: none;}
+.formdv table tr { line-height: 32px;}
+.formdv table tr.areatr { }
+.formdv table tr.btntr { height: 100px;  line-height: 100px;}
+.formdv table tr th {  width: 2%; vertical-align:middle;padding:10px; }
+.formdv table tr th input.save { width: 40px;}
+.formdv table tr td { width: 10%;padding:10px;}
+.formdv table tr td input.save { cursor:pointer;  width: 160px; height: 40px;  line-height:40px;  margin-right: 20px; background-color: #0DA6ED; font-size: 16px; color: #FFF; font-weight: 500; border: 0px; border-radius: 3px;}
+.formdv table tr td input.cancel {  cursor:pointer; width: 70px; height: 40px; line-height:40px;  background-color: #C0C0C0;  font-size: 16px;  color: white; font-weight: 500; border: 0px; border-radius: 3px;  }
+.formdv table tr td input[type='text'] {  padding:0 10px; width: 60%; height: 32px;  line-height:32px; border: 1px solid #d1d1d1;  border-radius: 3px; }
+.formdv table tr td table tr td img { width: 12px; height: 12px; padding-top: 15px;  }
+.formdv table tr td table tr td a { cursor: pointer; }
+.formdv table tr td select { width: 60%;  height: 32px;  line-height:32px; border: 1px solid #d1d1d1; border-radius: 3px;}
+.formdv table tr td textarea { width: 94%;  padding:0 10px; border: 1px solid #d1d1d1; border-radius: 3px; }
+.formdv table tr td input { line-height:22px;}
+/*教师成长表单相关样式结束*/
+/*正常表单相关样式开始*/
+.listdv {   width: 90%;   margin: auto; color:#666; margin:20px;}
+.listdv table {   width: 100%; }
+.listdv table tr th {  vertical-align:middle; padding:5px 0; width: 2%;  color:#666;font-size:14px;  }
+.listdv table tr th input.save { width: 40px; }
+.listdv table tr { line-height: 32px; color:#666;font-size:14px;  }
+.listdv table tr.areatr {   }
+.listdv table tr.btntr {  height: 100px;line-height: 100px;  }
+.listdv table tr td { vertical-align:middle; width: 10%;  padding:5px 0;  }
+.listdv table tr td input.save {  cursor:pointer; width: 140px; height: 40px; margin-right: 20px; background-color: #0DA6ED; font-size: 16px; color: #fff; font-weight: 500; border: 0px; border-radius: 3px;  }
+.listdv table tr td span { color: red;        }
+.listdv table tr td input.cancel { cursor:pointer; width: 70px; height: 40px; margin-left: 20px; background-color: #C0C0C0;  font-size: 16px;  color: #fff; font-weight: 500; border: 0px;border-radius: 3px;   }
+.listdv table tr td input[type='text'] {  width: 60%;height: 30px; line-height:30px; color:#666; border: 1px solid #d1d1d1;  border-radius: 3px; }                
+.listdv table tr td select { color:#666; width: 60%; height: 34px; line-height:34px; border: 1px solid #d1d1d1; border-radius: 3px; }
+.listdv table tr td table tr td img {  width: 12px;   height: 12px; margin-right: 10px; }
+.listdv table tr td table tr td a {cursor: pointer; }
+.listdv table tr td textarea { width: 90%; border: 1px solid #d1d1d1; border-radius: 3px; }
+.listdv table tr td input { line-height:22px;}
+/*正常表单相关样式结束*/
+table.emptydate {    width: 100%;}
+table.emptydate tr td {       width: 100%;      text-align: center !important;    }
+table.emptydate tr td img {      width: 96px;  height: 96px; margin-top: 50px;   display: inline-block;    }
+table.emptydate tr td img p {  color: #ccc;font-size: 18px;   }
+.dvaddTerm {    background: url(/_layouts/15/TeacherImages/addTerm.png) no-repeat center center;    height: 359px;    position: relative;    margin-top: 50px;}
+.dvaddTerm input {	cursor:pointer;   border-radius: 3px;  background: #0DA6ED;  color: #fff;   padding: 8px 10px;   POSITION: absolute;    border: none; font-family: "micsoft yehei ui","微软雅黑";    left: 46%;   top: 62%;  }
+ /*添加完学期计划完成状态*/
+.showterm {  width: 100%;   margin: auto;}
+.ZT_img { height:46px;}
+.showterm table {width: 100%;margin: auto;    }
+.showterm table tr {  height: 30px;   line-height: 30px;   margin: auto;  }
+.showterm table tr td { height: 30px; line-height: 30px; margin: auto; width: 33%;  font-size: 14px; }
+.showterm .plantitle { line-height:32px; text-align:center;}
+.showterm .plantitle .title { font-size: 20px;  font-weight: bold; width:100%; }
+.showterm table tr td.fujian { color:#333;}
+.showterm table tr td.a_editor { width:100%;text-align:right;}
+.showterm table tr td.a_editor a{  color:#148cf1;}
+.showterm table tr td span { margin-left: 15px; margin-right: 15px;   font-size: 14px;color:#666; }
+.showterm table tr td a {  text-align: right; font-size: 14px;}
+.showterm table tr td p {   text-indent: 2em;line-height:34px;color:#666; }
+/*新加样式*/
+/*列表样式*/
+.content .container .list li {  line-height: 28px;  font-size: 14px;}
+.li_list { border-left: 2px solid #f2f2f2;}
+.top_remarks {
+}
+.li_list .top_remarks {
+    font-size: 14px;
+    color: #6d6d6d;
+    clear: both;
+    overflow: hidden;
+    background: url("/_layouts/15/TeacherImages/tit_left.png") no-repeat;
+    height: 36px;
+    line-height: 30px;
+    margin-left: -6px;
+}
+.list .top_remarks .left_con {  margin-left: 20px; color: #6d6d6d;}
+.list .top_remarks .left_con span.times {  margin-right: 20px;  font-family: microsoft yahei ui;}
+.list .top_remarks .left_con span.con_details em { padding: 0 10px; font-family: microsoft yahei ui;    }
+.list .top_remarks .right_edit{ color: #148cf1;}
+.list .top_remarks .right_edit i { margin-left:10px; color: #148cf1;}
+.list .top_remarks .right_edit a {  color: #148cf1;  font-family: microsoft yahei ui;  margin-right:10px;}
+.con_text { margin: 0 15px; font-family: microsoft yahei ui;}
+.con_text h2 { font-size: 14px;  color: #393939; line-height:32px;  }
+.con_text h2 i { font-size: 14px;  color: #148cf1;  }
+.con_text p {  color: #565656;  text-indent: 2em;line-height: 28px;  }
+.con_text .attachment a { font-size: 14px;  color: #3e3e3e;line-height:28px; }
+.con_con { display: none;}
+.boxmore {  display: block;  text-align: center; border-top: 1px solid #ddd; margin: 0 10px;  font-family: "微软雅黑",microsoft yahei ui;}
+.boxmore a span.J-more {   padding: 6px 59px; line-height:32px; border: 1px solid #ddd;   border-top: 1px solid #fff;  font-family: "微软雅黑",microsoft yahei ui;    }
+
+/*分页*/
+.paging {
+    font-family:"Microsoft Yahei UI","Microsoft Yahei","微软雅黑",SimSun,sans-serif;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+    clear:both;
+    color:#757575;
+}
+.paging span a{ cursor:pointer;padding:0 4px;}
+.paging span .number { background:#fff; border: 1px solid #d7d7d7; color:#757575;padding:0px 5px; border-radius:3px;}
+.paging span .now { background:#01b0ef; border: 1px solid #0494d6; color:#fff;}
+
+/*弹出层样式*/
+#Idiv {
+    width: 800px;
+    height: 600px;
+    display: none;
+    position: absolute;
+    z-index: 800;
+    background-color: white;
+    border: 3px solid #3DB8F1;
+}
+
+#mou_head {
+    width: 800px;
+    height: 600px;
+    z-index: 1001;
+    overflow: hidden;
+    background-color: white;
+    position: absolute;
+}
+
+.dvtit {
+    height: 40px;
+    line-height: 40px;
+    background-color: #3DB8F1;
+}
+
+    .dvtit .spleft {
+        float: left;
+        color: white;
+        font-weight: 800;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .dvtit .spright {
+        margin-right: 20px;
+        float: right;
+    }
+
+        .dvtit .spright a {
+            text-decoration: none;
+            float: right;
+            color: white;
+            font-weight: 800;
+            font-size: 20px;
+            font-family: microsoft yahei ui;
+        }
+
+/*教师成长审核弹出框*/
+.dialog_wrap { margin:20px; }
+.dialog_wrap .showterm { width:62%;}
+.dialog_wrap .formdv { width:80%;}
+.dialog_wrap .formdv table tr td { padding:0px;}
+.dialog_wrap .formdv table tr td textarea { width:92%;}
+/*教师科研管理首页  我的课题  申报课题  学习资料*/
+.Scientific_management { margin-top:14px; }
+/*Mp_tab左侧*/
+	.Mp_tab{ float:left; border:1px solid #e1e1e1;width:60%;min-height:600px;background:#fff; box-shadow: 0px 0px 4px #bbb;}
+	.Mp_tab .Mp_tabheader{height:45px;background:#f0f0f0;border-bottom:1px solid #e1e1e1;}
+	.Mp_tab .Mp_tabheader a{text-decoration:none;color:#666;display:block;padding:0px 30px;}
+	.Mp_tab  ul.tab_tit li{float:left;line-height:45px;border-right:1px solid #e1e1e1;text-align:center; font-size:16px; color:#757575;font-family:microsoft yahei ui;}
+	.Mp_tab ul li.selected{background:#fff;position:relative;top:-1px;border-top:2px solid #01b1ed; border-right:1px solid #e1e1e1;border-left:1px solid #e1e1e1;left:-1px;}
+	.Mp_tab .Mp_content .td .tabcontent .W_form { margin-top:10px; }
+/*查询条件*/
+	.searchtit { color:#666; margin-left:20px; padding:10px;}
+	.searchtit .searinput {border-radius:3px; height:30px; line-height:30px; color:#666; padding:0 10px; }
+	.searchtit .sear { cursor:pointer; background: #eaeaea;border: 1px solid #ccc;border-radius: 3px; color: #666;  font-size: 14px; height: 30px; line-height: 30px;  padding: 0 12px; margin:0 8px;}
+
+/*list_btn申报课题btn*/
+.list_btn { border-radius:3px; background:#fff; border:1px solid #0da6ec; color:#0da6ec; font-size:14px;padding:0px 4px; margin:2px 0; line-height:28px; cursor:pointer; }
+/*编辑课题 btn_editor*/
+.btn_editor{ border-radius:3px; background:#fff; border:1px solid #0da6ec; color:#0da6ec; font-size:14px;padding:0px 4px; margin:2px 0; line-height:28px; cursor:pointer;}
+/*管理员按钮 添加什么的*/
+.add_GL { border-radius:3px; background:#0da6ec; border:1px solid #0a98d9; color:#fff; font-size:14px;padding:2px 10px; cursor:pointer;}
+/*右侧*/
+.Learning_materials {float:right; width:39%;background:#fff;min-height:400px; border:1px solid #e1e1e1;box-shadow: 0px 0px 4px #bbb;  }
+/*单个tit的标题 学习资料*/
+.single_tit h2 { line-height:45px;height:45px; margin: 0 10px;border-bottom:1px solid #e1e1e1; color:#666;}
+.single_tit h2 span.title_left { border-bottom:2px solid #0da6ec; padding:0px 6px; display:block; float:left; line-height:45px; font-size:16px; }
+.single_tit h2 span.title_left a {color:#666; }
+.tabcontent { clear:both;}
+/*教师科研样式详情页开始 阶段信息*/
+.PD_con { margin-top:14px;}
+.ky_tab {width: 60%;  min-height: 600px; float: left;box-shadow:0px 0px 4px #bbb; background:#fff; border:1px solid #e1e1e1;}
+.ky_tab .ky_tabheader {  height: 45px; margin:0 auto; width: 710px;    }
+.ky_tab ul.tab_tit li { display: block; float: left; line-height: 45px; text-align: center; font-size: 16px; color: #757575; font-family: microsoft yahei ui;    }
+.ky_tab ul li a span.wenzi { color: #10a7ed; font-size: 14px; margin-bottom: 72px; display: block;    } 
+.ky_tab ul li a {    }
+ /*li a 当前状态*/
+.ky_tab ul li a.tab_l {  display: block; float: left;  background: url(/_layouts/15/TeacherImages/tab_l.png) no-repeat center;  width: 214px; }
+.ky_tab ul li a.tab_c { display: block;  float: left;    background: url(/_layouts/15/TeacherImages/tab_c_d.png) no-repeat center;  width: 214px;}
+.ky_tab ul li a.tab_r { display: block;  float: left;  background: url(/_layouts/15/TeacherImages/tab_r_d.png) no-repeat center;  width: 214px;  }
+/*li a  选中状态 */
+.ky_tab ul li.selected a.tab_l {  display: block;  float: left; background: url(/_layouts/15/TeacherImages/tab_l.png) no-repeat center;  width: 214px;  }
+.ky_tab ul li.selected a.tab_c { display: block;  float: left;  background: url(/_layouts/15/TeacherImages/tab_c.png) no-repeat center;  width: 214px; }
+.ky_tab ul li.selected a.tab_r { display: block;  float: left; background: url(/_layouts/15/TeacherImages/tab_r.png) no-repeat center;  width: 214px;  }
+.ky_tab .secondtit {  border-bottom: 1px solid #d2d2d2;  clear: both;   height: 35px; line-height: 35px; width: 100%; margin:0 auto; }
+.ky_tab .secondtit span.left { float: left;  padding-left: 15px;  font-size: 15px;  }
+.ky_tab .secondtit span.right {  float: right;  }
+.ky_tab .secondtit span.right input {  cursor:pointer; margin-left: 15px;  background-color: #0EA8EE; border: 0px;  height: 28px; padding:0px 4px; color:#fff; line-height: 28px; border-radius: 3px;  }
+/*科研管理右侧*/
+.ky_right {   width: 39%;   float: right;  background:#fff;     min-height: 600px; box-shadow:0px 0px 4px #bbb;}
+.ky_right .secondtit .left { border-bottom: 2px solid #01B1ED; float: left; font-family: '微软雅黑'; font-size: 14px; height: 30px;line-height: 30px; margin-left: 20px;   }
+.ky_right .secondtit .right { float: right; height: 30px; line-height: 30px;   }
+.ky_right .secondtit .title_right input { cursor:pointer;  background-color: #01B1ED;  height: 25px; line-height: 25px;  color:#fff; border: 0px; border-radius: 3px; padding:0px 4px;   }
+.tit_zong { clear:both; padding:10px; text-align:center;color:#666; line-height:34px; font-size:14px;}
+.tit_zong h2 { font-size:16px;}
+.ky_right .list { margin:20px;}
+/*教师科研样式详情页开始*/
+/*教师科研阶段标题*/
+.phasetit { padding-left: 15px; width: 95%; border: 1px solid #d2d2d2; margin: auto;  height: 30px;  line-height: 30px;    background-color: #F2F2F2;  margin-top: 10px;}
+.phasetit a { width: 17px;  height: 16px;  display: inline-block; line-height: 16px; margin-top: 7px; float: right; margin-right: 5px;    }
+.down {  background: url(/_layouts/15/TeacherImages/down.png) no-repeat !important;}
+.up {  background: url(/_layouts/15/TeacherImages/up.png) no-repeat;}
+/*科研送审通知审核页面开始*/
+/*教师科研管理老师审核界面*/
+.PE_wrap { border:1px solid #d2d2d2; width: 100%; margin: auto; background:#fff; margin-top:14px;  padding:10px;  box-shadow:0px 0px 4px #bbb;}
+.PE_con { } 
+.projecttit {   font-size: 18px; color: #333; line-height: 36px; border-bottom: 2px solid #0da6ec;  }
+.exphasetit {   border-bottom: 1px solid #d2d2d2; height: 34px;line-height: 34px;  overflow: hidden; color:#666; cursor:pointer;}
+.exphasetit a { width: 17px; height: 16px; display: inline-block; line-height: 16px;  margin-top: 7px; margin-right: 5px; }
+span.right { float: right; padding-right: 20px;}
+.down { background: url(/_layouts/15/TeacherImages/down.png) no-repeat;}
+.up { background: url(/_layouts/15/TeacherImages/up.png) no-repeat !important;}
+.ulcontent {  display: none;}
+.ulcontent td {list-style: none; font-size: 14px;  font-weight: 500; float: left;  height: 28px;  line-height: 28px; border-bottom: 1px dashed #d2d2d2; text-align: center;   }
+.ulcontent td a {text-decoration: none; }
+.eledisplay { display: none; margin:10px 20px;}
+
+/*****************************************************************************个人网盘Personal_skyDrive**************************************************/
+
+
+.Personal_skyDrive { padding:10px; margin-top:14px; box-shadow:0px 0px 4px #bbb; background:#fff; border:1px solid #e1e1e1;}
+.Personal_skyDrive .Operation_area { padding-top:10px;}
+
+/*整个展示区域*/
+/*操作区域*/
+.Operation_area { background:#f2f2f2; height:36px; line-height:36px;}
+/*左边*/
+.right_add ul li { float:left; margin-right:10px;line-height:26px;}
+.right_add ul li.Select { }
+.right_add ul li.Batch_operation { }
+.right_add ul li select { height:26px; line-height:26px; border-radius:3px; border:1px solid #0da6ec; padding-left:10px;  color:#666; min-width:98px;}
+.right_add ul li select option { color:#666; line-height:26px; height:26px;}
+.right_add ul li.Sear input { border-radius:3px; border:1px solid #0da6ec; color:#bbb; height:26px; line-height:26px; }
+.right_add ul li.Sear input:hover,.left_choice ul li.Sear input:visited { border-radius:3px; border:1px solid #0da6ec; color:#bbb; }
+.right_add ul li.Sear i {color:#666;margin-left:-22px; } /**/ 
+/*.left_choice ul li.Sear i a{ margin-left:-22px; color:#666; }*//*刘丽华*/
+
+/*右边*/
+.left_choice .add { line-height:22px; display:block; padding:2px 8px; background:#0da6ec; border-radius:3px; color:#fff;  float:left; margin:0 4px;}
+
+
+/*批量操作*/
+.Batch_operation { position:relative; }
+.Batch_operation .B_con { position:absolute; background:#fff; border:1px solid #0da6ec; box-shadow:0px 0px 4px #bbb; top:28px; width:87px; z-index:100; left:4px; border-radius:3px; text-align:center;}
+.Batch_operation .B_con li  { line-height:28px; color:#999; border-bottom:1px solid #ddd; }
+
+.Batch_operation .B_con li a  { display:block; }
+.Batch_operation .B_con li:hover  { background:#0da6ec; color:#fff; }
+.Batch_operation .B_con li:hover a  { color:#fff; }
+
+
+.File_type { padding:6px;  border:1px solid #0da6ec; border-bottom:2px solid #0da6ec; overflow:hidden; margin-bottom:10px;margin-top:10px; }
+.File_type dl { float:left;  line-height:32px; }
+.File_type dd ,.File_type dt { float:left; padding:0 8px;}
+.File_type dd:hover { background:#0da6ec;}
+.File_type dd:hover a { background:#0da6ec; color:#fff;}
+
+/*分享 下载 删除*/
+.Personal_skyDrive td.name { text-align:left; width:60%; padding-left:10px;}
+td.name .Operation  { float:right; line-height:28px; height:28px; margin-right:20px; }
+
+.Operation span { margin:0 2px;}
+.Operation span.more { position:relative;}
+
+/*more*/
+.M_con { background:#fff; border-radius:3px; box-shadow:0px 0px 4px #bbb; text-align:center; position:absolute; width:86px;}
+.M_con li { border-bottom:1px solid #e1e1e1; color:#999; width:86px;}
+.M_con li a { display:block;  }
+.M_con li:hover { background:#00a1ec; }
+.M_con li:hover a {color:#fff;  }
+
+	 table.P_form { border:none; width:100%; text-align:center; margin: auto; font-size:14px;}
+	 table.P_form tr,.table.P_form tr th ,.table.P_form tr td{ border:none; line-height:32px;}
+	 table.P_form tr { border-bottom:1px solid #e1e1e1;}
+	 table.P_form .Check { padding-right:10px;}
+	 table.P_form .name { width:45%; text-align:left;}
+	 table.P_form .Operations  { padding:4px; }
+	 table.P_form .Operations i  { padding:4px; }
+	 table.P_form .Operations i.pass  { color:#76c35d;}
+	 table.P_form .Operations i.reject  { color:#d93735;}
+
+
+/************************************************************************************校本资源库School_library*******************************************/
+.Whole_display_area { /*overflow:hidden;*/}
+.School_library { padding:10px; margin-top:14px; box-shadow:0px 0px 4px #bbb; background:#fff; border:1px solid #e1e1e1; }
+.School_library .S_conditions { padding:10px 0;  }
+
+/*管理员添加*/
+.Add_list { padding:10px;padding-bottom:0px;  }
+.Add_list select { height:26px; line-height:26px; border-radius:3px; padding-left:10px;  color:#666; min-width:98px;}
+.Add_list select option { color:#666; line-height:26px; height:26px;}
+.Add_list span  {  padding-right:8px;}
+.Add_list span.Search input {  border: 1px solid #e1e1e1; border-radius: 3px; color: #666; padding-left: 10px;  }
+.Add_list span.add input.b_add  {  border-radius:3px; background:#0da6ec; border:none; color:#fff; padding:0 8px; height:26px; cursor:pointer;}
+
+/*查询list*/
+
+.screenBox { border-left:1px solid #e5e5e5; border-top:1px solid #e5e5e5; margin:10px 0 ;}
+.screenBox dl { background:#fff ; border-bottom:1px solid #e5e5e5; border-right:1px solid #e5e5e5; overflow: hidden; width:99.9%;}
+.dlHeight { height: 38px;}
+.screenBox dl dt { padding:4px 0; font-weight: 600; float: left; text-align: left; width: 10%; line-height:30px; color:#666; background:#fbfbfb; text-align:center;}
+.screenBox dl dd { border-left:1px solid #e5e5e5; background:#fff; float: left; padding-left: 0; padding-top: 0; position: relative; vertical-align: middle; width: 89.86%;}
+.screenBox dl dd li { color: #666; display: block; float: left; line-height: 30px;  margin: 0 12px; padding:4px; overflow: hidden; text-decoration: none;  vertical-align: middle;}
+
+.screenBox dl dd li a { padding:0 4px; display: inline-block;  }
+.screenBox dl dd li a:hover { display: inline-block; background:#0da6ec ; color:#fff;   }
+.screenBox dl dd span.more {  cursor: pointer; display: block;  height: 30px;  position: absolute;top:8px; right: 0px; width: 32px;}
+.screenBox dl dd li.selected { display: inline-block; background:#0da6ec ; color:#fff;   }
+
+/*leftnav*/
+.Schoolcon_wrap {  background:#fff; }
+.Schoolcon_wrap .Operation_area { background:#fff;}
+.left_navcon { border:1px solid #d2d2d2; width:210px; background:#fff; min-height:500px; }
+.left_navcon h1 { background:#ecf0f3; color:#666; font-size:16px; line-height:36px;padding-left:10px; font-weight:normal; }
+.left_navcon h3 {  font-size:14px; line-height:32px;padding-left:10px; padding-right:10px; font-weight:normal; color:#333; }
+.left_navcon .icon {  border: 1px solid #666; border-radius: 60px; display: block;  float: left; height: 10px; line-height: 32px; margin-right: 6px; margin-top: 12px; width: 10px; }
+.left_navcon .ici-menu:hover .icon {  background:#0da6ea; border:1px solid #0da6ea; border-radius: 60px; display: block; float: left; height: 10px; line-height: 32px; margin-right: 6px; margin-top: 12px; width: 10px; }
+/*select*/
+.left_navcon .ici-menu:hover .icon {  background:#0da6ea; border:1px solid #0da6ea; border-radius: 60px; display: block;  float: left; height: 10px; line-height: 32px; margin-right: 6px; margin-top: 12px; width: 10px; }
+
+.left_navcon .icic-item:hover .icon {  background:#0da6ea; border:1px solid #0da6ea; border-radius: 60px; display: block;  float: left; height: 10px; line-height: 32px; margin-right: 6px; margin-top: 7px; width: 10px; }
+
+.select-box{ position:relative;}
+.i-menu {  height:38px;  line-height:38px; cursor:pointer; clear:both; padding-left:20px; color:#333;}
+.ici-menu{  height:38px;  line-height:38px; cursor:pointer; clear:both; padding-left:30px; color:#666;}
+.icic-item{  height:38px;  line-height:28px; cursor:pointer; padding-left:40px; clear:both; color:#999; }
+.icic-item .icon { margin-top:7px;}
+/*一级*/
+.item .i-menu  span.tubiao i { font-size:14px; margin-right:6px;}
+span.tit { display:block; width:85%;}
+/* 二级
+.i-con .ic_item .ici-menu .icon { background:#95cc66; border-radius: 60px; display: block;  float: left; height: 10px; 
+
+line-height: 32px; margin-right: 6px; 
+
+margin-top: 11px; width: 10px;  }
+.i-con .ic_item .ici-menu:hover .icon { background:#95cc66; border-radius: 60px; display: block;  float: left; height: 
+
+10px; line-height: 32px; margin-
+
+right: 6px; margin-top: 11px; width: 10px;  }
+.i-con .ic_item .ici-menu .select .icon { background:#95cc66; border-radius: 60px; display: block;  float: left; height: 
+
+10px; line-height: 32px; margin-
+
+right: 6px; margin-top: 11px; width: 10px;  }*/
+
+
+  .btn-area a{ font-size:12px; color:#333; padding:2px;}
+  .btn-area a:hover{  text-decoration:underline;   }   
+  .btn-area{ display:none; background: #fff ; border: 1px solid #e1e1e1; border-radius: 3px; color: red; display: none; line-height: 24px; margin-right: 5px; margin-top: 30px; padding: 0 4px;   position: absolute; left:45px;}
+  .ici-con,.i-con{display:none;}
+  .i-menu:hover,.ici-menu:hover,.icic-item:hover {  background:#f6f6f6;color:#666;  }
+ 
+  
+
+/*right_dcon*/
+.right_dcon { margin-left:224px; width:auto; float:none; position:relative;}
+.right_dcon .Display_form { margin-top:10px;}
+/*筛选点击展开*/
+.right_add .S_con { }
+.right_add .S_con  .add { display:block;  }
+.right_add .S_con .File_type { }
+
+/*资源列表tab*/
+
+			.Resources_tab { min-height: 455px; background:#fff;}
+			.Resources_tab .Resources_tabheader { height:45px; transition:all 0.3s ease-in-out; background:#fff; border-bottom:2px solid #e5e5e5;}
+			.Resources_tab ul.resourses li { padding:0 20px; float:left; line-height:45px; text-align:center; color:#666;}
+			.Resources_tab .Resources_tabheader a{text-decoration:none; color:#666; display:block; text-align:center; overflow:hidden;}
+			/*选中颜色*/
+			.Resources_tab .Resources_tabheader ul li.selected{ background:#fff; border-left:1px solid #e5e5e5; border-right:1px solid #e5e5e5;  border-top:2px solid #0da6ec; line-height:44px; border-bottom:2px solid #fff; }
+			.Resources_tab .Resources_tabheader ul li.selected a { color:#0da6ec;}				
+			.Resources_tab .Resources_tabheader ul li a span.zong_tit { display: block; overflow: hidden; line-height: 44px; text-align: center;}
+			
+	.Resources_tab .content {  padding-top:10px;}
+	.Resources_tab .content .tc table.O_form { border:none;}
+
+    .content .tc table.O_form tr td{ border:none; line-height:34px;}
+	.Resources_tab .content .tc table.O_form tr { border-bottom:1px solid #ddd;}
+	.Resources_tab .content .tc table.O_form .Check { padding-right:10px;}
+	.Resources_tab .content .tc table.O_form .name { width:45%; text-align:left;}
+	.Resources_tab .content .tc table.O_form .Operations  { }
+	.Resources_tab .content .tc table.O_form .Operations i  { padding:4px; }
+	.Resources_tab .content .tc table.O_form .Operations i.pass  { color:#76c35d;}
+	.Resources_tab .content .tc table.O_form .Operations i.reject  { color:#d93735;}
+
+	
+	/*J-item hover*/
+table.O_form tr.J-item:hover { background:#f0f7fd ! important;}
+
+/*table.O_form*/			
+			table.O_form { width:100%; text-align:center; margin: auto; font-size:14px;}
+			table.O_form th { border-bottom:none; color:#333; font-size:14px; line-height:34px; text-align:center; background:#f1f1f1; }
+			table.O_form tr { border:1px solid #e6e6e6; color:#666; line-height:28px; }
+			table.O_form td { border:1px solid #e6e6e6;color:#666; line-height:28px;}	
+
+            td.name .Operation span i { color:#00a1ec;}
+            .Operations .opertor{ display:inline-block; vertical-align:middle;}
+            .Operations .opertor a.shenhe { color:#fff;}  
+            .Operations a { color:#00a1ec;}
+			/*表头*/
+			tr.O_trth {  background:#f1f1f1;}
+			/*单行变色*/
+			table.O_form tr.Single { background:#fff;}
+			/*双行变色*/
+			table.O_form tr.Double { background:#fff;}		
+            
+		 /*****************************************************************************弹窗dialog页面**************************************************/
+			/*input框*/
+            .yy_dialog { color:#666;}
+            .yy_dialog .t_content .yy_tab{ margin-top:0px; border:0; box-shadow:none;}
+            .yy_dialog .t_content .yy_tab .content { width:auto; min-height:auto;}
+			.yy_dialog .t_content .t_message .message_con tr td { font-size:14px;line-height: 30px; padding: 9px 0; }	                   
+           	.yy_dialog .t_content .t_message .message_con tr td#att1 {padding:0; }	                   
+
+			/*添加岗位*/	
+		   .add_input { padding:10px; }
+		   .add_input input.add_sear { padding:0 10px; border-radius:3px; height:28px; }
+		   .add_input input.b_add { padding:0 10px; border-radius:3px; height:28px; background:#00a1ec; border:none; color:#fff; cursor:pointer; }
+	     	table.add_internship { border-collapse: collapse; }
+			table.add_internship tr { float:left; display:block; width:197px; text-align:center; border:1px solid #00a1ec;}
+			table.add_internship tr td { float:left; display:block;  }
+			table.add_internship tr td i { color:#666;}
+			/*刘丽华*/
+            table.add_drivetype { border-collapse: collapse; color:#666;}
+			table.add_drivetype tr .le{ float:left; display:block; width:595px; text-align:center;}
+			table.add_drivetype tr .ri { float:left; display:block;width:469px;  }
+			table.add_drivetype tr td i { color:#666;}
+			table.add_drivetype tr td{ border:0px; border-top:1px solid #abd0f5;}
+            table.add_drivetype tr .type{ float:left; display:block; width:500px; text-align:center;}
+/*上传文件*/
+.add_jia {border:2px dashed #00a1ec; color:#00a1ec; margin:20px;}
+.jia_c { color:#00a1ec; width:100%;text-align: center;}
+#BtFile { height:100%; width:100%; background:#fff; border:0; font-size: 30px; font-weight: bolder; cursor:pointer;}
+.T_list { margin:20px;}
+.fileup_w { text-align:center; margin:20px;}
+.fileup {  border-radius: 3px; background-color: #0DA6EC;color: white; border: 0px; padding:6px; cursor:pointer;    }
+
+.navgition { display:inline-block;width:100%; text-align:left; line-height:32px; font-size:14px;color:#00a1ec;}
+.navgition a { padding:0 4px; cursor:pointer; color:#00a1ec;}
+
+/*社团管理*/
+/*创建社团列表*/
+/*正常表单相关样式开始*/
+.listdv_p {   width: 90%;   margin: auto; color:#666; margin:20px;}
+.listdv_p table {   width: 100%; }
+.listdv_p table tr th {  vertical-align:middle; padding:5px 0; width: 2%;  color:#666;font-size:14px;  }
+.listdv_p table tr th input.save { width: 40px; }
+.listdv_p table tr { line-height: 32px; color:#666;font-size:14px;  }
+.listdv_p table tr.areatr {   }
+/*社团图片*/
+.listdv_p table .photo { position:absolute; top:20px; right:40px;  height:90px; overflow:hidden;}
+.listdv_p table .photo img { width:150px; }
+.listdv_p table tr.btntr {  height: 100px;line-height: 100px;  }
+.listdv_p table tr td { vertical-align:middle; width: 10%;  padding:5px 0;  }
+.listdv_p table tr td input.save {  cursor:pointer; width: 140px; height: 40px; margin-right: 20px; background-color: #0DA6ED; font-size: 16px; color: #fff; font-weight: 500; border: 0px; border-radius: 3px;  }
+.listdv_p table tr td span { color: red;        }
+.listdv_p table tr td input.cancel { cursor:pointer; width: 70px; height: 40px; margin-left: 20px; background-color: #C0C0C0;  font-size: 16px;  color: #fff; font-weight: 500; border: 0px;border-radius: 3px;   }
+.listdv_p table tr td input[type='text'] {  width: 60%;height: 30px; line-height:30px; color:#666; border: 1px solid #d1d1d1;  border-radius: 3px; }                
+.listdv_p table tr td select { color:#666; width: 60%; height: 34px; line-height:34px; border: 1px solid #d1d1d1; border-radius: 3px; }
+.listdv_p table tr td table tr td img {  width: 12px;   height: 12px; margin-right: 10px; }
+.listdv_p table tr td table tr td a {cursor: pointer; }
+.listdv_p table tr td textarea { width: 90%; border: 1px solid #d1d1d1; border-radius: 3px; }
+.listdv_p table tr td input { line-height:22px;}

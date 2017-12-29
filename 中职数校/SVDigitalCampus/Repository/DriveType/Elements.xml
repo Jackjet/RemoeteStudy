@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="DriveType" List="113" Url="_catalogs/wp">
+    <File Path="DriveType\DriveType.webpart" Url="SVDigitalCampus_DriveType.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园-个人网盘" />
+    </File>
+  </Module>
+</Elements>

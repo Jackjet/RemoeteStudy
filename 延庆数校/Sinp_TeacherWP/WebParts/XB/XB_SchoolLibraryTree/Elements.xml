@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="XB_SchoolLibraryTree" List="113" Url="_catalogs/wp">
+    <File Path="XB_SchoolLibraryTree\XB_SchoolLibraryTree.webpart" Url="Sinp_TeacherWP_XB_SchoolLibraryTree.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园_校本资源库" />
+    </File>
+  </Module>
+</Elements>

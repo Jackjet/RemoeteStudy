@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="SE_wp_MySurveyPaper" List="113" Url="_catalogs/wp">
+    <File Path="SE_wp_MySurveyPaper\SE_wp_MySurveyPaper.webpart" Url="Sinp_StudentWP_SE_wp_MySurveyPaper.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园_调查评价" />
+    </File>
+  </Module>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="ChooseStudentUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="ChooseStudent\" Type="ElementManifest" />
+    <ProjectItemFile Source="ChooseStudent.webpart" Target="ChooseStudent\" Type="ElementFile" />
+    <ProjectItemFile Source="ChooseStudentUserControl.ascx" Target="CONTROLTEMPLATES\SVDigitalCampus.School_Courses\ChooseStudent\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SVDigitalCampus.School_Courses.ChooseStudent" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

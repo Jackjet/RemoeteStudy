@@ -1,0 +1,65 @@
+#ddlUserType {
+	margin-left: 10px;
+}
+#ddlXX {
+	margin-left: 10px;
+}
+.user_login {
+	clear: both;
+	height: 100%;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.user_login table {
+	width: 650px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "微软雅黑";
+	color: #666666;
+}
+.user_login table tr {
+	background-color: #F5F5F5;
+	line-height: 26px;
+	height: 26px;
+	border: 3px solid #DADADA;
+}
+.user_login th {
+	height: 26px;
+	line-height: 26px;
+	color: #FFFFFF;
+	width: 650px;
+	background-color: #FF6699;
+	text-align: center;
+	font-family: "微软雅黑";
+}
+.height {
+	line-height: 20px;
+	font-size: 13px;
+	text-align: left;
+	padding-left: 10px;
+}
+.width {
+	width: 130px;
+	padding-left: 20px;
+}
+.user_login input {
+	line-height: 20px;
+	height: 20px;
+	width: 168px;
+	background-image: url(image/inputbg.png);
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin-left: 10px;
+}
+
+.user_login .sbtn {
+	height: 26px;
+	width: 50px;
+	line-height: 26px;
+	margin-top: 5px;
+}

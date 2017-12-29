@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="PND_wp_PersonDriveSetUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="PND_wp_PersonDriveSet\" Type="ElementManifest" />
+    <ProjectItemFile Source="PND_wp_PersonDriveSet.webpart" Target="PND_wp_PersonDriveSet\" Type="ElementFile" />
+    <ProjectItemFile Source="PND_wp_PersonDriveSetUserControl.ascx" Target="CONTROLTEMPLATES\SVDigitalCampus.Repository\PND_wp_PersonDriveSet\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SVDigitalCampus.Repository.PND_wp_PersonDriveSet" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

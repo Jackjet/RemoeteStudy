@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+ 
+<SchoolList>
+<School name="十一学校">
+  <teacher>OU=教师,OU=十一学校</teacher>
+  <student>OU=学生,OU=十一学校</student>
+  <parent>OU=家长,OU=十一学校</parent>
+</School>
+<School name="第一中学">
+  <teacher>OU=教师,OU=第一中学</teacher>
+  <student>OU=学生,OU=第一中学</student>
+  <parent>OU=家长,OU=第一中学</parent>
+</School>
+
+</SchoolList>

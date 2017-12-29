@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SVDigitalCampus", "SVDigitalCampus\SVDigitalCampus.csproj", "{117BEAF4-FBC1-4E53-8D4B-11B3260497E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{A309A1BF-2474-45BE-85DF-47DDA57E2C49}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://61.50.119.70:700/tfs/%E8%BF%9C%E7%A8%8B%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Common\\Common.csproj
+		SccProjectName1 = Common
+		SccLocalPath1 = Common
+		SccProjectUniqueName2 = SVDigitalCampus\\SVDigitalCampus.csproj
+		SccProjectName2 = SVDigitalCampus
+		SccLocalPath2 = SVDigitalCampus
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{117BEAF4-FBC1-4E53-8D4B-11B3260497E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117BEAF4-FBC1-4E53-8D4B-11B3260497E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117BEAF4-FBC1-4E53-8D4B-11B3260497E6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{117BEAF4-FBC1-4E53-8D4B-11B3260497E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117BEAF4-FBC1-4E53-8D4B-11B3260497E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117BEAF4-FBC1-4E53-8D4B-11B3260497E6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A309A1BF-2474-45BE-85DF-47DDA57E2C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A309A1BF-2474-45BE-85DF-47DDA57E2C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A309A1BF-2474-45BE-85DF-47DDA57E2C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A309A1BF-2474-45BE-85DF-47DDA57E2C49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

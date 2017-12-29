@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.WebPart" DefaultFile="VEClassMgrWebPart.cs" SupportedTrustLevels="All" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="VEClassMgrWebPart\" Type="ElementManifest" />
+    <ProjectItemFile Source="VEClassMgrWebPart.webpart" Target="VEClassMgrWebPart\" Type="ElementFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="YHSD.VocationalEducation.Portal.VEClassMgrWebPart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="CE_wp_CourseScore" List="113" Url="_catalogs/wp">
+    <File Path="CE_wp_CourseScore\CE_wp_CourseScore.webpart" Url="Sinp_StudentWP_CE_wp_CourseScore.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="学生管理_课程评价" />
+    </File>
+  </Module>
+</Elements>

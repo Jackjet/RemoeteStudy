@@ -1,0 +1,79 @@
+*{word-wrap: break-word; padding: 0px;  margin: 0px;}
+html {-webkit-text-size-adjust: none; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{font:normal 14px/24px "Microsoft Yahei","冬青黑体简体中文 w3","宋体";background:#f2f2f2; }
+body p{font-size: 14px;	}
+body p a{font-size: 16px;}
+ol,ul,li,dl,dd,dt {	list-style: none; text-decoration:none; }
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:normal;font-size:100%;}
+a:hover{text-decoration	: underline;}
+
+/* general */
+.clear {clear: both;}
+
+/* Header */
+.brand{	color: #E05E00 !important;font-family: georgia;	font-style: italic;}
+
+/* list stuff */
+#org{background-color: white;margin : 10px;	padding: 10px;}
+
+#show-list{	cursor: pointer;}
+
+/* bootstrap overrides */
+.alert-message{	margin: 2px 0;}
+
+.topbar{position : absolute;}
+
+.jOrgChart {  margin: 10px;  padding : 20px;}
+.org_page{ border:1px solid #d2d2d2; margin: auto; background:#fff; margin-top:14px;  padding:10px;  box-shadow:0px 0px 4px #bbb;min-height:700px;}
+.org_page .Gl_tabheader{ height:36px; border:none;border-bottom:2px solid #ccc; }
+.org_page .Gl_tabheader ul.tab_tit{border:none;}
+.org_page .Gl_tabheader ul.tab_tit li { float: left;  line-height:36px; text-align: center; fopx; text-align: center; font-size: 14px;color: #757575; font-family: microsoft yahei ui; clear:none;}
+.org_page .Gl_tabheader a { text-decoration: none; color: #666; display: block; padding: 0px 30px;}
+.org_page .Gl_tabheader ul li.selected {  background: #fff; border-bottom: 2px solid #01b1ed;}
+.org_page .addbtn{width: 87px;height: 29px;line-height: 29px;text-align: center;color: #fff;background: #0da6ec;border-radius: 5px;
+	               display: block;margin-top:30px;}
+.jOrgChart .node { width:50px;  height:140px;font-size : 14px;background-color 	: #b9e9ff;border-radius : 8px;
+	               border: 1px solid #9dd9f5;color: #00a1e9;-moz-border-radius : 8px;position:relative;margin:0px 11px;}
+.jOrgChart .node dt a{display:block; width:14px;margin-left:16px;}
+.jOrgChart .firsecnode { width:140px;  height:50px;font-size : 14px;background-color: #b9e9ff;border-radius : 8px;
+	               border: 1px solid #9dd9f5;color: #00a1e9;-moz-border-radius : 8px;margin:auto;position:relative;}
+.jOrgChart .firsecnode dt a{display:block;margin-top:12px;}
+.node p{font-size: 10px;line-height: 11px;padding : 2px;	}
+.jOrgChart .top{border-top-color:#b9e9ff;}
+.jOrgChart .down{background-color:#b9e9ff;}
+.jOrgChart .left{border-right-color:#b9e9ff;}
+.jOrgChart .right{border-left-color:#b9e9ff;}
+
+/*下拉菜单*/
+.jOrgChart .dropmenu{width:100%;height:100%;}
+.jOrgChart .dropmenu dt em { display:block;width:0;height:0;overflow:hidden;border:4px solid #fff;border-bottom:none;border-color:#fff #0053a6 #000 #0053a6;float:left;margin:18px 3px 3px 6px;}
+.jOrgChart .dropmenu dt em.hover {border:4px solid #fff;border-top:none; transform-origin:center ;border-color:#fff #f0ad04 #fff #f0ad04;}
+.lie { position:absolute; left:-23px; top:37px; display:none; z-index:20;}
+.firsecnode .lie{left:20px;}
+.hover{display:block;}
+.lie ul.liea li { line-height:28px; height:28px; width:96px;/*background:rgba(128 157 199 5) */background:#005db8;}
+.lie ul.liea li:hover {  background:#013c90;}
+.lie ul.liea li a { color:#fff; display:block; font-weight:normal; font-size:14px;}
+.lie ul.liea li a:hover { text-decoration:underline;}
+
+    

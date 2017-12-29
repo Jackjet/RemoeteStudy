@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="EO_wp_OrganizationList" List="113" Url="_catalogs/wp">
+    <File Path="EO_wp_OrganizationList\EO_wp_OrganizationList.webpart" Url="SVDigitalCampus_EO_wp_OrganizationList.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

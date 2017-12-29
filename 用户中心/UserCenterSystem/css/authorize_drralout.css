@@ -1,0 +1,224 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    background: #f9f9f9;
+    font-size: 12px;
+    font-family: "Microsoft YaHei" !important;
+}
+
+.wrad {
+    width: 100%;
+    height: 67px;
+    padding-top: 37px;
+    background: url(../images/logo_bk.png) repeat-x;
+    margin-bottom: 26px;
+}
+
+.leftcon {
+    width: 570px;
+    text-align: center;
+    margin: auto;
+}
+
+.rightcon {
+    width: 430px;
+    text-align: center;
+    margin: auto;
+}
+
+.logointo {
+    width: 304px;
+    padding-top: 100px;
+}
+
+.forget {
+    line-height: 30px;
+}
+
+.logo, .dr_title {
+    width: 1000px;
+    margin: auto;
+}
+
+.dr_title {
+    height: 518px;
+    width: 1000px;
+    background: url(../images/drback.png) no-repeat;
+}
+
+
+
+
+
+    .dr_title .logointo, .dr_title .regist {
+        display: inline-block;
+    }
+
+        .dr_title .logointo h1 {
+            width: 294px;
+            text-align: center;
+            color: #434141;
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+
+        .dr_title .logointo div {
+            width: 306px;
+            height: 40px;
+            background: url(../images/inputkuang.png) no-repeat;
+            padding: 5px;
+            margin: 10px 0 0 0;
+        }
+
+            .dr_title .logointo div:hover {
+                width: 306px;
+                height: 40px;
+                background: url(../images/inputkuang_hover.png) no-repeat;
+                padding: 5px;
+                margin: 10px 0 0 0;
+            }
+
+            .dr_title .logointo div span {
+                color: #989898;
+                margin-left: 8px;
+            }
+
+            .dr_title .logointo div b, .dr_title .logointo div span {
+                float: left;
+            }
+
+            .dr_title .logointo div b {
+                width: 18px;
+                height: 14px;
+                background: url(../images/huming.png) no-repeat left;
+                position: relative;
+                top: 9px;
+                left: 5px;
+            }
+
+            .dr_title .logointo div .mima {
+                width: 18px;
+                height: 14px;
+                background: url(../images/huma.png) no-repeat left;
+                position: relative;
+                top: 9px;
+                left: 5px;
+            }
+
+.minghu {
+    margin: 23px 0 6px;
+    background-color: white;
+}
+
+.dr_title .logointo .btnok {
+    width: 304px;
+    height: 42px;
+    display: block;
+    background: url(../images/loginto.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.dr_title .logointo p {
+    width: 294px;
+    text-align: end;
+    color: #9b9b9b;
+}
+
+    .dr_title .logointo p .tishiyu {
+        margin-left: 10px;
+    }
+
+.dr_title .regist {
+    padding-top: 100px;
+    width: 310px;
+}
+
+    .dr_title .regist h1 {
+        font-size: 18px;
+        color: #5f5f5f;
+        width: 303px;
+        margin: auto;
+    }
+
+    .dr_title .regist h2 {
+        font-size: 16px;
+        color: #5f5f5f;
+        width: 347px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .dr_title .regist a {
+        display: block;
+        width: 310px;
+        text-align: center;
+        height: 42px;
+        background: url(../images/regist.png) no-repeat;
+        margin: 20px 0;
+        font-family: microsoft yahei ui;
+    }
+
+
+.footer {
+    width: 100%;
+    height: 112px;
+    background: #313131;
+    margin-top: 20px;
+}
+
+.foot {
+    width: 1000px;
+    margin: auto;
+}
+
+    .foot p {
+        text-align: center;
+        color: #ffffff;
+    }
+
+        .foot p a {
+            color: #ffffff;
+        }
+
+.txtstyle {
+    width: 265px;
+    height: 25px;
+    font-size: 15px;
+    color: #bbb;
+    border-style: none;
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
+    font-family: microsoft yahei ui;
+}
+
+.txtstyle1 {
+    width: 265px;
+    height: 25px;
+    font-size: 15px;
+    color: #bbb;
+    border-style: none;
+    position: relative;
+    top: 3px;
+    left: 14px;
+    font-family: microsoft yahei ui;
+}

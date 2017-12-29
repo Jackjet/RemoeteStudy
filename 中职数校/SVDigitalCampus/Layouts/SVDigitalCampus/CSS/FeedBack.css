@@ -1,0 +1,36 @@
+﻿
+    .feedback {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+        .feedback input {
+            padding: 0 2px;
+            margin-left: 5px;
+            border-radius: 3px;
+            line-height: 10px;
+        }
+
+        .feedback textarea {
+            padding: 0 2px;
+            margin-left: 2px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+
+        .feedback tr {
+            height: 30px;
+            line-height: 44px;
+        }
+
+        .feedback .btn {
+            color: #fff;
+            width: 100px;
+            border: none;
+            border-radius: 3px;
+            padding: 6px 0;
+            font-size: 14px;
+            font-family: "微软雅黑";
+            background: #96cc66;
+            cursor: pointer;
+        }

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="EnterEditUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="EnterEdit\" Type="ElementManifest" />
+    <ProjectItemFile Source="EnterEdit.webpart" Target="EnterEdit\" Type="ElementFile" />
+    <ProjectItemFile Source="EnterEditUserControl.ascx" Target="CONTROLTEMPLATES\SVDigitalCampus.Internship_Feedback\EnterEdit\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SVDigitalCampus.Internship_Feedback.EnterEdit" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

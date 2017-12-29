@@ -1,0 +1,70 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+.erp-top{ height:68px; width:100%; background:url(../images/ad_top.jpg) repeat-x 0 0;}
+
+.logo-block{ background:url(../images/logo.png) no-repeat 0 center; height:63px; width:270px; float:left}
+.menu-block{background:url(../images/bg/bg-top-3.png) left no-repeat; padding-left:10px; padding-top:40px; height:28px;}
+.first-menu li{ float:left;}
+.first-menu a{ display:block; width:85px; height:28px; line-height:28px; color:#e0e0e0; text-align:center}
+.first-menu a:hover{ color:#fff; background:#000;}
+.first-menu li.active a{ background:url(../images/firsr-menu-active.png) no-repeat; width:90px; color:#000000}
+/*底部通栏*/
+.bottom{ position:fixed; bottom:0; left:0; height:25px; background:#2a2a2a; border-top:1px solid #000; text-align:center; line-height:25px; color:#FFF; width:100%; overflow:hidden;}
+/*面包屑导航*/
+.breadcrumb-block{ background:url(../images/bg-breadcrumb.png) repeat-x; height:33px; width:100%}
+.block-l{ margin-left:240px;}
+.block-l a{display:inline-block; float:left; height:33px;line-height:33px; color:#2c2c2c; padding:0 25px 0 15px;}
+.block-l a img{ margin-top:8px;}
+.breadcrumb-a{ background:url(../images/breadcrumb-a.png) right no-repeat;}
+.breadcrumb-a span{ display:inline-block; float:left; width:18px; height:14px; background:url(../images/breadcrumb-home.png) no-repeat 0 0; text-indent:-9999px; margin:8px 8px 0 0;}
+.block-r{ margin-right:10px;}
+.block-r a{ display:inline-block; float:left; height:33px;line-height:33px; color:#33abdf; padding:0 5px 0 5px;}
+/*内容布局*/
+.content{ width:100%; float:left; /*background:url(../images/bg-body.gif) repeat-y 0 0;*/ }
+.content .con-l{ width:230px; position:relative ; z-index:2;margin-right:-230px; float:left; margin-top:-33px;  background:url(../images/bg-body.gif) repeat-y 0 0;overflow:hidden;}
+.content .con-r{ margin-left:230px; overflow-y: auto; min-width:500px; overflow-x:hidden; *position:relative; _position:absolute; _top:100px; _width:80%;}
+
+/*用户信息*/
+.uesr-info-block{z-index:5; position: relative}
+.uesr-info-block{ /*background:url(../images/bg/bg-user-bloack.png) right bottom no-repeat;*/ padding-right:10px; padding-bottom:10px;}
+.uesr-info-block .ui-con{ width:230px; height:70px; overflow:hidden;/*background:url(../images/bg/bg-ui.png) bottom repeat-x #fff;*/}
+.uesr-info-block .ui-con .box-pad{ padding:10px 15px;overflow:hidden}
+/*.img-div{ background:url(../images/bg/ui-bg.png) no-repeat; width:70px; height:70px; padding:5px;}
+.img-div p{ width:70px; height:70px; overflow:hidden; border-radius:5px;-moz-border-radius:5px; -webkit-border-radius:5px;}
+.img-div p img{ width:70px;height:70px;}*/
+.info-div{ width:115px; margin-left:10px; color:#fff;}
+.info-div a{ color:#985421}
+.info-div p{ line-height:20px;}
+.info-div p label{ color:#646464; margin-right:5px; font-family:arial}
+.sidebar{margin-top:-10px; width:206px; float:right;z-index:1;  overflow-y:auto; overflow-x:hidden;}
+/*左侧菜单*/
+.side-menu li{ width:100%; background:url(../images/menu.png) no-repeat 0 0; margin-bottom:10px;}
+.side-menu .LeftMenu-open{ background:url(../images/bg-menu-item-current.gif) no-repeat 0 0}
+.side-menu li a{ display:block; height:33px; line-height:33px;color:#fff; font-size:16px; margin-left:15px; text-align:right; font-weight:bold; margin-right:10px;}
+/*.side-menu li.haschild a{background: url(../images/bg/sild-has.png) 195px 0 no-repeat;}*/
+.side-menu li .childmenu{ margin-top:10px; }
+.side-menu li .childmenu li{  height:30px; line-height:30px; background:none; margin:0; }
+
+/*.side-menu li.LeftMenu-open{ background:#585858}*/
+.side-menu li.LeftMenu-open a{ color:#333; }
+.side-menu li .childmenu li a{ height:30px; line-height:30px;  padding-left:15px; color:#fff; font-size:14px; font-weight:normal}
+.side-menu li .childmenu li.active{ background:url(../images/menu-current-arrow.gif) no-repeat right center}
+.side-menu li .childmenu li.active a{ color:#fff;}
+.side-menu li .childmenu li a:hover{ color:#fff;}
+
+.control-menu{ background:#000;height:25px; width:230px;}
+.ct-menu-bt,.ct-menu-bt-open{ background:url(../images/ct-menu-bt.png) left no-repeat; width:20px; height:25px; display:inline-block; float:right; margin-right:10px; margin-left:10px;}
+.ct-menu-bt:hover{ background-position:-20px 0;}
+.ct-menu-bt-open:hover{ background-position:-60px 0;}
+.ct-menu-bt-open{ background-position:-40px 0; float:left;}
+.control-user-info{ position:absolute;display:inline-block; bottom:5px; right:0; height:16px; width:16px; background:url(../images/button/close-user-info.png) no-repeat;}
+.open-all,.close-all,.userinfo-open{ background:url(../images/open-all.png) no-repeat; display:inline-block; width:25px; height:25px;}
+.close-all{ background-position:0 -25px;}
+.close-all:hover{ background-position:-25px -25px;}
+.open-all:hover{ background-position:-25px 0;}
+.userinfo-open{ background-position:-50px -25px;}
+.userinfo-open-un{background-position:-50px 0px;}
+.open-all-active{ background-position:-75px 0;}
+.close-all-active{ background-position:-75px -25px !important;}

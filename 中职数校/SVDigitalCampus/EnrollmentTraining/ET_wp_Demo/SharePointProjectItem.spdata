@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="ET_wp_DemoUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="ET_wp_Demo\" Type="ElementManifest" />
+    <ProjectItemFile Source="ET_wp_Demo.webpart" Target="ET_wp_Demo\" Type="ElementFile" />
+    <ProjectItemFile Source="ET_wp_DemoUserControl.ascx" Target="CONTROLTEMPLATES\SVDigitalCampus.招生培训\ET_wp_Demo\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SVDigitalCampus.招生培训.ET_wp_Demo" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

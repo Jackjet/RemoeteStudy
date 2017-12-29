@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="CO_wp_OrderReport" List="113" Url="_catalogs/wp">
+    <File Path="CO_wp_OrderReport\CO_wp_OrderReport.webpart" Url="SVDigitalCampus_CO_wp_OrderReport.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Sinp_TeacherWP.WebParts.WP.PND_wp_Shrar.PND_wp_Shrar, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Sinp_TeacherWP - PND_wp_Shrar</property>
+        <property name="Description" type="string">我的可视 Web 部件</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

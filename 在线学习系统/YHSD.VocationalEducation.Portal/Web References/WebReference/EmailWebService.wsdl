@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="EmailSend">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fromUserDisplayName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToUserList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tittle" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmailSendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmailSendResult" type="tns:ReturnDataBase" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReturnDataBase">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Method" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InnerError" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessed" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ReturnDataBase" nillable="true" type="tns:ReturnDataBase" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="EmailSendSoapIn">
+    <wsdl:part name="parameters" element="tns:EmailSend" />
+  </wsdl:message>
+  <wsdl:message name="EmailSendSoapOut">
+    <wsdl:part name="parameters" element="tns:EmailSendResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmailSendHttpGetIn">
+    <wsdl:part name="fromUserDisplayName" type="s:string" />
+    <wsdl:part name="ToUserList" type="s:string" />
+    <wsdl:part name="tittle" type="s:string" />
+    <wsdl:part name="body" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EmailSendHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnDataBase" />
+  </wsdl:message>
+  <wsdl:message name="EmailSendHttpPostIn">
+    <wsdl:part name="fromUserDisplayName" type="s:string" />
+    <wsdl:part name="ToUserList" type="s:string" />
+    <wsdl:part name="tittle" type="s:string" />
+    <wsdl:part name="body" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EmailSendHttpPostOut">
+    <wsdl:part name="Body" element="tns:ReturnDataBase" />
+  </wsdl:message>
+  <wsdl:portType name="EmailWebServiceSoap">
+    <wsdl:operation name="EmailSend">
+      <wsdl:input message="tns:EmailSendSoapIn" />
+      <wsdl:output message="tns:EmailSendSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="EmailWebServiceHttpGet">
+    <wsdl:operation name="EmailSend">
+      <wsdl:input message="tns:EmailSendHttpGetIn" />
+      <wsdl:output message="tns:EmailSendHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="EmailWebServiceHttpPost">
+    <wsdl:operation name="EmailSend">
+      <wsdl:input message="tns:EmailSendHttpPostIn" />
+      <wsdl:output message="tns:EmailSendHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EmailWebServiceSoap" type="tns:EmailWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EmailSend">
+      <soap:operation soapAction="http://tempuri.org/EmailSend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EmailWebServiceSoap12" type="tns:EmailWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EmailSend">
+      <soap12:operation soapAction="http://tempuri.org/EmailSend" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EmailWebServiceHttpGet" type="tns:EmailWebServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="EmailSend">
+      <http:operation location="/EmailSend" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EmailWebServiceHttpPost" type="tns:EmailWebServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="EmailSend">
+      <http:operation location="/EmailSend" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EmailWebService">
+    <wsdl:port name="EmailWebServiceSoap" binding="tns:EmailWebServiceSoap">
+      <soap:address location="http://61.50.119.70:1080/EmailWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EmailWebServiceSoap12" binding="tns:EmailWebServiceSoap12">
+      <soap12:address location="http://61.50.119.70:1080/EmailWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EmailWebServiceHttpGet" binding="tns:EmailWebServiceHttpGet">
+      <http:address location="http://61.50.119.70:1080/EmailWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EmailWebServiceHttpPost" binding="tns:EmailWebServiceHttpPost">
+      <http:address location="http://61.50.119.70:1080/EmailWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

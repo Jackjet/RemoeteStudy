@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="TS_wp_ReportProjectUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="TS_wp_ReportProject\" Type="ElementManifest" />
+    <ProjectItemFile Source="TS_wp_ReportProject.webpart" Target="TS_wp_ReportProject\" Type="ElementFile" />
+    <ProjectItemFile Source="TS_wp_ReportProjectUserControl.ascx" Target="CONTROLTEMPLATES\Sinp_TeacherWP.WebParts.TS\TS_wp_ReportProject\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Sinp_TeacherWP.WebParts.TS.TS_wp_ReportProject" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

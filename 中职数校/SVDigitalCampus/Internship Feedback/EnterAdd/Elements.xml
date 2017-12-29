@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="EnterAdd" List="113" Url="_catalogs/wp">
+    <File Path="EnterAdd\EnterAdd.webpart" Url="SVDigitalCampus_EnterAdd.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园-实习反馈" />
+    </File>
+  </Module>
+</Elements>

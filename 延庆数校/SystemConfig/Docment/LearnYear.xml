@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LearnYear>
+  <Academic name="2010">
+    <Semester name="第一学期" startdate="2010-09-01" enddate="2011-01-15" />
+    <Semester name="第二学期" startdate="2011-03-01" enddate="2011-07-15" />
+  </Academic>
+  <Academic name="2011">
+    <Semester name="第一学期" startdate="2011-09-01" enddate="2012-01-15" />
+    <Semester name="第二学期" startdate="2012-03-01" enddate="2012-07-15" />
+  </Academic>
+  <Academic name="2012">
+    <Semester name="第一学期" startdate="2012-09-01" enddate="2013-01-15" />
+    <Semester name="第二学期" startdate="2013-03-01" enddate="2013-07-15" />
+  </Academic>
+  <Academic name="2013">
+    <Semester name="第一学期" startdate="2013-09-01" enddate="2014-01-15" />
+    <Semester name="第二学期" startdate="2014-03-01" enddate="2014-07-15" />
+  </Academic>
+  <Academic name="2014">
+    <Semester name="第一学期" startdate="2014-09-01" enddate="2015-01-15" />
+    <Semester name="第二学期" startdate="2015-03-01" enddate="2015-07-15" />
+  </Academic>
+  <Academic name="2015">
+    <Semester name="第一学期" startdate="2015-09-01" enddate="2016-01-15" />
+    <Semester name="第二学期" startdate="2016-03-01" enddate="2016-07-15" />
+  </Academic>
+  <Academic name="2016">
+    <Semester name="第一学期" startdate="2016-09-01" enddate="2017-01-15" />
+    <Semester name="第二学期" startdate="2017-03-01" enddate="2017-07-15" />
+  </Academic>
+  <Academic name="2017">
+    <Semester name="第一学期" startdate="2017-09-10" enddate="2018-01-13" />
+    <Semester name="第二学期" startdate="2018-03-19" enddate="2018-09-21" />
+  </Academic>
+</LearnYear>

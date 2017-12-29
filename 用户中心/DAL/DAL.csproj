@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88072529-58E9-4695-BB48-A9377F4B42B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Entity.Design" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base_AuthDAL.cs" />
+    <Compile Include="Base_ClassDAL.cs" />
+    <Compile Include="Base_DepartmentDAL.cs" />
+    <Compile Include="Base_SpecialtyDAL.cs" />
+    <Compile Include="Base_GradeDAL.cs" />
+    <Compile Include="Base_LogDAL.cs" />
+    <Compile Include="Base_ReserchTeamDAL.cs" />
+    <Compile Include="Base_SchoolDAL.cs" />
+    <Compile Include="Base_SchoolSubjectDAL.cs" />
+    <Compile Include="Base_StudyCareerDAL.cs" />
+    <Compile Include="Base_SubjectDAL.cs" />
+    <Compile Include="Base_TeacherSpouseDAL.cs" />
+    <Compile Include="Base_TeamPersonsDAL.cs" />
+    <Compile Include="Base_ParentDAL.cs" />
+    <Compile Include="Base_TeacherDAL.cs" />
+    <Compile Include="Base_StudentDAL.cs" />
+    <Compile Include="Helper\ConvertHelper.cs" />
+    <Compile Include="Helper\ExcelHelper.cs" />
+    <Compile Include="Helper\RandomHelper.cs" />
+    <Compile Include="Helper\Result.cs" />
+    <Compile Include="Helper\SqlHelper2.cs" />
+    <Compile Include="Helper\ValidatorHelper.cs" />
+    <Compile Include="Helper\JSONHelper.cs" />
+    <Compile Include="Helper\LogHelper.cs" />
+    <Compile Include="Helper\MD5Helper.cs" />
+    <Compile Include="InterfaceConfigurationDAL.cs" />
+    <Compile Include="InterfaceInformationDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helper\SqlHelper.cs" />
+    <Compile Include="Helper\StringHelper.cs" />
+    <Compile Include="Helper\XMLHelper.cs" />
+    <Compile Include="Study_SectionDAL.cs" />
+    <Compile Include="SystemConfigurationDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{d14c88a5-7bcf-4d65-b2c1-6a457302cf3c}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{72574d73-d9da-4905-8098-dff898a65666}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

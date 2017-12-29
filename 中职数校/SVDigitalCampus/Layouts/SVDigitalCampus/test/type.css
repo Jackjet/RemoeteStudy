@@ -1,0 +1,124 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.table_main{
+	width:833px;
+}
+.search_mian{
+	border-bottom:1px solid #cecece;
+}
+.search_input{
+	padding-left:16px;
+	margin:8px 0;
+}
+.input_part{
+	width:300px;
+	height:29px;
+	border:1px solid #dedede;
+	padding:0 5px;
+	font-size: 13px;
+	font-family: "微软雅黑","宋体";
+	color: #646464;
+}
+.button_part{
+	height:31px;
+	line-height:29px;
+	background: url(../images/btn_bg.png) repeat-x;
+	padding:0 20px;
+	font-size: 13px;
+	font-family: "微软雅黑","宋体";
+	color: #565656;
+	font-weight:bold;
+	border-radius:4px;
+	border:1px solid #d5d5d5;
+	cursor:pointer;
+	margin-left:15px;
+	letter-spacing:2px;
+}
+.main_list_table{
+	width:801px;
+	margin:16px;
+	border:1px solid #dedede;
+}
+.main_list_table .list_table{
+	width:801px;
+}
+.main_list_table .list_table .tab_th{
+	height:36px;
+	line-height:36px;
+	cursor:pointer;
+}
+.main_list_table .list_table .th_tit{
+	font-size:13px;
+	color:#444;
+	text-align:center;
+}
+.main_list_table .list_table  .top_th{
+	background:#f2f2f2;
+}
+.main_list_table .list_table .td_tit{
+	font-size:13px;
+	color:#666;
+	text-align:center;
+}
+.main_list_table .list_table .tab_td{
+	height:40px;
+	line-height:40px;
+}
+.main_list_table .list_table .td_bg{
+	background:#f9f9f7;
+}
+.list_table .tit_link{
+	font-size: 13px;
+	font-family: "微软雅黑","宋体";
+	color: #49b700;
+}
+.list_table .tit_link:hover{
+	text-decoration:underline;
+}
+.main_button_part{
+	text-align:center;
+}
+.button_s{
+	height:31px;
+	line-height:29px;
+	background: url(../images/btn_bg.png) repeat-x;
+	padding:0 36px !important;
+	font-size: 13px !important;
+	font-family: "微软雅黑","宋体" !important;
+	color: #49b700 !important;
+	font-weight:bold;
+	border-radius:4px;
+	border:1px solid #d5d5d5;
+	cursor:pointer;
+	margin:0 10px;
+	letter-spacing:2px;
+}
+.button_n{
+	height:31px;
+	line-height:29px;
+	background: url(../images/btn_bg.png) repeat-x;
+	padding:0 36px !important;
+	font-size: 13px !important;
+	font-family: "微软雅黑","宋体" !important;
+	color: #565656 !important;
+	font-weight:bold;
+	border-radius:4px;
+	border:1px solid #d5d5d5;
+	cursor:pointer;
+	margin:0 10px;
+	letter-spacing:2px;
+}
+.TopToolbar{
+    margin:16px;
+}
+
+
+
+
+
+
+
+
+
+
+

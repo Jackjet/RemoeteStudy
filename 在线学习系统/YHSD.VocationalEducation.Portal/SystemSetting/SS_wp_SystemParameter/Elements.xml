@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="SS_wp_SystemParameter" List="113" Url="_catalogs/wp">
+    <File Path="SS_wp_SystemParameter\SS_wp_SystemParameter.webpart" Url="YHSD.VocationalEducation.Portal_SS_wp_SystemParameter.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="在线教学_系统管理" />
+    </File>
+  </Module>
+</Elements>

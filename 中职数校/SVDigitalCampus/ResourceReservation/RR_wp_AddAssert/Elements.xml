@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="RR_wp_AddAssert" List="113" Url="_catalogs/wp">
+    <File Path="RR_wp_AddAssert\RR_wp_AddAssert.webpart" Url="SVDigitalCampus_RR_wp_AddAssert.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园-资源预定" />
+    </File>
+  </Module>
+</Elements>

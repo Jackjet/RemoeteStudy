@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <setting name="site">http://192.168.1.78/sites/Student</setting>
+  <setting name="shcoolid">6198</setting>
+  <!--<setting name="shcoolid">5195</setting>一中-->
+</configuration>

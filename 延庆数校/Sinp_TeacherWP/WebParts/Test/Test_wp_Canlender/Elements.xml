@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="Test_wp_Canlender" List="113" Url="_catalogs/wp">
+    <File Path="Test_wp_Canlender\Test_wp_Canlender.webpart" Url="Sinp_TeacherWP_Test_wp_Canlender.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

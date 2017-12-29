@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ADManager.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://ADManager.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ADManager.org/">
+      <s:element name="CreateParents">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sAMAccountName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="displayName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IDCard" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OUType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateParentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateParentsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTeacher">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sAMAccountName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="displayName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IDCard" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OUType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTeacherResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateTeacherResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateStudent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sAMAccountName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="displayName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IDCard" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OUType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateStudentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateStudentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUserName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteUserResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUser2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUserName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUser2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteUser2Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByCN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="displayName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByCNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUserByCNResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByIDCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDCard" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByIDCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUserByIDCardResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByIDCard2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDCard" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByIDCard2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserByIDCard2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserBysAMAccountName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sAMAccountName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserBysAMAccountNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUserBysAMAccountNameResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserTypeBysAMAccountName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sAMAccountName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SchoolName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserTypeBysAMAccountNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserTypeBysAMAccountNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsUserValid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sAMAccountName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsUserValidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsUserValidResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsEnableUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sAMAccountName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsEnable" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsEnableUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IsEnableUserResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newPwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetUserPasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManagerResetPassWord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManagerResetPassWordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ManagerResetPassWordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateParentsSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateParents" />
+  </wsdl:message>
+  <wsdl:message name="CreateParentsSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateParentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateTeacherSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateTeacher" />
+  </wsdl:message>
+  <wsdl:message name="CreateTeacherSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateTeacherResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateStudentSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateStudent" />
+  </wsdl:message>
+  <wsdl:message name="CreateStudentSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUser2SoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteUser2" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUser2SoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteUser2Response" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByCNSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserByCN" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByCNSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserByCNResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByIDCardSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserByIDCard" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByIDCardSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserByIDCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByIDCard2SoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserByIDCard2" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByIDCard2SoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserByIDCard2Response" />
+  </wsdl:message>
+  <wsdl:message name="GetUserBysAMAccountNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserBysAMAccountName" />
+  </wsdl:message>
+  <wsdl:message name="GetUserBysAMAccountNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserBysAMAccountNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserTypeBysAMAccountNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserTypeBysAMAccountName" />
+  </wsdl:message>
+  <wsdl:message name="GetUserTypeBysAMAccountNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserTypeBysAMAccountNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsUserValidSoapIn">
+    <wsdl:part name="parameters" element="tns:IsUserValid" />
+  </wsdl:message>
+  <wsdl:message name="IsUserValidSoapOut">
+    <wsdl:part name="parameters" element="tns:IsUserValidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsEnableUserSoapIn">
+    <wsdl:part name="parameters" element="tns:IsEnableUser" />
+  </wsdl:message>
+  <wsdl:message name="IsEnableUserSoapOut">
+    <wsdl:part name="parameters" element="tns:IsEnableUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetUserPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:SetUserPassword" />
+  </wsdl:message>
+  <wsdl:message name="SetUserPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:SetUserPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ManagerResetPassWordSoapIn">
+    <wsdl:part name="parameters" element="tns:ManagerResetPassWord" />
+  </wsdl:message>
+  <wsdl:message name="ManagerResetPassWordSoapOut">
+    <wsdl:part name="parameters" element="tns:ManagerResetPassWordResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ADWebServiceSoap">
+    <wsdl:operation name="CreateParents">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">创建家长账户：sAMAccountName（zhangsan）、displayName（张三）、IDCard（身份证）、Password(密码要求：1.至少有六个字符长2.包含以下四类字符中的三类字符:英文大写字母(A 到 Z)，英文小写字母(a 到 z)，10 个基本数字(0 到 9)，非字母字符(例如 !、$、#、%))</wsdl:documentation>
+      <wsdl:input message="tns:CreateParentsSoapIn" />
+      <wsdl:output message="tns:CreateParentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTeacher">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">创建教师账户：sAMAccountName（zhangsan）、displayName（张三）、IDCard（身份证）、Password(密码要求：1.至少有六个字符长2.包含以下四类字符中的三类字符:英文大写字母(A 到 Z)，英文小写字母(a 到 z)，10 个基本数字(0 到 9)，非字母字符(例如 !、$、#、%))</wsdl:documentation>
+      <wsdl:input message="tns:CreateTeacherSoapIn" />
+      <wsdl:output message="tns:CreateTeacherSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateStudent">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">创建学生账户：sAMAccountName（zhangsan）、displayName（张三）、IDCard（身份证）、Password(密码要求：1.至少有六个字符长2.包含以下四类字符中的三类字符:英文大写字母(A 到 Z)，英文小写字母(a 到 z)，10 个基本数字(0 到 9)，非字母字符(例如 !、$、#、%))</wsdl:documentation>
+      <wsdl:input message="tns:CreateStudentSoapIn" />
+      <wsdl:output message="tns:CreateStudentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据用户名删除域账户</wsdl:documentation>
+      <wsdl:input message="tns:DeleteUserSoapIn" />
+      <wsdl:output message="tns:DeleteUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据用户名删除域账户</wsdl:documentation>
+      <wsdl:input message="tns:DeleteUser2SoapIn" />
+      <wsdl:output message="tns:DeleteUser2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByCN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">检查中文名是否存在</wsdl:documentation>
+      <wsdl:input message="tns:GetUserByCNSoapIn" />
+      <wsdl:output message="tns:GetUserByCNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByIDCard">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">检查身份证是否存在</wsdl:documentation>
+      <wsdl:input message="tns:GetUserByIDCardSoapIn" />
+      <wsdl:output message="tns:GetUserByIDCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByIDCard2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">检查身份证是否存在</wsdl:documentation>
+      <wsdl:input message="tns:GetUserByIDCard2SoapIn" />
+      <wsdl:output message="tns:GetUserByIDCard2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserBysAMAccountName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">检查用户名是否存在</wsdl:documentation>
+      <wsdl:input message="tns:GetUserBysAMAccountNameSoapIn" />
+      <wsdl:output message="tns:GetUserBysAMAccountNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeBysAMAccountName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">检查用户名,查询用户组</wsdl:documentation>
+      <wsdl:input message="tns:GetUserTypeBysAMAccountNameSoapIn" />
+      <wsdl:output message="tns:GetUserTypeBysAMAccountNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUserValid">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据用户名和密码验证用户是否存在</wsdl:documentation>
+      <wsdl:input message="tns:IsUserValidSoapIn" />
+      <wsdl:output message="tns:IsUserValidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsEnableUser">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">是否禁用域账户 , sAMAccountName：账户名 , IsEnable 是否启用</wsdl:documentation>
+      <wsdl:input message="tns:IsEnableUserSoapIn" />
+      <wsdl:output message="tns:IsEnableUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUserPassword">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">修改用户密码 , userName：账户名 , oldPwd 老密码 ，newPwd  新密码</wsdl:documentation>
+      <wsdl:input message="tns:SetUserPasswordSoapIn" />
+      <wsdl:output message="tns:SetUserPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ManagerResetPassWord">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">重置密码，UserName：帐户名</wsdl:documentation>
+      <wsdl:input message="tns:ManagerResetPassWordSoapIn" />
+      <wsdl:output message="tns:ManagerResetPassWordSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ADWebServiceSoap" type="tns:ADWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateParents">
+      <soap:operation soapAction="http://ADManager.org/CreateParents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTeacher">
+      <soap:operation soapAction="http://ADManager.org/CreateTeacher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateStudent">
+      <soap:operation soapAction="http://ADManager.org/CreateStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://ADManager.org/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser2">
+      <soap:operation soapAction="http://ADManager.org/DeleteUser2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByCN">
+      <soap:operation soapAction="http://ADManager.org/GetUserByCN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByIDCard">
+      <soap:operation soapAction="http://ADManager.org/GetUserByIDCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByIDCard2">
+      <soap:operation soapAction="http://ADManager.org/GetUserByIDCard2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserBysAMAccountName">
+      <soap:operation soapAction="http://ADManager.org/GetUserBysAMAccountName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeBysAMAccountName">
+      <soap:operation soapAction="http://ADManager.org/GetUserTypeBysAMAccountName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUserValid">
+      <soap:operation soapAction="http://ADManager.org/IsUserValid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsEnableUser">
+      <soap:operation soapAction="http://ADManager.org/IsEnableUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserPassword">
+      <soap:operation soapAction="http://ADManager.org/SetUserPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManagerResetPassWord">
+      <soap:operation soapAction="http://ADManager.org/ManagerResetPassWord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ADWebServiceSoap12" type="tns:ADWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateParents">
+      <soap12:operation soapAction="http://ADManager.org/CreateParents" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTeacher">
+      <soap12:operation soapAction="http://ADManager.org/CreateTeacher" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateStudent">
+      <soap12:operation soapAction="http://ADManager.org/CreateStudent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap12:operation soapAction="http://ADManager.org/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser2">
+      <soap12:operation soapAction="http://ADManager.org/DeleteUser2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByCN">
+      <soap12:operation soapAction="http://ADManager.org/GetUserByCN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByIDCard">
+      <soap12:operation soapAction="http://ADManager.org/GetUserByIDCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByIDCard2">
+      <soap12:operation soapAction="http://ADManager.org/GetUserByIDCard2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserBysAMAccountName">
+      <soap12:operation soapAction="http://ADManager.org/GetUserBysAMAccountName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTypeBysAMAccountName">
+      <soap12:operation soapAction="http://ADManager.org/GetUserTypeBysAMAccountName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUserValid">
+      <soap12:operation soapAction="http://ADManager.org/IsUserValid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsEnableUser">
+      <soap12:operation soapAction="http://ADManager.org/IsEnableUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserPassword">
+      <soap12:operation soapAction="http://ADManager.org/SetUserPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManagerResetPassWord">
+      <soap12:operation soapAction="http://ADManager.org/ManagerResetPassWord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ADWebService">
+    <wsdl:port name="ADWebServiceSoap" binding="tns:ADWebServiceSoap">
+      <soap:address location="http://117.106.7.150/ADWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ADWebServiceSoap12" binding="tns:ADWebServiceSoap12">
+      <soap12:address location="http://117.106.7.150/ADWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

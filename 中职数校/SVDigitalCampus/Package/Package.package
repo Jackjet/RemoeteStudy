@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c34c04fe-ca3b-4cfe-8801-2e7fde26a693" solutionId="c34c04fe-ca3b-4cfe-8801-2e7fde26a693" resetWebServer="false" sharePointProductVersion="15.0" name="SVDigitalCampus" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="040b7b2e-7f2f-4d83-89fb-0af098d4c046" />
+    <featureReference itemId="332968b9-34bd-4f10-8526-cb31c104683b" />
+    <featureReference itemId="b2543ba8-5478-4e31-a10e-eb28558a2e51" />
+    <featureReference itemId="583d6ae8-ede9-48d6-af54-703898ee9caa" />
+    <featureReference itemId="63a23163-1b86-4593-a919-a5204dfd6f80" />
+    <featureReference itemId="5f9fb4a3-6e7b-4cd3-8928-b42ebbe646ce" />
+    <featureReference itemId="b3ef4e74-af42-4437-aaa6-2bf40eeb7ae1" />
+    <featureReference itemId="5c18f497-da34-43d2-9ce7-f0a2b18bf5f5" />
+    <featureReference itemId="f6687088-86dd-42a8-b435-f23bbc3b3193" />
+    <featureReference itemId="91e3e573-f23f-4947-967d-7bde34e23754" />
+    <featureReference itemId="c9436db9-b58e-4212-9a3b-ddafeeeaeb5b" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="611b7dc8-afbc-4861-96d1-3de2500106b7" />
+  </projectItems>
+</package>

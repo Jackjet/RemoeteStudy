@@ -1,0 +1,910 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B855AE2-A958-4141-9EAA-C7437FDED19B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinp_TeacherWP</RootNamespace>
+    <AssemblyName>Sinp_TeacherWP</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DayPilot, Version=7.5.2982.1, Culture=neutral, PublicKeyToken=426941954f05e7fe, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\DayPilot.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>C:\Users\admin\Desktop\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LAYOUTS\hander\Caurse.aspx.cs">
+      <DependentUpon>Caurse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LAYOUTS\hander\Caurse.aspx.designer.cs">
+      <DependentUpon>Caurse.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LAYOUTS\hander\LibraryList.aspx.cs">
+      <DependentUpon>LibraryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LAYOUTS\hander\LibraryList.aspx.designer.cs">
+      <DependentUpon>LibraryList.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LAYOUTS\hander\PersonDrive.aspx.cs">
+      <DependentUpon>PersonDrive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LAYOUTS\hander\PersonDrive.aspx.designer.cs">
+      <DependentUpon>PersonDrive.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LAYOUTS\hander\RequestEntity.cs" />
+    <Compile Include="LAYOUTS\hander\SchoolibraryTree.aspx.cs">
+      <DependentUpon>SchoolibraryTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LAYOUTS\hander\SchoolibraryTree.aspx.designer.cs">
+      <DependentUpon>SchoolibraryTree.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LAYOUTS\hander\SchoolLibrary.aspx.cs">
+      <DependentUpon>SchoolLibrary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LAYOUTS\hander\SchoolLibrary.aspx.designer.cs">
+      <DependentUpon>SchoolLibrary.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LAYOUTS\hander\TreeNodes.aspx.cs">
+      <DependentUpon>TreeNodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LAYOUTS\hander\TreeNodes.aspx.designer.cs">
+      <DependentUpon>TreeNodes.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LAYOUTS\hander\upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LAYOUTS\hander\upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UtilityHelp\HelpXML.cs" />
+    <Compile Include="UtilityHelp\ListHelp.cs" />
+    <Compile Include="WebParts\Master\Master_wp_Navigation\Master_wp_Navigation.cs" />
+    <Compile Include="WebParts\Master\Master_wp_Navigation\Master_wp_NavigationUserControl.ascx.cs">
+      <DependentUpon>Master_wp_NavigationUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Master\Master_wp_Navigation\Master_wp_NavigationUserControl.ascx.designer.cs">
+      <DependentUpon>Master_wp_NavigationUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Master\Master_wp_PutNavigation\Master_wp_PutNavigation.cs" />
+    <Compile Include="WebParts\Master\Master_wp_PutNavigation\Master_wp_PutNavigationUserControl.ascx.cs">
+      <DependentUpon>Master_wp_PutNavigationUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Master\Master_wp_PutNavigation\Master_wp_PutNavigationUserControl.ascx.designer.cs">
+      <DependentUpon>Master_wp_PutNavigationUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Master\Master_wp_UserInfo\Master_wp_UserInfo.cs" />
+    <Compile Include="WebParts\Master\Master_wp_UserInfo\Master_wp_UserInfoUserControl.ascx.cs">
+      <DependentUpon>Master_wp_UserInfoUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Master\Master_wp_UserInfo\Master_wp_UserInfoUserControl.ascx.designer.cs">
+      <DependentUpon>Master_wp_UserInfoUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Test\Test_wp_Canlender\Test_wp_Canlender.cs" />
+    <Compile Include="WebParts\Test\Test_wp_Canlender\Test_wp_CanlenderUserControl.ascx.cs">
+      <DependentUpon>Test_wp_CanlenderUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Test\Test_wp_Canlender\Test_wp_CanlenderUserControl.ascx.designer.cs">
+      <DependentUpon>Test_wp_CanlenderUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TG\TG_wp_AnloyData\TG_wp_AnloyData.cs" />
+    <Compile Include="WebParts\TG\TG_wp_AnloyData\TG_wp_AnloyDataUserControl.ascx.cs">
+      <DependentUpon>TG_wp_AnloyDataUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TG\TG_wp_AnloyData\TG_wp_AnloyDataUserControl.ascx.designer.cs">
+      <DependentUpon>TG_wp_AnloyDataUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TG\TG_wp_ClassExamine\TG_wp_ClassExamine.cs" />
+    <Compile Include="WebParts\TG\TG_wp_ClassExamine\TG_wp_ClassExamineUserControl.ascx.cs">
+      <DependentUpon>TG_wp_ClassExamineUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TG\TG_wp_ClassExamine\TG_wp_ClassExamineUserControl.ascx.designer.cs">
+      <DependentUpon>TG_wp_ClassExamineUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TG\TG_wp_ExamineTerm\TG_wp_ExamineTerm.cs" />
+    <Compile Include="WebParts\TG\TG_wp_ExamineTerm\TG_wp_ExamineTermUserControl.ascx.cs">
+      <DependentUpon>TG_wp_ExamineTermUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TG\TG_wp_ExamineTerm\TG_wp_ExamineTermUserControl.ascx.designer.cs">
+      <DependentUpon>TG_wp_ExamineTermUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TG\TG_wp_LearExamine\TG_wp_LearExamine.cs" />
+    <Compile Include="WebParts\TG\TG_wp_LearExamine\TG_wp_LearExamineUserControl.ascx.cs">
+      <DependentUpon>TG_wp_LearExamineUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TG\TG_wp_LearExamine\TG_wp_LearExamineUserControl.ascx.designer.cs">
+      <DependentUpon>TG_wp_LearExamineUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TG\TG_wp_TeacherGrow\TG_wp_TeacherGrow.cs" />
+    <Compile Include="WebParts\TG\TG_wp_TeacherGrow\TG_wp_TeacherGrowUserControl.ascx.cs">
+      <DependentUpon>TG_wp_TeacherGrowUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TG\TG_wp_TeacherGrow\TG_wp_TeacherGrowUserControl.ascx.designer.cs">
+      <DependentUpon>TG_wp_TeacherGrowUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TG\TG_wp_UserGrowDetail\TG_wp_UserGrowDetail.cs" />
+    <Compile Include="WebParts\TG\TG_wp_UserGrowDetail\TG_wp_UserGrowDetailUserControl.ascx.cs">
+      <DependentUpon>TG_wp_UserGrowDetailUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TG\TG_wp_UserGrowDetail\TG_wp_UserGrowDetailUserControl.ascx.designer.cs">
+      <DependentUpon>TG_wp_UserGrowDetailUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_AddHonour\TS_wp_AddHonour.cs" />
+    <Compile Include="WebParts\TS\TS_wp_AddHonour\TS_wp_AddHonourUserControl.ascx.cs">
+      <DependentUpon>TS_wp_AddHonourUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_AddHonour\TS_wp_AddHonourUserControl.ascx.designer.cs">
+      <DependentUpon>TS_wp_AddHonourUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_AddProject\TS_wp_AddProject.cs" />
+    <Compile Include="WebParts\TS\TS_wp_AddProject\TS_wp_AddProjectUserControl.ascx.cs">
+      <DependentUpon>TS_wp_AddProjectUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_AddProject\TS_wp_AddProjectUserControl.ascx.designer.cs">
+      <DependentUpon>TS_wp_AddProjectUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_ExamineItem\TS_wp_ExamineItem.cs" />
+    <Compile Include="WebParts\TS\TS_wp_ExamineItem\TS_wp_ExamineItemUserControl.ascx.cs">
+      <DependentUpon>TS_wp_ExamineItemUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_ExamineItem\TS_wp_ExamineItemUserControl.ascx.designer.cs">
+      <DependentUpon>TS_wp_ExamineItemUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_ManagerProjectList\TS_wp_ManagerProjectList.cs" />
+    <Compile Include="WebParts\TS\TS_wp_ManagerProjectList\TS_wp_ManagerProjectListUserControl.ascx.cs">
+      <DependentUpon>TS_wp_ManagerProjectListUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_ManagerProjectList\TS_wp_ManagerProjectListUserControl.ascx.designer.cs">
+      <DependentUpon>TS_wp_ManagerProjectListUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_MyProject\TS_wp_MyProject.cs" />
+    <Compile Include="WebParts\TS\TS_wp_MyProject\TS_wp_MyProjectUserControl.ascx.cs">
+      <DependentUpon>TS_wp_MyProjectUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_MyProject\TS_wp_MyProjectUserControl.ascx.designer.cs">
+      <DependentUpon>TS_wp_MyProjectUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_ProjectData\TS_wp_ProjectData.cs" />
+    <Compile Include="WebParts\TS\TS_wp_ProjectData\TS_wp_ProjectDataUserControl.ascx.cs">
+      <DependentUpon>TS_wp_ProjectDataUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_ProjectData\TS_wp_ProjectDataUserControl.ascx.designer.cs">
+      <DependentUpon>TS_wp_ProjectDataUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_ProjectDetail\TS_wp_ProjectDetail.cs" />
+    <Compile Include="WebParts\TS\TS_wp_ProjectDetail\TS_wp_ProjectDetailUserControl.ascx.cs">
+      <DependentUpon>TS_wp_ProjectDetailUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_ProjectDetail\TS_wp_ProjectDetailUserControl.ascx.designer.cs">
+      <DependentUpon>TS_wp_ProjectDetailUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_ProjectExamine\TS_wp_ProjectExamine.cs" />
+    <Compile Include="WebParts\TS\TS_wp_ProjectExamine\TS_wp_ProjectExamineUserControl.ascx.cs">
+      <DependentUpon>TS_wp_ProjectExamineUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_ProjectExamine\TS_wp_ProjectExamineUserControl.ascx.designer.cs">
+      <DependentUpon>TS_wp_ProjectExamineUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_ReportDetail\TS_wp_ReportDetail.cs" />
+    <Compile Include="WebParts\TS\TS_wp_ReportDetail\TS_wp_ReportDetailUserControl.ascx.cs">
+      <DependentUpon>TS_wp_ReportDetailUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_ReportDetail\TS_wp_ReportDetailUserControl.ascx.designer.cs">
+      <DependentUpon>TS_wp_ReportDetailUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_ReportProject\TS_wp_ReportProject.cs" />
+    <Compile Include="WebParts\TS\TS_wp_ReportProject\TS_wp_ReportProjectUserControl.ascx.cs">
+      <DependentUpon>TS_wp_ReportProjectUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_ReportProject\TS_wp_ReportProjectUserControl.ascx.designer.cs">
+      <DependentUpon>TS_wp_ReportProjectUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_UploadFile\TS_wp_UploadFile.cs" />
+    <Compile Include="WebParts\TS\TS_wp_UploadFile\TS_wp_UploadFileUserControl.ascx.cs">
+      <DependentUpon>TS_wp_UploadFileUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_UploadFile\TS_wp_UploadFileUserControl.ascx.designer.cs">
+      <DependentUpon>TS_wp_UploadFileUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_UserProjectDetail\TS_wp_UserProjectDetail.cs" />
+    <Compile Include="WebParts\TS\TS_wp_UserProjectDetail\TS_wp_UserProjectDetailUserControl.ascx.cs">
+      <DependentUpon>TS_wp_UserProjectDetailUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TS\TS_wp_UserProjectDetail\TS_wp_UserProjectDetailUserControl.ascx.designer.cs">
+      <DependentUpon>TS_wp_UserProjectDetailUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TT\TT_wp_AddTrainProject\TT_wp_AddTrainProject.cs" />
+    <Compile Include="WebParts\TT\TT_wp_AddTrainProject\TT_wp_AddTrainProjectUserControl.ascx.cs">
+      <DependentUpon>TT_wp_AddTrainProjectUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TT\TT_wp_AddTrainProject\TT_wp_AddTrainProjectUserControl.ascx.designer.cs">
+      <DependentUpon>TT_wp_AddTrainProjectUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TT\TT_wp_AllTraining\TT_wp_AllTraining.cs" />
+    <Compile Include="WebParts\TT\TT_wp_AllTraining\TT_wp_AllTrainingUserControl.ascx.cs">
+      <DependentUpon>TT_wp_AllTrainingUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TT\TT_wp_AllTraining\TT_wp_AllTrainingUserControl.ascx.designer.cs">
+      <DependentUpon>TT_wp_AllTrainingUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TT\TT_wp_Discuss\TT_wp_Discuss.cs" />
+    <Compile Include="WebParts\TT\TT_wp_Discuss\TT_wp_DiscussUserControl.ascx.cs">
+      <DependentUpon>TT_wp_DiscussUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TT\TT_wp_Discuss\TT_wp_DiscussUserControl.ascx.designer.cs">
+      <DependentUpon>TT_wp_DiscussUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TT\TT_wp_GroupDescri\TT_wp_GroupDescri.cs" />
+    <Compile Include="WebParts\TT\TT_wp_GroupDescri\TT_wp_GroupDescriUserControl.ascx.cs">
+      <DependentUpon>TT_wp_GroupDescriUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TT\TT_wp_GroupDescri\TT_wp_GroupDescriUserControl.ascx.designer.cs">
+      <DependentUpon>TT_wp_GroupDescriUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\WP\PND_wp_Shrar\PND_wp_Shrar.cs" />
+    <Compile Include="WebParts\WP\PND_wp_Shrar\PND_wp_ShrarUserControl.ascx.cs">
+      <DependentUpon>PND_wp_ShrarUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\WP\PND_wp_Shrar\PND_wp_ShrarUserControl.ascx.designer.cs">
+      <DependentUpon>PND_wp_ShrarUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\WP\WP_wp_DriveTree\WP_wp_DriveTree.cs" />
+    <Compile Include="WebParts\WP\WP_wp_DriveTree\WP_wp_DriveTreeUserControl.ascx.cs">
+      <DependentUpon>WP_wp_DriveTreeUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\WP\WP_wp_DriveTree\WP_wp_DriveTreeUserControl.ascx.designer.cs">
+      <DependentUpon>WP_wp_DriveTreeUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\WP\WP_wp_DriveUpload\WP_wp_DriveUpload.cs" />
+    <Compile Include="WebParts\WP\WP_wp_DriveUpload\WP_wp_DriveUploadUserControl.ascx.cs">
+      <DependentUpon>WP_wp_DriveUploadUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\WP\WP_wp_DriveUpload\WP_wp_DriveUploadUserControl.ascx.designer.cs">
+      <DependentUpon>WP_wp_DriveUploadUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\WP\WP_wp_MyDrive\WP_wp_MyDrive.cs" />
+    <Compile Include="WebParts\WP\WP_wp_MyDrive\WP_wp_MyDriveUserControl.ascx.cs">
+      <DependentUpon>WP_wp_MyDriveUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\WP\WP_wp_MyDrive\WP_wp_MyDriveUserControl.ascx.designer.cs">
+      <DependentUpon>WP_wp_MyDriveUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\XB\DriveType\DriveType.cs" />
+    <Compile Include="WebParts\XB\DriveType\DriveTypeUserControl.ascx.cs">
+      <DependentUpon>DriveTypeUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\XB\DriveType\DriveTypeUserControl.ascx.designer.cs">
+      <DependentUpon>DriveTypeUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\XB\XB_SchoolLibraryTree\XB_SchoolLibraryTree.cs" />
+    <Compile Include="WebParts\XB\XB_SchoolLibraryTree\XB_SchoolLibraryTreeUserControl.ascx.cs">
+      <DependentUpon>XB_SchoolLibraryTreeUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\XB\XB_SchoolLibraryTree\XB_SchoolLibraryTreeUserControl.ascx.designer.cs">
+      <DependentUpon>XB_SchoolLibraryTreeUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\XB\XB_SchoolMajor\XB_SchoolMajor.cs" />
+    <Compile Include="WebParts\XB\XB_SchoolMajor\XB_SchoolMajorUserControl.ascx.cs">
+      <DependentUpon>XB_SchoolMajorUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\XB\XB_SchoolMajor\XB_SchoolMajorUserControl.ascx.designer.cs">
+      <DependentUpon>XB_SchoolMajorUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\XB\XB_wp_SchoolLibrary\XB_wp_SchoolLibrary.cs" />
+    <Compile Include="WebParts\XB\XB_wp_SchoolLibrary\XB_wp_SchoolLibraryUserControl.ascx.cs">
+      <DependentUpon>XB_wp_SchoolLibraryUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\XB\XB_wp_SchoolLibrary\XB_wp_SchoolLibraryUserControl.ascx.designer.cs">
+      <DependentUpon>XB_wp_SchoolLibraryUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\XXK\XXK_wp_AddCource\XXK_wp_AddCource.cs" />
+    <Compile Include="WebParts\XXK\XXK_wp_AddCource\XXK_wp_AddCourceUserControl.ascx.cs">
+      <DependentUpon>XXK_wp_AddCourceUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\XXK\XXK_wp_AddCource\XXK_wp_AddCourceUserControl.ascx.designer.cs">
+      <DependentUpon>XXK_wp_AddCourceUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\XXK\XXK_wp_ApplyCource\XXK_wp_ApplyCource.cs" />
+    <Compile Include="WebParts\XXK\XXK_wp_ApplyCource\XXK_wp_ApplyCourceUserControl.ascx.cs">
+      <DependentUpon>XXK_wp_ApplyCourceUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\XXK\XXK_wp_ApplyCource\XXK_wp_ApplyCourceUserControl.ascx.designer.cs">
+      <DependentUpon>XXK_wp_ApplyCourceUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\XXK\XXK_wp_CheckApply\XXK_wp_CheckApply.cs" />
+    <Compile Include="WebParts\XXK\XXK_wp_CheckApply\XXK_wp_CheckApplyUserControl.ascx.cs">
+      <DependentUpon>XXK_wp_CheckApplyUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\XXK\XXK_wp_CheckApply\XXK_wp_CheckApplyUserControl.ascx.designer.cs">
+      <DependentUpon>XXK_wp_CheckApplyUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\XXK\XXK_wp_CourceHome\XXK_wp_CourceHome.cs" />
+    <Compile Include="WebParts\XXK\XXK_wp_CourceHome\XXK_wp_CourceHomeUserControl.ascx.cs">
+      <DependentUpon>XXK_wp_CourceHomeUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\XXK\XXK_wp_CourceHome\XXK_wp_CourceHomeUserControl.ascx.designer.cs">
+      <DependentUpon>XXK_wp_CourceHomeUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\XXK\XXK_wp_CourcManage\XXK_wp_CourcManage.cs" />
+    <Compile Include="WebParts\XXK\XXK_wp_CourcManage\XXK_wp_CourcManageUserControl.ascx.cs">
+      <DependentUpon>XXK_wp_CourcManageUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\XXK\XXK_wp_CourcManage\XXK_wp_CourcManageUserControl.ascx.designer.cs">
+      <DependentUpon>XXK_wp_CourcManageUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\XXK\XXK_wp_CourseDetail\XXK_wp_CourseDetail.cs" />
+    <Compile Include="WebParts\XXK\XXK_wp_CourseDetail\XXK_wp_CourseDetailUserControl.ascx.cs">
+      <DependentUpon>XXK_wp_CourseDetailUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\XXK\XXK_wp_CourseDetail\XXK_wp_CourseDetailUserControl.ascx.designer.cs">
+      <DependentUpon>XXK_wp_CourseDetailUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\XXK\XXK_wp_MyCourceManage\XXK_wp_MyCourceManage.cs" />
+    <Compile Include="WebParts\XXK\XXK_wp_MyCourceManage\XXK_wp_MyCourceManageUserControl.ascx.cs">
+      <DependentUpon>XXK_wp_MyCourceManageUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\XXK\XXK_wp_MyCourceManage\XXK_wp_MyCourceManageUserControl.ascx.designer.cs">
+      <DependentUpon>XXK_wp_MyCourceManageUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="CONTROLTEMPLATES\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8e4fe887-170a-415e-856f-b79039829255}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\CooperativeOffice\CooperativeOffice.feature">
+      <FeatureId>{a08bc6ed-abde-448f-a8e6-9dd30cbbb77a}</FeatureId>
+    </None>
+    <None Include="Features\SchoolCource\SchoolCource.feature">
+      <FeatureId>{aab7d0ec-0ac1-41e1-a333-6b9697e55215}</FeatureId>
+    </None>
+    <None Include="Features\Master\Master.feature">
+      <FeatureId>{dd4e8e6b-27a8-4358-bbbe-aa454cff377b}</FeatureId>
+    </None>
+    <None Include="Features\SchoolLibraly\SchoolLibraly.feature">
+      <FeatureId>{4e1bd70b-5e58-419b-b2b9-6df96fb331b0}</FeatureId>
+    </None>
+    <None Include="Features\TeacherTraining\TeacherTraining.feature">
+      <FeatureId>{c58da7fb-4120-45d3-8ecf-79accda01cf1}</FeatureId>
+    </None>
+    <None Include="Features\TeacherScientific\TeacherScientific.feature">
+      <FeatureId>{8df3b644-89a6-47d7-98ad-8830e27f234e}</FeatureId>
+    </None>
+    <None Include="Features\TeacherGrowth\TeacherGrowth.feature">
+      <FeatureId>{160fcbbb-c59c-44b4-b89b-565e1dfecc1e}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="LAYOUTS\Script\My97DatePicker\WdatePicker.js.bak" />
+    <None Include="LAYOUTS\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{37fc0e3f-b050-489d-b25a-a3f52b1a9c5f}</SharePointProjectItemId>
+    </None>
+    <None Include="LAYOUTS\Style\iconfont.eot" />
+    <None Include="LAYOUTS\Style\iconfont.ttf" />
+    <None Include="LAYOUTS\Style\iconfont.woff" />
+    <None Include="Package\Package.package">
+      <PackageId>{e489213a-fc6f-4681-bbd5-5a5509d55524}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="WebParts\Master\Master_wp_Navigation\Master_wp_Navigation.webpart" />
+    <None Include="WebParts\Master\Master_wp_Navigation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{557f5988-23ba-442c-92ca-b6788fdd8197}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Master\Master_wp_PutNavigation\Master_wp_PutNavigation.webpart" />
+    <None Include="WebParts\Master\Master_wp_PutNavigation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{79470f3a-cd84-40a6-9a7c-5317b18fc320}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Master\Master_wp_UserInfo\Master_wp_UserInfo.webpart" />
+    <None Include="WebParts\Master\Master_wp_UserInfo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b060a6e3-b5e1-4e63-ac08-118f6ded1836}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Test\Test_wp_Canlender\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0a5406b6-15d6-48b8-91e9-d2864f00f709}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Test\Test_wp_Canlender\Test_wp_Canlender.webpart" />
+    <None Include="WebParts\TG\TG_wp_AnloyData\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{96cffa79-5b3c-441b-b249-939bec4b7987}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TG\TG_wp_AnloyData\TG_wp_AnloyData.webpart" />
+    <None Include="WebParts\TG\TG_wp_ClassExamine\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{345292da-b32c-4c91-971e-1b7ed48e044b}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TG\TG_wp_ClassExamine\TG_wp_ClassExamine.webpart" />
+    <None Include="WebParts\TG\TG_wp_ExamineTerm\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{291e0bfc-d059-4dde-bfab-13ff0405a031}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TG\TG_wp_ExamineTerm\TG_wp_ExamineTerm.webpart" />
+    <None Include="WebParts\TG\TG_wp_LearExamine\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{62e65d44-c075-479c-8066-15923050dd72}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TG\TG_wp_LearExamine\TG_wp_LearExamine.webpart" />
+    <None Include="WebParts\TG\TG_wp_TeacherGrow\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bbb40c23-3b70-4360-8fd3-b1852b974065}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TG\TG_wp_TeacherGrow\TG_wp_TeacherGrow.webpart" />
+    <None Include="WebParts\TG\TG_wp_UserGrowDetail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ee559209-8a59-42e4-b648-82c101639e11}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TG\TG_wp_UserGrowDetail\TG_wp_UserGrowDetail.webpart" />
+    <None Include="WebParts\TS\TS_wp_AddHonour\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7f2e6a71-de47-498f-9a8e-623e75349e37}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TS\TS_wp_AddHonour\TS_wp_AddHonour.webpart" />
+    <None Include="WebParts\TS\TS_wp_AddProject\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3487bc8b-70d9-4099-a9cf-aa7de154d5b8}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TS\TS_wp_AddProject\TS_wp_AddProject.webpart" />
+    <None Include="WebParts\TS\TS_wp_ExamineItem\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{235603c9-68d7-4534-8099-49344c98327f}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TS\TS_wp_ExamineItem\TS_wp_ExamineItem.webpart" />
+    <None Include="WebParts\TS\TS_wp_ManagerProjectList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7b5f5072-7a03-44ff-a0db-9d77d65b2db7}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TS\TS_wp_ManagerProjectList\TS_wp_ManagerProjectList.webpart" />
+    <None Include="WebParts\TS\TS_wp_MyProject\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{41bab909-53dd-4144-a8dc-52281c5fcc7c}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TS\TS_wp_MyProject\TS_wp_MyProject.webpart" />
+    <None Include="WebParts\TS\TS_wp_ProjectData\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d44cc41d-9c79-43d3-bf97-ab524858ccf0}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TS\TS_wp_ProjectData\TS_wp_ProjectData.webpart" />
+    <None Include="WebParts\TS\TS_wp_ProjectDetail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{49188b46-4def-4270-abc9-72e8e2698b95}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TS\TS_wp_ProjectDetail\TS_wp_ProjectDetail.webpart" />
+    <None Include="WebParts\TS\TS_wp_ProjectExamine\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{86a78500-83c4-4de6-a2e9-ec48bd3d47a0}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TS\TS_wp_ProjectExamine\TS_wp_ProjectExamine.webpart" />
+    <None Include="WebParts\TS\TS_wp_ReportDetail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c423a2fb-3660-4933-9dae-ce882e55e1f6}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TS\TS_wp_ReportDetail\TS_wp_ReportDetail.webpart" />
+    <None Include="WebParts\TS\TS_wp_ReportProject\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{386cd090-d2db-49e7-98da-4064d3ce5f7e}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TS\TS_wp_ReportProject\TS_wp_ReportProject.webpart" />
+    <None Include="WebParts\TS\TS_wp_UploadFile\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dcf9b872-8c71-4538-bd4b-cc109d447892}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TS\TS_wp_UploadFile\TS_wp_UploadFile.webpart" />
+    <None Include="WebParts\TS\TS_wp_UserProjectDetail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a76ddd9a-dd3e-4c3f-ab71-bf7ea00ac2f6}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TS\TS_wp_UserProjectDetail\TS_wp_UserProjectDetail.webpart" />
+    <None Include="WebParts\TT\TT_wp_AddTrainProject\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d130f4ea-579f-47b0-a522-d1419aaf2278}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TT\TT_wp_AddTrainProject\TT_wp_AddTrainProject.webpart" />
+    <None Include="WebParts\TT\TT_wp_AllTraining\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{52d11ef7-8e9c-4a1c-81d2-6fdbda29329e}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TT\TT_wp_AllTraining\TT_wp_AllTraining.webpart" />
+    <None Include="WebParts\TT\TT_wp_Discuss\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cb517485-3978-4390-8753-da3d784e499d}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TT\TT_wp_Discuss\TT_wp_Discuss.webpart" />
+    <None Include="WebParts\TT\TT_wp_GroupDescri\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5195f135-deb7-4354-9486-b8a90f946c31}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TT\TT_wp_GroupDescri\TT_wp_GroupDescri.webpart" />
+    <None Include="WebParts\WP\PND_wp_Shrar\PND_wp_Shrar.webpart" />
+    <None Include="WebParts\WP\PND_wp_Shrar\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{31b1b9bc-bc4d-4fb4-ba08-104850056930}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\WP\WP_wp_DriveTree\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7193aea0-ad57-4868-a0a4-bd0ff93b387c}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\WP\WP_wp_DriveTree\WP_wp_DriveTree.webpart" />
+    <None Include="WebParts\WP\WP_wp_DriveUpload\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{19c45fd3-f7a8-4d6a-90e3-a73bf5dd71ac}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\WP\WP_wp_DriveUpload\WP_wp_DriveUpload.webpart" />
+    <None Include="WebParts\WP\WP_wp_MyDrive\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{abaad939-3dba-4920-b732-5333f1a532e4}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\WP\WP_wp_MyDrive\WP_wp_MyDrive.webpart" />
+    <None Include="WebParts\XB\DriveType\DriveType.webpart" />
+    <None Include="WebParts\XB\DriveType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dfb788d6-8404-4966-9a0f-51db6c75069f}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\XB\XB_SchoolLibraryTree\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{976e1212-18e9-4251-b656-34d963677b05}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\XB\XB_SchoolLibraryTree\XB_SchoolLibraryTree.webpart" />
+    <None Include="WebParts\XB\XB_SchoolMajor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e2ab8e43-e79f-4155-ac63-c4a2c8ae876a}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\XB\XB_SchoolMajor\XB_SchoolMajor.webpart" />
+    <None Include="WebParts\XB\XB_wp_SchoolLibrary\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b5162fb3-3ea6-4995-bca1-dbdfd6f84a42}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\XB\XB_wp_SchoolLibrary\XB_wp_SchoolLibrary.webpart" />
+    <None Include="WebParts\XXK\XXK_wp_AddCource\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9874dcdb-f8db-4958-9f7c-40b854f73c83}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\XXK\XXK_wp_AddCource\XXK_wp_AddCource.webpart" />
+    <None Include="WebParts\XXK\XXK_wp_ApplyCource\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fb71df8d-e905-4819-9245-4e729881aacf}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\XXK\XXK_wp_ApplyCource\XXK_wp_ApplyCource.webpart" />
+    <None Include="WebParts\XXK\XXK_wp_CheckApply\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{987f12c9-a3ec-41e3-ae4b-33236891e540}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\XXK\XXK_wp_CheckApply\XXK_wp_CheckApply.webpart" />
+    <None Include="WebParts\XXK\XXK_wp_CourceHome\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f61b5174-5ea4-40c0-9bf0-a0b79a8c3d60}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\XXK\XXK_wp_CourceHome\XXK_wp_CourceHome.webpart" />
+    <None Include="WebParts\XXK\XXK_wp_CourcManage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5745e4f9-6503-4550-b2a1-f5b40c8a8886}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\XXK\XXK_wp_CourcManage\XXK_wp_CourcManage.webpart" />
+    <None Include="WebParts\XXK\XXK_wp_CourseDetail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3edb9160-b7eb-412f-bfe8-41fbd55a7acf}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\XXK\XXK_wp_CourseDetail\XXK_wp_CourseDetail.webpart" />
+    <None Include="WebParts\XXK\XXK_wp_MyCourceManage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{69e36672-5b1a-403f-9bfb-c02a20f7766c}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\XXK\XXK_wp_MyCourceManage\XXK_wp_MyCourceManage.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\DayPilot.dll" />
+    <Content Include="DLL\Ionic.Zip.dll" />
+    <Content Include="Features\CooperativeOffice\CooperativeOffice.Template.xml">
+      <DependentUpon>CooperativeOffice.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SchoolCource\SchoolCource.Template.xml">
+      <DependentUpon>SchoolCource.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Master\Master.Template.xml">
+      <DependentUpon>Master.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SchoolLibraly\SchoolLibraly.Template.xml">
+      <DependentUpon>SchoolLibraly.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\TeacherTraining\TeacherTraining.Template.xml">
+      <DependentUpon>TeacherTraining.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\TeacherScientific\TeacherScientific.Template.xml">
+      <DependentUpon>TeacherScientific.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\TeacherGrowth\TeacherGrowth.Template.xml">
+      <DependentUpon>TeacherGrowth.feature</DependentUpon>
+    </Content>
+    <Content Include="LAYOUTS\ajax\FormatUtil.js" />
+    <Content Include="LAYOUTS\ajax\json.js" />
+    <Content Include="LAYOUTS\ajax\Pager.css" />
+    <Content Include="LAYOUTS\ajax\Pager.js" />
+    <Content Include="LAYOUTS\ajax\type.css" />
+    <Content Include="LAYOUTS\ajax\VocationalEducation.js" />
+    <Content Include="LAYOUTS\hander\Caurse.aspx" />
+    <Content Include="LAYOUTS\hander\LibraryList.aspx" />
+    <Content Include="LAYOUTS\hander\PersonDrive.aspx" />
+    <Content Include="LAYOUTS\hander\SchoolibraryTree.aspx" />
+    <Content Include="LAYOUTS\hander\SchoolLibrary.aspx" />
+    <Content Include="LAYOUTS\hander\TreeNodes.aspx" />
+    <Content Include="LAYOUTS\hander\upload.aspx" />
+    <Content Include="LAYOUTS\Script\choosen\chosen.jquery.js" />
+    <Content Include="LAYOUTS\Script\choosen\prism.js" />
+    <Content Include="LAYOUTS\Script\jquery-1.8.2.min.js" />
+    <Content Include="LAYOUTS\Script\JSBase.js" />
+    <Content Include="LAYOUTS\Script\popwin.js" />
+    <Content Include="LAYOUTS\Script\sg.js" />
+    <Content Include="LAYOUTS\Script\tz_slider.js" />
+    <Content Include="LAYOUTS\Script\tz_util.js" />
+    <Content Include="LAYOUTS\Script\uploadFile.js" />
+    <Content Include="LAYOUTS\Script\xb\popwin.js" />
+    <Content Include="LAYOUTS\Script\xb\tz_slider.js" />
+    <Content Include="LAYOUTS\Script\xb\uploadFile.js" />
+    <Content Include="LAYOUTS\Script\uploadfile1.js" />
+    <Content Include="LAYOUTS\Style\animate.css" />
+    <Content Include="LAYOUTS\Style\choosen\chosen-sprite.png" />
+    <Content Include="LAYOUTS\Style\choosen\chosen.css" />
+    <Content Include="LAYOUTS\Style\choosen\prism.css" />
+    <Content Include="LAYOUTS\Style\choosen\style.css" />
+    <Content Include="LAYOUTS\Style\common.css" />
+    <Content Include="LAYOUTS\Style\demo.css" />
+    <Content Include="LAYOUTS\Style\demo.html" />
+    <Content Include="LAYOUTS\Style\discuss.css" />
+    <Content Include="LAYOUTS\Style\iconfont.css" />
+    <Content Include="LAYOUTS\Style\iconfont.svg" />
+    <Content Include="LAYOUTS\Style\leaderExamine.css" />
+    <Content Include="LAYOUTS\Style\sg\animate.css" />
+    <Content Include="LAYOUTS\Style\sg\common.css" />
+    <Content Include="LAYOUTS\Style\sg\sg.css" />
+    <Content Include="LAYOUTS\Style\sg\tz-dialog.css" />
+    <Content Include="LAYOUTS\Style\sg\tz-loading.css" />
+    <Content Include="LAYOUTS\Style\sg\tz-slider.css" />
+    <Content Include="LAYOUTS\Style\sg\tz-tab.css" />
+    <Content Include="LAYOUTS\Style\sg\tz-tip.css" />
+    <Content Include="LAYOUTS\Style\sg\tz_magic.css" />
+    <Content Include="LAYOUTS\Style\style1.css" />
+    <Content Include="LAYOUTS\Style\style.css" />
+    <Content Include="LAYOUTS\Style\st_index.css" />
+    <Content Include="LAYOUTS\Style\tablelist.css" />
+    <Content Include="LAYOUTS\TeacherImages\addTerm.png" />
+    <Content Include="LAYOUTS\TeacherImages\bg.png" />
+    <Content Include="LAYOUTS\TeacherImages\disphoto.jpg" />
+    <Content Include="LAYOUTS\TeacherImages\down.png" />
+    <Content Include="LAYOUTS\TeacherImages\expression.png" />
+    <Content Include="LAYOUTS\Script\jquery-1.8.0.js" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\calendar.js" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\lang\en.js" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\skin\default\img.gif" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\WdatePicker.js" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\开发包\lang\en.js" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\开发包\readme.txt" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="LAYOUTS\Script\My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="LAYOUTS\Style\layout.css" />
+    <Content Include="LAYOUTS\TeacherImages\fail.png" />
+    <Content Include="LAYOUTS\TeacherImages\line.png" />
+    <Content Include="LAYOUTS\TeacherImages\logo.png" />
+    <Content Include="LAYOUTS\TeacherImages\photo1.jpg" />
+    <Content Include="LAYOUTS\TeacherImages\sanjiao1.png" />
+    <Content Include="LAYOUTS\TeacherImages\success.png" />
+    <Content Include="LAYOUTS\TeacherImages\s_top.png" />
+    <Content Include="LAYOUTS\TeacherImages\tab_c.png" />
+    <Content Include="LAYOUTS\TeacherImages\tab_c_d.png" />
+    <Content Include="LAYOUTS\TeacherImages\tab_l.png" />
+    <Content Include="LAYOUTS\TeacherImages\tab_r.png" />
+    <Content Include="LAYOUTS\TeacherImages\tab_r_d.png" />
+    <Content Include="LAYOUTS\TeacherImages\teacher.jpg" />
+    <Content Include="LAYOUTS\TeacherImages\teacher.png" />
+    <Content Include="LAYOUTS\TeacherImages\tit_left.png" />
+    <Content Include="LAYOUTS\TeacherImages\up.png" />
+    <Content Include="LAYOUTS\TeacherImages\wait.png" />
+    <Content Include="LAYOUTS\TeacherImages\zan.png" />
+    <Content Include="LAYOUTS\TG\Images\addTerm.png" />
+    <Content Include="LAYOUTS\TG\Images\expression.png" />
+    <Content Include="LAYOUTS\TG\Images\teacher.jpg" />
+    <Content Include="LAYOUTS\uploadify\jquery.uploadify-3.1.js" />
+    <Content Include="LAYOUTS\uploadify\jquery.uploadify-3.1.min.js" />
+    <Content Include="LAYOUTS\uploadify\uploadify-cancel.png" />
+    <Content Include="LAYOUTS\uploadify\uploadify.css" />
+    <Content Include="LAYOUTS\uploadify\uploadify.swf" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\demo.css" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\zTreeStyle\img\diy\1_close.png" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\zTreeStyle\img\diy\1_open.png" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\zTreeStyle\img\diy\2.png" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\zTreeStyle\img\diy\3.png" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\zTreeStyle\img\diy\4.png" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\zTreeStyle\img\diy\5.png" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\zTreeStyle\img\diy\6.png" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\zTreeStyle\img\diy\7.png" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\zTreeStyle\img\diy\8.png" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\zTreeStyle\img\diy\9.png" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\zTreeStyle\img\line_conn.gif" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\zTreeStyle\img\loading.gif" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\zTreeStyle\img\zTreeStandard.gif" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\zTreeStyle\img\zTreeStandard.png" />
+    <Content Include="LAYOUTS\zTree_v3-master\css\zTreeStyle\zTreeStyle.css" />
+    <Content Include="LAYOUTS\zTree_v3-master\js\jquery-1.4.4.min.js" />
+    <Content Include="LAYOUTS\zTree_v3-master\js\jquery.ztree.core-3.5.js" />
+    <Content Include="LAYOUTS\zTree_v3-master\js\jquery.ztree.excheck-3.5.js" />
+    <Content Include="LAYOUTS\zTree_v3-master\js\jquery.ztree.exedit-3.5.js" />
+    <Content Include="WebParts\Master\Master_wp_Navigation\Elements.xml" />
+    <Content Include="WebParts\Master\Master_wp_Navigation\Master_wp_NavigationUserControl.ascx" />
+    <Content Include="WebParts\Master\Master_wp_PutNavigation\Elements.xml" />
+    <Content Include="WebParts\Master\Master_wp_PutNavigation\Master_wp_PutNavigationUserControl.ascx" />
+    <Content Include="WebParts\Master\Master_wp_UserInfo\Elements.xml" />
+    <Content Include="WebParts\Master\Master_wp_UserInfo\Master_wp_UserInfoUserControl.ascx" />
+    <Content Include="WebParts\Test\Test_wp_Canlender\Elements.xml" />
+    <Content Include="WebParts\Test\Test_wp_Canlender\Test_wp_CanlenderUserControl.ascx" />
+    <Content Include="WebParts\TG\TG_wp_AnloyData\Elements.xml" />
+    <Content Include="WebParts\TG\TG_wp_AnloyData\TG_wp_AnloyDataUserControl.ascx" />
+    <Content Include="WebParts\TG\TG_wp_ClassExamine\Elements.xml" />
+    <Content Include="WebParts\TG\TG_wp_ClassExamine\TG_wp_ClassExamineUserControl.ascx" />
+    <Content Include="WebParts\TG\TG_wp_ExamineTerm\Elements.xml" />
+    <Content Include="WebParts\TG\TG_wp_ExamineTerm\TG_wp_ExamineTermUserControl.ascx" />
+    <Content Include="WebParts\TG\TG_wp_LearExamine\Elements.xml" />
+    <Content Include="WebParts\TG\TG_wp_LearExamine\TG_wp_LearExamineUserControl.ascx" />
+    <Content Include="WebParts\TG\TG_wp_TeacherGrow\Elements.xml" />
+    <Content Include="WebParts\TG\TG_wp_TeacherGrow\TG_wp_TeacherGrowUserControl.ascx" />
+    <Content Include="WebParts\TG\TG_wp_UserGrowDetail\Elements.xml" />
+    <Content Include="WebParts\TG\TG_wp_UserGrowDetail\TG_wp_UserGrowDetailUserControl.ascx" />
+    <Content Include="WebParts\TS\TS_wp_AddHonour\Elements.xml" />
+    <Content Include="WebParts\TS\TS_wp_AddHonour\TS_wp_AddHonourUserControl.ascx" />
+    <Content Include="WebParts\TS\TS_wp_AddProject\Elements.xml" />
+    <Content Include="WebParts\TS\TS_wp_AddProject\TS_wp_AddProjectUserControl.ascx" />
+    <Content Include="WebParts\TS\TS_wp_ExamineItem\Elements.xml" />
+    <Content Include="WebParts\TS\TS_wp_ExamineItem\TS_wp_ExamineItemUserControl.ascx" />
+    <Content Include="WebParts\TS\TS_wp_ManagerProjectList\Elements.xml" />
+    <Content Include="WebParts\TS\TS_wp_ManagerProjectList\TS_wp_ManagerProjectListUserControl.ascx" />
+    <Content Include="WebParts\TS\TS_wp_MyProject\Elements.xml" />
+    <Content Include="WebParts\TS\TS_wp_MyProject\TS_wp_MyProjectUserControl.ascx" />
+    <Content Include="WebParts\TS\TS_wp_ProjectData\Elements.xml" />
+    <Content Include="WebParts\TS\TS_wp_ProjectData\TS_wp_ProjectDataUserControl.ascx" />
+    <Content Include="WebParts\TS\TS_wp_ProjectDetail\Elements.xml" />
+    <Content Include="WebParts\TS\TS_wp_ProjectDetail\TS_wp_ProjectDetailUserControl.ascx" />
+    <Content Include="WebParts\TS\TS_wp_ProjectExamine\Elements.xml" />
+    <Content Include="WebParts\TS\TS_wp_ProjectExamine\TS_wp_ProjectExamineUserControl.ascx" />
+    <Content Include="WebParts\TS\TS_wp_ReportDetail\Elements.xml" />
+    <Content Include="WebParts\TS\TS_wp_ReportDetail\TS_wp_ReportDetailUserControl.ascx" />
+    <Content Include="WebParts\TS\TS_wp_ReportProject\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebParts\TS\TS_wp_ReportProject\TS_wp_ReportProjectUserControl.ascx" />
+    <Content Include="WebParts\TS\TS_wp_UploadFile\Elements.xml" />
+    <Content Include="WebParts\TS\TS_wp_UploadFile\TS_wp_UploadFileUserControl.ascx" />
+    <Content Include="WebParts\TS\TS_wp_UserProjectDetail\Elements.xml" />
+    <Content Include="WebParts\TS\TS_wp_UserProjectDetail\TS_wp_UserProjectDetailUserControl.ascx" />
+    <Content Include="WebParts\TT\TT_wp_AddTrainProject\Elements.xml" />
+    <Content Include="WebParts\TT\TT_wp_AddTrainProject\TT_wp_AddTrainProjectUserControl.ascx" />
+    <Content Include="WebParts\TT\TT_wp_AllTraining\Elements.xml" />
+    <Content Include="WebParts\TT\TT_wp_AllTraining\TT_wp_AllTrainingUserControl.ascx" />
+    <Content Include="WebParts\TT\TT_wp_Discuss\Elements.xml" />
+    <Content Include="WebParts\TT\TT_wp_Discuss\TT_wp_DiscussUserControl.ascx" />
+    <Content Include="WebParts\TT\TT_wp_GroupDescri\Elements.xml" />
+    <Content Include="WebParts\TT\TT_wp_GroupDescri\TT_wp_GroupDescriUserControl.ascx" />
+    <Content Include="WebParts\WP\PND_wp_Shrar\Elements.xml" />
+    <Content Include="WebParts\WP\PND_wp_Shrar\PND_wp_ShrarUserControl.ascx" />
+    <Content Include="WebParts\WP\WP_wp_DriveTree\Elements.xml" />
+    <Content Include="WebParts\WP\WP_wp_DriveTree\WP_wp_DriveTreeUserControl.ascx" />
+    <Content Include="WebParts\WP\WP_wp_DriveUpload\Elements.xml" />
+    <Content Include="WebParts\WP\WP_wp_DriveUpload\WP_wp_DriveUploadUserControl.ascx" />
+    <Content Include="WebParts\WP\WP_wp_MyDrive\Elements.xml" />
+    <Content Include="WebParts\WP\WP_wp_MyDrive\WP_wp_MyDriveUserControl.ascx" />
+    <Content Include="WebParts\XB\DriveType\DriveTypeUserControl.ascx" />
+    <Content Include="WebParts\XB\DriveType\Elements.xml" />
+    <Content Include="WebParts\XB\XB_SchoolLibraryTree\Elements.xml" />
+    <Content Include="WebParts\XB\XB_SchoolLibraryTree\XB_SchoolLibraryTreeUserControl.ascx" />
+    <Content Include="WebParts\XB\XB_SchoolMajor\Elements.xml" />
+    <Content Include="WebParts\XB\XB_SchoolMajor\XB_SchoolMajorUserControl.ascx" />
+    <Content Include="WebParts\XB\XB_wp_SchoolLibrary\Elements.xml" />
+    <Content Include="WebParts\XB\XB_wp_SchoolLibrary\XB_wp_SchoolLibraryUserControl.ascx" />
+    <Content Include="WebParts\XXK\XXK_wp_AddCource\Elements.xml" />
+    <Content Include="WebParts\XXK\XXK_wp_AddCource\XXK_wp_AddCourceUserControl.ascx" />
+    <Content Include="WebParts\XXK\XXK_wp_ApplyCource\Elements.xml" />
+    <Content Include="WebParts\XXK\XXK_wp_ApplyCource\XXK_wp_ApplyCourceUserControl.ascx" />
+    <Content Include="WebParts\XXK\XXK_wp_CheckApply\Elements.xml" />
+    <Content Include="WebParts\XXK\XXK_wp_CheckApply\XXK_wp_CheckApplyUserControl.ascx" />
+    <Content Include="WebParts\XXK\XXK_wp_CourceHome\Elements.xml" />
+    <Content Include="WebParts\XXK\XXK_wp_CourceHome\XXK_wp_CourceHomeUserControl.ascx" />
+    <Content Include="WebParts\XXK\XXK_wp_CourcManage\Elements.xml" />
+    <Content Include="WebParts\XXK\XXK_wp_CourcManage\XXK_wp_CourcManageUserControl.ascx" />
+    <Content Include="WebParts\XXK\XXK_wp_CourseDetail\Elements.xml" />
+    <Content Include="WebParts\XXK\XXK_wp_CourseDetail\XXK_wp_CourseDetailUserControl.ascx" />
+    <Content Include="WebParts\XXK\XXK_wp_MyCourceManage\Elements.xml" />
+    <Content Include="WebParts\XXK\XXK_wp_MyCourceManage\XXK_wp_MyCourceManageUserControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{4b38b8bc-6017-4f4e-921a-6c622cfb328d}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

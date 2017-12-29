@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="51f19cf4-42c5-4a84-b7db-0af32bc8b99a" solutionId="51f19cf4-42c5-4a84-b7db-0af32bc8b99a" resetWebServer="false" sharePointProductVersion="15.0" name="YHSD.VocationalEducation.Portal" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="b3f8fd63-849a-4fb0-8b8d-23449783b019" />
+    <featureReference itemId="11240a54-5fda-4816-81e1-de53bf41f4f2" />
+    <featureReference itemId="e4fbed1a-267d-448d-854e-0cd4c2c5ab2c" />
+    <featureReference itemId="a9add3a4-0e37-4454-90cd-23308e1ad7f0" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="2c4ce93f-43a8-4f78-b7c8-0ff5a157de48" />
+    <projectItemReference itemId="9d6e4709-6c35-4bf6-b51d-c0f4d1a30602" />
+  </projectItems>
+</package>

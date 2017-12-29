@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="RR_wp_ExamineItem" List="113" Url="_catalogs/wp">
+    <File Path="RR_wp_ExamineItem\RR_wp_ExamineItem.webpart" Url="SVDigitalCampus_RR_wp_ExamineItem.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="Master_wp_Navigation" List="113" Url="_catalogs/wp">
+    <File Path="Master_wp_Navigation\Master_wp_Navigation.webpart" Url="Sinp_TeacherWP_Master_wp_Navigation.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园_母板页" />
+    </File>
+  </Module>
+</Elements>

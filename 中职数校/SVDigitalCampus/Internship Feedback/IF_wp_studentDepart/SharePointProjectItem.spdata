@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="IF_wp_studentDepartUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="IF_wp_studentDepart\" Type="ElementManifest" />
+    <ProjectItemFile Source="IF_wp_studentDepart.webpart" Target="IF_wp_studentDepart\" Type="ElementFile" />
+    <ProjectItemFile Source="IF_wp_studentDepartUserControl.ascx" Target="CONTROLTEMPLATES\SVDigitalCampus.Internship_Feedback\IF_wp_studentDepart\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SVDigitalCampus.Internship_Feedback.IF_wp_studentDepart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

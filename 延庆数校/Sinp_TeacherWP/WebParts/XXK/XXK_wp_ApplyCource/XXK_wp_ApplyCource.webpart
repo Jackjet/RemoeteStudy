@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Sinp_TeacherWP.WebParts.XXK.XXK_wp_ApplyCource.XXK_wp_ApplyCource, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Sinp_TeacherWP - XXK_wp_ApplyCource</property>
+        <property name="Description" type="string">我的可视 Web 部件</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

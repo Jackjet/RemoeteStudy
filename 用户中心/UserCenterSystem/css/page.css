@@ -1,0 +1,195 @@
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;border:0}
+.cf:before,.cf:after{content:"";display:table}.cf:after{clear:both}.cf{zoom:1}
+input, textarea{ box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; border:1px solid #ccc}
+input:focus, textarea:focus {
+  -webkit-box-shadow:rgba(0, 0, 0, 0.0745098) 0 1px 1px inset, rgba(82, 168, 236, 0.6) 0 0 8px;
+  border-color:rgba(82, 168, 236, 0.8);
+  box-shadow:rgba(0, 0, 0, 0.0745098) 0 1px 1px inset, rgba(82, 168, 236, 0.6) 0 0 8px;
+  outline:0;
+}
+li{ list-style:none;}
+a{ text-decoration:none; color:#333;}
+a:hover{ color:#33abdf}
+img{ border:none;}
+body{ font-size:14px; font-family: "微软雅黑",arial;}
+
+.art_title{ text-align:center; font-size:16px; color:#333}
+h3{ font-size:16px;}
+h2 {font-size: 22px; padding: 0 0 10px;
+}
+ table{ border-collapse:collapse }
+ select,input,textarea{ color:#888;font-size:14px; font-family: "微软雅黑",arial; padding:0 4px; line-height:20px;}
+ input{border: 1px solid #ccc; border-radius: 3px; color: #888;display: inline-block; height:28px; padding:0 4px;}
+ table td{ padding:3px 0}
+ .mr40{ margin-right:40px;}
+ .mr20{ margin-right:20px;}
+ .mr60{ margin-right:60px;}
+
+span input{ display:block; float:left;} 
+span label{ display:block; float:left; line-height:28px; padding-right:8px;} 
+span#rblXB input { width:14px;}
+span#rbHYZKM input {width:14px;}
+span#rblJKZKM input{width:14px;}
+span#rbHKXZM input{width:14px;}
+span#lvStu_cblXK input{width:14px;}
+span#cblSubject input{width:14px;}
+
+
+/*注册*/
+.reg_wrap{ margin-left:20px;font-size:12px;}
+.reg_wrap h3{ margin:10px 0 15px;}
+.reg_wrap input,.reg_wrap textarea,.reg_wrap .uneditable-input { width: 180px;}
+select{ height:22px; line-height:28px; padding:2px 0}
+.reg_wrap .reg_btn{ width:81px; height:25px; background:url(../images/login/button.png) no-repeat; border:0px; color:#FFF; line-height:24px; cursor:pointer}
+.reg_wrap .reg_btn_no{ background-position:0px -32px; color:#4d4d4d;}
+.agreen_info p{ height:22px; line-height:22px; color:#888;}
+.agreen_info .tit{ font-size:14px; margin-bottom:6px; color:#333; }
+.reg_wrap table input.inptxt{ float:left;}
+.reg_wrap .check_img{ float:left; height:28px; margin-left:6px;cursor:pointer}
+.reg_wrap .check_img img{ height:28px; border:1px solid #888}
+.reg_wrap .img-re,
+.reg_wrap .img_y,
+.reg_wrap .img_no{ float:left; margin:8px 0 0 6px; width:14px; height:15px; background:url(../images/login/icons.png) no-repeat 0 0; cursor:pointer}
+.reg_wrap .img_y{ background-position:0 -17px;}
+.reg_wrap .img_no{ background-position:0 -33px;}
+
+/*内容页*/
+.con_wrap{ margin-left:10px;}
+.con_wrap h3{ margin:10px 0 10px;}
+.con_list{padding-top:10px}
+.con_list .b_txt{  font-size: 14px; font-weight:bold; color:#555 ;}
+.con_list td,
+.con_list th{ padding:4px 4px; text-align:center;}
+.con_list td{ color:#666; font-size:14px;}
+.con_list .alt-row,
+.con_list .alt-row td,
+.con_list .alt-row th{ background:#F3F3F3;}
+/*.con_list .alt-row input{ float:left}*/
+.con_list .se_btn{ text-align:left; padding: 8px 0 8px 10px;}
+
+.pagination a{margin: 0 5px 0 0; padding:2px 7px;}
+.pagination a.number { border: 1px solid #ddd;_moz-border-radius:4px; _webkit-border-radius:4px; border-radius:4px;
+}
+.pagination a.number:hover,
+.pagination a.now{ color:#fff; background:url(../images/pagebtn.png) repeat-x 0 0; border-color:#0f86b9;}
+.pagination span{margin: 0 5px 0 0; padding:2px 7px;}
+.pagination span.now { color:#fff; background:url(../images/pagebtn.png) repeat-x 0 0; border-color:#0f86b9;}
+
+.container input,.container textarea,.container .uneditable-input {border: 1px solid #CCCCCC; border-radius: 3px; color: #888;display: inline-block; height:28px; line-height:28px; width: 200px;}
+.container input{ margin-right:10px;}
+.container .con{ margin-bottom:15px;}
+select{height: 22px;line-height: 18px;padding: 2px 0;}
+.btn{ background-color: #fff; border: 1px solid #999999; border-radius:4px; cursor:pointer; min-width:45px;}
+/*input#lvStu_lbtnEdit_1 { margin-right:4px;}*/
+.con_list .btn{ padding:2px 4px; margin-right:12px;}
+.con_list .aspNetDisabled{border: 1px solid #ccc;border-radius:4px;padding:2px 4px;}
+
+/*左侧*/
+.divLeft a{ font-size:14px; color:#33abdf}
+
+
+.divMain .btn{border: 1px solid #CCCCCC; border-radius: 3px; color: #888;display: inline-block; height:28px; line-height:28px; }
+#main-content{ margin-left:20px;}
+#main-content h2{ color:#555; font-weight:normal}
+#main-content ul, #main-content ol {padding: 10px 0;}
+.shortcut-button { display: block;margin: 0 0 10px;width: 160px; height:80px; color:#fff; font-size:16px; line-height:90px;}
+.shortcut-buttons-set a:hover{ color:#fff}
+.shortcut-buttons-set li{width: 160px; height:90px; margin-right:20px; float:left; display:inline;}
+.shortcut-buttons-set a{  text-align:center; float:left;margin-right:30px;display:inline;}
+.shortcut-buttons-set .col_g a{ background:#5fd3d9;}
+.shortcut-buttons-set .col_y a{ background:#ff6b32;}
+.shortcut-buttons-set .col_z a{ background:#7f2fbd;}
+.shortcut-buttons-set .col_b a{ background:#3ee997;}
+.shortcut-buttons-set .col_g a:hover{background:#7fdce1;}
+.shortcut-buttons-set .col_y a:hover{ background:#ff8353;}
+.shortcut-buttons-set .col_z a:hover{ background:#8c43c3;}
+.shortcut-buttons-set .col_b a:hover{ background:#45f9a2;}
+
+
+/*学生信息修改*/
+.stu_edit{ margin-top:20px;}
+.stu_edit textarea,
+.stu_edit input{ width:170px;}
+.stu_edit select{ width:180px;}
+.stu_edit .btnrandom{ width:80px;}
+.stu_edit td{ padding:3px 0;}
+.stu_edit span{ padding-left:25px;}
+.stu_edit h3{ font-size:16px; color:#333;background:#F3F3F3; padding:4px 0; margin-top:20px;text-align:center}
+.btnsave,
+.btn_concel{ border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background: url('../images/btn_bg.png') repeat-x 0 0;
+    width:60px; font-size:14px; font-weight:bold; line-height:26px; margin-top:10px; border-radius:4px; cursor:pointer; color:#fff; }
+.btnsave:hover{ background-position:0 -36px;}
+.btn_concel{background-position:0 -164px;}
+.btn_concel:hover{background-position:0 -72px;}
+.stu_edit .btnsave,
+.stu_edit .btn_concel{width:60px;}
+
+/*上传*/
+
+.file_up{ text-align:left; margin:20px 0 0 20px;}
+.file_up .btnsave{ margin-left:120px;}
+.downl_f{ margin-left:10px; color:#33abdf}
+.editpart{ margin:20px 0 0 20px;}
+.editpart .btnsave{ margin-left:110px;}
+
+/*教师添加*/
+.teach_add{ padding-left:20px;}
+/*.teach_add input { width:200px;}*/
+.TcInputCss{width:170px;}
+.teach_add select { width:180px;}
+.teach_add h2{ color:#1c1c1c; font-weight:normal}
+.teach_add h3{ font-size:16px; color:#333;background:#F3F3F3; padding:4px 0; margin-top:20px;}
+.teach_add .alt-row th{padding:5px 0; }
+.rad_sex{ float:right; margin:4px 4px 0;}
+.teach_add table tbody tr td h3.TeacherInfo{ text-align:center; width:700px;}
+.teach_add table tbody tr th.Subtitle{ text-align:left;font-size:14px; padding-top:15px;}
+tbody tr.jianjv { line-height:45px;}
+.pagination { padding-top:20px;}
+.teach_add table tbody tr { display:block; clear:both;}
+/*tr.TeacherSubjectCss { width:600px;}*/
+tr.TeacherSubjectCss td { float:left; line-height:28px;}
+td.SubjectCss{ display:block;width:120px;}
+td.GreadCss {display: block; width:100px;}
+td.SubjectsCss{ display:block;}
+.auto-style1{width: 120px; text-align: left}
+.auto-style2{padding-right:100px}
+.photo { width:100px; height:120px; border: 1px solid #ccc; overflow: hidden;}
+        #imghead {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);
+        }
+
+
+/*组织管理*/
+.z_manage{ margin:20px 0 0 20px;}
+.z_manage th{ background:#F3F3F3;font-size:14px; color:#333;padding:4px 0;}
+.divHeader h2{ color:#1c1c1c; font-weight:normal; text-align:center}
+.top_btn .btn{ width:60px; margin-bottom:10px;}
+.link_co{ color:#33abdf}
+
+.nav h2{ margin-top:15px;}
+
+.CardCss{padding-left: 16px;}
+
+select.ParentSelCss{ width:180px;height:28px;line-height:28px; border:1px solid #ccc}
+
+.BoxCss{border: 1px #F3F3F3 solid}
+table.BoxCssTwo{border:#ddd 1px solid}
+
+.InputCss{
+}
+.SelectCss {
+    width:180px;height:28px
+}
+
+.BtnBackGroundColorCss{background-color:Wheat;}
+.BtnBackCss{background-color:Wheat; border:1px #d3d3d3 solid; text-align:center; width:30px; border-radius:3px; }
+.DivBtnCss{width: 160px; text-align: right; display: block}
+
+
+/*Photo*/
+.PhotoUploadCss{padding-right:100px;vertical-align:bottom;}
+.PhotoTextCSS{width:120px;vertical-align:bottom;}

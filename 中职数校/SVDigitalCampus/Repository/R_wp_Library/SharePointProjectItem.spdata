@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="R_wp_LibraryUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="R_wp_Library\" Type="ElementManifest" />
+    <ProjectItemFile Source="R_wp_Library.webpart" Target="R_wp_Library\" Type="ElementFile" />
+    <ProjectItemFile Source="R_wp_LibraryUserControl.ascx" Target="CONTROLTEMPLATES\SVDigitalCampus.Repository\R_wp_Library\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SVDigitalCampus.Repository.R_wp_Library" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

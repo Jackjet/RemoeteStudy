@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="TB_wp_AddQuestionUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="TB_wp_AddQuestion\" Type="ElementManifest" />
+    <ProjectItemFile Source="TB_wp_AddQuestion.webpart" Target="TB_wp_AddQuestion\" Type="ElementFile" />
+    <ProjectItemFile Source="TB_wp_AddQuestionUserControl.ascx" Target="CONTROLTEMPLATES\SVDigitalCampus.Task_base\TB_wp_AddQuestion\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SVDigitalCampus.Task_base.TB_wp_AddQuestion" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

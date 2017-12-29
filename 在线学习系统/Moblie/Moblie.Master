@@ -1,0 +1,236 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Moblie.master.cs" Inherits="Moblie.Moblie" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="北京市仪器仪表高级技工学校" />
+    <meta name="Description" content="北京市仪器仪表高级技工学校" />
+<!--Favicon shortcut link-->
+    <link type="image/x-icon" rel="shortcut icon" href="/images/splash/favicon.ico" />
+    <link type="image/x-icon" rel="icon" href="/images/splash/favicon.ico" />
+<!--Declare page as mobile friendly --> 
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+<!-- Declare page as iDevice WebApp friendly -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- iDevice WebApp Splash Screen, Regular Icon, iPhone, iPad, iPod Retina Icons -->
+<link rel="apple-touch-icon" sizes="114x114" href="/images/splash-icon.png"> 
+<link rel="apple-touch-startup-image" href="/images/splash-screen.png" media="screen and (max-device-width: 320px)" /> 
+<link rel="apple-touch-startup-image" href="/images/splash-screen2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" href="/images/splash-screen3x.png" sizes="640x1096">
+<!-- Page Title -->
+<title>北京市仪器仪表高级技工学校</title>
+<!-- Stylesheet Load -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/framework-style.css" rel="stylesheet" type="text/css">
+    <link href="/css/framework.css" rel="stylesheet" type="text/css">
+    <link href="/css/coach.css" rel="stylesheet" type="text/css">
+    <link href="/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="/css/retina.css" rel="stylesheet" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+<!--Page Scripts Load -->
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+
+    <script src="../js/jquery-ui-min.js" type="text/javascript"></script>
+
+    <script src="../js/colorbox.js" type="text/javascript"></script>
+
+    <script src="../js/hammer.js" type="text/javascript"></script>
+
+    <script src="../js/subscribe.js" type="text/javascript"></script>
+
+    <script src="../js/contact.js" type="text/javascript"></script>
+
+    <script src="../js/swipe.js" type="text/javascript"></script>
+
+    <script src="../js/swipebox.js" type="text/javascript"></script>
+
+    <script src="../js/retina.js" type="text/javascript"></script>
+
+    <script src="../js/custom.js" type="text/javascript"></script>
+
+    <script src="../js/framework.js" type="text/javascript"></script>
+    <script src="/js/swiper-2.1.min.js" type="text/javascript"></script>
+         <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="preloader">
+        <div id="status">
+            <p class="center-text">
+                加载中…...
+            <em>加载速度取决于你的网速快慢!</em>
+            </p>
+        </div>
+    </div>
+<div class="page-coach">
+	<div class="portrait-coach">
+            <span style="top: -10px; left: 50px;" class="coach-arrow arrow9">
+                <p class="center-text" style="padding-top: 20px; padding-left: 75px;">利用部署
+                    <br>
+                    菜单栏!</p>
+        </span>
+            <span style="top: 40px; right: 10px;" class="coach-arrow arrow2">
+                <p style="padding-top: 85px; padding-left: 105px;">从侧边栏联系和订阅!</p>
+        </span>
+            <span style="top: 180px; left: 50px;" class="coach-arrow arrow1">
+                <p class="center-text" style="padding-top: 35px; padding-left: 70px;">触摸启用
+                    <br>
+                    图片滑块!</p>
+        </span>
+            <span style="top: 280px; left: 35%;" class="coach-arrow arrow16">
+                <p class="center-text" style="padding-top: 125px; margin-left: -100px;">触摸<br>
+                    返回任何地方!</p>
+        </span>
+    </div>    
+    <div class="landscape-coach">        
+            <span style="left: 47%; top: 15%;" class="coach-arrow arrow12">
+                <p style="text-align: center; padding-top: 100px; margin-left: -160px;">
+此页面有很多响应的功能！<br>
+这意味着他们扩大当设备处于横向<br>
+翻转设备在肖像模式下继续教程 -    
+            </p>
+        </span>
+    </div>
+</div>
+
+<div class="header">
+	<a href="#" class="deploy-left-sidebar"></a>
+	<a href="#" class="deploy-right-sidebar"></a>
+        <a href="#" class="top-logo">
+            <img src="/images/logo.png" class="replace-2x" width="200" alt="img"></a>
+</div>
+<div class="content-box shadow">
+    <div class="content">
+       <form id="form1" runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </form>
+ <div class="decoration"></div>      
+            <p class="center-text uppercase footer-text">
+                Powered by <a href="#" target="_blank">北京市仪器仪表高级技工学校</a> Copyright © 2014 - 2015
+        </p>
+         
+
+    </div>
+
+</div>
+<div class="sidebar-left">
+
+	<div class="sidebar-scroll-left">
+
+    	<div class="sidebar-header-left">
+
+			<img src="/images/logo-sidebar.png" class="sidebar-left-logo replace-2x" width="200" alt="img">
+
+        	<a href="#" class="close-sidebar-left"></a>
+
+    	</div>
+
+    
+
+        <p class="sidebar-divider-text">导航菜单</p>
+
+            <a href="http://61.50.119.70:1133/Index.aspx" class="nav-item home-nav">学习中心门户<em class="icon-active"></em></a>
+            <a href="http://61.50.119.70:1133/blog.aspx" class="nav-item blog-nav">个人中心<em class="icon-page"></em></a>
+            <a href="http://61.50.119.70:1133/ClassCount.aspx" class="nav-item mail-nav">知识点统计（课程管理）<em class="icon-page"></em></a>
+            <a href="http://61.50.119.70:1133/WebChatRoom.aspx" class="nav-item video-nav">学员交流<em class="icon-page"></em></a>
+        <a href="#" id="submenu-one" class="nav-item info-nav">在线学习<em class="icon-drop"></em></a>
+            <div class="submenu submenu-one">
+                <a href="http://61.50.119.70:1133/MyCourseList.aspx"><em></em>在线学习</a>
+                <a href="http://61.50.119.70:1133/PersonalNotes.aspx"><em></em>学习笔记</a>
+                <a href="http://61.50.119.70:1133/type.html"><em></em>个人学习进度分析</a>
+                <a href="http://61.50.119.70:1133/jquery.html"><em></em>作业检查</a>
+                <a href="http://61.50.119.70:1133/jquery.html"><em></em>学习效果</a>
+            </div> 
+            <a href="#" class="nav-item blog-nav" id="submenu-two">在线考试<em class="icon-drop"></em></a>
+			<div class="submenu submenu-two">
+                <a href="http://61.50.119.70:1133/ExamMgr.aspx"><em></em>在线考试</a>
+                <a href="http://61.50.119.70:1133/onecol.html"><em></em>教学统计</a>
+				</div> 
+        <a href="http://61.50.119.70:1133/TeachingInteraction.aspx" class="nav-item folio-nav">教学互动<em class="icon-page"></em></a>
+        <a href="#" class="nav-item blog-nav" id="submenu-three">课程评价<em class="icon-page"></em></a>
+        <div class="submenu submenu-three">
+					<a href="http://61.50.119.70:1122/sites/StudentEducation/SitePages/CourseScoreM.aspx"><em></em>课程评分</a>
+					<a href="http://61.50.119.70:1122/sites/StudentEducation/SitePages/UseSurveyPaperM.aspx?itemid=1"><em></em>授课教师评价</a>
+                <a href="http://61.50.119.70:1122/sites/StudentEducation/SitePages/CourseScoreResultM.aspx"><em></em>课程评分结果统计</a>
+                <a href=" http://61.50.119.70:1122/sites/StudentEducation/SitePages/SurveyResultM.aspx"><em></em>授课教师评分统计</a>
+				</div> 
+        <a href="#" class="nav-item blog-nav" id="submenu-four">问卷调查<em class="icon-page"></em></a>
+                <div class="submenu submenu-four">
+					<a href="http://61.50.119.70:1122/sites/StudentEducation/SitePages/MySurveyPaperM.aspx"><em></em>我的问卷</a>
+				</div> 
+        <a href="#" class="nav-item folio-nav">师生名单<em class="icon-page"></em></a>        
+        <a href="#" class="nav-item folio-nav">自动通知<em class="icon-page"></em></a>
+            <a href="#" class="nav-item folio-nav" id="submenu-five">分统计析<em class="icon-drop"></em></a>
+         <div class="submenu submenu-five">
+            	
+                <a href="http://61.50.119.70:1133/CountPage/ClassCount.aspx"><em></em>课程统计</a>
+                <a href="http://61.50.119.70:1133/CountPage/ZhiShiDian.aspx"><em></em>知识点统计</a>
+                <a href="http://61.50.119.70:1133/CountPage/LoginCount.aspx"><em></em>登录频率统计</a>
+                <a href="http://61.50.119.70:1133/CountPage/ZiYuan.aspx"><em></em>资源统计</a>
+                <a href="http://61.50.119.70:1133/CountPage/LoginCount.aspx"><em></em>访问率统计</a>
+                <a href="http://61.50.119.70:1133/CountPage/ZuoYe.aspx"><em></em>作业批改统计</a>
+                <a href="http://61.50.119.70:1133/CountPage/DaYi.aspx"><em></em>答疑统计</a>
+                <a href="http://61.50.119.70:1133/CountPage/ZiYuan.aspx"><em></em>试卷批改统计</a>
+            </div> 
+        <a href="#" class="nav-item blog-nav" id="submenu-six">系统管理<em class="icon-page"></em></a>
+                <div class="submenu submenu-six">
+					<a href="http://61.50.119.70:1122/sites/StudentEducation/SitePages/DataBackupM.aspx"><em></em>数据备份</a>
+				</div> 
+		<a href="#" class="nav-item folio-nav">网站统计管理（门户管理）<em class="icon-page"></em></a>
+    </div>
+
+</div>
+
+
+
+<div class="sidebar-right">
+
+	<div class="sidebar-scroll-right"> 
+	<div class="sidebar-header-right">
+
+			<img src="/images/logo-sidebar.png" class="sidebar-right-logo replace-2x" width="200" alt="img">
+
+        	<a href="#" class="close-sidebar-right"></a>
+
+    	</div>
+					<div class="account">
+				<div class="login_b_t">
+					<div class="pd10">
+                        <div class="fl"><span class="fl">还没有账号</span><a id="reg_now" href="" onclick="return false;">立即注册</a></div>
+                        <div class="fr"><a href="#">忘记密码?</a></div>
+                        <div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="pd10">
+                <form method="post" action="">
+					<div class="login_b_i">
+						<div class="login_input">
+                            <div class="login_user">
+                                <input type="text" name="email" placeholder="邮箱/帐号" /><i></i></div>
+                            <div class="login_password">
+                                <input type="password" name="password" placeholder="密码" /><i></i></div>
+						</div>
+					</div>
+                    <a class="login_submit">登录</a>
+				</form>
+				
+			</div> 	
+    </div>
+
+</div>
+
+</body>
+    <script type="text/javascript" src="js/com.js"></script> 
+<script type="text/javascript">
+    window.onload = function () {
+
+        cTab("#tab1", "#con1");
+        cTab("#tab2", "#con2");
+    };
+</script>
+</html>

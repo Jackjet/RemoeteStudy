@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="YHSD.VocationalEducation.Portal.VEClassGateway.VEClassGateway, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">北京市仪器仪表高级技工学校-班级门户</property>
+        <property name="Description" type="string">北京市仪器仪表高级技工学校-班级门户</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="PND_wp_ShrarUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="PND_wp_Shrar\" Type="ElementManifest" />
+    <ProjectItemFile Source="PND_wp_Shrar.webpart" Target="PND_wp_Shrar\" Type="ElementFile" />
+    <ProjectItemFile Source="PND_wp_ShrarUserControl.ascx" Target="CONTROLTEMPLATES\Sinp_TeacherWP.WebParts.WP\PND_wp_Shrar\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Sinp_TeacherWP.WebParts.WP.PND_wp_Shrar" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

@@ -1,0 +1,68 @@
+﻿/*教师研修首页*/
+.maindv { width: 100%; overflow: hidden; margin-top: 14px; }
+.leftdv {  width: 60%; float: left; box-shadow:0px 0px 4px #bbb; background:#fff; border:1px solid #e1e1e1;}
+.rightdv { width: 39%; float: right; }
+/*研修计划标题样式*/
+.titleft { margin-left: 10px;float: left; color: #0072C6; font-weight: 900;}
+.titright {  float: right;  margin-right: 10px;}
+.tabtitle {  height: 40px;  line-height: 40px;}
+/*研修计划列表样式    列表样式（普通列表  通用表样式）*/
+/*.tabcontent { width: 100%; }
+.tabcontent table { width: 100%;  border: 0px; margin-top:10px; }
+.tabcontent table tr { height: 35px; line-height: 35px;  }
+.tabcontent table tr td { text-align: center;  border: 0px;  }
+.tabcontent table tr td a {text-decoration: none;  }*/
+/*表标题*/
+/*.trth { background: #f1f1f1; height: 40px;  line-height: 40px;  color: #fff;}
+.tralt {  background-color: #F0F0F0;}*/
+
+/*表头*/
+tr.trth { background:#f1f1f1; color:#7f7f7f;}
+/*单行变色*/
+tr.Single { background:#fff;}
+/*双行变色*/
+tr.Double {background:#f9f7f7; }
+/*table*/
+table.W_form { width:100%; text-align:center; font-size:14px;}
+table.W_form th {  text-align:center;  color:#575656; font-size:14px; line-height:40px; }
+table.W_form tr {  color:#666; line-height:34px; border-bottom:1px solid #d2d2d2; }
+table.W_form tr:hover {  background:#f0f8fb; }
+table.W_form td {  color:#666; line-height:34px; vertical-align:middle;}
+
+/*之前的自己写的表样式*/
+.writingform { margin-top:14px; border:1px solid #d2d2d2; background:#fff; box-shadow:0px 0px 4px #bbb; }
+
+.writing_title { }	
+.writing_title h2 { line-height:45px;height:45px; margin: 0 10px;border-bottom:1px solid #e1e1e1; color:#666; margin-bottom:10px;}
+.writing_title h2 span.title_left { color:#666; border-bottom:2px solid #0da6ec; padding:0px 6px; display:block; float:left; line-height:45px; font-size:16px; }
+.writing_title h2 span.title_left a {color:#666; }	
+/*更多*/
+.writing_title h2 span.title_right { margin-right:10px;float: right;}/*可要可不要*/	
+
+
+
+/*研修组简介样式*/
+.descri { box-shadow:0px 0px 4px #bbb; background:#fff; border:1px solid #e1e1e1; color: #666;  line-height: 30px; background-color: white;}
+.textcontent { width: 100%;background-color: white;}
+.textcontent p {text-indent: 2em;   line-height: 26px; padding: 10px;  }
+/*研修组成员样式*/
+.gromember { box-shadow:0px 0px 4px #bbb; background:#fff; border:1px solid #e1e1e1; margin-top: 15px; background-color: white; width: 100%;  overflow: hidden;}
+.gromember ul.people { padding: 0px; clear:both; padding:10px;    }
+.gromember ul li { list-style: none; float: left; width: 60px; text-align: center; padding:5px;    }
+.gromember ul li img {   width: 60px;height: 60px;  }
+.gromember ul li span.name_yx { height:28px; line-height:28px; overflow:hidden;color:#666;}
+/*分页样式*/
+.paging {  font-family: "Microsoft Yahei UI","Microsoft Yahei","微软雅黑",SimSun,sans-serif;   margin: 10px 0;  text-align: center;  width: 100%;}
+.paging span a { cursor: pointer; padding: 0 4px; }
+
+/*切换样式*/
+.yy_tab .yy_tabheader {  height: 45px;  background: #f0f0f0;  border-bottom: 1px solid #e1e1e1;}
+.yy_tab ul.tab_tit li { float: left; line-height: 45px; border-right: 1px solid #e1e1e1;  text-align: center; font-size: 16px; color: #757575;  font-family: 
+
+microsoft yahei ui;  list-style: none;}
+.yy_tab .yy_tabheader a {  text-decoration: none; color: #666; display: block;  padding: 0px 30px;}
+.yy_tab ul li.selected {  background: #fff;   position: relative;  top: -1px;  border-top: 2px solid #01b1ed;  border-right: 1px solid #e1e1e1;   border-left: 1px solid #e1e1e1;  left: -1px;}
+.yy_tab .content .tc {  padding: 10px;}
+
+
+

@@ -1,0 +1,189 @@
+body
+{ 	width: 100%;
+	height: 100%;
+	font-size:12px; 
+	line-height:25px; 
+	color:#333; 
+	font-family:"Microsoft YaHei";
+}
+body,ul,ol,li,dd,dt,dl,p,h1,h2,h3,label,form,img
+{
+	display: block;
+	margin: 0px;
+	padding:0px;
+	list-style: none;
+	color:#333; 
+	font-family:"Microsoft YaHei";
+}
+a:link{ color:#333; text-decoration:none}
+a:visited{ color:#006}
+a:hover{ color:#600; text-decoration:none;}
+
+
+.header,.main,.bottom{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	clear: both;
+}
+.header{
+	height: 80px;
+	background: #0695d8;
+}
+.lfmain{
+	float: left;
+	width: 200px;
+	min-height: 600px;
+	overflow: hidden;
+	background:#f3f8fc;
+	border-right: solid 1px #c3ced5;
+}
+.rfmain{
+	overflow: hidden;
+}
+
+/*学生社团首页_活动首页 页面*/
+.stxq_index{
+	width: 70%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.hd_cjxq{
+	height: 170px;
+	margin: 30px 0 0 0;
+}
+.hd_cjxq img{
+	width: 245px;
+	height: 150px;
+	float: left;
+	border: solid 4px #9ee0ff;
+}
+.hd_cjxq ul{
+	margin: 0 0 0 15px;
+	float: left;
+}
+.hd_cjxq ul li h2{
+	margin: 0 0 15px 0;
+	font-size: 16px;
+	font-weight: normal;
+	color: #0da6ec;
+}
+.hd_cjxq ul li i,
+.stxq_index dl dt i{
+	margin: 0 10px 0 0;
+	color: #aaaaaa;
+	/*font-weight: bold;*/
+}
+.hd_cjxq ul li span{
+	width: 90px;
+	height: 30px;
+	margin: 12px 0 0 0;
+	line-height: 30px;
+	text-align: center;
+	background: #0da6ec;
+	border-radius: 5px;
+	display: block;
+}
+.hd_cjxq ul li span a{
+	color: #fff;
+}
+.stxq_index dl{
+	margin: 10px 0 0 0;
+	clear: both;
+}
+
+.stxq_index dl dt{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: solid 1px #d7d7d7;
+}
+.stxq_index dl dd{
+	clear: both;
+	padding: 10px 0 0 0; 
+}
+.stxq_index dl dd img{
+	width: 50px;
+	height: 50px;
+	margin: 0px 5px 0 0;
+	border-radius: 2px;
+	display: inline-block;
+}
+.stxq_index dl dt p{
+	width: 4px;
+	height: 15px;
+	margin: 8px 7px 0 0;
+	background: #01b1ed;
+	float: left;
+}
+.stxq_index dl dd p{
+	text-indent: 2em;
+	color: #707070;
+}
+
+/*学生德育分数管理_班级维度 页面*/
+.pf_nj,
+.pf_zf{
+	width: 158px;
+	margin: 20px 0 20px 20px;
+	line-height: 36px;
+	text-align: center;
+	border: solid 1px #e1e1e1;
+	border-bottom: none;
+	float: left;	
+}
+.pf_nj li,
+.pf_zf li{
+	height: 36px;
+	line-height: 36px;	
+	border-bottom: solid 1px #e1e1e1;
+}
+.pf_nj li.ali,
+.pf_zf li.ali{ 
+	background: #f1f1f1;
+}
+/*中间可左右互动内容*/
+.pingfen_nr{
+	width: auto;
+	float: left;
+}
+.pingfen{
+	width: 807px;
+	height: 630px;
+	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	clear: both;
+}
+.pf_xq{
+	width: 1415px;
+	height: 36px; 
+	clear: both;
+}
+.pf_xq li{
+	width: 100px;	
+	height: 36px;	
+	line-height: 36px;	
+	text-align: center;	
+	border: solid 1px #e1e1e1;	
+	border-top: none;	
+	border-left: none;		
+	float: left;
+}
+.aul{
+	margin: 20px 0 0 0;
+}
+.aul li{
+	background: #f1f1f1;
+	border-top: solid 1px #e1e1e1;	
+}
+.pf_xq:hover{
+ 	background: #f0f7fd;
+}
+/*右边固定总分*/
+.pf_zf{
+	width: 100px;
+	margin: 20px 0 20px 0;
+}

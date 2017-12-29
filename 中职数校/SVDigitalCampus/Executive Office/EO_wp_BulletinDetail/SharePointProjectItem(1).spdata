@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="EO_wp_BulletinDetailUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="EO_wp_BulletinDetail\" Type="ElementManifest" />
+    <ProjectItemFile Source="EO_wp_BulletinDetail.webpart" Target="EO_wp_BulletinDetail\" Type="ElementFile" />
+    <ProjectItemFile Source="EO_wp_BulletinDetailUserControl.ascx" Target="CONTROLTEMPLATES\SVDigitalCampus.Executive_Office\EO_wp_BulletinDetail\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SVDigitalCampus.Executive_Office.EO_wp_BulletinDetail" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

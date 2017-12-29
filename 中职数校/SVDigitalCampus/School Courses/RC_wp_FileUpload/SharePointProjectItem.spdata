@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="RC_wp_FileUploadUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="RC_wp_FileUpload\" Type="ElementManifest" />
+    <ProjectItemFile Source="RC_wp_FileUpload.webpart" Target="RC_wp_FileUpload\" Type="ElementFile" />
+    <ProjectItemFile Source="RC_wp_FileUploadUserControl.ascx" Target="CONTROLTEMPLATES\SVDigitalCampus.School_Courses\RC_wp_FileUpload\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SVDigitalCampus.School_Courses.RC_wp_FileUpload" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

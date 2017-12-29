@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="TS_wp_UserProjectDetail" List="113" Url="_catalogs/wp">
+    <File Path="TS_wp_UserProjectDetail\TS_wp_UserProjectDetail.webpart" Url="Sinp_TeacherWP_TS_wp_UserProjectDetail.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园_教师科研管理系统" />
+    </File>
+  </Module>
+</Elements>

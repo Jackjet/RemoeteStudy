@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="SVDigitalCampus.School_Courses.RC_wp_StudentSelCourse.RC_wp_StudentSelCourse, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">SVDigitalCampus - RC_wp_StudentSelCourse</property>
+        <property name="Description" type="string">我的可视 Web 部件</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

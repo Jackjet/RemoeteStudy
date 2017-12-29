@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="SA_wp_AddActivityNews" List="113" Url="_catalogs/wp">
+    <File Path="SA_wp_AddActivityNews\SA_wp_AddActivityNews.webpart" Url="Sinp_StudentWP_SA_wp_AddActivityNews.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园_学生活动管理系统" />
+    </File>
+  </Module>
+</Elements>

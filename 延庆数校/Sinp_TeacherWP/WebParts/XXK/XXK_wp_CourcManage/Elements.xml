@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="XXK_wp_CourcManage" List="113" Url="_catalogs/wp">
+    <File Path="XXK_wp_CourcManage\XXK_wp_CourcManage.webpart" Url="Sinp_TeacherWP_XXK_wp_CourcManage.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园-校本选修课" />
+    </File>
+  </Module>
+</Elements>

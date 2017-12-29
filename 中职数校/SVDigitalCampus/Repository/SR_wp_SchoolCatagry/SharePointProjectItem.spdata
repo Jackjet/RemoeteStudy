@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="SR_wp_SchoolCatagryUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="SR_wp_SchoolCatagry\" Type="ElementManifest" />
+    <ProjectItemFile Source="SR_wp_SchoolCatagry.webpart" Target="SR_wp_SchoolCatagry\" Type="ElementFile" />
+    <ProjectItemFile Source="SR_wp_SchoolCatagryUserControl.ascx" Target="CONTROLTEMPLATES\SVDigitalCampus.Repository\SR_wp_SchoolCatagry\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SVDigitalCampus.Repository.SR_wp_SchoolCatagry" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

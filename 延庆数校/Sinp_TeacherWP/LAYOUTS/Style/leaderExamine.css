@@ -1,0 +1,34 @@
+﻿/*教师成长管理 学期计划审核*/
+/*标题搜索部分*/
+.Term_wrap { border:1px solid #d2d2d2; width: 100%; margin: auto; background:#fff; margin-top:14px;  padding:10px;  box-shadow:0px 0px 4px #bbb;}
+.Term_con { }    
+.Term_wrap h1.W_tit { font-size: 18px; color: #333; line-height: 36px; border-bottom: 2px solid #0da6ec;   }
+.Term_wrap .Query {  padding: 10px 0; overflow: hidden; }
+.Term_wrap .Query li { float: left; font-family: micsoft yahei ui; }
+.Term_wrap .Query li .option { color: #666; font-family: "微软雅黑",microsoft yahei ui; width: 200px; padding-left:10px; 
+border-radius: 3px; border: 1px 
+
+solid #ccc; height: 30px; line-height: 30px; margin-right: 10px; font-size: 14px;}
+.Term_wrap .Query li .option option { color: #666; font-family: "微软雅黑",microsoft yahei ui; padding: 0 10px;  border-color: #666;  border-radius: 3px;}
+.Term_wrap .Query li .search_w { font-family: "微软雅黑",microsoft yahei ui; color: #666;  padding-left: 10px; border-radius: 3px; border: 1px solid #ccc; 
+
+height: 30px; line-height: 30px; font-size: 14px;}
+.Term_wrap .Query li .sea { cursor:pointer; background: #eaeaea; border: 1px solid #ccc; border-radius: 3px; color: #666;  
+font-size: 14px; height: 32px; 
+
+line-height: 32px; margin-left: -6px; padding: 0 12px; /*position: absolute;*/     }
+/*tab_管理审核*/
+.Gl_tab { width: 100%; min-height: 600px;background: #fff;}
+.Gl_tab .Gl_tabheader { height: 45px;border-bottom: 1px solid #ccc;   }
+.Gl_tab ul.tab_tit li { float: left;  line-height: 45px; text-align: center; font-size: 16px;  color: #757575; font-family: microsoft yahei ui;}
+.Gl_tab .Gl_tabheader a { text-decoration: none; color: #666; display: block; padding: 0px 30px;}
+.Gl_tab ul li.selected {  background: #fff; border-bottom: 2px solid #01b1ed;}
+.Gl_tab .content .tc { padding-top: 10px;}
+/*未提交人员*/
+.No_personnel .menunow ul li .menuclick {  padding-left: 10px;  display: block;  border: 1px solid #ccc;  height: 34px;   line-height: 34px; color: #5c5c5c;    font-family: "微软雅黑",microsoft yahei ui;   font-size: 14px;}
+.No_personnel .menunow ul li .menuclick i {  width: 20px; display: block;  float: left; }
+.submenu { padding:4px 10px; border: 1px solid #ccc;  overflow: hidden;   border-top: none;}
+.submenu li {  float: left; display: block; width: 100px; text-align: center; color: #666; line-height: 28px; height: 28px;  font-size: 12px;font-family: "微软雅黑",microsoft yahei ui;   }
+
+/*form*/
+.Gl_form { padding-top: 10px;}

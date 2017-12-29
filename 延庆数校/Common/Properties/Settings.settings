@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Common.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Common_PostUserService_PostUser" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://117.106.7.150/PostUser.asmx</Value>
+    </Setting>
+    <Setting Name="Common_SchoolUserService_UserPhoto" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://117.106.7.150/SchoolUser.asmx</Value>
+    </Setting>
+    <Setting Name="Common_ADWebService_ADWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://117.106.7.150/ADWebService.asmx</Value>
+    </Setting>
+    <Setting Name="Common_DepartmentService_Department" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://117.106.7.150/department.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

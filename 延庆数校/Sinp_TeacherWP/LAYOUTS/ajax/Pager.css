@@ -1,0 +1,66 @@
+﻿
+.pageDiv {
+    width: 100%;
+    height: 38px;
+    margin:16px;
+    text-align:center;
+}
+
+.pageDiv div {
+    float: left;
+    padding: 4px;
+    margin: 3px;
+    cursor: pointer;
+    background-color: #FFF;
+    height: 11px;
+    line-height: 18px;
+    overflow: hidden;
+    vertical-align: middle;
+    color:blue;
+    font: 11px Arial, Helvetica, sans-serif
+}
+
+.pageDiv .overBtn {
+    color: #fff !important; 
+    background: #ffa501 !important;
+    border-color:#ffa501 !important;
+}
+
+/*页索引的样式*/
+.pageDiv .pageIndex{
+    /*width:auto;*/
+    /*border:1px solid #ddd;*/    
+    margin: 0 4px;
+    padding: 2px 8px;
+    background: #5493d7;
+    border-radius: 3px;
+    color: #fff;
+    
+}
+/*选中页索引的样式*/
+.pageDiv .SelectPageIndex{
+    /*width:auto;
+    border:0;
+    color:red;
+    cursor:text;*/
+     margin: 0 4px;
+    padding: 2px 8px;
+    background: #00a1ec;
+    border-radius: 3px;
+    color: #fff;
+}
+
+/*选中页索引的样式*/
+.pageDiv .Disabled{
+    cursor:text;
+    /*border:1px solid #ddd;*/
+    color:silver;
+}
+
+
+/*选中页索引的样式*/
+.pageDiv .Eabled{
+    cursor:pointer;
+    /*border:1px solid #ddd;*/
+    color:black;
+}

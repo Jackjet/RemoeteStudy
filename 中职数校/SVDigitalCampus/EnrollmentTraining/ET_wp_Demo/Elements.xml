@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="ET_wp_Demo" List="113" Url="_catalogs/wp">
+    <File Path="ET_wp_Demo\ET_wp_Demo.webpart" Url="SVDigitalCampus_ET_wp_Demo.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园-招生培训" />
+    </File>
+  </Module>
+</Elements>

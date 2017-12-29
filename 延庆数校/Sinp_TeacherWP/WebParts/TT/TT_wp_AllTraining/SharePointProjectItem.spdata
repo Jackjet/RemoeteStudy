@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="TT_wp_AllTrainingUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="TT_wp_AllTraining\" Type="ElementManifest" />
+    <ProjectItemFile Source="TT_wp_AllTraining.webpart" Target="TT_wp_AllTraining\" Type="ElementFile" />
+    <ProjectItemFile Source="TT_wp_AllTrainingUserControl.ascx" Target="CONTROLTEMPLATES\Sinp_TeacherWP.WebParts.TT\TT_wp_AllTraining\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Sinp_TeacherWP.WebParts.TT.TT_wp_AllTraining" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

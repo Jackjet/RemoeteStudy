@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YHSD.VocationalEducation.Portal", "YHSD.VocationalEducation.Portal\YHSD.VocationalEducation.Portal.csproj", "{9A13DA51-F74C-49D2-8CB7-743D5A085B76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADUtility", "ADUtility\ADUtility.csproj", "{76526DB0-70EA-4E7E-B98F-5737FD44B908}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moblie", "Moblie\Moblie.csproj", "{FFFD3693-BAAB-43B6-A20B-1CE43EB41852}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://61.50.119.70:700/tfs/%E8%BF%9C%E7%A8%8B%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ADUtility\\ADUtility.csproj
+		SccProjectName1 = ADUtility
+		SccLocalPath1 = ADUtility
+		SccProjectUniqueName2 = YHSD.VocationalEducation.Portal\\YHSD.VocationalEducation.Portal.csproj
+		SccProjectName2 = YHSD.VocationalEducation.Portal
+		SccLocalPath2 = YHSD.VocationalEducation.Portal
+		SccProjectUniqueName3 = Moblie\\Moblie.csproj
+		SccProjectName3 = Moblie
+		SccLocalPath3 = Moblie
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A13DA51-F74C-49D2-8CB7-743D5A085B76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A13DA51-F74C-49D2-8CB7-743D5A085B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A13DA51-F74C-49D2-8CB7-743D5A085B76}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9A13DA51-F74C-49D2-8CB7-743D5A085B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A13DA51-F74C-49D2-8CB7-743D5A085B76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A13DA51-F74C-49D2-8CB7-743D5A085B76}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{76526DB0-70EA-4E7E-B98F-5737FD44B908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76526DB0-70EA-4E7E-B98F-5737FD44B908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76526DB0-70EA-4E7E-B98F-5737FD44B908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76526DB0-70EA-4E7E-B98F-5737FD44B908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFFD3693-BAAB-43B6-A20B-1CE43EB41852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFFD3693-BAAB-43B6-A20B-1CE43EB41852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFFD3693-BAAB-43B6-A20B-1CE43EB41852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFFD3693-BAAB-43B6-A20B-1CE43EB41852}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

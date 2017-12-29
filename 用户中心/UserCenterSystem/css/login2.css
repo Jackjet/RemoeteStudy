@@ -1,0 +1,35 @@
+/* CSS Document */
+html {
+	overflow:auto; overflow-x:hidden; height:100%; 
+}
+.body_login{background:url(../images/login/bg.png) bottom repeat-x #b2b3b7;}
+.login{ width:1000px; background:url(../images/login/map.jpg) no-repeat bottom; position:absolute; bottom:80px; left:17%; height:440px; }
+.login_in{ background:url(../images/login/login_bg.png) no-repeat; width:550px; height:364px; margin-left:180px;  clear:both; overflow:hidden;  text-align:center;}
+.login_in_logo{ margin-top:45px; font-size:33px; font-weight:bolder; height:59px; background:url(../images/logo.png) no-repeat center 0;}
+.login_in_con{ margin-top:25px;}
+.login_in_con table{ width:320px; margin:0px auto;}
+.login_in_con table td{ padding:6px 0;border-top-color:#DDDDDD;
+  border-top-style:solid;
+  border-top-width:1px;
+  line-height:18px;
+
+  text-align:left;
+  vertical-align:middle;}
+  .login_in_con table td.tl{ padding-top:12px;}
+    .login_in_con input{ height:25px; border:none; padding:0 4px}
+  .login_in_con table input.inptxt{ float:left;}
+  .login_in_con .check_img{ float:left; height:24px; margin-left:6px;cursor:pointer}
+  .login_in_con .check_img img{ height:24px; border:1px solid #888}
+  .login_in_con .img-re,
+  .login_in_con .img_y,
+  .login_in_con .img_no{ float:left; margin:6px 0 0 6px; width:14px; height:15px; background:url(../images/login/icons.png) no-repeat 0 0; cursor:pointer}
+  .login_in_con .img_y{ background-position:0 -17px;}
+  .login_in_con .img_no{ background-position:0 -33px;}
+.input_login{ border:1px solid #807d7d; width:231px; height:19px; padding:5px;}
+.login_name{ font-size:14px; color:#454547; font-weight:bold;}
+.button_login{ width:81px; height:25px; background:url(../images/login/button.png) no-repeat; border:0px; color:#FFF; line-height:24px; cursor:pointer}
+.button_login_no{ background-position:0px -32px; color:#4d4d4d;}
+.login_bottom{ position:absolute; bottom:5px; right:5px; color:#969696;}
+
+
+  

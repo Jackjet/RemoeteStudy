@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserCenterSystem", "UserCenterSystem\UserCenterSystem.csproj", "{70D9E96E-2158-489B-83AF-E78CE77D0BA9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{503D2EEE-BD36-4200-8230-39858FE20005} = {503D2EEE-BD36-4200-8230-39858FE20005}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{C6E7547A-D876-46F9-B888-F137FBB6A42D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{88072529-58E9-4695-BB48-A9377F4B42B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{72574D73-D9DA-4905-8098-DFF898A65666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{D14C88A5-7BCF-4D65-B2C1-6A457302CF3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserCenterWebService", "UserCenterWebService\UserCenterWebService.csproj", "{503D2EEE-BD36-4200-8230-39858FE20005}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://61.50.119.70:700/tfs/%E8%BF%9C%E7%A8%8B%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BLL\\BLL.csproj
+		SccProjectName1 = BLL
+		SccLocalPath1 = BLL
+		SccProjectUniqueName2 = Common\\Common.csproj
+		SccProjectName2 = Common
+		SccLocalPath2 = Common
+		SccProjectUniqueName3 = DAL\\DAL.csproj
+		SccProjectName3 = DAL
+		SccLocalPath3 = DAL
+		SccProjectUniqueName4 = Model\\Model.csproj
+		SccProjectName4 = Model
+		SccLocalPath4 = Model
+		SccProjectUniqueName5 = UserCenterSystem\\UserCenterSystem.csproj
+		SccProjectName5 = UserCenterSystem
+		SccLocalPath5 = UserCenterSystem
+		SccProjectUniqueName6 = UserCenterWebService\\UserCenterWebService.csproj
+		SccProjectName6 = UserCenterWebService
+		SccLocalPath6 = UserCenterWebService
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70D9E96E-2158-489B-83AF-E78CE77D0BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D9E96E-2158-489B-83AF-E78CE77D0BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D9E96E-2158-489B-83AF-E78CE77D0BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D9E96E-2158-489B-83AF-E78CE77D0BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6E7547A-D876-46F9-B888-F137FBB6A42D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6E7547A-D876-46F9-B888-F137FBB6A42D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6E7547A-D876-46F9-B888-F137FBB6A42D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6E7547A-D876-46F9-B888-F137FBB6A42D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88072529-58E9-4695-BB48-A9377F4B42B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88072529-58E9-4695-BB48-A9377F4B42B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88072529-58E9-4695-BB48-A9377F4B42B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88072529-58E9-4695-BB48-A9377F4B42B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72574D73-D9DA-4905-8098-DFF898A65666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72574D73-D9DA-4905-8098-DFF898A65666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72574D73-D9DA-4905-8098-DFF898A65666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72574D73-D9DA-4905-8098-DFF898A65666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D14C88A5-7BCF-4D65-B2C1-6A457302CF3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D14C88A5-7BCF-4D65-B2C1-6A457302CF3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D14C88A5-7BCF-4D65-B2C1-6A457302CF3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D14C88A5-7BCF-4D65-B2C1-6A457302CF3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{503D2EEE-BD36-4200-8230-39858FE20005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{503D2EEE-BD36-4200-8230-39858FE20005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{503D2EEE-BD36-4200-8230-39858FE20005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{503D2EEE-BD36-4200-8230-39858FE20005}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

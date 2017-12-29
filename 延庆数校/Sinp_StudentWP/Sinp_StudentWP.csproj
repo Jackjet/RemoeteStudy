@@ -1,0 +1,1392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5950E38D-1FB2-45F1-87C0-5ED7F20D0969}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinp_StudentWP</RootNamespace>
+    <AssemblyName>Sinp_StudentWP</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <TokenReplacementFileExtensions>ashx</TokenReplacementFileExtensions>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LAYOUTS\Handler\OrganizeStructure.aspx.cs">
+      <DependentUpon>OrganizeStructure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LAYOUTS\Handler\OrganizeStructure.aspx.designer.cs">
+      <DependentUpon>OrganizeStructure.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LAYOUTS\Stu_upload\preview.ashx.cs">
+      <DependentUpon>preview.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LAYOUTS\Stu_upload\upload.ashx.cs">
+      <DependentUpon>upload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LAYOUTS\Stu_upload\upload.ashx.designer.cs">
+      <DependentUpon>upload.ashx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UtilityHelp\HelpXML.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UtilityHelp\ListHelp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UtilityHelp\UploadHelp.cs" />
+    <Compile Include="WebParts\CE\CE_wp_CourseScoreResult\CE_wp_CourseScoreResult.cs" />
+    <Compile Include="WebParts\CE\CE_wp_CourseScoreResult\CE_wp_CourseScoreResultUserControl.ascx.cs">
+      <DependentUpon>CE_wp_CourseScoreResultUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\CE\CE_wp_CourseScoreResult\CE_wp_CourseScoreResultUserControl.ascx.designer.cs">
+      <DependentUpon>CE_wp_CourseScoreResultUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\CE\CE_wp_CourseScore\CE_wp_CourseScore.cs" />
+    <Compile Include="WebParts\CE\CE_wp_CourseScore\CE_wp_CourseScoreUserControl.ascx.cs">
+      <DependentUpon>CE_wp_CourseScoreUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\CE\CE_wp_CourseScore\CE_wp_CourseScoreUserControl.ascx.designer.cs">
+      <DependentUpon>CE_wp_CourseScoreUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\CE\CE_wp_WdScore\CE_wp_WdScore.cs" />
+    <Compile Include="WebParts\CE\CE_wp_WdScore\CE_wp_WdScoreUserControl.ascx.cs">
+      <DependentUpon>CE_wp_WdScoreUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\CE\CE_wp_WdScore\CE_wp_WdScoreUserControl.ascx.designer.cs">
+      <DependentUpon>CE_wp_WdScoreUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Master\Master_wp_Navigation\Master_wp_Navigation.cs" />
+    <Compile Include="WebParts\Master\Master_wp_Navigation\Master_wp_NavigationUserControl.ascx.cs">
+      <DependentUpon>Master_wp_NavigationUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Master\Master_wp_Navigation\Master_wp_NavigationUserControl.ascx.designer.cs">
+      <DependentUpon>Master_wp_NavigationUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Master\Master_wp_PutNavigation\Master_wp_PutNavigation.cs" />
+    <Compile Include="WebParts\Master\Master_wp_PutNavigation\Master_wp_PutNavigationUserControl.ascx.cs">
+      <DependentUpon>Master_wp_PutNavigationUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Master\Master_wp_PutNavigation\Master_wp_PutNavigationUserControl.ascx.designer.cs">
+      <DependentUpon>Master_wp_PutNavigationUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Master\Master_wp_UserInfo\Master_wp_UserInfo.cs" />
+    <Compile Include="WebParts\Master\Master_wp_UserInfo\Master_wp_UserInfoUserControl.ascx.cs">
+      <DependentUpon>Master_wp_UserInfoUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Master\Master_wp_UserInfo\Master_wp_UserInfoUserControl.ascx.designer.cs">
+      <DependentUpon>Master_wp_UserInfoUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_EvaluateBase\ME_wp_EvaluateBase.cs" />
+    <Compile Include="WebParts\ME\ME_wp_EvaluateBase\ME_wp_EvaluateBaseUserControl.ascx.cs">
+      <DependentUpon>ME_wp_EvaluateBaseUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_EvaluateBase\ME_wp_EvaluateBaseUserControl.ascx.designer.cs">
+      <DependentUpon>ME_wp_EvaluateBaseUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_EvaluateBase_Edit\ME_wp_EvaluateBase_Edit.cs" />
+    <Compile Include="WebParts\ME\ME_wp_EvaluateBase_Edit\ME_wp_EvaluateBase_EditUserControl.ascx.cs">
+      <DependentUpon>ME_wp_EvaluateBase_EditUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_EvaluateBase_Edit\ME_wp_EvaluateBase_EditUserControl.ascx.designer.cs">
+      <DependentUpon>ME_wp_EvaluateBase_EditUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_EvaluateTemp\ME_wp_EvaluateTemp.cs" />
+    <Compile Include="WebParts\ME\ME_wp_EvaluateTemp\ME_wp_EvaluateTempUserControl.ascx.cs">
+      <DependentUpon>ME_wp_EvaluateTempUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_EvaluateTemp\ME_wp_EvaluateTempUserControl.ascx.designer.cs">
+      <DependentUpon>ME_wp_EvaluateTempUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_EvaluateTemp_Edit\ME_wp_EvaluateTemp_Edit.cs" />
+    <Compile Include="WebParts\ME\ME_wp_EvaluateTemp_Edit\ME_wp_EvaluateTemp_EditUserControl.ascx.cs">
+      <DependentUpon>ME_wp_EvaluateTemp_EditUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_EvaluateTemp_Edit\ME_wp_EvaluateTemp_EditUserControl.ascx.designer.cs">
+      <DependentUpon>ME_wp_EvaluateTemp_EditUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_EvaluateTemp_SetBase\ME_wp_EvaluateTemp_SetBase.cs" />
+    <Compile Include="WebParts\ME\ME_wp_EvaluateTemp_SetBase\ME_wp_EvaluateTemp_SetBaseUserControl.ascx.cs">
+      <DependentUpon>ME_wp_EvaluateTemp_SetBaseUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_EvaluateTemp_SetBase\ME_wp_EvaluateTemp_SetBaseUserControl.ascx.designer.cs">
+      <DependentUpon>ME_wp_EvaluateTemp_SetBaseUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_EvaluateTemp_SetScore\ME_wp_EvaluateTemp_SetScore.cs" />
+    <Compile Include="WebParts\ME\ME_wp_EvaluateTemp_SetScore\ME_wp_EvaluateTemp_SetScoreUserControl.ascx.cs">
+      <DependentUpon>ME_wp_EvaluateTemp_SetScoreUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_EvaluateTemp_SetScore\ME_wp_EvaluateTemp_SetScoreUserControl.ascx.designer.cs">
+      <DependentUpon>ME_wp_EvaluateTemp_SetScoreUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_MoralEduInfo\ME_wp_MoralEduInfo.cs" />
+    <Compile Include="WebParts\ME\ME_wp_MoralEduInfo\ME_wp_MoralEduInfoUserControl.ascx.cs">
+      <DependentUpon>ME_wp_MoralEduInfoUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_MoralEduInfo\ME_wp_MoralEduInfoUserControl.ascx.designer.cs">
+      <DependentUpon>ME_wp_MoralEduInfoUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_PrizeInfo\ME_wp_PrizeInfo.cs" />
+    <Compile Include="WebParts\ME\ME_wp_PrizeInfo\ME_wp_PrizeInfoUserControl.ascx.cs">
+      <DependentUpon>ME_wp_PrizeInfoUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_PrizeInfo\ME_wp_PrizeInfoUserControl.ascx.designer.cs">
+      <DependentUpon>ME_wp_PrizeInfoUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_PrizeInfo_Exam\ME_wp_PrizeInfo_Exam.cs" />
+    <Compile Include="WebParts\ME\ME_wp_PrizeInfo_Exam\ME_wp_PrizeInfo_ExamUserControl.ascx.cs">
+      <DependentUpon>ME_wp_PrizeInfo_ExamUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_PrizeInfo_Exam\ME_wp_PrizeInfo_ExamUserControl.ascx.designer.cs">
+      <DependentUpon>ME_wp_PrizeInfo_ExamUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_PrizeInfo_SetScore\ME_wp_PrizeInfo_SetScore.cs" />
+    <Compile Include="WebParts\ME\ME_wp_PrizeInfo_SetScore\ME_wp_PrizeInfo_SetScoreUserControl.ascx.cs">
+      <DependentUpon>ME_wp_PrizeInfo_SetScoreUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\ME\ME_wp_PrizeInfo_SetScore\ME_wp_PrizeInfo_SetScoreUserControl.ascx.designer.cs">
+      <DependentUpon>ME_wp_PrizeInfo_SetScoreUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_ActivityApplyAuditing\SA_wp_ActivityApplyAuditing.cs" />
+    <Compile Include="WebParts\SA\SA_wp_ActivityApplyAuditing\SA_wp_ActivityApplyAuditingUserControl.ascx.cs">
+      <DependentUpon>SA_wp_ActivityApplyAuditingUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_ActivityApplyAuditing\SA_wp_ActivityApplyAuditingUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_ActivityApplyAuditingUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_ActivityApply\SA_wp_ActivityApply.cs" />
+    <Compile Include="WebParts\SA\SA_wp_ActivityApply\SA_wp_ActivityApplyUserControl.ascx.cs">
+      <DependentUpon>SA_wp_ActivityApplyUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_ActivityApply\SA_wp_ActivityApplyUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_ActivityApplyUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_ActivityDetailShow\SA_wp_ActivityDetailShow.cs" />
+    <Compile Include="WebParts\SA\SA_wp_ActivityDetailShow\SA_wp_ActivityDetailShowUserControl.ascx.cs">
+      <DependentUpon>SA_wp_ActivityDetailShowUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_ActivityDetailShow\SA_wp_ActivityDetailShowUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_ActivityDetailShowUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_ActivityIndex\SA_wp_ActivityIndex.cs" />
+    <Compile Include="WebParts\SA\SA_wp_ActivityIndex\SA_wp_ActivityIndexUserControl.ascx.cs">
+      <DependentUpon>SA_wp_ActivityIndexUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_ActivityIndex\SA_wp_ActivityIndexUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_ActivityIndexUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_ActivityManage\SA_wp_ActivityManage.cs" />
+    <Compile Include="WebParts\SA\SA_wp_ActivityManage\SA_wp_ActivityManageUserControl.ascx.cs">
+      <DependentUpon>SA_wp_ActivityManageUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_ActivityManage\SA_wp_ActivityManageUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_ActivityManageUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_ActivityNewsShow\SA_wp_ActivityNewsShow.cs" />
+    <Compile Include="WebParts\SA\SA_wp_ActivityNewsShow\SA_wp_ActivityNewsShowUserControl.ascx.cs">
+      <DependentUpon>SA_wp_ActivityNewsShowUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_ActivityNewsShow\SA_wp_ActivityNewsShowUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_ActivityNewsShowUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_AddActivityNews\SA_wp_AddActivityNews.cs" />
+    <Compile Include="WebParts\SA\SA_wp_AddActivityNews\SA_wp_AddActivityNewsUserControl.ascx.cs">
+      <DependentUpon>SA_wp_AddActivityNewsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_AddActivityNews\SA_wp_AddActivityNewsUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_AddActivityNewsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_AddActivity\SA_wp_AddActivity.cs" />
+    <Compile Include="WebParts\SA\SA_wp_AddActivity\SA_wp_AddActivityUserControl.ascx.cs">
+      <DependentUpon>SA_wp_AddActivityUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_AddActivity\SA_wp_AddActivityUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_AddActivityUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_AddDepartmentAlbum\SA_wp_AddDepartmentAlbum.cs" />
+    <Compile Include="WebParts\SA\SA_wp_AddDepartmentAlbum\SA_wp_AddDepartmentAlbumUserControl.ascx.cs">
+      <DependentUpon>SA_wp_AddDepartmentAlbumUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_AddDepartmentAlbum\SA_wp_AddDepartmentAlbumUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_AddDepartmentAlbumUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_AddDepartment\SA_wp_AddDepartment.cs" />
+    <Compile Include="WebParts\SA\SA_wp_AddDepartment\SA_wp_AddDepartmentUserControl.ascx.cs">
+      <DependentUpon>SA_wp_AddDepartmentUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_AddDepartment\SA_wp_AddDepartmentUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_AddDepartmentUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_AllActivity\SA_wp_AllActivity.cs" />
+    <Compile Include="WebParts\SA\SA_wp_AllActivity\SA_wp_AllActivityUserControl.ascx.cs">
+      <DependentUpon>SA_wp_AllActivityUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_AllActivity\SA_wp_AllActivityUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_AllActivityUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_DepartmentHomePic\SA_wp_DepartmentHomePic.cs" />
+    <Compile Include="WebParts\SA\SA_wp_DepartmentHomePic\SA_wp_DepartmentHomePicUserControl.ascx.cs">
+      <DependentUpon>SA_wp_DepartmentHomePicUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_DepartmentHomePic\SA_wp_DepartmentHomePicUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_DepartmentHomePicUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_DepartmentShow\SA_wp_DepartmentShow.cs" />
+    <Compile Include="WebParts\SA\SA_wp_DepartmentShow\SA_wp_DepartmentShowUserControl.ascx.cs">
+      <DependentUpon>SA_wp_DepartmentShowUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_DepartmentShow\SA_wp_DepartmentShowUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_DepartmentShowUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_RecruitApplyAuditing\SA_wp_RecruitApplyAuditing.cs" />
+    <Compile Include="WebParts\SA\SA_wp_RecruitApplyAuditing\SA_wp_RecruitApplyAuditingUserControl.ascx.cs">
+      <DependentUpon>SA_wp_RecruitApplyAuditingUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_RecruitApplyAuditing\SA_wp_RecruitApplyAuditingUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_RecruitApplyAuditingUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_RecruitApply\SA_wp_RecruitApply.cs" />
+    <Compile Include="WebParts\SA\SA_wp_RecruitApply\SA_wp_RecruitApplyUserControl.ascx.cs">
+      <DependentUpon>SA_wp_RecruitApplyUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_RecruitApply\SA_wp_RecruitApplyUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_RecruitApplyUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_ShowDepartPhoto\SA_wp_ShowDepartPhoto.cs" />
+    <Compile Include="WebParts\SA\SA_wp_ShowDepartPhoto\SA_wp_ShowDepartPhotoUserControl.ascx.cs">
+      <DependentUpon>SA_wp_ShowDepartPhotoUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_ShowDepartPhoto\SA_wp_ShowDepartPhotoUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_ShowDepartPhotoUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_StuOrganizeStructure\SA_wp_StuOrganizeStructure.cs" />
+    <Compile Include="WebParts\SA\SA_wp_StuOrganizeStructure\SA_wp_StuOrganizeStructureUserControl.ascx.cs">
+      <DependentUpon>SA_wp_StuOrganizeStructureUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_StuOrganizeStructure\SA_wp_StuOrganizeStructureUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_StuOrganizeStructureUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_UploadDepartPhoto\SA_wp_UploadDepartPhoto.cs" />
+    <Compile Include="WebParts\SA\SA_wp_UploadDepartPhoto\SA_wp_UploadDepartPhotoUserControl.ascx.cs">
+      <DependentUpon>SA_wp_UploadDepartPhotoUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SA\SA_wp_UploadDepartPhoto\SA_wp_UploadDepartPhotoUserControl.ascx.designer.cs">
+      <DependentUpon>SA_wp_UploadDepartPhotoUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_EditQuestion\SE_wp_EditQuestion.cs" />
+    <Compile Include="WebParts\SE\SE_wp_EditQuestion\SE_wp_EditQuestionUserControl.ascx.cs">
+      <DependentUpon>SE_wp_EditQuestionUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_EditQuestion\SE_wp_EditQuestionUserControl.ascx.designer.cs">
+      <DependentUpon>SE_wp_EditQuestionUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_EditSurveyPaper2\SE_wp_EditSurveyPaper2.cs" />
+    <Compile Include="WebParts\SE\SE_wp_EditSurveyPaper2\SE_wp_EditSurveyPaper2UserControl.ascx.cs">
+      <DependentUpon>SE_wp_EditSurveyPaper2UserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_EditSurveyPaper2\SE_wp_EditSurveyPaper2UserControl.ascx.designer.cs">
+      <DependentUpon>SE_wp_EditSurveyPaper2UserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_EditSurveyPaper\SE_wp_EditSurveyPaper.cs" />
+    <Compile Include="WebParts\SE\SE_wp_EditSurveyPaper\SE_wp_EditSurveyPaperUserControl.ascx.cs">
+      <DependentUpon>SE_wp_EditSurveyPaperUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_EditSurveyPaper\SE_wp_EditSurveyPaperUserControl.ascx.designer.cs">
+      <DependentUpon>SE_wp_EditSurveyPaperUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_GroupManager\SE_wp_GroupManager.cs" />
+    <Compile Include="WebParts\SE\SE_wp_GroupManager\SE_wp_GroupManagerUserControl.ascx.cs">
+      <DependentUpon>SE_wp_GroupManagerUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_GroupManager\SE_wp_GroupManagerUserControl.ascx.designer.cs">
+      <DependentUpon>SE_wp_GroupManagerUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_MySurveyPaper\SE_wp_MySurveyPaper.cs" />
+    <Compile Include="WebParts\SE\SE_wp_MySurveyPaper\SE_wp_MySurveyPaperUserControl.ascx.cs">
+      <DependentUpon>SE_wp_MySurveyPaperUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_MySurveyPaper\SE_wp_MySurveyPaperUserControl.ascx.designer.cs">
+      <DependentUpon>SE_wp_MySurveyPaperUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_QuestionManager\SE_wp_QuestionManager.cs" />
+    <Compile Include="WebParts\SE\SE_wp_QuestionManager\SE_wp_QuestionManagerUserControl.ascx.cs">
+      <DependentUpon>SE_wp_QuestionManagerUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_QuestionManager\SE_wp_QuestionManagerUserControl.ascx.designer.cs">
+      <DependentUpon>SE_wp_QuestionManagerUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_SelectQuestion\SE_wp_SelectQuestion.cs" />
+    <Compile Include="WebParts\SE\SE_wp_SelectQuestion\SE_wp_SelectQuestionUserControl.ascx.cs">
+      <DependentUpon>SE_wp_SelectQuestionUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_SelectQuestion\SE_wp_SelectQuestionUserControl.ascx.designer.cs">
+      <DependentUpon>SE_wp_SelectQuestionUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_SurveyPaper\SE_wp_SurveyPaper.cs" />
+    <Compile Include="WebParts\SE\SE_wp_SurveyPaper\SE_wp_SurveyPaperUserControl.ascx.cs">
+      <DependentUpon>SE_wp_SurveyPaperUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_SurveyPaper\SE_wp_SurveyPaperUserControl.ascx.designer.cs">
+      <DependentUpon>SE_wp_SurveyPaperUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_SurveyResult\SE_wp_SurveyResult.cs" />
+    <Compile Include="WebParts\SE\SE_wp_SurveyResult\SE_wp_SurveyResultUserControl.ascx.cs">
+      <DependentUpon>SE_wp_SurveyResultUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_SurveyResult\SE_wp_SurveyResultUserControl.ascx.designer.cs">
+      <DependentUpon>SE_wp_SurveyResultUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_UseSurveyPaper\SE_wp_UseSurveyPaper.cs" />
+    <Compile Include="WebParts\SE\SE_wp_UseSurveyPaper\SE_wp_UseSurveyPaperUserControl.ascx.cs">
+      <DependentUpon>SE_wp_UseSurveyPaperUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SE\SE_wp_UseSurveyPaper\SE_wp_UseSurveyPaperUserControl.ascx.designer.cs">
+      <DependentUpon>SE_wp_UseSurveyPaperUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_AddPlanRecord\SG_wp_AddPlanRecord.cs" />
+    <Compile Include="WebParts\SG\SG_wp_AddPlanRecord\SG_wp_AddPlanRecordUserControl.ascx.cs">
+      <DependentUpon>SG_wp_AddPlanRecordUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_AddPlanRecord\SG_wp_AddPlanRecordUserControl.ascx.designer.cs">
+      <DependentUpon>SG_wp_AddPlanRecordUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_AddPracticeEvaluate\SG_wp_AddPracticeEvaluate.cs" />
+    <Compile Include="WebParts\SG\SG_wp_AddPracticeEvaluate\SG_wp_AddPracticeEvaluateUserControl.ascx.cs">
+      <DependentUpon>SG_wp_AddPracticeEvaluateUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_AddPracticeEvaluate\SG_wp_AddPracticeEvaluateUserControl.ascx.designer.cs">
+      <DependentUpon>SG_wp_AddPracticeEvaluateUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_GrowthSummary\SG_wp_GrowthSummary.cs" />
+    <Compile Include="WebParts\SG\SG_wp_GrowthSummary\SG_wp_GrowthSummaryUserControl.ascx.cs">
+      <DependentUpon>SG_wp_GrowthSummaryUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_GrowthSummary\SG_wp_GrowthSummaryUserControl.ascx.designer.cs">
+      <DependentUpon>SG_wp_GrowthSummaryUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_PlanComment\SG_wp_PlanComment.cs" />
+    <Compile Include="WebParts\SG\SG_wp_PlanComment\SG_wp_PlanCommentUserControl.ascx.cs">
+      <DependentUpon>SG_wp_PlanCommentUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_PlanComment\SG_wp_PlanCommentUserControl.ascx.designer.cs">
+      <DependentUpon>SG_wp_PlanCommentUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_PlanOperate\SG_wp_PlanOperate.cs" />
+    <Compile Include="WebParts\SG\SG_wp_PlanOperate\SG_wp_PlanOperateUserControl.ascx.cs">
+      <DependentUpon>SG_wp_PlanOperateUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_PlanOperate\SG_wp_PlanOperateUserControl.ascx.designer.cs">
+      <DependentUpon>SG_wp_PlanOperateUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_PracticeEvaluate\SG_wp_PracticeEvaluate.cs" />
+    <Compile Include="WebParts\SG\SG_wp_PracticeEvaluate\SG_wp_PracticeEvaluateUserControl.ascx.cs">
+      <DependentUpon>SG_wp_PracticeEvaluateUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_PracticeEvaluate\SG_wp_PracticeEvaluateUserControl.ascx.designer.cs">
+      <DependentUpon>SG_wp_PracticeEvaluateUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_StudentGrowth\SG_wp_StudentGrowth.cs" />
+    <Compile Include="WebParts\SG\SG_wp_StudentGrowth\SG_wp_StudentGrowthUserControl.ascx.cs">
+      <DependentUpon>SG_wp_StudentGrowthUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_StudentGrowth\SG_wp_StudentGrowthUserControl.ascx.designer.cs">
+      <DependentUpon>SG_wp_StudentGrowthUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_StuGrowthDetail\SG_wp_StuGrowthDetail.cs" />
+    <Compile Include="WebParts\SG\SG_wp_StuGrowthDetail\SG_wp_StuGrowthDetailUserControl.ascx.cs">
+      <DependentUpon>SG_wp_StuGrowthDetailUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\SG\SG_wp_StuGrowthDetail\SG_wp_StuGrowthDetailUserControl.ascx.designer.cs">
+      <DependentUpon>SG_wp_StuGrowthDetailUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ActivityAuditing\TA_wp_ActivityAuditing.cs" />
+    <Compile Include="WebParts\TA\TA_wp_ActivityAuditing\TA_wp_ActivityAuditingUserControl.ascx.cs">
+      <DependentUpon>TA_wp_ActivityAuditingUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ActivityAuditing\TA_wp_ActivityAuditingUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_ActivityAuditingUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ActivityShow\TA_wp_ActivityShow.cs" />
+    <Compile Include="WebParts\TA\TA_wp_ActivityShow\TA_wp_ActivityShowUserControl.ascx.cs">
+      <DependentUpon>TA_wp_ActivityShowUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ActivityShow\TA_wp_ActivityShowUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_ActivityShowUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_AddAlbum\TA_wp_AddAlbum.cs" />
+    <Compile Include="WebParts\TA\TA_wp_AddAlbum\TA_wp_AddAlbumUserControl.ascx.cs">
+      <DependentUpon>TA_wp_AddAlbumUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_AddAlbum\TA_wp_AddAlbumUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_AddAlbumUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_AddAssociaeActivity\TA_wp_AddAssociaeActivity.cs" />
+    <Compile Include="WebParts\TA\TA_wp_AddAssociaeActivity\TA_wp_AddAssociaeActivityUserControl.ascx.cs">
+      <DependentUpon>TA_wp_AddAssociaeActivityUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_AddAssociaeActivity\TA_wp_AddAssociaeActivityUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_AddAssociaeActivityUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_AddAssociaeNews\TA_wp_AddAssociaeNews.cs" />
+    <Compile Include="WebParts\TA\TA_wp_AddAssociaeNews\TA_wp_AddAssociaeNewsUserControl.ascx.cs">
+      <DependentUpon>TA_wp_AddAssociaeNewsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_AddAssociaeNews\TA_wp_AddAssociaeNewsUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_AddAssociaeNewsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_AddAssociae\TA_wp_AddAssociae.cs" />
+    <Compile Include="WebParts\TA\TA_wp_AddAssociae\TA_wp_AddAssociaeUserControl.ascx.cs">
+      <DependentUpon>TA_wp_AddAssociaeUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_AddAssociae\TA_wp_AddAssociaeUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_AddAssociaeUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ApplyAssociae\TA_wp_ApplyAssociae.cs" />
+    <Compile Include="WebParts\TA\TA_wp_ApplyAssociae\TA_wp_ApplyAssociaeUserControl.ascx.cs">
+      <DependentUpon>TA_wp_ApplyAssociaeUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ApplyAssociae\TA_wp_ApplyAssociaeUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_ApplyAssociaeUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ApplyQuitAuditing\TA_wp_ApplyQuitAuditing.cs" />
+    <Compile Include="WebParts\TA\TA_wp_ApplyQuitAuditing\TA_wp_ApplyQuitAuditingUserControl.ascx.cs">
+      <DependentUpon>TA_wp_ApplyQuitAuditingUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ApplyQuitAuditing\TA_wp_ApplyQuitAuditingUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_ApplyQuitAuditingUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ApplyQuit\TA_wp_ApplyQuit.cs" />
+    <Compile Include="WebParts\TA\TA_wp_ApplyQuit\TA_wp_ApplyQuitUserControl.ascx.cs">
+      <DependentUpon>TA_wp_ApplyQuitUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ApplyQuit\TA_wp_ApplyQuitUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_ApplyQuitUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_AssociaeHomePic\TA_wp_AssociaeHomePic.cs" />
+    <Compile Include="WebParts\TA\TA_wp_AssociaeHomePic\TA_wp_AssociaeHomePicUserControl.ascx.cs">
+      <DependentUpon>TA_wp_AssociaeHomePicUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_AssociaeHomePic\TA_wp_AssociaeHomePicUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_AssociaeHomePicUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_AssociaeIndx\TA_wp_AssociaeIndx.cs" />
+    <Compile Include="WebParts\TA\TA_wp_AssociaeIndx\TA_wp_AssociaeIndxUserControl.ascx.cs">
+      <DependentUpon>TA_wp_AssociaeIndxUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_AssociaeIndx\TA_wp_AssociaeIndxUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_AssociaeIndxUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_AssociationShow\TA_wp_AssociationShow.cs" />
+    <Compile Include="WebParts\TA\TA_wp_AssociationShow\TA_wp_AssociationShowUserControl.ascx.cs">
+      <DependentUpon>TA_wp_AssociationShowUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_AssociationShow\TA_wp_AssociationShowUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_AssociationShowUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_Association\TA_wp_Association.cs" />
+    <Compile Include="WebParts\TA\TA_wp_Association\TA_wp_AssociationUserControl.ascx.cs">
+      <DependentUpon>TA_wp_AssociationUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_Association\TA_wp_AssociationUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_AssociationUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ExamAssociaeAuditing\TA_wp_ExamAssociaeAuditing.cs" />
+    <Compile Include="WebParts\TA\TA_wp_ExamAssociaeAuditing\TA_wp_ExamAssociaeAuditingUserControl.ascx.cs">
+      <DependentUpon>TA_wp_ExamAssociaeAuditingUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ExamAssociaeAuditing\TA_wp_ExamAssociaeAuditingUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_ExamAssociaeAuditingUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ExamAssociae\TA_wp_ExamAssociae.cs" />
+    <Compile Include="WebParts\TA\TA_wp_ExamAssociae\TA_wp_ExamAssociaeUserControl.ascx.cs">
+      <DependentUpon>TA_wp_ExamAssociaeUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ExamAssociae\TA_wp_ExamAssociaeUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_ExamAssociaeUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ShowAssociaePhoto\TA_wp_ShowAssociaePhoto.cs" />
+    <Compile Include="WebParts\TA\TA_wp_ShowAssociaePhoto\TA_wp_ShowAssociaePhotoUserControl.ascx.cs">
+      <DependentUpon>TA_wp_ShowAssociaePhotoUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_ShowAssociaePhoto\TA_wp_ShowAssociaePhotoUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_ShowAssociaePhotoUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_UploadPhoto\TA_wp_UploadPhoto.cs" />
+    <Compile Include="WebParts\TA\TA_wp_UploadPhoto\TA_wp_UploadPhotoUserControl.ascx.cs">
+      <DependentUpon>TA_wp_UploadPhotoUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\TA\TA_wp_UploadPhoto\TA_wp_UploadPhotoUserControl.ascx.designer.cs">
+      <DependentUpon>TA_wp_UploadPhotoUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CONTROLTEMPLATES\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{34f82918-7a9f-4a78-9a88-3d26409651c5}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Associae\Associae.feature">
+      <FeatureId>{f130033d-3867-41ec-8718-a2a6ecc27a43}</FeatureId>
+    </None>
+    <None Include="Features\CourseEvaluate\CourseEvaluate.feature">
+      <FeatureId>{b37eb5c4-68d0-4165-9aa8-ea5a5b0fd51b}</FeatureId>
+    </None>
+    <None Include="Features\SurveyEvaluation\SurveyEvaluation.feature">
+      <FeatureId>{1a2cf5dd-f2bd-40a7-b804-aa68e8983d32}</FeatureId>
+    </None>
+    <None Include="Features\StudentActivity\StudentActivity.feature">
+      <FeatureId>{adecdd21-9c4d-47e5-8305-7b2ed42840b5}</FeatureId>
+    </None>
+    <None Include="Features\StudentGrowth\StudentGrowth.feature">
+      <FeatureId>{c586ec46-734d-4efa-8c30-00de9d889ba7}</FeatureId>
+    </None>
+    <None Include="Features\MoralEdu\MoralEdu.feature">
+      <FeatureId>{33e4bdca-6a11-4736-b3a5-643444144a4c}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="LAYOUTS\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{daa9ae8f-4b70-4688-896c-814f7bb4f4c6}</SharePointProjectItemId>
+    </None>
+    <None Include="LAYOUTS\Stu_css\ico\iconfont.eot" />
+    <None Include="LAYOUTS\Stu_css\ico\iconfont.ttf" />
+    <None Include="LAYOUTS\Stu_css\ico\iconfont.woff" />
+    <None Include="LAYOUTS\Stu_upload\icons.psd" />
+    <None Include="LAYOUTS\Stu_upload\preview.ashx" />
+    <None Include="LAYOUTS\Stu_upload\progress.psd" />
+    <None Include="LAYOUTS\Stu_upload\upload.ashx" />
+    <None Include="Package\Package.package">
+      <PackageId>{1e550ed9-4698-41f1-acb8-71bf02b2f6cc}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WebParts\CE\CE_wp_CourseScoreResult\CE_wp_CourseScoreResult.webpart" />
+    <None Include="WebParts\CE\CE_wp_CourseScoreResult\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bec2d605-0079-4a31-ab28-f325c027385e}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\CE\CE_wp_CourseScore\CE_wp_CourseScore.webpart" />
+    <None Include="WebParts\CE\CE_wp_CourseScore\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{544423e7-5283-45c2-892a-a8c5006833bb}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\CE\CE_wp_WdScore\CE_wp_WdScore.webpart" />
+    <None Include="WebParts\CE\CE_wp_WdScore\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2daa8c53-36ed-40c6-93aa-14ae23d6dbf9}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Master\Master_wp_Navigation\Master_wp_Navigation.webpart">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WebParts\Master\Master_wp_Navigation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{908621f3-935b-4640-92d1-ccec50de40b1}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Master\Master_wp_PutNavigation\Master_wp_PutNavigation.webpart" />
+    <None Include="WebParts\Master\Master_wp_PutNavigation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f0b0175e-bf77-4d61-bb21-4848382c550a}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Master\Master_wp_UserInfo\Master_wp_UserInfo.webpart" />
+    <None Include="WebParts\Master\Master_wp_UserInfo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{de8a970f-d7fb-40b9-bd0d-0ce6b10e249d}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\ME\ME_wp_EvaluateBase\ME_wp_EvaluateBase.webpart" />
+    <None Include="WebParts\ME\ME_wp_EvaluateBase\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e2b34d44-9d90-4363-8cb5-fc7d4c4055f3}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\ME\ME_wp_EvaluateBase_Edit\ME_wp_EvaluateBase_Edit.webpart" />
+    <None Include="WebParts\ME\ME_wp_EvaluateBase_Edit\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d1c81a1f-8708-4080-802f-a7195a0011cd}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\ME\ME_wp_EvaluateTemp\ME_wp_EvaluateTemp.webpart" />
+    <None Include="WebParts\ME\ME_wp_EvaluateTemp\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a6d23d63-0236-4b0d-b547-393bc140ef92}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\ME\ME_wp_EvaluateTemp_Edit\ME_wp_EvaluateTemp_Edit.webpart" />
+    <None Include="WebParts\ME\ME_wp_EvaluateTemp_Edit\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{55143d5c-6f82-48b3-b715-c4070d7df1e9}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\ME\ME_wp_EvaluateTemp_SetBase\ME_wp_EvaluateTemp_SetBase.webpart" />
+    <None Include="WebParts\ME\ME_wp_EvaluateTemp_SetBase\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{75b155b2-1cfb-4363-8384-7263b11f127e}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\ME\ME_wp_EvaluateTemp_SetScore\ME_wp_EvaluateTemp_SetScore.webpart" />
+    <None Include="WebParts\ME\ME_wp_EvaluateTemp_SetScore\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3166377f-055f-4a6a-8ade-b1a94f8add66}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\ME\ME_wp_MoralEduInfo\ME_wp_MoralEduInfo.webpart" />
+    <None Include="WebParts\ME\ME_wp_MoralEduInfo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4bf36d47-2482-4f55-ad03-fdbea734dd4f}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\ME\ME_wp_PrizeInfo\ME_wp_PrizeInfo.webpart" />
+    <None Include="WebParts\ME\ME_wp_PrizeInfo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e755583f-710a-46b4-bcf1-715765077974}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\ME\ME_wp_PrizeInfo_Exam\ME_wp_PrizeInfo_Exam.webpart" />
+    <None Include="WebParts\ME\ME_wp_PrizeInfo_Exam\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7d8b55af-9901-4d28-80bc-321cd7b349f3}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\ME\ME_wp_PrizeInfo_SetScore\ME_wp_PrizeInfo_SetScore.webpart" />
+    <None Include="WebParts\ME\ME_wp_PrizeInfo_SetScore\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d1ae07c8-a612-4db9-b9e1-192ae027768d}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_ActivityApplyAuditing\SA_wp_ActivityApplyAuditing.webpart" />
+    <None Include="WebParts\SA\SA_wp_ActivityApplyAuditing\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{27081fa7-cf7a-4565-ab38-af9a936cb193}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_ActivityApply\SA_wp_ActivityApply.webpart" />
+    <None Include="WebParts\SA\SA_wp_ActivityApply\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d8ba69b9-b7f4-4fa9-b4dd-328ff47cd4d7}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_ActivityDetailShow\SA_wp_ActivityDetailShow.webpart" />
+    <None Include="WebParts\SA\SA_wp_ActivityDetailShow\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4ddf9a67-d818-4f3f-aaf2-0c978f4aed99}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_ActivityIndex\SA_wp_ActivityIndex.webpart" />
+    <None Include="WebParts\SA\SA_wp_ActivityIndex\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5fddbf37-1719-4e16-844e-663f0a68c936}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_ActivityManage\SA_wp_ActivityManage.webpart" />
+    <None Include="WebParts\SA\SA_wp_ActivityManage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{69b1f9cf-9958-458a-9083-516df90b40ac}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_ActivityNewsShow\SA_wp_ActivityNewsShow.webpart" />
+    <None Include="WebParts\SA\SA_wp_ActivityNewsShow\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ba75f567-a22e-48e0-a900-7c5adbba07c8}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_AddActivityNews\SA_wp_AddActivityNews.webpart" />
+    <None Include="WebParts\SA\SA_wp_AddActivityNews\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{becd834e-2e9d-4293-9fcf-6aafafb4561c}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_AddActivity\SA_wp_AddActivity.webpart" />
+    <None Include="WebParts\SA\SA_wp_AddActivity\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bf67d42f-63ba-4615-9966-6523c6654047}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_AddDepartmentAlbum\SA_wp_AddDepartmentAlbum.webpart" />
+    <None Include="WebParts\SA\SA_wp_AddDepartmentAlbum\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{41e38624-1cdd-4101-b75e-7ab32e2baa30}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_AddDepartment\SA_wp_AddDepartment.webpart" />
+    <None Include="WebParts\SA\SA_wp_AddDepartment\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0dcb56f8-7a67-4fbc-8092-a044b8ae9902}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_AllActivity\SA_wp_AllActivity.webpart" />
+    <None Include="WebParts\SA\SA_wp_AllActivity\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bfe3bf98-a5ba-42fb-923d-48e6f580ec25}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_DepartmentHomePic\SA_wp_DepartmentHomePic.webpart" />
+    <None Include="WebParts\SA\SA_wp_DepartmentHomePic\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2c7a4992-32ac-42c6-8a7c-cdf0cb46db02}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_DepartmentShow\SA_wp_DepartmentShow.webpart" />
+    <None Include="WebParts\SA\SA_wp_DepartmentShow\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2df6db35-16c6-4efc-aa01-e23baf51b9b2}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_RecruitApplyAuditing\SA_wp_RecruitApplyAuditing.webpart" />
+    <None Include="WebParts\SA\SA_wp_RecruitApplyAuditing\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a71b1d13-2ced-4af6-8db7-21891a35d80d}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_RecruitApply\SA_wp_RecruitApply.webpart" />
+    <None Include="WebParts\SA\SA_wp_RecruitApply\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{734f5636-0dbb-4000-890f-1690eb3707ef}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_ShowDepartPhoto\SA_wp_ShowDepartPhoto.webpart" />
+    <None Include="WebParts\SA\SA_wp_ShowDepartPhoto\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{043ce150-96d6-42be-9606-13e1e4a0ad5c}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_StuOrganizeStructure\SA_wp_StuOrganizeStructure.webpart" />
+    <None Include="WebParts\SA\SA_wp_StuOrganizeStructure\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a03d7f8c-f17a-4cff-b6a3-87ed24138f5a}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SA\SA_wp_UploadDepartPhoto\SA_wp_UploadDepartPhoto.webpart" />
+    <None Include="WebParts\SA\SA_wp_UploadDepartPhoto\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2c314085-9451-4f29-92d8-fd933b7b5ee9}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SE\SE_wp_EditQuestion\SE_wp_EditQuestion.webpart" />
+    <None Include="WebParts\SE\SE_wp_EditQuestion\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b58efcc7-d4cd-4171-a25f-a9e6d26ebf92}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SE\SE_wp_EditSurveyPaper2\SE_wp_EditSurveyPaper2.webpart" />
+    <None Include="WebParts\SE\SE_wp_EditSurveyPaper2\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0e7c5a90-3fae-4663-a606-ea285fe73223}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SE\SE_wp_EditSurveyPaper\SE_wp_EditSurveyPaper.webpart" />
+    <None Include="WebParts\SE\SE_wp_EditSurveyPaper\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{40fa3cae-351b-444a-abba-c8c6f760da35}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SE\SE_wp_GroupManager\SE_wp_GroupManager.webpart" />
+    <None Include="WebParts\SE\SE_wp_GroupManager\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{250e5b2a-8433-4651-b1e9-7d7199b6dfd1}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SE\SE_wp_MySurveyPaper\SE_wp_MySurveyPaper.webpart" />
+    <None Include="WebParts\SE\SE_wp_MySurveyPaper\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f1e9bf27-459e-444b-9eb8-f9c2827063e7}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SE\SE_wp_QuestionManager\SE_wp_QuestionManager.webpart" />
+    <None Include="WebParts\SE\SE_wp_QuestionManager\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0d1003e2-2d2d-45b4-8830-a164198efef2}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SE\SE_wp_SelectQuestion\SE_wp_SelectQuestion.webpart" />
+    <None Include="WebParts\SE\SE_wp_SelectQuestion\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8aa7ceb4-d441-498c-8b8e-2c28ba1853fd}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SE\SE_wp_SurveyPaper\SE_wp_SurveyPaper.webpart" />
+    <None Include="WebParts\SE\SE_wp_SurveyPaper\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4bf60527-3310-41f7-89ca-65721b0ebb28}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SE\SE_wp_SurveyResult\SE_wp_SurveyResult.webpart" />
+    <None Include="WebParts\SE\SE_wp_SurveyResult\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f35c0aa0-82ba-49f8-ab32-2fcbeec39305}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SE\SE_wp_UseSurveyPaper\SE_wp_UseSurveyPaper.webpart" />
+    <None Include="WebParts\SE\SE_wp_UseSurveyPaper\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ad99b328-f16b-4788-8b30-46b1f05dc3a8}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SG\SG_wp_AddPlanRecord\SG_wp_AddPlanRecord.webpart" />
+    <None Include="WebParts\SG\SG_wp_AddPlanRecord\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f6be5916-1367-44d9-877a-fcf72d25f521}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SG\SG_wp_AddPracticeEvaluate\SG_wp_AddPracticeEvaluate.webpart" />
+    <None Include="WebParts\SG\SG_wp_AddPracticeEvaluate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{59691b46-7e5c-4291-a5a5-ff157a0f7fd6}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SG\SG_wp_GrowthSummary\SG_wp_GrowthSummary.webpart" />
+    <None Include="WebParts\SG\SG_wp_GrowthSummary\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5f6d2b61-9e14-4bd8-8af4-e6ba356a9e23}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SG\SG_wp_PlanComment\SG_wp_PlanComment.webpart" />
+    <None Include="WebParts\SG\SG_wp_PlanComment\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eccc54ed-36b8-4904-9fb5-c7014fb21d7d}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SG\SG_wp_PlanOperate\SG_wp_PlanOperate.webpart" />
+    <None Include="WebParts\SG\SG_wp_PlanOperate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f6e203f9-a1c3-4362-bb10-03aeac2ca7b7}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SG\SG_wp_PracticeEvaluate\SG_wp_PracticeEvaluate.webpart" />
+    <None Include="WebParts\SG\SG_wp_PracticeEvaluate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4e7dc7de-155c-46ac-90a2-af346f5f8f7c}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SG\SG_wp_StudentGrowth\SG_wp_StudentGrowth.webpart" />
+    <None Include="WebParts\SG\SG_wp_StudentGrowth\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e525b9a8-4547-4c3a-8edf-2ff114d6915c}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SG\SG_wp_StuGrowthDetail\SG_wp_StuGrowthDetail.webpart" />
+    <None Include="WebParts\SG\SG_wp_StuGrowthDetail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9f0e9628-f0f0-407d-9be4-786ab3bb9862}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_ActivityAuditing\TA_wp_ActivityAuditing.webpart" />
+    <None Include="WebParts\TA\TA_wp_ActivityAuditing\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{52b697fc-af2d-4725-a8f0-5a121dcb1119}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_ActivityShow\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{71aff84a-c5fc-4958-8e51-21ea9d13ee04}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_ActivityShow\TA_wp_ActivityShow.webpart" />
+    <None Include="WebParts\TA\TA_wp_AddAlbum\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d35e40c6-5172-4aba-a4f7-1a24d7a3ece5}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_AddAlbum\TA_wp_AddAlbum.webpart" />
+    <None Include="WebParts\TA\TA_wp_AddAssociaeActivity\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{03b5224e-6320-43ba-9266-a3ca0eb0a01e}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_AddAssociaeActivity\TA_wp_AddAssociaeActivity.webpart" />
+    <None Include="WebParts\TA\TA_wp_AddAssociaeNews\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{96c421b7-7284-4ade-8b67-2591825318b3}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_AddAssociaeNews\TA_wp_AddAssociaeNews.webpart" />
+    <None Include="WebParts\TA\TA_wp_AddAssociae\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f5b903c0-a681-47b4-8c42-1ab13c58dc53}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_AddAssociae\TA_wp_AddAssociae.webpart" />
+    <None Include="WebParts\TA\TA_wp_ApplyAssociae\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3c57011e-2451-4112-ae64-3a039efdf295}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_ApplyAssociae\TA_wp_ApplyAssociae.webpart" />
+    <None Include="WebParts\TA\TA_wp_ApplyQuitAuditing\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d2b7c731-a41b-4127-a09a-c0500f52b56c}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_ApplyQuitAuditing\TA_wp_ApplyQuitAuditing.webpart" />
+    <None Include="WebParts\TA\TA_wp_ApplyQuit\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{47036405-dd53-4151-9e00-426b240fa8db}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_ApplyQuit\TA_wp_ApplyQuit.webpart" />
+    <None Include="WebParts\TA\TA_wp_AssociaeHomePic\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9fee3cd6-7c18-4495-a470-2e0ae11bef06}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_AssociaeHomePic\TA_wp_AssociaeHomePic.webpart" />
+    <None Include="WebParts\TA\TA_wp_AssociaeIndx\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{755a487c-1213-4689-a12b-31a6afb29c26}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_AssociaeIndx\TA_wp_AssociaeIndx.webpart" />
+    <None Include="WebParts\TA\TA_wp_AssociationShow\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9f96ebbb-873e-42eb-bb94-e01f02b8a23c}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_AssociationShow\TA_wp_AssociationShow.webpart" />
+    <None Include="WebParts\TA\TA_wp_Association\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5129e9cd-154d-4ed2-9ed3-2335e53a4de3}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_Association\TA_wp_Association.webpart" />
+    <None Include="WebParts\TA\TA_wp_ExamAssociaeAuditing\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3cd78cf9-edac-4d94-a08d-4e2ce6f39f1e}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_ExamAssociaeAuditing\TA_wp_ExamAssociaeAuditing.webpart" />
+    <None Include="WebParts\TA\TA_wp_ExamAssociae\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{226734ec-eeb6-414c-b114-d7431ccfff4f}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_ExamAssociae\TA_wp_ExamAssociae.webpart" />
+    <None Include="WebParts\TA\TA_wp_ShowAssociaePhoto\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ec5a0b15-5f2a-42bd-841c-fa2628f52820}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_ShowAssociaePhoto\TA_wp_ShowAssociaePhoto.webpart" />
+    <None Include="WebParts\TA\TA_wp_UploadPhoto\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5142de96-173a-4935-9b4e-73465c0bfc29}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\TA\TA_wp_UploadPhoto\TA_wp_UploadPhoto.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Associae\Associae.Template.xml">
+      <DependentUpon>Associae.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\CourseEvaluate\CourseEvaluate.Template.xml">
+      <DependentUpon>CourseEvaluate.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SurveyEvaluation\SurveyEvaluation.Template.xml">
+      <DependentUpon>SurveyEvaluation.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\StudentActivity\StudentActivity.Template.xml">
+      <DependentUpon>StudentActivity.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\StudentGrowth\StudentGrowth.Template.xml">
+      <DependentUpon>StudentGrowth.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\MoralEdu\MoralEdu.Template.xml">
+      <DependentUpon>MoralEdu.feature</DependentUpon>
+    </Content>
+    <Content Include="LAYOUTS\Handler\OrganizeStructure.aspx" />
+    <Content Include="LAYOUTS\Stu_css\allst.css" />
+    <Content Include="LAYOUTS\Stu_css\allst_content.css" />
+    <Content Include="LAYOUTS\Stu_css\ico\demo.css" />
+    <Content Include="LAYOUTS\Stu_css\ico\demo.html" />
+    <Content Include="LAYOUTS\Stu_css\ico\iconfont.css" />
+    <Content Include="LAYOUTS\Stu_css\ico\iconfont.svg" />
+    <Content Include="LAYOUTS\Stu_css\list_nr.css" />
+    <Content Include="LAYOUTS\Stu_css\StuAssociate.css" />
+    <Content Include="LAYOUTS\Stu_css\st_index.css" />
+    <Content Include="LAYOUTS\Stu_images\baoming.png" />
+    <Content Include="LAYOUTS\Stu_images\homepic.jpeg" />
+    <Content Include="LAYOUTS\Stu_images\jieshu.png" />
+    <Content Include="LAYOUTS\Stu_images\jinxing.png" />
+    <Content Include="LAYOUTS\Stu_images\nopic.png" />
+    <Content Include="LAYOUTS\Stu_images\studentdefault.jpg" />
+    <Content Include="LAYOUTS\Stu_images\zs11.jpg" />
+    <Content Include="LAYOUTS\Stu_images\zs20.jpg" />
+    <Content Include="LAYOUTS\Stu_images\zs21.jpg" />
+    <Content Include="LAYOUTS\Stu_images\zs22.jpg" />
+    <Content Include="LAYOUTS\Stu_images\zs26.jpg" />
+    <Content Include="LAYOUTS\Stu_images\zs28.jpg" />
+    <Content Include="LAYOUTS\Stu_js\file_upload_plug-in.js" />
+    <Content Include="LAYOUTS\Stu_js\jOrgChart\css\bootstrap.min.css" />
+    <Content Include="LAYOUTS\Stu_js\jOrgChart\css\custom.css" />
+    <Content Include="LAYOUTS\Stu_js\jOrgChart\css\jquery.jOrgChart.css" />
+    <Content Include="LAYOUTS\Stu_js\jOrgChart\css\prettify.css" />
+    <Content Include="LAYOUTS\Stu_js\jOrgChart\images\bkgd.png" />
+    <Content Include="LAYOUTS\Stu_js\jOrgChart\images\raspberry.jpg" />
+    <Content Include="LAYOUTS\Stu_js\jOrgChart\index.html" />
+    <Content Include="LAYOUTS\Stu_js\jOrgChart\jquery-ui.min.js" />
+    <Content Include="LAYOUTS\Stu_js\jOrgChart\jquery.jOrgChart.js" />
+    <Content Include="LAYOUTS\Stu_js\jOrgChart\jquery.min.js" />
+    <Content Include="LAYOUTS\Stu_js\jOrgChart\prettify.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\kindeditor-all-min.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\kindeditor-all.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\kindeditor-min.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\kindeditor.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\lang\ar.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\lang\en.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\lang\ko.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\lang\zh_CN.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\lang\zh_TW.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\anchor\anchor.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\autoheight\autoheight.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\baidumap\baidumap.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\baidumap\index.html" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\baidumap\map.html" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\clearhtml\clearhtml.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\code\code.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\code\prettify.css" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\code\prettify.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\emoticons.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\0.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\1.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\10.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\100.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\101.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\102.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\103.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\104.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\105.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\106.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\107.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\108.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\109.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\11.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\110.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\111.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\112.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\113.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\114.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\115.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\116.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\117.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\118.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\119.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\12.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\120.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\121.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\122.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\123.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\124.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\125.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\126.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\127.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\128.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\129.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\13.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\130.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\131.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\132.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\133.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\134.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\14.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\15.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\16.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\17.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\18.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\19.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\2.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\20.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\21.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\22.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\23.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\24.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\25.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\26.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\27.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\28.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\29.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\3.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\30.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\31.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\32.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\33.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\34.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\35.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\36.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\37.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\38.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\39.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\4.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\40.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\41.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\42.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\43.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\44.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\45.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\46.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\47.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\48.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\49.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\5.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\50.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\51.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\52.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\53.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\54.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\55.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\56.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\57.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\58.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\59.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\6.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\60.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\61.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\62.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\63.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\64.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\65.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\66.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\67.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\68.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\69.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\7.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\70.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\71.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\72.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\73.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\74.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\75.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\76.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\77.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\78.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\79.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\8.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\80.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\81.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\82.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\83.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\84.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\85.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\86.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\87.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\88.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\89.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\9.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\90.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\91.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\92.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\93.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\94.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\95.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\96.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\97.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\98.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\99.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\emoticons\images\static.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\filemanager\filemanager.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\filemanager\images\file-16.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\filemanager\images\file-64.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\filemanager\images\folder-16.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\filemanager\images\folder-64.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\filemanager\images\go-up.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\flash\flash.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\image\image.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\image\images\align_left.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\image\images\align_right.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\image\images\align_top.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\image\images\refresh.png" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\insertfile\insertfile.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\lineheight\lineheight.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\link\link.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\map\map.html" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\map\map.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\media\media.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\multiimage\images\image.png" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\multiimage\images\select-files-en.png" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\multiimage\images\select-files-zh_CN.png" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\multiimage\images\swfupload.swf" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\multiimage\multiimage.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\pagebreak\pagebreak.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\plainpaste\plainpaste.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\preview\preview.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\quickformat\quickformat.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\table\table.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\template\html\1.html" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\template\html\2.html" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\template\html\3.html" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\template\template.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\plugins\wordpaste\wordpaste.js" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\themes\common\anchor.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\themes\common\blank.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\themes\common\flash.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\themes\common\loading.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\themes\common\media.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\themes\common\rm.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\themes\default\background.png" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\themes\default\default.css" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\themes\default\default.png" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\themes\qq\editor.gif" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\themes\qq\qq.css" />
+    <Content Include="LAYOUTS\Stu_js\KindUeditor\themes\simple\simple.css" />
+    <Content Include="LAYOUTS\Stu_js\shetuan.js" />
+    <Content Include="LAYOUTS\Stu_js\skitter\css\skitter.styles.css" />
+    <Content Include="LAYOUTS\Stu_js\skitter\css\skitter.styles.min.css" />
+    <Content Include="LAYOUTS\Stu_js\skitter\images\ajax-loader.gif" />
+    <Content Include="LAYOUTS\Stu_js\skitter\images\sprite-clean.png" />
+    <Content Include="LAYOUTS\Stu_js\skitter\images\sprite-default.png" />
+    <Content Include="LAYOUTS\Stu_js\skitter\images\sprite-minimalist.png" />
+    <Content Include="LAYOUTS\Stu_js\skitter\images\sprite-round.png" />
+    <Content Include="LAYOUTS\Stu_js\skitter\images\sprite-square.png" />
+    <Content Include="LAYOUTS\Stu_js\skitter\jquery-2.1.1.min.js" />
+    <Content Include="LAYOUTS\Stu_js\skitter\jquery.easing.1.3.js" />
+    <Content Include="LAYOUTS\Stu_js\skitter\jquery.skitter.js" />
+    <Content Include="LAYOUTS\Stu_js\skitter\jquery.skitter.min.js" />
+    <Content Include="LAYOUTS\Stu_upload\bg.png" />
+    <Content Include="LAYOUTS\Stu_upload\expressInstall.swf" />
+    <Content Include="LAYOUTS\Stu_upload\icons.png" />
+    <Content Include="LAYOUTS\Stu_upload\image.png" />
+    <Content Include="LAYOUTS\Stu_upload\jquery.js" />
+    <Content Include="LAYOUTS\Stu_upload\progress.png" />
+    <Content Include="LAYOUTS\Stu_upload\readme.txt" />
+    <Content Include="LAYOUTS\Stu_upload\upstyle.css" />
+    <Content Include="LAYOUTS\Stu_upload\success.png" />
+    <Content Include="LAYOUTS\Stu_upload\upload.js" />
+    <Content Include="LAYOUTS\Stu_upload\Uploader.swf" />
+    <Content Include="LAYOUTS\Stu_upload\webuploader.css" />
+    <Content Include="LAYOUTS\Stu_upload\webuploader.min.js" />
+    <Content Include="WebParts\CE\CE_wp_CourseScoreResult\CE_wp_CourseScoreResultUserControl.ascx" />
+    <Content Include="WebParts\CE\CE_wp_CourseScoreResult\Elements.xml" />
+    <Content Include="WebParts\CE\CE_wp_CourseScore\CE_wp_CourseScoreUserControl.ascx" />
+    <Content Include="WebParts\CE\CE_wp_CourseScore\Elements.xml" />
+    <Content Include="WebParts\CE\CE_wp_WdScore\CE_wp_WdScoreUserControl.ascx" />
+    <Content Include="WebParts\CE\CE_wp_WdScore\Elements.xml" />
+    <Content Include="WebParts\Master\Master_wp_Navigation\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebParts\Master\Master_wp_Navigation\Master_wp_NavigationUserControl.ascx" />
+    <Content Include="WebParts\Master\Master_wp_PutNavigation\Elements.xml" />
+    <Content Include="WebParts\Master\Master_wp_PutNavigation\Master_wp_PutNavigationUserControl.ascx" />
+    <Content Include="WebParts\Master\Master_wp_UserInfo\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebParts\Master\Master_wp_UserInfo\Master_wp_UserInfoUserControl.ascx" />
+    <Content Include="WebParts\ME\ME_wp_EvaluateBase\Elements.xml" />
+    <Content Include="WebParts\ME\ME_wp_EvaluateBase\ME_wp_EvaluateBaseUserControl.ascx" />
+    <Content Include="WebParts\ME\ME_wp_EvaluateBase_Edit\Elements.xml" />
+    <Content Include="WebParts\ME\ME_wp_EvaluateBase_Edit\ME_wp_EvaluateBase_EditUserControl.ascx" />
+    <Content Include="WebParts\ME\ME_wp_EvaluateTemp\Elements.xml" />
+    <Content Include="WebParts\ME\ME_wp_EvaluateTemp\ME_wp_EvaluateTempUserControl.ascx" />
+    <Content Include="WebParts\ME\ME_wp_EvaluateTemp_Edit\Elements.xml" />
+    <Content Include="WebParts\ME\ME_wp_EvaluateTemp_Edit\ME_wp_EvaluateTemp_EditUserControl.ascx" />
+    <Content Include="WebParts\ME\ME_wp_EvaluateTemp_SetBase\Elements.xml" />
+    <Content Include="WebParts\ME\ME_wp_EvaluateTemp_SetBase\ME_wp_EvaluateTemp_SetBaseUserControl.ascx" />
+    <Content Include="WebParts\ME\ME_wp_EvaluateTemp_SetScore\Elements.xml" />
+    <Content Include="WebParts\ME\ME_wp_EvaluateTemp_SetScore\ME_wp_EvaluateTemp_SetScoreUserControl.ascx" />
+    <Content Include="WebParts\ME\ME_wp_MoralEduInfo\Elements.xml" />
+    <Content Include="WebParts\ME\ME_wp_MoralEduInfo\ME_wp_MoralEduInfoUserControl.ascx" />
+    <Content Include="WebParts\ME\ME_wp_PrizeInfo_Exam\Elements.xml" />
+    <Content Include="WebParts\ME\ME_wp_PrizeInfo_Exam\ME_wp_PrizeInfo_ExamUserControl.ascx" />
+    <Content Include="WebParts\ME\ME_wp_PrizeInfo_SetScore\Elements.xml" />
+    <Content Include="WebParts\ME\ME_wp_PrizeInfo_SetScore\ME_wp_PrizeInfo_SetScoreUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_ActivityApplyAuditing\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_ActivityApplyAuditing\SA_wp_ActivityApplyAuditingUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_ActivityApply\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_ActivityApply\SA_wp_ActivityApplyUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_ActivityDetailShow\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_ActivityDetailShow\SA_wp_ActivityDetailShowUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_ActivityIndex\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_ActivityIndex\SA_wp_ActivityIndexUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_ActivityManage\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_ActivityManage\SA_wp_ActivityManageUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_ActivityNewsShow\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_ActivityNewsShow\SA_wp_ActivityNewsShowUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_AddActivityNews\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_AddActivityNews\SA_wp_AddActivityNewsUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_AddActivity\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_AddActivity\SA_wp_AddActivityUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_AddDepartmentAlbum\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_AddDepartmentAlbum\SA_wp_AddDepartmentAlbumUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_AddDepartment\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_AddDepartment\SA_wp_AddDepartmentUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_AllActivity\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_AllActivity\SA_wp_AllActivityUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_DepartmentHomePic\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_DepartmentHomePic\SA_wp_DepartmentHomePicUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_DepartmentShow\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_DepartmentShow\SA_wp_DepartmentShowUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_RecruitApplyAuditing\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_RecruitApplyAuditing\SA_wp_RecruitApplyAuditingUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_RecruitApply\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_RecruitApply\SA_wp_RecruitApplyUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_ShowDepartPhoto\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_ShowDepartPhoto\SA_wp_ShowDepartPhotoUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_StuOrganizeStructure\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_StuOrganizeStructure\SA_wp_StuOrganizeStructureUserControl.ascx" />
+    <Content Include="WebParts\SA\SA_wp_UploadDepartPhoto\Elements.xml" />
+    <Content Include="WebParts\SA\SA_wp_UploadDepartPhoto\SA_wp_UploadDepartPhotoUserControl.ascx" />
+    <Content Include="WebParts\SE\SE_wp_EditQuestion\Elements.xml" />
+    <Content Include="WebParts\SE\SE_wp_EditQuestion\SE_wp_EditQuestionUserControl.ascx" />
+    <Content Include="WebParts\SE\SE_wp_EditSurveyPaper2\Elements.xml" />
+    <Content Include="WebParts\SE\SE_wp_EditSurveyPaper2\SE_wp_EditSurveyPaper2UserControl.ascx" />
+    <Content Include="WebParts\SE\SE_wp_EditSurveyPaper\Elements.xml" />
+    <Content Include="WebParts\SE\SE_wp_EditSurveyPaper\SE_wp_EditSurveyPaperUserControl.ascx" />
+    <Content Include="WebParts\SE\SE_wp_GroupManager\Elements.xml" />
+    <Content Include="WebParts\SE\SE_wp_GroupManager\SE_wp_GroupManagerUserControl.ascx" />
+    <Content Include="WebParts\SE\SE_wp_MySurveyPaper\Elements.xml" />
+    <Content Include="WebParts\SE\SE_wp_MySurveyPaper\SE_wp_MySurveyPaperUserControl.ascx" />
+    <Content Include="WebParts\SE\SE_wp_QuestionManager\Elements.xml" />
+    <Content Include="WebParts\SE\SE_wp_QuestionManager\SE_wp_QuestionManagerUserControl.ascx" />
+    <Content Include="WebParts\SE\SE_wp_SelectQuestion\Elements.xml" />
+    <Content Include="WebParts\SE\SE_wp_SelectQuestion\SE_wp_SelectQuestionUserControl.ascx" />
+    <Content Include="WebParts\SE\SE_wp_SurveyPaper\Elements.xml" />
+    <Content Include="WebParts\SE\SE_wp_SurveyPaper\SE_wp_SurveyPaperUserControl.ascx" />
+    <Content Include="WebParts\SE\SE_wp_SurveyResult\Elements.xml" />
+    <Content Include="WebParts\SE\SE_wp_SurveyResult\SE_wp_SurveyResultUserControl.ascx" />
+    <Content Include="WebParts\SE\SE_wp_UseSurveyPaper\Elements.xml" />
+    <Content Include="WebParts\SE\SE_wp_UseSurveyPaper\SE_wp_UseSurveyPaperUserControl.ascx" />
+    <Content Include="WebParts\SG\SG_wp_AddPlanRecord\Elements.xml" />
+    <Content Include="WebParts\SG\SG_wp_AddPlanRecord\SG_wp_AddPlanRecordUserControl.ascx" />
+    <Content Include="WebParts\SG\SG_wp_AddPracticeEvaluate\Elements.xml" />
+    <Content Include="WebParts\SG\SG_wp_AddPracticeEvaluate\SG_wp_AddPracticeEvaluateUserControl.ascx" />
+    <Content Include="WebParts\SG\SG_wp_GrowthSummary\Elements.xml" />
+    <Content Include="WebParts\SG\SG_wp_GrowthSummary\SG_wp_GrowthSummaryUserControl.ascx" />
+    <Content Include="WebParts\SG\SG_wp_PlanComment\Elements.xml" />
+    <Content Include="WebParts\SG\SG_wp_PlanComment\SG_wp_PlanCommentUserControl.ascx" />
+    <Content Include="WebParts\SG\SG_wp_PlanOperate\Elements.xml" />
+    <Content Include="WebParts\SG\SG_wp_PlanOperate\SG_wp_PlanOperateUserControl.ascx" />
+    <Content Include="WebParts\SG\SG_wp_PracticeEvaluate\Elements.xml" />
+    <Content Include="WebParts\SG\SG_wp_PracticeEvaluate\SG_wp_PracticeEvaluateUserControl.ascx" />
+    <Content Include="WebParts\SG\SG_wp_StudentGrowth\Elements.xml" />
+    <Content Include="WebParts\SG\SG_wp_StudentGrowth\SG_wp_StudentGrowthUserControl.ascx" />
+    <Content Include="WebParts\SG\SG_wp_StuGrowthDetail\Elements.xml" />
+    <Content Include="WebParts\SG\SG_wp_StuGrowthDetail\SG_wp_StuGrowthDetailUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_ActivityAuditing\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_ActivityAuditing\TA_wp_ActivityAuditingUserControl.ascx" />
+    <Content Include="WebParts\ME\ME_wp_PrizeInfo\Elements.xml" />
+    <Content Include="WebParts\ME\ME_wp_PrizeInfo\ME_wp_PrizeInfoUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_ActivityShow\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_ActivityShow\TA_wp_ActivityShowUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_AddAlbum\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_AddAlbum\TA_wp_AddAlbumUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_AddAssociaeActivity\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_AddAssociaeActivity\TA_wp_AddAssociaeActivityUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_AddAssociaeNews\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_AddAssociaeNews\TA_wp_AddAssociaeNewsUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_AddAssociae\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_AddAssociae\TA_wp_AddAssociaeUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_ApplyAssociae\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_ApplyAssociae\TA_wp_ApplyAssociaeUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_ApplyQuitAuditing\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_ApplyQuitAuditing\TA_wp_ApplyQuitAuditingUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_ApplyQuit\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_ApplyQuit\TA_wp_ApplyQuitUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_AssociaeHomePic\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_AssociaeHomePic\TA_wp_AssociaeHomePicUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_AssociaeIndx\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_AssociaeIndx\TA_wp_AssociaeIndxUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_AssociationShow\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_AssociationShow\TA_wp_AssociationShowUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_Association\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_Association\TA_wp_AssociationUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_ExamAssociaeAuditing\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_ExamAssociaeAuditing\TA_wp_ExamAssociaeAuditingUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_ExamAssociae\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_ExamAssociae\TA_wp_ExamAssociaeUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_ShowAssociaePhoto\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_ShowAssociaePhoto\TA_wp_ShowAssociaePhotoUserControl.ascx" />
+    <Content Include="WebParts\TA\TA_wp_UploadPhoto\Elements.xml" />
+    <Content Include="WebParts\TA\TA_wp_UploadPhoto\TA_wp_UploadPhotoUserControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{4b38b8bc-6017-4f4e-921a-6c622cfb328d}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

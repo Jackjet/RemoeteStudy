@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="TT_wp_GroupDescri" List="113" Url="_catalogs/wp">
+    <File Path="TT_wp_GroupDescri\TT_wp_GroupDescri.webpart" Url="Sinp_TeacherWP_TT_wp_GroupDescri.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="数字校园_教师研修管理系统" />
+    </File>
+  </Module>
+</Elements>

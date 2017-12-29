@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="Master_wp_PutNavigationUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Master_wp_PutNavigation\" Type="ElementManifest" />
+    <ProjectItemFile Source="Master_wp_PutNavigation.webpart" Target="Master_wp_PutNavigation\" Type="ElementFile" />
+    <ProjectItemFile Source="Master_wp_PutNavigationUserControl.ascx" Target="CONTROLTEMPLATES\Sinp_TeacherWP.WebParts.Master\Master_wp_PutNavigation\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Sinp_TeacherWP.WebParts.Master.Master_wp_PutNavigation" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

@@ -1,0 +1,147 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.content {
+    background: url(../images/bg.png) no-repeat center;
+    width: 100%;
+    height: 949px;
+}
+
+.top_top {
+    text-align: center;
+}
+
+.center p.top_top {
+    padding-top: 35px;
+}
+
+.center .biaodan table {
+    margin: auto;
+}
+
+    .center .biaodan table tr td.name {
+        width: 100px;
+        text-align: right;
+        font-size: 14px;
+        line-height: 30px;
+        font-family: "微软雅黑";
+        color: #767676;
+        vertical-align: top;
+    }
+
+    .center .biaodan table tr td.name1 {
+        width: 100px;
+        text-align: right;
+        font-size: 14px;
+        line-height: 30px;
+        font-family: "微软雅黑";
+        color: #767676;
+    }
+
+    .center .biaodan table tr td .inputdiv input {
+        width: 293px;
+        height: 28px;
+        line-height: 24px;
+        font-size: 14px;
+        border-style: none;
+    }
+
+    .center .biaodan table tr td input, .center .biaodan table tr td select {
+        width: 220px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 14px;
+    }
+
+
+        .center .biaodan table tr td input.yzm {
+            width: 100px;
+        }
+
+    .center .biaodan table tr td img.yzm {
+        padding-left: 60px;
+        padding-right: 25px;
+    }
+
+.xuanze {
+    text-align: center;
+}
+
+    .xuanze p {
+        font-family: "微软雅黑";
+        font-size: 14px;
+    }
+
+        .xuanze p.p2 {
+            padding-top: 10px;
+        }
+
+            .xuanze p.p2 span a {
+                color: #1791dc;
+                padding-left: 20px;
+            }
+        /*.submit { background:url(../images/submit.png) no-repeat; width:132px; height:38px; border:none; font-size:16px; color:#FFF; font-family:"微软雅黑"; cursor:pointer;}*/
+        .xuanze p.p4 .btnRegister {
+            background: url(../images/register.png) no-repeat;
+            width: 306px;
+            height: 40px;
+            border: none;
+            font-size: 16px;
+            color: #FFF;
+            font-family: "微软雅黑";
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+
+
+         .p2 #BtnChangePWD {
+            background: url(../images/ModifyPwd.png) no-repeat;
+            width: 306px;
+            height: 40px;
+            border: none;
+            font-size: 16px;
+            color: #FFF;
+            font-family: "微软雅黑";
+            cursor: pointer;
+            margin-top: 10px;text-align:left;
+        }
+
+        .xuanze p.p2 #btnRegister, .xuanze p.p3 input {
+            background: url(../images/submit.png) no-repeat;
+            width: 130px;
+            height: 32px;
+            border: none;
+            font-size: 16px;
+            color: #FFF;
+            font-family: "微软雅黑";
+            cursor: pointer;
+        }
+
+
+
+
+
+.kuang {
+    text-align: left;
+}
+
+.shuoming {
+    width: 500px;
+    line-height: 24px;
+    margin: auto;
+    font-family: "微软雅黑";
+}
+
+    .shuoming p {
+        color: #cb0000;
+        font-size: 14px;
+    }
+
+    .shuoming h1 {
+        font-size: 16px;
+    }
+
+
+span#Rb_Sex input {
+    width: 14px;
+}

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ClassInfo>
+  <NJ id="10" name="高一">
+    <BJ id="101" name="高一1班" />
+    <BJ id="102" name="高一2班" />
+    <BJ id="103" name="高一3班" />
+    <BJ id="104" name="高一4班" />
+    <BJ id="105" name="高一5班" />
+    <BJ id="106" name="高一6班" />
+    <BJ id="107" name="高一7班" />
+    <BJ id="108" name="高一8班" />
+    <BJ id="109" name="高一9班" />
+    <BJ id="1010" name="高一10班" />
+    <BJ id="1011" name="高一11班" />
+    <BJ id="1012" name="高一12班" />
+    <BJ id="1013" name="高一13班" />
+    <BJ id="1014" name="高一14班" />
+  </NJ>
+  <NJ id="11" name="高二">
+    <BJ id="111" name="高二1班" />
+    <BJ id="112" name="高二2班" />
+    <BJ id="113" name="高二3班" />
+    <BJ id="114" name="高二4班" />
+    <BJ id="115" name="高二5班" />
+    <BJ id="116" name="高二6班" />
+    <BJ id="117" name="高二7班" />
+    <BJ id="118" name="高二8班" />
+    <BJ id="119" name="高二9班" />
+    <BJ id="1110" name="高二10班" />
+    <BJ id="1111" name="高二11班" />
+    <BJ id="1112" name="高二12班" />
+    <BJ id="1113" name="高二13班" />
+    <BJ id="1114" name="高二14班" />
+  </NJ>
+  <NJ id="12" name="高三">
+    <BJ id="121" name="高三1班" />
+    <BJ id="122" name="高三2班" />
+    <BJ id="123" name="高三3班" />
+    <BJ id="124" name="高三4班" />
+    <BJ id="125" name="高三5班" />
+    <BJ id="126" name="高三6班" />
+    <BJ id="127" name="高三7班" />
+    <BJ id="128" name="高三8班" />
+    <BJ id="129" name="高三9班" />
+    <BJ id="1210" name="高三10班" />
+    <BJ id="1211" name="高三11班" />
+    <BJ id="1212" name="高三12班" />
+    <BJ id="1213" name="高三13班" />
+    <BJ id="1214" name="高三14班" />
+    <BJ id="1215" name="高三15班" />
+  </NJ>
+</ClassInfo>

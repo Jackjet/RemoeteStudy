@@ -1,0 +1,638 @@
+body
+{ 	width: 100%;
+	height: 100%;
+	font-size:12px; 
+	line-height:25px; 
+	color:#333; 
+	font-family:"Microsoft YaHei";
+}
+body,ul,ol,li,dd,dt,dl,p,h1,h2,h3,label,form,img
+{
+	display: block;
+	margin: 0px;
+	padding:0px;
+	list-style: none;
+	color:#333; 
+	font-family:"Microsoft YaHei";
+}
+a:link{ color:#333; text-decoration:none}
+a:visited{ color:#006}
+a:hover{ color:#600; text-decoration:none;}
+
+
+.header,.main,.bottom{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	clear: both;
+}
+.header{
+	height: 80px;
+	background: #0695d8;
+}
+.lfmain{
+	float: left;
+	width: 170px;
+	min-height: 600px;
+	overflow: hidden;
+	background:#f3f8fc;
+	border-right: solid 1px #c3ced5;
+}
+.rfmain{
+	background: #f2f2f2;
+	overflow: hidden;
+	padding-bottom:50px; 
+}
+.stindex{
+	height: auto;
+	margin: 14px 14px 0 15px;
+}
+.stindex_rflf{
+	width: 59%;
+	background: #fff;
+	border: solid 1px #e6e6e6;
+	box-shadow: 0 0 5px #e6e6e6;
+	float: left;
+	overflow: hidden;
+}
+.stindex_rfrf{
+	width: 40%;
+	background: #fff;
+	border: solid 1px #e6e6e6;
+	box-shadow: 0 0 5px #e6e6e6;
+	float: right;
+	overflow: hidden;	
+}
+
+/*校本选修课学生_全部选修课 页面*/
+.allxxk_list{
+	margin: 20px;
+}
+.allxxk_list ul{
+	width: 233px;
+	height: 185px;
+	margin: 8px 15px 10px 15px;
+	border: solid 1px #e9e9e9;
+	box-shadow: 0 0 5px #e9e9e9;
+	border-radius: 1px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+}
+.allxxk_list ul li{
+	width: 233px;
+	height: 31px;
+	clear: both;
+}
+.allxxk_list ul li h2{
+	width: 160px;
+	margin: 0 0 0 6px;
+	line-height: 31px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #434343;
+	float: left;
+	overflow: hidden;
+}
+.allxxk_list ul li span{
+	width: 55px;
+	height: 22px;
+	margin: 3px 5px 0 0;
+	line-height: 22px;
+	text-align: center;
+	border: solid 1px #00a1ea;
+	border-radius: 3px;
+	background: #11aaf0;
+	float: right;
+}
+.allxxk_list ul li span a{
+	color: #fff;
+}
+
+.allxxk_list ul li div.lf_tp,
+.allxxk_list ul li div.lf_xq{
+	width: 65px;
+	height: 100px;
+	margin: 15px 0 15px 10px;
+	float: left;
+	overflow: hidden;
+}
+.allxxk_list ul li div.rf_xq{
+	width: 145px;
+	margin: 15px 10px 15px 0;
+	float: right;
+}
+.allxxk_list ul li div img{
+	width: 65px;
+	height: 65px;
+	border-radius: 65px;
+}
+.allxxk_list ul li div h3{
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: normal;
+	color: #fff;
+	overflow: hidden;
+}
+.allxxk_list ul li div.lf_tp h3{
+	font-size: 12px;
+}
+.allxxk_list ul li div p{
+	height: 75px;
+	text-indent: 2em;
+	color: #fff;
+	overflow: hidden;
+}
+.allxxk_list ul li:last-child{
+	width: 227px;
+	height: 22px;
+	padding: 0 0 0 6px;
+	line-height: 22px;
+	border-top: solid 1px #e7e7e7;
+	color: #999999;
+}
+.sb_fz02{
+	background: #61c3f2;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.sb_fz03{
+	position: absolute;
+	top: 130px;
+	left: 0;
+}
+.sb_fz04{
+	position: absolute;
+	top: 161px;
+	left: 0;
+}
+.sb_fz01 img,
+.allxxk_list ul li.sb_fz02,
+.allxxk_list ul li.sb_fz01{
+	width: 233px;
+	height: 130px;
+	overflow: hidden;
+}
+.sb_fz01{  
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+	-moz-transition: -moz-transform .2s ease-in-out;
+	-o-transition: -o-transform .2s ease-in-out;
+	-ms-transition: -ms-transform .2s ease-in-out;
+	transition: transform .2s ease-in-out;
+	-webkit-transform: rotateY(0);
+	-ms-transform: rotateY(0);
+	-moz-transform: rotateY(0);
+	transform: rotateY(0);
+	-o-transform: rotateY(0);}
+.allxxk_list ul:hover .sb_fz01{-webkit-transform: rotateY(-90deg);-ms-transform: rotateY(-90deg);transform: rotateY(-90deg);-o-transform: rotateY(-90deg);-moz-transform: rotateY(-90deg);-webkit-transition: -webkit-transform .1s ease-in;-moz-transition: -moz-transform .1s ease-in;-o-transition: -o-transform .1s ease-in;-ms-transition: -ms-transform .1s ease-in;transition: transform .1s ease-in;}
+.sb_fz02{ position:absolute; top:0px; left:0px;-webkit-transition: -webkit-transform .1s ease-in;-moz-transition: -moz-transform .1s ease-in;-o-transition: -o-transform .1s ease-in;transition: transform .1s ease-in;-ms-transition: transform .1s ease-in;-webkit-transform: rotateY(90deg);-ms-transform: rotateY(90deg);transform: rotateY(90deg);-moz-transform: rotateY(90deg);-o-transform: rotateY(90deg);display: none\9; }
+.allxxk_list ul:hover .sb_fz02{-webkit-transform: rotateY(0);-ms-transform: rotateY(0);-moz-transform: rotateY(0);
+transform: rotateY(0);-o-transform: rotateY(0);-webkit-transition: -webkit-transform .3s ease-out;-moz-transition: -moz-transform .3s ease-out;-o-transition: -o-transform .3s ease-out;-ms-transition: -ms-transform .3s ease-out;transition: transform .3s ease-out;
+display: block\9;}
+
+
+
+/*学生社团首页 页面*/
+.st_join{
+	height: 133px;
+	margin: 14px 14px 0 15px;
+	overflow: hidden; 
+	position: relative;
+}
+.st_join img{
+	width: 100%;
+	height: 133px;
+}
+.st_join_bt{
+	width: 100%;
+	height: 45px;
+	padding: 0 0 0 10px;
+	line-height: 45px;
+	color: #fff;
+	background: #454954;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.st_join_bt a{
+	width: 88px;
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+	color: #fff;
+	background: #f1b40e;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 8px;
+	right: 17px;
+}
+
+/*热门活动    （与社团活动详情列表略有不同）*/
+.rm_active dt,
+.st_hyd dt,
+.hot_kc dt,
+.yx_tea dt,
+.bm_student dt,
+.kc_zuoye dt,
+.js_jianjie dt{
+	height: 32px;
+	margin: 15px 10px 0 10px;
+	line-height: 32px;
+	border-bottom: solid 2px #e1e1e1;
+}
+.rm_active dt span,
+.st_hyd dt span,
+.hot_kc dt span,
+.yx_tea dt span,
+.bm_student dt span,
+.kc_zuoye dt span,
+.js_jianjie dt span{
+	padding: 0 5px 0 10px;
+	font-size: 16px;
+	float: left;
+}
+.rm_active dt span.active,
+.st_hyd dt span.active,
+.hot_kc dt span.active,
+.yx_tea dt span.active,
+.bm_student dt span.active,
+.kc_zuoye dt span.active,
+.js_jianjie dt span.active{
+	border-bottom: solid 2px #01b1ed;
+}
+.rm_active dt p{
+	width: 20px;
+	height: 20px;
+	margin: 7px 0 0 10px;
+	line-height: 20px;
+	text-align: center;
+	background: #0da6ec;
+	float: right;
+}
+.rm_active dt p a{
+	color: #fff;
+}
+.rm_active dd,
+.hot_kc dd,
+.sst_hyd dd{
+	margin: 0 5px 5px 5px;
+	clear: both;
+	overflow: hidden;
+}
+.rm_active dd div{
+	width: 214px;
+	height: 283px;
+	margin: 5px 3px 5px 3px;
+	/*background: #f8f8f8;*/
+	border: solid 1px #ededed;
+	box-shadow: 0 0 3px #dedede;
+	float: left;
+	overflow: hidden;
+}
+.rm_active dd div ul li{
+	width: 205px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.rm_active dd div ul li img{
+	width: 205px;
+	height: 127px;
+	margin: 3px 0 15px 0;
+}
+.rm_active dd div ul li h2{
+	margin: 0 0 0 0;
+	font-size: 14px;
+	/*font-weight: normal;*/
+	color: #0da6ec;
+}
+.rm_active dd div ul li i,
+.rm_active dd div dl dt i{
+	margin: 0 10px 0 0;
+	color: #aaaaaa;
+	/*font-weight: bold;*/
+}
+/*社团活跃度排名*/
+.st_hyd dt{
+	border-bottom: solid 1px #e1e1e1;
+}
+.st_hyd dt p,
+.yx_tea dt p,
+.hot_kc dt p{
+	width: 50px;
+	margin: 0 0 0 0;
+	text-align: right;
+	float: right;
+}
+.st_hyd dd,
+.yx_tea dd{
+	margin: 5px 10px 9px 10px;
+}
+.st_hyd dd ol li,
+.yx_tea dd ol li{
+	width: 100%;
+	height: 107px;
+	margin: 7px 0 8px 0;
+	overflow: hidden;
+}
+.st_hyd dd ol li img,
+.yx_tea dd ol li img{
+	width: 160px;
+	height: 100px;
+	margin: 0 10px 0 0;
+	border: solid 1px #e6e4e5;
+	float: left;
+}
+.st_hyd dd ol li div,
+.yx_tea dd ol li div{
+	height: 34px;
+}
+.st_hyd dd ol li div h3,
+.yx_tea dd ol li div h3{
+	margin: 0 15px 0 0;
+	display: inline;
+	font-size: 14px;
+	font-weight: normal;
+}
+.st_hyd dd ol li div span{
+	margin: 0 0 0 5px;
+	font-size: 14px;
+}
+.st_hyd dd ol li div i{
+	font-size: 16px;
+}
+.st_hyd dd ol li p,
+.yx_tea dd ol li p{
+	text-indent: 2em;
+	color: #767676;
+} 
+
+/*校本选修课首页 页面*/
+/*热门选修课*/
+.hot_kc dd ul{
+	width: 206px;
+	height: 185px;
+	margin: 6px 6px 6px 6px;
+}
+.hot_kc dd ul li h2{
+	width: 130px;
+}
+.hot_kc dd ul li{
+	width: 206px;
+}
+.hot_kc dd ul li.sb_fz02,
+.hot_kc dd ul li.sb_fz01 img,{
+	width: 206px;
+}
+.hot_kc dd ul li.sb_fz02{
+	width: 206px;
+}
+.hot_kc dd li div.lf_tp,
+.hot_kc dd ul li div.lf_xq{
+	width: 50px;
+}
+.hot_kc dd ul li div.rf_xq{
+	width: 135px;
+}
+.hot_kc dd ul li div img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+
+.hot_kc dd ul li:last-child{
+	width: 200px;
+	height: 22px;
+	padding: 0 0 0 6px;
+	line-height: 22px;
+	border-top: solid 1px #e7e7e7;
+	color: #999999;
+}
+/*优秀任课教师*/
+.yx_tea dd ol li{
+	height: 115px;
+}
+.yx_tea dd ol li img{
+	width: 87px;
+	height: 87px;
+	border-radius: 87px;
+	border: solid 4px #dddddd;
+}
+.yx_tea dd ol li{
+	border-bottom: dashed 1px #c7c7c7;
+}
+/*校本选修课教师_我的选修课_调整选修课人员 页面*/
+.my_kc{
+	margin: 17px 15px 20px 15px;
+	background: #fff;
+	border: solid 1px #e6e6e6;
+	box-shadow: 0 0 5px #e6e6e6;
+}
+.my_kc_xxk{
+	height: 42px;
+	background: #f0f0f0;
+	border-bottom: solid 1px #e3e3e3;
+}
+.my_kc_xxk ul li{
+	width: 125px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	float: left;
+}
+.my_kc_xxk ul li a{
+	color: #757575;
+	font-size: 14px;
+}
+.my_kc_xxk ul li.active{
+	background: #fff;
+	border-right: solid 1px #e3e3e3;
+	border-left: solid 1px #e3e3e3;
+	border-top: solid 2px #01b1ed;
+}
+.my_kc_xq{
+	margin: 5px 20px 20px 20px;
+}
+.music_kc,
+.bm_student{
+	margin:20px 0 0 0;
+	background: #f9f9f9;
+	border: solid 1px #eaeaea;
+}
+.music_kc img{
+	width: 365px;
+	height: 230px;
+	margin: 20px 20px 20px 20px;
+	border: solid 1px #dddddd;
+	box-shadow: 0 0 3px #dddddd;
+	float: left;
+}
+.music_nr{
+	height: 265px;
+	margin: 20px 14px 10px 0;
+	overflow: hidden;
+}
+.music_nr h2{
+	height: 36px;
+	line-height: 36px;
+	font-size: 16px;
+}
+.music_nr div span{
+	margin: 0 5px 0 0;
+	color: #a9a9a9;
+	font-size: 10px;
+	display: inline-block;
+}
+.music_nr p{
+	max-height: 180px;
+	text-indent: 2em;
+	overflow: hidden;
+}
+.music_nr div a{
+	color: #23a8ed;
+}
+/*报名学生*/
+.bm_student dt,
+.kc_zuoye dt,
+.js_jianjie dt{
+	margin: 0 8px 0 8px;
+	background: none; 
+}
+.bm_student dt p{
+	width: 150px;
+	height: 20px;
+	margin: 7px 0 0 10px;
+	line-height: 20px;
+	text-align: right;
+	color: #23a8ed;
+	float: right;
+}
+.bm_student dd img{
+	width: 50px;
+	height: 50px;
+	margin: 10px 7px 5px 7px;
+	border-radius: 3px;
+	display: inline-block;
+}
+/*课程作业*/
+.kc_ls dl{
+	display: inline-block;
+}
+.kc_zuoye{
+	width: 59%;
+	/*float: left;*/
+	margin:20px 0 0 0;
+	background: #f9f9f9;
+	border: solid 1px #eaeaea;
+}
+.kc_zuoye dd ul li,
+.kc_zuoye dd ul li ol li,
+.js_jianjie dd ul li{
+	line-height: 36px;
+	margin: 0 10px 0 10px;
+	clear: both;
+}
+.list_kctitle{
+	height: 36px;
+	line-height: 36px;
+	border-bottom: solid 1px #e9e9e9;	
+}
+.kc_zuoye dd ul li ol li{
+	border-bottom: dashed 1px #e9e9e9;	
+}
+.kc_zuoye dd ul li p,
+.js_jianjie dd ul li a{
+	width: 70%;
+	height: 36px;
+	overflow: hidden;
+	float: left;
+}
+.kc_zuoye dd ul li i{
+	width: 15px;
+	height: 15px;
+	margin: 10px 10px 0 0;
+	line-height: 13px;
+	text-align: center;
+	border-radius: 15px;
+	border: solid 1px #9c9c9c;
+	font-style: normal;
+	float: right;
+	cursor: pointer;
+}
+.kc_zuoye dd ul li ol{
+	clear: both;
+	display: none;
+}
+.kc_zuoye dd ul li ol li a,
+.kc_zuoye dd ul li ol li div,
+.js_jianjie dd ul li a,
+.js_jianjie dd ul li div{
+	color: #9a9a9a;
+}
+.kc_zuoye dd ul li ol li div,
+.kc_zuoye dd ul li ol li span,
+.js_jianjie dd ul li div{
+	width: 50px;
+	height: 36px;
+	text-align: right;
+	float: right;
+	overflow: hidden;
+}
+.kc_zuoye dd ul li ol li span{
+	width: 70px;
+	height: 26px;
+	margin: 6px 0 0 0;
+	line-height: 26px;
+	text-align: center;
+	border-radius: 5px;
+	background: #00a1ec;	
+}
+.kc_zuoye dd ul li ol li span a{
+	color: #fff;
+}
+/*教师简介***课程资源**/
+.js_ziyuan{
+	width: 40%;
+	float: right;
+}
+.js_jianjie{
+	width: 100%;
+	display: block;
+	margin:20px 0 0 0;
+	background: #f9f9f9;
+	border: solid 1px #eaeaea;	
+}
+.js_jianjie dd img{
+	width: 92px;
+	height: 92px;
+	margin: 10px 15px 15px 15px;
+	border-radius: 92px;
+	border: solid 2px #0196da;	
+	float: left;
+}
+.js_jianjie dd p{
+	margin: 10px 0 20px 0;
+	text-indent: 2em;
+	color: #767676;
+}
+
+
+
+
+
+
+
+
+
+

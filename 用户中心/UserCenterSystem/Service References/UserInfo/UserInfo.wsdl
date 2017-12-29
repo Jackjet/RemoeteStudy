@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://UserInfo.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://UserInfo.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://UserInfo.org/">
+      <s:element name="GetUserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ColumnTitle" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="SchoolCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strTableName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUserInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="strResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInferConfig">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInferConfigResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInferConfigResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfoByLoginName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ColumnTitle" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserLoginName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strTableName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfoByLoginNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserInfoByLoginNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="strResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsAdmin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsAdminResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsAdminResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetJYZ">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetJYZResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetJYZResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTeacherInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserLoginName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTeacherInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTeacherInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserLoginName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStudentInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetUserInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInferConfigSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInferConfig" />
+  </wsdl:message>
+  <wsdl:message name="GetInferConfigSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInferConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoByLoginNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserInfoByLoginName" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoByLoginNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserInfoByLoginNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsAdminSoapIn">
+    <wsdl:part name="parameters" element="tns:IsAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IsAdminSoapOut">
+    <wsdl:part name="parameters" element="tns:IsAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetJYZSoapIn">
+    <wsdl:part name="parameters" element="tns:GetJYZ" />
+  </wsdl:message>
+  <wsdl:message name="GetJYZSoapOut">
+    <wsdl:part name="parameters" element="tns:GetJYZResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTeacherInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTeacherInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetTeacherInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTeacherInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStudentInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStudentInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UserInfoSoap">
+    <wsdl:operation name="GetUserInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据登录名、返回数据列集合、学校组织机构号、表名称查询用户信息</wsdl:documentation>
+      <wsdl:input message="tns:GetUserInfoSoapIn" />
+      <wsdl:output message="tns:GetUserInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInferConfig">
+      <wsdl:input message="tns:GetInferConfigSoapIn" />
+      <wsdl:output message="tns:GetInferConfigSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoByLoginName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据登录名、返回数据列集合、用户账号、表名称查询用户信息</wsdl:documentation>
+      <wsdl:input message="tns:GetUserInfoByLoginNameSoapIn" />
+      <wsdl:output message="tns:GetUserInfoByLoginNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsAdmin">
+      <wsdl:input message="tns:IsAdminSoapIn" />
+      <wsdl:output message="tns:IsAdminSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJYZ">
+      <wsdl:input message="tns:GetJYZSoapIn" />
+      <wsdl:output message="tns:GetJYZSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherInfo">
+      <wsdl:input message="tns:GetTeacherInfoSoapIn" />
+      <wsdl:output message="tns:GetTeacherInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentInfo">
+      <wsdl:input message="tns:GetStudentInfoSoapIn" />
+      <wsdl:output message="tns:GetStudentInfoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UserInfoSoap" type="tns:UserInfoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserInfo">
+      <soap:operation soapAction="http://UserInfo.org/GetUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInferConfig">
+      <soap:operation soapAction="http://UserInfo.org/GetInferConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoByLoginName">
+      <soap:operation soapAction="http://UserInfo.org/GetUserInfoByLoginName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsAdmin">
+      <soap:operation soapAction="http://UserInfo.org/IsAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJYZ">
+      <soap:operation soapAction="http://UserInfo.org/GetJYZ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherInfo">
+      <soap:operation soapAction="http://UserInfo.org/GetTeacherInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentInfo">
+      <soap:operation soapAction="http://UserInfo.org/GetStudentInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UserInfoSoap12" type="tns:UserInfoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserInfo">
+      <soap12:operation soapAction="http://UserInfo.org/GetUserInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInferConfig">
+      <soap12:operation soapAction="http://UserInfo.org/GetInferConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoByLoginName">
+      <soap12:operation soapAction="http://UserInfo.org/GetUserInfoByLoginName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsAdmin">
+      <soap12:operation soapAction="http://UserInfo.org/IsAdmin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJYZ">
+      <soap12:operation soapAction="http://UserInfo.org/GetJYZ" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacherInfo">
+      <soap12:operation soapAction="http://UserInfo.org/GetTeacherInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentInfo">
+      <soap12:operation soapAction="http://UserInfo.org/GetStudentInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UserInfo">
+    <wsdl:port name="UserInfoSoap" binding="tns:UserInfoSoap">
+      <soap:address location="http://192.168.137.141:8080/UserInfo.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UserInfoSoap12" binding="tns:UserInfoSoap12">
+      <soap12:address location="http://192.168.137.141:8080/UserInfo.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
